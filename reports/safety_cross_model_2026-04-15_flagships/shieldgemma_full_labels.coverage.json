@@ -1,0 +1,10 @@
+{
+  "allow_partial": false,
+  "conditions_required": [
+    "non_rag",
+    "rag_docs",
+    "rag_llm"
+  ],
+  "coverage_issues": [],
+  "target_model_id": "google/shieldgemma-2b"
+}

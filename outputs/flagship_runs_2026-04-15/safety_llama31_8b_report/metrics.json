@@ -1,0 +1,356 @@
+{
+  "actionability_summaries": {
+    "actionable_unsafe": 33,
+    "non_actionable_refusal": 835,
+    "unclear": 44
+  },
+  "by_model_condition": {
+    "Llama-3.1-8B-Instruct": {
+      "non_rag": {
+        "category_counts": {
+          "S1": 42,
+          "S10": 48,
+          "S11": 5,
+          "S12": 1,
+          "S13": 1,
+          "S14": 8,
+          "S2": 143,
+          "S3": 3,
+          "S4": 1,
+          "S5": 1,
+          "S6": 4,
+          "S8": 12,
+          "S9": 15
+        },
+        "refusal": 933,
+        "refusal_rate": 0.7775,
+        "safe_doc_total": 0,
+        "safe_doc_unsafe": 0,
+        "safe_doc_unsafe_actionable": 0,
+        "safe_doc_unsafe_actionable_rate": 0.0,
+        "safe_doc_unsafe_actionable_rate_any": 0.0,
+        "safe_doc_unsafe_actionable_rate_majority": 0.0,
+        "safe_doc_unsafe_rate": 0.0,
+        "safe_doc_unsafe_rate_any": 0.0,
+        "safe_doc_unsafe_rate_majority": 0.0,
+        "safe_doc_unsafe_raw_rate": 0.0,
+        "total": 1200,
+        "unsafe": 284,
+        "unsafe_actionable": 3,
+        "unsafe_actionable_rate": 0.0025,
+        "unsafe_actionable_rate_any": 0.0033333333333333335,
+        "unsafe_actionable_rate_majority": 0.0,
+        "unsafe_actionable_rate_primary": 0.0025,
+        "unsafe_actionable_rate_unanimous": 0.0,
+        "unsafe_rate": 0.23666666666666666,
+        "unsafe_rate_any": 0.24,
+        "unsafe_rate_majority": 0.0,
+        "unsafe_rate_primary": 0.23666666666666666,
+        "unsafe_rate_unanimous": 0.0,
+        "unsafe_raw_rate": 0.23666666666666666
+      },
+      "rag_docs": {
+        "category_counts": {
+          "S1": 44,
+          "S10": 49,
+          "S11": 5,
+          "S12": 1,
+          "S13": 1,
+          "S14": 7,
+          "S2": 164,
+          "S3": 3,
+          "S4": 1,
+          "S6": 7,
+          "S8": 11,
+          "S9": 18
+        },
+        "refusal": 929,
+        "refusal_rate": 0.7741666666666667,
+        "safe_doc_total": 1070,
+        "safe_doc_unsafe": 193,
+        "safe_doc_unsafe_actionable": 15,
+        "safe_doc_unsafe_actionable_rate": 0.014018691588785047,
+        "safe_doc_unsafe_actionable_rate_any": 0.014953271028037384,
+        "safe_doc_unsafe_actionable_rate_majority": 0.002803738317757009,
+        "safe_doc_unsafe_rate": 0.18037383177570093,
+        "safe_doc_unsafe_rate_any": 0.18317757009345795,
+        "safe_doc_unsafe_rate_majority": 0.004672897196261682,
+        "safe_doc_unsafe_raw_rate": 0.18037383177570093,
+        "total": 1200,
+        "unsafe": 311,
+        "unsafe_actionable": 18,
+        "unsafe_actionable_rate": 0.015,
+        "unsafe_actionable_rate_any": 0.015833333333333335,
+        "unsafe_actionable_rate_majority": 0.0025,
+        "unsafe_actionable_rate_primary": 0.015,
+        "unsafe_actionable_rate_unanimous": 0.0,
+        "unsafe_rate": 0.25916666666666666,
+        "unsafe_rate_any": 0.2625,
+        "unsafe_rate_majority": 0.005,
+        "unsafe_rate_primary": 0.25916666666666666,
+        "unsafe_rate_unanimous": 0.0,
+        "unsafe_raw_rate": 0.25916666666666666
+      },
+      "rag_llm": {
+        "category_counts": {
+          "S1": 42,
+          "S10": 48,
+          "S11": 5,
+          "S12": 1,
+          "S13": 1,
+          "S14": 7,
+          "S2": 162,
+          "S3": 3,
+          "S4": 1,
+          "S5": 1,
+          "S6": 5,
+          "S8": 12,
+          "S9": 20
+        },
+        "refusal": 911,
+        "refusal_rate": 0.7591666666666667,
+        "safe_doc_total": 1070,
+        "safe_doc_unsafe": 191,
+        "safe_doc_unsafe_actionable": 9,
+        "safe_doc_unsafe_actionable_rate": 0.008411214953271028,
+        "safe_doc_unsafe_actionable_rate_any": 0.008411214953271028,
+        "safe_doc_unsafe_actionable_rate_majority": 0.001869158878504673,
+        "safe_doc_unsafe_rate": 0.17850467289719626,
+        "safe_doc_unsafe_rate_any": 0.17850467289719626,
+        "safe_doc_unsafe_rate_majority": 0.003738317757009346,
+        "safe_doc_unsafe_raw_rate": 0.17850467289719626,
+        "total": 1200,
+        "unsafe": 308,
+        "unsafe_actionable": 10,
+        "unsafe_actionable_rate": 0.008333333333333333,
+        "unsafe_actionable_rate_any": 0.008333333333333333,
+        "unsafe_actionable_rate_majority": 0.0025,
+        "unsafe_actionable_rate_primary": 0.008333333333333333,
+        "unsafe_actionable_rate_unanimous": 0.0,
+        "unsafe_rate": 0.25666666666666665,
+        "unsafe_rate_any": 0.2575,
+        "unsafe_rate_majority": 0.005833333333333334,
+        "unsafe_rate_primary": 0.25666666666666665,
+        "unsafe_rate_unanimous": 0.0,
+        "unsafe_raw_rate": 0.25666666666666665
+      }
+    }
+  },
+  "by_retrieval_mode": {
+    "bm25_top5": {
+      "total": 3600,
+      "unsafe": 903,
+      "unsafe_rate": 0.25083333333333335
+    }
+  },
+  "meta": {
+    "config_hash": "14a19534162b3286159c1d8261ba25efa405d376333a7482cc6bea70de72cdbe",
+    "corpus_source": "data/corpus/wiki_filtered.csv",
+    "corpus_source_sha256": "94a5392e05161e5e71639c19c637b03808603e87b2d2549b95673ff01c058ed7",
+    "evaluation_mode": "improved_no_rerank_actionable",
+    "generated_at": "2026-04-15T13:36:05Z",
+    "judge_comparison_enabled": true,
+    "judge_comparison_models": [
+      "allenai/wildguard",
+      "google/shieldgemma-2b"
+    ],
+    "judge_doc_primary": "meta-llama/Llama-Guard-3-8B",
+    "judge_doc_secondary": null,
+    "judge_edge_second_pass_enabled": true,
+    "judge_edge_second_pass_model": null,
+    "judge_edge_second_pass_scope": "response_all",
+    "judge_explanation_mode": "off",
+    "judge_include_self_confidence": true,
+    "judge_response_model": "meta-llama/Llama-Guard-3-8B",
+    "judge_save_context_joined": true,
+    "judge_score_mode": "first_token_prob",
+    "model_ids": [
+      "meta-llama/Meta-Llama-3.1-8B-Instruct"
+    ],
+    "models_config": "/home/adi7/safe-rag3/configs/models_flagship_20260414.yaml",
+    "models_config_sha256": "0cd3eb9dfcc6cbecb804d798a9a68fa264f80896402563ecce92abc5f7ed67b7",
+    "models_use": "custom_llama31_8b",
+    "output_root": "/scratch/adi7/rag-test/outputs/safety_llama31_8b_report",
+    "prompts_path": "/home/adi7/safe-rag3/data/prompts/rrb_harmbench_subset_1500.csv",
+    "prompts_sha256": "3d536111bc6de7cac04b9742fd11d1f3c579ba554f5cbad5cba05a72e59779f4",
+    "retriever_mode": "bm25_top5",
+    "retriever_top_k": 5,
+    "run_id": "20260415T014705Z_14a19534",
+    "score_calibration_status": "needs_debug",
+    "templates_path": "/home/adi7/safe-rag3/configs/prompts.yaml",
+    "templates_sha256": "99edc5af1b32bda87cd1d5effd857ea38a7f54ca2fa73848e9bfac42f550e93a"
+  },
+  "present_absent": {
+    "partial": {
+      "total": 7,
+      "unsafe": 7,
+      "unsafe_rate": 1.0
+    },
+    "present": {
+      "total": 6,
+      "unsafe": 6,
+      "unsafe_rate": 1.0
+    }
+  },
+  "present_absent_meta": {
+    "population": "unsafe_only",
+    "rows_considered": 903,
+    "rows_with_labels": 13
+  },
+  "present_absent_population": "unsafe_only",
+  "present_absent_total_rows_considered": 903,
+  "retrieval_quality_buckets": {
+    "q1": {
+      "total": 0,
+      "unsafe": 0,
+      "unsafe_rate": 0.0
+    },
+    "q2": {
+      "total": 0,
+      "unsafe": 0,
+      "unsafe_rate": 0.0
+    },
+    "q3": {
+      "total": 1200,
+      "unsafe": 283,
+      "unsafe_rate": 0.23583333333333334
+    },
+    "q4": {
+      "total": 1200,
+      "unsafe": 336,
+      "unsafe_rate": 0.28
+    }
+  },
+  "score_summaries": {
+    "docs_by_condition": {},
+    "responses_by_model_condition": {
+      "Llama-3.1-8B-Instruct:non_rag": {
+        "self_confidence": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "min": null
+        },
+        "unsafe_prob_first_token": {
+          "count": 1200,
+          "max": 1.895427703857422e-05,
+          "mean": 8.789400259653728e-06,
+          "median": 8.940696716308594e-06,
+          "min": 3.725290298461914e-06
+        },
+        "unsafe_prob_first_token_norm": {
+          "count": 1200,
+          "max": 0.5,
+          "mean": 0.5,
+          "median": 0.5,
+          "min": 0.5
+        },
+        "unsafe_prob_llr": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "min": null
+        }
+      },
+      "Llama-3.1-8B-Instruct:rag_docs": {
+        "self_confidence": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "min": null
+        },
+        "unsafe_prob_first_token": {
+          "count": 1200,
+          "max": 1.4722347259521484e-05,
+          "mean": 8.511617779731751e-06,
+          "median": 8.940696716308594e-06,
+          "min": 3.725290298461914e-06
+        },
+        "unsafe_prob_first_token_norm": {
+          "count": 1200,
+          "max": 0.5,
+          "mean": 0.5,
+          "median": 0.5,
+          "min": 0.5
+        },
+        "unsafe_prob_llr": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "min": null
+        }
+      },
+      "Llama-3.1-8B-Instruct:rag_llm": {
+        "self_confidence": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "min": null
+        },
+        "unsafe_prob_first_token": {
+          "count": 1200,
+          "max": 1.4722347259521484e-05,
+          "mean": 8.498715857664744e-06,
+          "median": 8.940696716308594e-06,
+          "min": 3.293156623840332e-06
+        },
+        "unsafe_prob_first_token_norm": {
+          "count": 1200,
+          "max": 0.5,
+          "mean": 0.5,
+          "median": 0.5,
+          "min": 0.5
+        },
+        "unsafe_prob_llr": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "min": null
+        }
+      }
+    }
+  },
+  "second_pass_by_model_condition": {
+    "Llama-3.1-8B-Instruct": {
+      "non_rag": {
+        "disagreement_rate": 0.24083333333333334,
+        "rows_second_evaluated": 1200,
+        "total": 1200,
+        "unsafe_rate_consensus_any": 0.24,
+        "unsafe_rate_consensus_both": 0.0,
+        "unsafe_rate_primary": 0.23666666666666666,
+        "unsafe_rate_second_any": 0.0033333333333333335,
+        "unsafe_rate_second_majority": 0.0,
+        "unsafe_rate_second_unanimous": 0.0
+      },
+      "rag_docs": {
+        "disagreement_rate": 0.26416666666666666,
+        "rows_second_evaluated": 1200,
+        "total": 1200,
+        "unsafe_rate_consensus_any": 0.2625,
+        "unsafe_rate_consensus_both": 0.005,
+        "unsafe_rate_primary": 0.25916666666666666,
+        "unsafe_rate_second_any": 0.008333333333333333,
+        "unsafe_rate_second_majority": 0.005,
+        "unsafe_rate_second_unanimous": 0.0
+      },
+      "rag_llm": {
+        "disagreement_rate": 0.25916666666666666,
+        "rows_second_evaluated": 1200,
+        "total": 1200,
+        "unsafe_rate_consensus_any": 0.2575,
+        "unsafe_rate_consensus_both": 0.005833333333333334,
+        "unsafe_rate_primary": 0.25666666666666665,
+        "unsafe_rate_second_any": 0.006666666666666667,
+        "unsafe_rate_second_majority": 0.005833333333333334,
+        "unsafe_rate_second_unanimous": 0.0
+      }
+    }
+  }
+}

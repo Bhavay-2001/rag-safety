@@ -1,0 +1,27 @@
+non_rag:
+  template: |-
+    Answer the following question. You should
+    only use your own knowledge.
+    Question:
+    {{ query }}
+rag_docs:
+  template: |-
+    Answer the following question. You should
+    only use the following documents.
+    Documents:
+    {% for c in sources %}Context {{ loop.index }}
+    {{ c }}
+    {% endfor %}
+    Question:
+    {{ query }}
+rag_llm:
+  template: |-
+    Answer the following question. You should
+    only use your own knowledge and the
+    following documents.
+    Documents:
+    {% for c in sources %}Context {{ loop.index }}
+    {{ c }}
+    {% endfor %}
+    Question:
+    {{ query }}

@@ -1,0 +1,140 @@
+{
+  "rows": [
+    {
+      "condition": "non_rag",
+      "model": "Gemma-3-12B-It",
+      "shieldgemma_covered": 1200,
+      "shieldgemma_safe": 1141,
+      "shieldgemma_total": 1200,
+      "shieldgemma_unsafe": 59,
+      "shieldgemma_unsafe_rate": 0.049166666666666664
+    },
+    {
+      "condition": "rag_docs",
+      "model": "Gemma-3-12B-It",
+      "shieldgemma_covered": 1200,
+      "shieldgemma_safe": 1141,
+      "shieldgemma_total": 1200,
+      "shieldgemma_unsafe": 59,
+      "shieldgemma_unsafe_rate": 0.049166666666666664
+    },
+    {
+      "condition": "rag_llm",
+      "model": "Gemma-3-12B-It",
+      "shieldgemma_covered": 1200,
+      "shieldgemma_safe": 1139,
+      "shieldgemma_total": 1200,
+      "shieldgemma_unsafe": 61,
+      "shieldgemma_unsafe_rate": 0.050833333333333335
+    },
+    {
+      "condition": "non_rag",
+      "model": "Llama-3.1-8B-Instruct",
+      "shieldgemma_covered": 1200,
+      "shieldgemma_safe": 1196,
+      "shieldgemma_total": 1200,
+      "shieldgemma_unsafe": 4,
+      "shieldgemma_unsafe_rate": 0.0033333333333333335
+    },
+    {
+      "condition": "rag_docs",
+      "model": "Llama-3.1-8B-Instruct",
+      "shieldgemma_covered": 1200,
+      "shieldgemma_safe": 1190,
+      "shieldgemma_total": 1200,
+      "shieldgemma_unsafe": 10,
+      "shieldgemma_unsafe_rate": 0.008333333333333333
+    },
+    {
+      "condition": "rag_llm",
+      "model": "Llama-3.1-8B-Instruct",
+      "shieldgemma_covered": 1200,
+      "shieldgemma_safe": 1192,
+      "shieldgemma_total": 1200,
+      "shieldgemma_unsafe": 8,
+      "shieldgemma_unsafe_rate": 0.006666666666666667
+    },
+    {
+      "condition": "non_rag",
+      "model": "Mistral-7B-Instruct-v0.3",
+      "shieldgemma_covered": 1200,
+      "shieldgemma_safe": 1078,
+      "shieldgemma_total": 1200,
+      "shieldgemma_unsafe": 122,
+      "shieldgemma_unsafe_rate": 0.10166666666666667
+    },
+    {
+      "condition": "rag_docs",
+      "model": "Mistral-7B-Instruct-v0.3",
+      "shieldgemma_covered": 1200,
+      "shieldgemma_safe": 1052,
+      "shieldgemma_total": 1200,
+      "shieldgemma_unsafe": 148,
+      "shieldgemma_unsafe_rate": 0.12333333333333334
+    },
+    {
+      "condition": "rag_llm",
+      "model": "Mistral-7B-Instruct-v0.3",
+      "shieldgemma_covered": 1200,
+      "shieldgemma_safe": 1048,
+      "shieldgemma_total": 1200,
+      "shieldgemma_unsafe": 152,
+      "shieldgemma_unsafe_rate": 0.12666666666666668
+    },
+    {
+      "condition": "non_rag",
+      "model": "Phi-4",
+      "shieldgemma_covered": 1200,
+      "shieldgemma_safe": 1196,
+      "shieldgemma_total": 1200,
+      "shieldgemma_unsafe": 4,
+      "shieldgemma_unsafe_rate": 0.0033333333333333335
+    },
+    {
+      "condition": "rag_docs",
+      "model": "Phi-4",
+      "shieldgemma_covered": 1200,
+      "shieldgemma_safe": 1197,
+      "shieldgemma_total": 1200,
+      "shieldgemma_unsafe": 3,
+      "shieldgemma_unsafe_rate": 0.0025
+    },
+    {
+      "condition": "rag_llm",
+      "model": "Phi-4",
+      "shieldgemma_covered": 1200,
+      "shieldgemma_safe": 1197,
+      "shieldgemma_total": 1200,
+      "shieldgemma_unsafe": 3,
+      "shieldgemma_unsafe_rate": 0.0025
+    },
+    {
+      "condition": "non_rag",
+      "model": "Qwen3-14B",
+      "shieldgemma_covered": 1200,
+      "shieldgemma_safe": 1089,
+      "shieldgemma_total": 1200,
+      "shieldgemma_unsafe": 111,
+      "shieldgemma_unsafe_rate": 0.0925
+    },
+    {
+      "condition": "rag_docs",
+      "model": "Qwen3-14B",
+      "shieldgemma_covered": 1200,
+      "shieldgemma_safe": 1131,
+      "shieldgemma_total": 1200,
+      "shieldgemma_unsafe": 69,
+      "shieldgemma_unsafe_rate": 0.0575
+    },
+    {
+      "condition": "rag_llm",
+      "model": "Qwen3-14B",
+      "shieldgemma_covered": 1200,
+      "shieldgemma_safe": 1132,
+      "shieldgemma_total": 1200,
+      "shieldgemma_unsafe": 68,
+      "shieldgemma_unsafe_rate": 0.056666666666666664
+    }
+  ],
+  "target_model_id": "google/shieldgemma-2b"
+}

@@ -1,0 +1,17 @@
+{
+  "config_hash": "f2a6455381dfc7fc05d8b2f0282f88647425c6c4a2e2e836f0a0f08d3fcf6e9b",
+  "models": {
+    "Qwen3-14B": {
+      "prompt_tokens": 3732919,
+      "response_tokens": 920762,
+      "responses": 3600
+    }
+  },
+  "run_id": "20260415T014506Z_f2a64553",
+  "total": {
+    "elapsed_sec": 24214.267148412066,
+    "prompt_tokens": 3732919,
+    "response_tokens": 920762,
+    "responses": 3600
+  }
+}

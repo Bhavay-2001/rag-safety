@@ -1,0 +1,10 @@
+{
+  "docs_count": 28390850,
+  "docstore_class": "PickleLz4FullStore",
+  "has_docs": true,
+  "has_qrels": true,
+  "has_queries": true,
+  "irds_id": "natural-questions/train",
+  "qrels_count": 152148,
+  "queries_count": 307373
+}

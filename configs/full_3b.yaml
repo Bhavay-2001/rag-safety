@@ -1,0 +1,53 @@
+run:
+  seed: 42
+  max_prompts: null
+
+corpus:
+  source: "data/corpus/wiki_tiny.csv"
+  chunking:
+    min_chars: 1000
+    merge_shorter: true
+  filtering:
+    enabled: false
+    domains: [finance, legal, cybersecurity]
+    keyword_threshold: 7
+    max_filtered: 150000
+
+retriever:
+  type: bm25
+  top_k: 3
+  index_dir: indexes/bm25_full
+  context_max_tokens: null
+
+prompts:
+  data_path: data/prompts/full_prompts.csv
+  template_path: configs/prompts.yaml
+
+models:
+  config: configs/models.yaml
+  use: custom_qwen3_4b
+
+conditions:
+  - non_rag
+  - rag_docs
+  - rag_llm
+
+generation:
+  max_new_tokens: 256
+  temperature: 0.0
+  top_p: 1.0
+  do_sample: false
+
+judge:
+  response_model: meta-llama/Llama-Guard-3-8B
+  response_calibration_model: null
+  doc_model_primary: meta-llama/Llama-Guard-3-8B
+  doc_model_secondary: null
+  taxonomy: paper_16_categories
+  score_mode: llr
+  include_self_confidence: true
+  explanation_mode: "off"
+  save_context_joined: true
+
+output:
+  root: outputs/full_3b

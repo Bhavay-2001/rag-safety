@@ -1,0 +1,13 @@
+{
+  "run_dir": "outputs\\week1_safety\\20260219T214819Z_a9907427",
+  "conditions": [
+    "rag_docs",
+    "rag_llm"
+  ],
+  "total_examples": 121,
+  "by_condition": {
+    "rag_docs": 63,
+    "rag_llm": 58
+  },
+  "output_jsonl": "reports\\week1_safety_safe-doc_unsafe-answer_examples_20260219T214819Z_a9907427.jsonl"
+}

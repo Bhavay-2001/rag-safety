@@ -1,0 +1,9 @@
+{
+  "config_hash": "0e3a1407bbe9e472e7f86dd3259692250db14ffdd53f7ea2787a9a5691e0d8b8",
+  "filtering_enabled": false,
+  "min_chars": 1000,
+  "source": "wikimedia/wikipedia:20231101.en",
+  "total_chunks": 2000,
+  "total_records": 91,
+  "written": 2000
+}

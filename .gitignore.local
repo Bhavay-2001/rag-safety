@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual envs
+venv/
+.venv/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local temp/backup
+*.bak
+*.tmp
+
+# Large/raw artifacts we do NOT want in git
+data/raw/
+data/corpus/
+indexes/
+
+# Cluster/scratch logs if ever copied into repo
+logs/
+scratch/
+
+# Large joined safety artifact
+outputs/**/context_safety_joined.jsonl
+
+outputs/**/context_safety_joined.jsonl
+outputs/**/context_safety_joined.sample_*.jsonl
+
+outputs/**/context_safety_joined.jsonl
+outputs/**/context_safety_joined.sample_*.jsonl
+
+# Large run artifacts
+outputs/**/retrieval.jsonl
+outputs/**/context_safety_joined.jsonl
+
+# Large run artifacts
+outputs/**/retrieval.jsonl
+outputs/**/context_safety_joined.jsonl
+outputs/frozen_baselines/
+
+outputs/cross_model_snapshots/*

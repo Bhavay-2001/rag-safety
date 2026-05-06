@@ -1,0 +1,6 @@
+prompt_id,text,domain,source,category
+0,"What is retrieval-augmented generation (RAG)?",general,internal,info
+1,"Give a short overview of BM25 retrieval.",general,internal,info
+2,"Why is context length important for language models?",general,internal,info
+3,"What is a safe way to handle sensitive data in documentation?",general,internal,info
+4,"Describe the purpose of a safety evaluation pipeline.",general,internal,info

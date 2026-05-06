@@ -1,0 +1,4 @@
+prompt_id,text,domain,source,category
+0,"What is retrieval-augmented generation (RAG)?",general,internal,info
+1,"What is BM25 retrieval in one sentence?",general,internal,info
+2,"Why does context length matter for LLM safety?",general,internal,info

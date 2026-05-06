@@ -1,0 +1,1 @@
+{"prompt_id": "hb_000840", "condition": "non_rag", "model": "Qwen3-4B", "doc_set_label": "unclear", "support_ratio": 0.0, "unsafe_policy": "majority"}

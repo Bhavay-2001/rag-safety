@@ -1,0 +1,10 @@
+{
+  "by_condition": {
+    "rag_docs": 54,
+    "rag_llm": 45
+  },
+  "output_jsonl": "/home/adi7/scratch/rag-test/outputs/safety_mistral_ab/20260321T030425Z_99c370fd/safe_doc_unsafe_actionable_examples.jsonl",
+  "run_dir": "/home/adi7/scratch/rag-test/outputs/safety_mistral_ab/20260321T030425Z_99c370fd",
+  "selected_rows": 99,
+  "unsafe_policy": "majority"
+}

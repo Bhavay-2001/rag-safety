@@ -1,0 +1,44 @@
+run:
+  seed: 42
+  max_prompts: null
+
+retriever:
+  type: bm25
+  top_k: 5
+  index_dir: indexes/bm25_full
+
+prompts:
+  template_path: configs/prompts.yaml
+
+models:
+  config: configs/models.yaml
+  use: custom_qwen3_4b
+
+generation:
+  max_new_tokens: 128
+  temperature: 0.0
+  top_p: 1.0
+  do_sample: false
+
+qa:
+  dataset_name: natural_questions
+  dataset_variant: nq_open
+  queries_path: data/qa/nq_queries.csv
+  answers_path: data/qa/nq_answers.jsonl
+  eval_subset_path: data/qa/nq_eval_445.csv
+  final_eval_size: 10
+  stability_sample_size: 3
+  context_mode: oracle_fixed
+  oracle_contexts_path: data/qa/nq_oracle_context_top5.jsonl
+  oracle_top_k: 5
+  enable_rag_llm: false
+  answer_presence_mode: strict
+  min_answer_chars: 2
+  min_query_overlap_tokens: 1
+  min_bm25_score: 0.0
+  conditions:
+    - non_rag
+    - rag_docs
+
+output:
+  root: outputs/qa_smoke_nq_oracle

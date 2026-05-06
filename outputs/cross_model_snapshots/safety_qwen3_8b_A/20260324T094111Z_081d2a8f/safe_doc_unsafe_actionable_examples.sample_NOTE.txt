@@ -1,0 +1,4 @@
+Original omitted from git due to size management.
+Source: /scratch/adi7/rag-test/outputs/safety_qwen3_8b_A/20260324T094111Z_081d2a8f/safe_doc_unsafe_actionable_examples.jsonl
+Original size: 0.29 MiB
+Included: safe_doc_unsafe_actionable_examples.sample_1000.jsonl (first 1000 lines)

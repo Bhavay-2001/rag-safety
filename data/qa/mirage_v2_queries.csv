@@ -1,0 +1,1001 @@
+prompt_id,text,source_benchmark,source_dataset
+mirage:popqa:6c512c5b-f2d6-471f-8984-5672f49f6fb7,What is Bae Geu-rin's occupation?,MIRAGE,popqa
+mirage:popqa:719d5d4b-7781-4db5-8390-f585a00eab5b,What is Patrick O'Brien Demsey's occupation?,MIRAGE,popqa
+mirage:popqa:38878a2e-ae69-44f2-b606-b72dd15ddf92,What is Muhammad Ali Luqman's occupation?,MIRAGE,popqa
+mirage:popqa:d86e4b65-10ba-44e1-8b17-e4b952e6f8af,What is Joseph Weydemeyer's occupation?,MIRAGE,popqa
+mirage:popqa:b77a9faa-330e-41a2-b893-b0b98c448a3f,What is Elisa Bridges's occupation?,MIRAGE,popqa
+mirage:popqa:89aeefef-73f0-4da1-88e0-b0e381475595,What is Kekko Fornarelli's occupation?,MIRAGE,popqa
+mirage:popqa:08e79974-675c-4ce5-9e1d-952c088522d1,What is Adil Shamoo's occupation?,MIRAGE,popqa
+mirage:popqa:2b1cbd52-01d8-4798-aac4-3893c05a368d,What is Patrick Mulvany's occupation?,MIRAGE,popqa
+mirage:popqa:d5a55717-ccfd-4ef7-95a5-dc6bf0ad65cf,What is Huntington Wilson's occupation?,MIRAGE,popqa
+mirage:popqa:9d5dad3e-14d6-47d1-89b2-febf0d64403e,What is Ernst Theodor Echtermeyer's occupation?,MIRAGE,popqa
+mirage:popqa:7a987b7d-4618-407f-aba4-f400d076c2f6,What is Bedřich Feigl's occupation?,MIRAGE,popqa
+mirage:popqa:e523314a-995c-4a27-9ba1-0774e1f160bd,What is J. Da Silva's occupation?,MIRAGE,popqa
+mirage:popqa:66df9bc5-b665-4eaa-9a55-c43ca060ce1f,What is Kamya Panjabi's occupation?,MIRAGE,popqa
+mirage:popqa:6c15cc08-fa1a-44af-a4f4-6e527d830c3e,What is John Strange's occupation?,MIRAGE,popqa
+mirage:popqa:1eecd927-ec6a-4f73-b208-1cf87dddaffa,What is Meg McCall's occupation?,MIRAGE,popqa
+mirage:popqa:20d6d164-7b97-4160-83a3-a333f657364b,What is Todd Verow's occupation?,MIRAGE,popqa
+mirage:popqa:93d2366a-c962-48d0-a1f1-af84f4dc50cf,What is Tatiana Doronina's occupation?,MIRAGE,popqa
+mirage:popqa:beac4a2f-8b22-4ba2-a581-eff46c834bb8,What is E. David Redwine's occupation?,MIRAGE,popqa
+mirage:popqa:d383abfb-8bdb-4729-add7-15646a2e002c,What is Chiara Zanni's occupation?,MIRAGE,popqa
+mirage:popqa:bf950026-be37-40bc-8a5f-b00aaa0079ce,What is Guillem Ramon de Gironella's occupation?,MIRAGE,popqa
+mirage:popqa:1703f7c5-12a1-44c4-9b5d-494842810951,What is Paddy Mullins's occupation?,MIRAGE,popqa
+mirage:popqa:92d80130-47ff-410f-a6fc-4ea6c979d0d6,What is Richard Sandrak's occupation?,MIRAGE,popqa
+mirage:popqa:b148fb30-aa7c-4a80-8a1b-923ebca0add3,What is Paul Lieber's occupation?,MIRAGE,popqa
+mirage:popqa:2d972621-0292-43d0-abb0-7d527d13e97b,What is Anjali Sudhakar's occupation?,MIRAGE,popqa
+mirage:popqa:7cb6c94f-8a47-4afc-b2f3-d8438103babc,What is A. Lawrence Kocher's occupation?,MIRAGE,popqa
+mirage:popqa:9ca34add-2de5-4d7e-aebe-5e1f25cc1629,What is Lewis J. Rachmil's occupation?,MIRAGE,popqa
+mirage:popqa:b4ec3927-afb1-4643-b557-078ba717cf11,What is Robert Antoine's occupation?,MIRAGE,popqa
+mirage:popqa:836849ac-8328-4f0c-a3d6-32bb1451d5f0,What is Akimasa Nakamura's occupation?,MIRAGE,popqa
+mirage:popqa:d595b916-f9b5-441b-92d3-9df795b1ea53,What is Jean-Marie-Victor Viel's occupation?,MIRAGE,popqa
+mirage:popqa:ec959bcf-9ced-489e-b3b4-f5f7498cfd46,What is Lorena Corona Valdés's occupation?,MIRAGE,popqa
+mirage:popqa:23f2d026-9a4a-4d54-b0e8-436db2f130e3,What is Honor Harger's occupation?,MIRAGE,popqa
+mirage:popqa:fbc540d2-3774-420c-89cb-64016ab7dc68,In what city was Alastair Heathcote born?,MIRAGE,popqa
+mirage:popqa:f4d76401-b38a-41de-ace2-2fb9b1fe448a,In what city was Danie Mellor born?,MIRAGE,popqa
+mirage:popqa:ae40a1dd-0bb4-42ab-9432-961e7e3ab6af,In what city was Austin Cuvillier born?,MIRAGE,popqa
+mirage:popqa:ac3f3d38-c6a0-4fd8-ae2d-273569c8c365,In what city was Jack Kachkar born?,MIRAGE,popqa
+mirage:popqa:cc5ee0c7-bb74-4930-8e9b-58b5c7ea2257,In what city was Betty Francisco born?,MIRAGE,popqa
+mirage:popqa:29225af5-56b5-457e-8b51-c149cb78f89c,In what city was Matt Moralee born?,MIRAGE,popqa
+mirage:popqa:8fc8fd2c-da90-40b8-a282-18f104cec7e3,In what city was Aloïs Boudry born?,MIRAGE,popqa
+mirage:popqa:554e16dc-c491-4398-a766-642858fc99fc,In what city was Piotr Balcerzak born?,MIRAGE,popqa
+mirage:popqa:e402c272-4f0e-4ebe-badf-aeee76ea5b02,In what city was Roy A. Roberts born?,MIRAGE,popqa
+mirage:popqa:982b2d7e-018a-4c4a-bd7d-eea0090587af,In what city was Donald De Lue born?,MIRAGE,popqa
+mirage:popqa:733af1a2-47fa-4821-906d-1d4976ca4a29,In what city was Dilson Torres born?,MIRAGE,popqa
+mirage:popqa:1f73ebf3-bc79-4ce5-9c92-9fe9d0febd03,In what city was Geert Brusselers born?,MIRAGE,popqa
+mirage:popqa:21042758-0361-4f84-b50b-3bf22dfa5bc1,In what city was Grant Bramwell born?,MIRAGE,popqa
+mirage:popqa:cd3870e4-9c29-4f16-889a-4105c9909df4,In what city was John Anderson born?,MIRAGE,popqa
+mirage:popqa:62997318-115d-477a-9412-5f8c1ffd011c,In what city was Amir Syamsuddin born?,MIRAGE,popqa
+mirage:popqa:95e2a997-c980-4a75-a5a4-08e5bc1d0174,In what city was Spartaco Schergat born?,MIRAGE,popqa
+mirage:popqa:feda58e0-f7e3-4e79-bde8-d7cee59faaac,In what city was Heinrich August Jäschke born?,MIRAGE,popqa
+mirage:popqa:0ce595d9-81b8-4a03-85fb-73b8de3add40,In what city was Julia Jones born?,MIRAGE,popqa
+mirage:popqa:512ea79c-ce68-4e2b-9661-bfe81f12fcf4,In what city was Thomas Seaton Scott born?,MIRAGE,popqa
+mirage:popqa:670bc9f6-6aea-4d06-b296-572836b7ed72,In what city was Irving Amen born?,MIRAGE,popqa
+mirage:popqa:fe0019a5-2ab1-4d44-a90f-3617068d7909,In what city was Juan Manuel Montero Vázquez born?,MIRAGE,popqa
+mirage:popqa:416a5518-ea91-4185-9872-a85cf5a77304,In what city was Teri DeSario born?,MIRAGE,popqa
+mirage:popqa:051bd1ff-49b8-439f-ac6c-9362d989f9e1,In what city was Dennis Havig born?,MIRAGE,popqa
+mirage:popqa:59933cc5-aabf-4930-be33-630951605391,In what city was Renato Bartilotti born?,MIRAGE,popqa
+mirage:popqa:60fee1ed-1c6a-452d-a81f-024a6c1888e2,In what city was Louis Renault born?,MIRAGE,popqa
+mirage:popqa:f13ef1c0-1bc4-4189-8b78-288aeb1426d3,In what city was Karim Ojjeh born?,MIRAGE,popqa
+mirage:popqa:8c9ee319-1c93-452d-a36c-70c1c7a492e4,In what city was Gerhard Ludwig born?,MIRAGE,popqa
+mirage:popqa:0ae7d75e-5dbd-426a-aae2-04006e6f8db1,In what city was Gaston-François de Witte born?,MIRAGE,popqa
+mirage:popqa:88b99beb-4ef0-47f3-9936-4a18976fb081,In what city was William Bell Scott born?,MIRAGE,popqa
+mirage:popqa:38d0640e-f341-44d3-9a46-1e538e34dc32,In what city was Karl Bartholomaeus Heller born?,MIRAGE,popqa
+mirage:popqa:81d87ad7-957b-4f58-a9ca-408de7ed96b1,In what city was John Edward Campbell born?,MIRAGE,popqa
+mirage:popqa:97f15d7a-840f-4034-abcb-9954f5792533,In what city was Norbert Grund born?,MIRAGE,popqa
+mirage:popqa:222bda09-9202-49c3-a8b3-b093a96b3ed0,What genre is Technology?,MIRAGE,popqa
+mirage:popqa:1b9eb295-e4b8-4165-940a-686660d9f1f4,What genre is The Void?,MIRAGE,popqa
+mirage:popqa:ac77c0ed-f049-456c-8587-e2f652c66e82,What genre is Arthur William Devis?,MIRAGE,popqa
+mirage:popqa:d8adc9a5-de54-4a2f-8c96-95c687166406,What genre is Chaotic?,MIRAGE,popqa
+mirage:popqa:9f6b4432-5cb0-4d1b-b743-3ff3b84753d5,What genre is The New World?,MIRAGE,popqa
+mirage:popqa:c00a37c4-6db1-46fb-8014-ba9178f45c52,What genre is Never Better?,MIRAGE,popqa
+mirage:popqa:e3d2078d-d516-41d6-8fbe-445ee96b0f2b,What genre is Bullet?,MIRAGE,popqa
+mirage:popqa:feadb274-2d51-420e-8ad9-275ef3d0c371,What genre is C. L. Blast?,MIRAGE,popqa
+mirage:popqa:cfb6e472-45c9-4216-bf53-9726c0696e6e,What genre is The Song of the Suburbs?,MIRAGE,popqa
+mirage:popqa:f8fea95b-fc39-43b4-a1d6-05d0950682a8,What genre is Nely?,MIRAGE,popqa
+mirage:popqa:bd0f9a7b-30ca-4b96-8c69-f2b8cc8e251b,What genre is Cut?,MIRAGE,popqa
+mirage:popqa:69c32115-120e-4a58-91fc-c68c942d2d65,What genre is Pre?,MIRAGE,popqa
+mirage:popqa:c2fd0b6d-ec0b-40d0-a7a6-2e16e4857a9c,What genre is United States?,MIRAGE,popqa
+mirage:popqa:e90d520e-0ff4-4d5a-bb78-7237c044c6b8,What genre is Mars?,MIRAGE,popqa
+mirage:popqa:f345de14-4861-4fb9-8a5b-68a8d9ecdc0a,What genre is Rest?,MIRAGE,popqa
+mirage:popqa:789f55b9-66ae-4935-af5a-63a0bdfb3bdf,What genre is Nine?,MIRAGE,popqa
+mirage:popqa:d305fce6-449f-413f-b597-bddac6185ae0,What genre is Hot Cop?,MIRAGE,popqa
+mirage:popqa:1fe7ca9f-40b7-4f86-91d9-9296fc472fe3,What genre is Servant?,MIRAGE,popqa
+mirage:popqa:11baa045-5386-4d3f-948f-bbf079f9acf3,What genre is Wolf?,MIRAGE,popqa
+mirage:popqa:eee8e9d9-6cae-4592-82f8-6c33c41312ce,What genre is The Candidate?,MIRAGE,popqa
+mirage:popqa:6ad55f4a-f074-4d73-95cb-927e996dfa11,What genre is Foxy Brown?,MIRAGE,popqa
+mirage:popqa:1232c071-970d-47ae-acdf-88c32a285920,What genre is Disturbed?,MIRAGE,popqa
+mirage:popqa:09a01180-7209-43b8-9048-c099026dcdf5,What genre is Good News?,MIRAGE,popqa
+mirage:popqa:90640f17-69b9-4174-a952-53edc1b4a0c2,What genre is Right of Way?,MIRAGE,popqa
+mirage:popqa:6d26bea5-44c2-438a-bfbe-2263ca37fab1,What genre is The Governor?,MIRAGE,popqa
+mirage:popqa:10ddd320-fab9-43b1-8934-9f4c64e134f1,What genre is Jeffrey?,MIRAGE,popqa
+mirage:popqa:8b0737b5-85a7-4df0-aed6-8e44c385cbdb,What genre is The Great Outdoors?,MIRAGE,popqa
+mirage:popqa:c682e5e5-d42e-47e3-ac01-2a767dcedda4,What genre is West?,MIRAGE,popqa
+mirage:popqa:106b69cc-ef67-44cd-a008-bb6a730272fb,What genre is Glass?,MIRAGE,popqa
+mirage:popqa:6d5cd0ca-9626-4462-80fc-ee1428f83b51,What genre is Together?,MIRAGE,popqa
+mirage:popqa:f2208e24-4bb3-4fbb-99be-b386846e1165,What genre is The Well?,MIRAGE,popqa
+mirage:popqa:040adbfa-c293-4c6f-9c71-aa67d9ba2f5b,What genre is Report?,MIRAGE,popqa
+mirage:popqa:9ecf27d6-7086-47de-b8f6-a81d15b36109,Who is the father of Alexander?,MIRAGE,popqa
+mirage:popqa:7e544f8f-6e3b-483b-8f37-104ada6b98e5,Who is the father of Radim Gaudentius?,MIRAGE,popqa
+mirage:popqa:747ba60c-3c58-48bc-abc5-45ccf8260639,Who is the father of Reveal?,MIRAGE,popqa
+mirage:popqa:203055a5-8783-4d0c-ae95-9c5d37faee77,Who is the father of Rajshree?,MIRAGE,popqa
+mirage:popqa:a1c4e5c7-eeca-4b1e-aa24-afafd0d7eac6,Who is the father of Abbot Oliba?,MIRAGE,popqa
+mirage:popqa:2fc5577b-707e-4629-9258-177e03f53aa1,Who is the father of Princess Maria of Greece and Denmark?,MIRAGE,popqa
+mirage:popqa:eac44ba1-c3c5-4401-9e37-a7897ce0bdc9,Who is the father of Frans Pourbus the Elder?,MIRAGE,popqa
+mirage:popqa:8bfab0ec-18c4-451a-9051-15f4efdab7b6,Who is the father of Dahyabhai Patel?,MIRAGE,popqa
+mirage:popqa:2c900438-b1e9-47e7-875f-53e7557f4dfd,Who is the father of Count Palatine Joseph Charles of Sulzbach?,MIRAGE,popqa
+mirage:popqa:dfde1354-ef78-48ad-aa86-5493b5ff54d4,Who is the father of Dance in the Dark?,MIRAGE,popqa
+mirage:popqa:0d98c2fd-2375-40e6-b6ec-429e23b54bba,Who is the father of Susan Crown?,MIRAGE,popqa
+mirage:popqa:33d728c9-889a-464d-9d6f-290fc048138f,Who is the father of Hormizd II?,MIRAGE,popqa
+mirage:popqa:7d2c576b-1d92-4d04-8c26-e137da812e46,Who is the father of Isaac Bowman?,MIRAGE,popqa
+mirage:popqa:f65a12f4-edbf-46bc-acb1-e46e17985382,Who is the father of Proud Clarion?,MIRAGE,popqa
+mirage:popqa:035a7277-c37a-4b91-bd8e-e4624cd0d50e,Who is the father of Azazel Jacobs?,MIRAGE,popqa
+mirage:popqa:1a5ba143-af97-40bf-99bb-4ccb896c71a1,Who is the father of Robert?,MIRAGE,popqa
+mirage:popqa:85280b6c-ebda-4004-92e5-4dbfd1232a25,Who is the father of Tanya?,MIRAGE,popqa
+mirage:popqa:de54b516-0c8d-44e2-8698-d25645a8bc2d,In what country is Seishi Ursula Gakuen Junior College?,MIRAGE,popqa
+mirage:popqa:b7f87840-c2f5-4329-92a8-8a6e463029d5,In what country is Lent?,MIRAGE,popqa
+mirage:popqa:26ee72fc-a2aa-4ece-af53-d22c6f0f8796,Who was the producer of Maari?,MIRAGE,popqa
+mirage:popqa:3dcb4bcb-9d64-4a55-8645-d88c677c7c46,Who was the producer of The Master?,MIRAGE,popqa
+mirage:popqa:f4c7eb3f-9377-48df-86fe-a4a4eebee04c,Who was the producer of Game?,MIRAGE,popqa
+mirage:popqa:3cad03c9-ad2e-4547-beb0-a9cb9a618c09,Who was the producer of Money?,MIRAGE,popqa
+mirage:popqa:99498223-7c6b-49d2-bc05-f1beb1828cf9,Who was the producer of Flame?,MIRAGE,popqa
+mirage:popqa:d41d3c3f-c286-43ba-b92b-08b06f173000,Who was the producer of Day After Day?,MIRAGE,popqa
+mirage:popqa:196b835f-f48a-40bf-ae3a-1f98cdfbebcb,Who was the producer of The Pioneers?,MIRAGE,popqa
+mirage:popqa:e77de2d3-d18f-47b4-8b46-9c2ea6874409,Who was the producer of The Trial?,MIRAGE,popqa
+mirage:popqa:ae1b61d3-2fa6-4d98-894e-fa45d6874137,Who was the producer of The Cheyenne Social Club?,MIRAGE,popqa
+mirage:popqa:cf5400ee-5a34-4372-b3f2-85d0474d9afe,Who was the producer of Chrome?,MIRAGE,popqa
+mirage:popqa:3831b700-e6d4-48fb-858c-2a0cdc28c217,Who was the producer of Daddy?,MIRAGE,popqa
+mirage:popqa:4fc4e478-942a-4a6a-b70c-7a1e81537cec,Who was the producer of Ugly?,MIRAGE,popqa
+mirage:popqa:5d3988cd-d4c6-40d0-b76e-44a603870713,Who was the producer of Green?,MIRAGE,popqa
+mirage:popqa:7c629d26-07aa-4033-892b-55650242498c,Who was the producer of Vachan?,MIRAGE,popqa
+mirage:popqa:f457b7e8-6256-4739-bb65-84d4b32de657,Who was the producer of Leaving?,MIRAGE,popqa
+mirage:popqa:0055e39a-cde5-4c17-85c4-4538a4bfb01f,Who was the producer of Tarzan and the Great River?,MIRAGE,popqa
+mirage:popqa:7034d630-9c8b-4302-9f7c-ae258b016afa,Who was the producer of Grounds for Marriage?,MIRAGE,popqa
+mirage:popqa:9b1ce1b7-01fd-4304-a668-b795ae3e7e4b,Who was the producer of Friday?,MIRAGE,popqa
+mirage:popqa:6d213c26-2455-4562-be2f-089a0bd882de,Who was the producer of The Plague?,MIRAGE,popqa
+mirage:popqa:f3128e52-08e4-472f-a352-c4f7cc7de063,Who was the producer of Clerk?,MIRAGE,popqa
+mirage:popqa:792b7f7f-70a8-4396-b508-03e569d0e53a,Who was the producer of Us Two?,MIRAGE,popqa
+mirage:popqa:5e4ad34a-7e28-4a45-9f6c-d1f8bdabcf0a,Who was the producer of Buzz?,MIRAGE,popqa
+mirage:popqa:504968a4-061b-4494-b3d2-8547da8b915c,Who was the producer of Go?,MIRAGE,popqa
+mirage:popqa:ff0ac1e1-10f9-446e-a1db-8bf240d3ef80,Who was the producer of Cro?,MIRAGE,popqa
+mirage:popqa:b6acfae7-c8f2-4a8b-9c01-63355d44f78e,Who was the producer of H?,MIRAGE,popqa
+mirage:popqa:e854a30c-619f-4854-b611-f1d18402eeec,Who was the producer of The Treatment?,MIRAGE,popqa
+mirage:popqa:8513dcef-5858-41f2-8bc2-7651550dcbef,Who was the producer of Magica?,MIRAGE,popqa
+mirage:popqa:1c2e119c-e0f1-40c8-ad69-e17ef473137e,Who was the producer of Expectations?,MIRAGE,popqa
+mirage:popqa:166537a0-a2c8-49c9-abb5-7ccd5151df9f,Who was the producer of The Lover?,MIRAGE,popqa
+mirage:popqa:6f89e78a-fb1e-4ca4-bda5-0ab6f7c8d863,Who was the producer of The Pointer?,MIRAGE,popqa
+mirage:popqa:2a94f2df-c44f-4f5b-a3c1-5c31ee3b85de,Who was the producer of Perfect Day?,MIRAGE,popqa
+mirage:popqa:149c5ca1-c4ff-4261-8727-f876f3022562,Who was the producer of September?,MIRAGE,popqa
+mirage:popqa:1f1f83ff-f5a9-4312-a3c6-2f0de24259eb,Who was the producer of Waterworld?,MIRAGE,popqa
+mirage:popqa:d95bb455-6a3f-41a4-9b42-0c3ff7f9b76a,Who was the producer of One Love?,MIRAGE,popqa
+mirage:popqa:ad455f71-de3f-44d5-be26-37b7fd0e06a3,Who was the producer of Ride?,MIRAGE,popqa
+mirage:popqa:210fb5c6-0cdb-4137-adc4-9d98e5f6c054,Who was the producer of The Overnight?,MIRAGE,popqa
+mirage:popqa:60536d74-d729-46f7-b7d0-475af744e51d,Who was the producer of Shine?,MIRAGE,popqa
+mirage:popqa:d94eaba5-cdcb-4973-bfe4-e2c8126ac32b,Who was the producer of Hero?,MIRAGE,popqa
+mirage:popqa:cb7a378e-4e6a-4641-96b3-661f8421bcb2,Who was the producer of Arrive Alive?,MIRAGE,popqa
+mirage:popqa:6e2f7014-0519-468c-b3b7-6bf011fadd35,Who was the producer of The King and I?,MIRAGE,popqa
+mirage:popqa:0b22b06e-2d02-48e0-ad1e-560c46d5cfa2,Who was the producer of M?,MIRAGE,popqa
+mirage:popqa:4f82c40a-a985-42bc-8cc8-2ac8bc2f0ef7,Who was the producer of Saanch Ko Aanch Nahin?,MIRAGE,popqa
+mirage:popqa:2f500ba7-d54f-4de5-ac30-b9dbbf12b474,Who was the director of Wedding in White?,MIRAGE,popqa
+mirage:popqa:f35441b4-51c7-48ba-9bdf-6692c7e2f51d,Who was the director of Hunger?,MIRAGE,popqa
+mirage:popqa:d48b8a78-26fe-4880-9bb8-32e2409f68d7,Who was the director of The King?,MIRAGE,popqa
+mirage:popqa:46b22909-9356-471f-b2a2-08417db93c5b,Who was the director of The Mutants?,MIRAGE,popqa
+mirage:popqa:380cc99c-0afa-438a-aac0-7331347d8817,Who was the director of AK-47?,MIRAGE,popqa
+mirage:popqa:b86cc2d3-7dab-4e7e-a3d8-edae37e64571,Who was the director of What Every Woman Learns?,MIRAGE,popqa
+mirage:popqa:b98f0c4a-4b9a-4e73-8d6a-46697e329c85,Who was the director of The Happy Family?,MIRAGE,popqa
+mirage:popqa:9f2e7739-b495-4430-92d6-4a87e81cd27d,Who was the director of The African Woman?,MIRAGE,popqa
+mirage:popqa:632720c7-d1bd-41b7-90bc-ef15672a7d83,Who was the director of Goodbye?,MIRAGE,popqa
+mirage:popqa:1ad1e412-2b2c-4183-bc3c-a98dcbc9b33f,Who was the director of Normal Life?,MIRAGE,popqa
+mirage:popqa:b1cdc146-81c0-4c7c-a7b4-d70dc62f8995,Who was the director of Youth?,MIRAGE,popqa
+mirage:popqa:6ba27860-4173-41c6-bf51-92b35a119231,Who was the director of Animal Crackers?,MIRAGE,popqa
+mirage:popqa:b91fd2d7-92cc-4da1-91c4-70097104ebc7,Who was the director of Pilot?,MIRAGE,popqa
+mirage:popqa:a69c0fb2-ad21-4793-950c-4a4d77667d01,Who was the director of Impulse?,MIRAGE,popqa
+mirage:popqa:d06633a0-84d8-4d4c-9c98-d2da423474e0,Who was the director of Sunset Limousine?,MIRAGE,popqa
+mirage:popqa:1215dc61-a276-4c7f-b2f5-f7b99e48894a,Who was the director of Dolls?,MIRAGE,popqa
+mirage:popqa:8f6632ed-6758-46a8-a850-877a0df30b38,Who was the director of Masks?,MIRAGE,popqa
+mirage:popqa:a0100b66-4313-4a30-be02-b34d93a2367f,Who was the director of Chicken Party?,MIRAGE,popqa
+mirage:popqa:d7d86320-f9d1-4641-a4b4-58dfb9bc2081,Who was the director of Flame?,MIRAGE,popqa
+mirage:popqa:f96c9267-ee0a-434f-a0ee-8acacd7ceaa5,Who was the director of The Doll?,MIRAGE,popqa
+mirage:popqa:c17cd24d-f065-4f6b-b9b6-dc3405e3fb39,Who was the director of Day One?,MIRAGE,popqa
+mirage:popqa:b12669a1-2e92-4fdd-9047-d7476cbd8e73,Who was the director of The Circle?,MIRAGE,popqa
+mirage:popqa:38af65b0-5b41-45ff-924b-de7d6d16dbdc,Who was the director of All the Way Up?,MIRAGE,popqa
+mirage:popqa:b8f456a1-b3dd-417d-ba1c-eefd552f693d,Who was the director of Eggs?,MIRAGE,popqa
+mirage:popqa:072a349f-9388-4dc0-b174-b0d5a0b9044d,Who was the director of Alarm?,MIRAGE,popqa
+mirage:popqa:b0414c59-880c-4c75-968b-1b3072b84dcb,Who was the director of Blessed?,MIRAGE,popqa
+mirage:popqa:300d0b9e-c2ae-477f-a468-9dbd71152633,Who was the director of New World?,MIRAGE,popqa
+mirage:popqa:5970d0d1-63e3-4ef6-9400-d10f6a5d3a3f,Who was the director of The Tree?,MIRAGE,popqa
+mirage:popqa:96e0b824-4634-44bf-b612-65ffff95f26f,Who was the director of Il bandito dagli occhi azzurri?,MIRAGE,popqa
+mirage:popqa:de8fbd7f-cdc0-4f67-b22a-c18a0e82cadf,Who was the director of Sons?,MIRAGE,popqa
+mirage:popqa:32aa97e0-5cc1-4ad2-a647-77266eceb917,Who was the director of Taxi at Midnight?,MIRAGE,popqa
+mirage:popqa:529986e1-1c96-487e-bbdd-e66e32f86677,Who was the director of A?,MIRAGE,popqa
+mirage:popqa:a44263c2-0e57-48d3-b09a-e91ea6ff8bf1,Who was the director of Wings of Destiny?,MIRAGE,popqa
+mirage:popqa:fb706ef5-c8ad-4e6f-ae4e-23e021f610ed,Who was the director of Nightmare?,MIRAGE,popqa
+mirage:popqa:aff228b8-3941-4abc-8c0d-dcabeaa98189,Who was the director of Protagonist?,MIRAGE,popqa
+mirage:popqa:b6573ee9-84b4-4d2f-95fd-c741f0032b27,Who was the director of The Intended?,MIRAGE,popqa
+mirage:popqa:0c3066a5-c02d-40ce-b053-400fb47a1e94,Who was the director of Bread?,MIRAGE,popqa
+mirage:popqa:c0dffa11-daeb-4b0e-8a37-b01d1a7457d9,Who was the director of In My Life?,MIRAGE,popqa
+mirage:popqa:125d5114-becf-4c80-a539-6cee27d5b455,Who was the director of Submission?,MIRAGE,popqa
+mirage:popqa:04a9322b-760c-4268-9f6a-9ca185982ba7,Who was the director of Desirable?,MIRAGE,popqa
+mirage:popqa:6c8e8fc1-73ea-4400-bf70-8ac86eeb209c,Who was the director of Up in the Air?,MIRAGE,popqa
+mirage:popqa:8768eaf0-c9cf-40dd-b5dc-428d2a5e1a58,Who was the director of St. Patrick's Day?,MIRAGE,popqa
+mirage:popqa:8cb42c03-1356-46ca-91e5-aa8b19c0745e,Who was the director of The Love Nest?,MIRAGE,popqa
+mirage:popqa:a03a7520-662f-4cda-9a0b-778f44be0058,Who was the director of Whitney?,MIRAGE,popqa
+mirage:popqa:2b1ed0b9-dfe7-45ba-813d-f30774512a81,Who was the director of El Último perro?,MIRAGE,popqa
+mirage:popqa:1fe7f0aa-f968-41ab-ba41-4fa7299d0fd1,Who was the director of Mary?,MIRAGE,popqa
+mirage:popqa:621ac8b4-235d-43a3-96ee-9897e1956ed9,Who was the director of Eva?,MIRAGE,popqa
+mirage:popqa:4dd057ca-65fb-45ec-9eb5-0bb83fd14779,Who was the director of Sagar Sangamey?,MIRAGE,popqa
+mirage:popqa:ba39f489-28ff-488a-9938-ec5b4f08aa84,Who was the director of Another Life?,MIRAGE,popqa
+mirage:popqa:38e0d9e4-5e6f-4d10-889d-7cd23262fc57,Who was the director of Sunday?,MIRAGE,popqa
+mirage:popqa:85e54926-7155-44e3-a374-d2a65e80a6f9,Who was the director of The Reader?,MIRAGE,popqa
+mirage:popqa:42176a8d-39f1-4d31-bd3b-38a20f847de7,Who was the director of The Bad Bunch?,MIRAGE,popqa
+mirage:popqa:cc110fa2-5e7d-4d5c-8d3e-f9a301f3926d,Who was the director of Prag?,MIRAGE,popqa
+mirage:popqa:e0cbeb79-fb92-4790-bad1-1d1ceb0ab21c,Who was the director of Det var paa Rundetaarn?,MIRAGE,popqa
+mirage:popqa:7308579d-c21c-4664-b911-579c291f7961,Who was the director of Boys?,MIRAGE,popqa
+mirage:popqa:57cddb93-5850-4173-9d9d-f81dfebed7d0,Who was the director of Sold?,MIRAGE,popqa
+mirage:popqa:32b89691-9ba7-48b1-9144-af401333a335,Who was the director of The Billionaire?,MIRAGE,popqa
+mirage:popqa:1ac011a3-f56a-4355-8989-2d7f6c578568,Who was the director of Framed?,MIRAGE,popqa
+mirage:popqa:761d35e4-65ed-4cd9-8e8d-1f52f2bbdf91,Who was the director of The Buster Keaton Story?,MIRAGE,popqa
+mirage:popqa:1e4ba109-d411-48db-a0ac-eae1442d9619,Who was the director of Echo?,MIRAGE,popqa
+mirage:popqa:09a3289f-a8be-400f-809b-adfc58ddcb62,Who was the director of Genesis?,MIRAGE,popqa
+mirage:popqa:73128a7b-2945-47ce-82bc-2eabf0235794,Who was the director of The Trap?,MIRAGE,popqa
+mirage:popqa:6c324548-3303-48ac-889b-99843a4f4dde,Who was the director of Normal?,MIRAGE,popqa
+mirage:popqa:dee3e656-92f2-452c-8a8d-33b4974053d0,Who was the director of Barricade?,MIRAGE,popqa
+mirage:popqa:ed876963-5bbf-4008-8344-0b1395d5a391,Who was the director of Shiva?,MIRAGE,popqa
+mirage:popqa:ac88b206-627c-4921-a141-65d25c608aab,Who was the director of The Day?,MIRAGE,popqa
+mirage:popqa:68e33f72-3a4b-4695-89fa-468ba8dea089,Who was the director of The Girl?,MIRAGE,popqa
+mirage:popqa:1d9a59fc-07a8-405b-a70e-c4fdda588ea8,Who was the director of Le Guérisseur?,MIRAGE,popqa
+mirage:popqa:612ad3a6-8613-43d0-89b9-7101a4b60e31,Who was the director of Hotel Noir?,MIRAGE,popqa
+mirage:popqa:f35e0ad6-1025-4391-b796-328f4a00b92e,Who was the director of Hilde Warren und der Tod?,MIRAGE,popqa
+mirage:popqa:4079cfe5-bcc9-4124-9589-6390a0c1d0ea,Who was the director of Free Love?,MIRAGE,popqa
+mirage:popqa:dde794f6-ec7e-4307-a225-c168a8aa4754,Who was the director of A Place to Go?,MIRAGE,popqa
+mirage:popqa:4b92becb-4267-4223-9618-0cb30e0db43e,Who was the director of Destiny?,MIRAGE,popqa
+mirage:popqa:93f3fd18-c9a3-4de8-89ca-f0860a2359b0,Who was the director of The Eternal?,MIRAGE,popqa
+mirage:popqa:cc2d43cd-1411-4042-8d2d-199e69ed17d2,Who was the director of Glass?,MIRAGE,popqa
+mirage:popqa:519250fc-4559-45ff-ac15-df507edbc46a,Who was the director of Anna Christie?,MIRAGE,popqa
+mirage:popqa:1de17bae-6cc9-4f6e-9e48-ffa379fa51db,Who was the director of Some Like It Hot?,MIRAGE,popqa
+mirage:popqa:1d7675e7-e55d-4c03-9b62-e72ad3ab0b88,Who was the director of Georgia?,MIRAGE,popqa
+mirage:popqa:6117ad7f-f248-47f4-9b84-d22658f77eab,Who was the director of Contract?,MIRAGE,popqa
+mirage:popqa:318fe47a-5e22-40dc-a1c4-046823665e39,Who was the director of Manhattan?,MIRAGE,popqa
+mirage:popqa:6fb02bc6-b987-4003-90ef-1b7f3ffb120a,Who was the director of Tears?,MIRAGE,popqa
+mirage:popqa:26506497-446d-4717-8ff9-13889c2b8a0f,Who was the director of Visitors?,MIRAGE,popqa
+mirage:popqa:479fe610-a7b8-456e-84a3-6423b0da39e2,Who was the director of Reducing?,MIRAGE,popqa
+mirage:popqa:f0273d7f-f476-4cfa-ba50-2880d9261d20,Who was the director of Overnight Delivery?,MIRAGE,popqa
+mirage:popqa:34b61f07-e917-4236-9315-724059e1530d,Who was the director of Man of the Year?,MIRAGE,popqa
+mirage:popqa:c8486841-18b1-4384-8e3a-186217ff554c,Who was the director of English?,MIRAGE,popqa
+mirage:popqa:83a328f2-7ff7-416c-9aa6-f60a43a38e6f,Who was the director of Richard?,MIRAGE,popqa
+mirage:popqa:6e10bd7c-c95a-4874-8fb2-fea07c8fde4a,Who was the director of Katherine?,MIRAGE,popqa
+mirage:popqa:dbb9c8f1-466d-4eb3-a4c6-74fad0e7ed01,Who was the director of Outing Riley?,MIRAGE,popqa
+mirage:popqa:f3685c4f-6a3f-4a16-8327-8ba859213038,Who was the director of The Hole?,MIRAGE,popqa
+mirage:popqa:ace045ac-cbe0-4da7-9d1a-c5f859d8dd7f,Who was the director of We Are Both?,MIRAGE,popqa
+mirage:popqa:6877f817-d6dc-4894-b396-36c647635d3a,Who was the director of The Assassin?,MIRAGE,popqa
+mirage:popqa:7ca9b0bf-f57f-4828-a2e6-f0a2fb76b715,Who was the director of Time Out?,MIRAGE,popqa
+mirage:popqa:50226bb5-c2d0-4578-8aa9-d0b7be922bee,Who was the director of Desires?,MIRAGE,popqa
+mirage:popqa:4df6356f-b457-4e2f-a6f8-d3d4e3b4124a,Who was the director of Panic?,MIRAGE,popqa
+mirage:popqa:25234eb8-4acf-4cd8-ae04-0b42ac27a29e,Who was the director of California?,MIRAGE,popqa
+mirage:popqa:f2ea072c-c71c-4d56-9c73-587e33fdc223,Who was the director of Jigsaw?,MIRAGE,popqa
+mirage:popqa:3d41c2d8-3abe-415b-b33a-3714ad3c694c,Who was the director of Passenger?,MIRAGE,popqa
+mirage:popqa:00e6518d-0dc2-4893-8877-d1961c2ba127,Who was the director of Happy End?,MIRAGE,popqa
+mirage:popqa:37a28624-8c38-428d-bf5f-ad62350612cd,What is Tura the capital of?,MIRAGE,popqa
+mirage:popqa:f6586236-1dbc-4e27-8230-53f6e6b9ac4a,What is Dallas the capital of?,MIRAGE,popqa
+mirage:popqa:0b895e7f-aec0-48b4-8080-b3b9f893acd1,Who was the screenwriter for The Chairman?,MIRAGE,popqa
+mirage:popqa:3d6a356b-05cd-4a09-9a35-172f94d386b0,Who was the screenwriter for The Bet?,MIRAGE,popqa
+mirage:popqa:9f2d92ce-5e42-4b9c-88cd-4f47c2cd1f00,Who was the screenwriter for Fears?,MIRAGE,popqa
+mirage:popqa:5ec81d02-9865-4987-aa15-c6c58b005e2e,Who was the screenwriter for Death of a Batman?,MIRAGE,popqa
+mirage:popqa:2be940e7-f686-4df4-ad60-4cbcaa078202,Who was the screenwriter for Lifetime Supply?,MIRAGE,popqa
+mirage:popqa:3732cdec-cb42-44c2-afe9-1e310eacd336,"Who was the screenwriter for I, Mudd?",MIRAGE,popqa
+mirage:popqa:e5a3c01f-f278-43b8-8cf7-25db2907b96c,Who was the screenwriter for Mary's Ankle?,MIRAGE,popqa
+mirage:popqa:3cc4f341-29f2-48b5-9134-17a260fc7007,Who was the screenwriter for The Firm?,MIRAGE,popqa
+mirage:popqa:6ba413f5-f7c7-492a-9aa4-612727dd6ec9,Who was the screenwriter for We Are Not Alone?,MIRAGE,popqa
+mirage:popqa:194f1459-7d0f-4281-9714-fc63ca53dfa6,Who was the screenwriter for The Stud?,MIRAGE,popqa
+mirage:popqa:78760362-5a13-44ef-896d-cbd85141c4eb,Who was the screenwriter for Slam?,MIRAGE,popqa
+mirage:popqa:e9814e15-6fba-40d4-90dd-d8f08167d4fb,Who was the screenwriter for The Sea?,MIRAGE,popqa
+mirage:popqa:1fdf7893-d81d-485f-bf96-c61a1c397818,Who was the screenwriter for The Broken?,MIRAGE,popqa
+mirage:popqa:65fa31ad-fef4-4343-ac99-059e5f33f3cb,Who was the screenwriter for The Other Woman?,MIRAGE,popqa
+mirage:popqa:4c640411-7505-4b01-951d-ace97d189ec0,Who was the screenwriter for The Invisible Hand?,MIRAGE,popqa
+mirage:popqa:d01ada4e-268a-412f-932f-d6e890406da1,Who was the screenwriter for A Night in Sickbay?,MIRAGE,popqa
+mirage:popqa:1d2f81ff-17dd-442d-abd3-1750cb427526,Who was the screenwriter for The Bet?,MIRAGE,popqa
+mirage:popqa:a2976697-ec93-42de-b396-2447571c0117,Who was the screenwriter for Another Simpsons Clip Show?,MIRAGE,popqa
+mirage:popqa:3d425b13-6887-4205-885a-bfc834fc3a0a,Who was the screenwriter for Cause and Effect?,MIRAGE,popqa
+mirage:popqa:dd431c9d-ebaf-4d38-8b96-2fffb70a38be,Who was the screenwriter for Heavy?,MIRAGE,popqa
+mirage:popqa:5cdfce56-fc27-4796-88f3-12bf185bd749,Who was the screenwriter for Making It?,MIRAGE,popqa
+mirage:popqa:6af5fdcf-49be-478b-8166-9dcf61bb8fa6,Who was the screenwriter for The Amazing Mrs Pritchard?,MIRAGE,popqa
+mirage:popqa:43ea085c-4f4b-47d3-b4e8-9aa8f9051f74,Who was the screenwriter for The Nutcracker in 3D?,MIRAGE,popqa
+mirage:popqa:36a833c2-5720-45d8-a01d-f10fc782dba1,Who was the screenwriter for Oregon?,MIRAGE,popqa
+mirage:popqa:0509ecbd-30e8-4057-82fb-8d313686d01c,Who was the screenwriter for Army Daze?,MIRAGE,popqa
+mirage:popqa:a545e337-8c22-454c-a627-c578925628ac,Who was the screenwriter for The Space Between?,MIRAGE,popqa
+mirage:popqa:853886b8-a442-4505-ba3b-feb8aecc5a49,Who was the screenwriter for Max?,MIRAGE,popqa
+mirage:popqa:4f207d8c-5b58-4fcf-87fd-d70d07f8ec28,Who was the screenwriter for A Matter of Time?,MIRAGE,popqa
+mirage:popqa:4a775856-35e7-4e3f-952b-39fc9eab8e97,Who was the screenwriter for The Yards?,MIRAGE,popqa
+mirage:popqa:1bb284e0-34dd-4333-8532-1e0e980f520d,Who was the screenwriter for The Garden?,MIRAGE,popqa
+mirage:popqa:eaaee0da-cb59-4301-b2e7-e5cfbd602166,Who was the screenwriter for The Card?,MIRAGE,popqa
+mirage:popqa:00ca7914-e305-4025-abcd-045e197e47d6,Who was the screenwriter for Made for Each Other?,MIRAGE,popqa
+mirage:popqa:8d4e4897-fc2f-4859-95d5-c37f70b8bfbc,Who was the screenwriter for Yaare Koogadali?,MIRAGE,popqa
+mirage:popqa:9199d4dd-b6d0-4817-8a90-ed0e1c56bd63,Who was the screenwriter for The Street?,MIRAGE,popqa
+mirage:popqa:7548a699-d968-4dc7-bd0a-08d575f415d5,Who was the screenwriter for The Search?,MIRAGE,popqa
+mirage:popqa:a6ffc2f3-faf5-43cb-9f3a-578264ed1738,Who was the screenwriter for The Ones?,MIRAGE,popqa
+mirage:popqa:6df50411-306f-445a-8d50-d54f188ce698,Who was the screenwriter for Woman of Straw?,MIRAGE,popqa
+mirage:popqa:32fb79c2-19ba-4739-89c5-de99611a3415,Who was the screenwriter for Mental?,MIRAGE,popqa
+mirage:popqa:9d83fed6-0bc8-4581-b46e-982f87f55355,Who was the screenwriter for Dream On?,MIRAGE,popqa
+mirage:popqa:ed6ea739-9aaa-4fb3-a846-034dec2aea9e,Who was the composer of Kärleken är?,MIRAGE,popqa
+mirage:popqa:489d9905-17d8-4f50-979e-d1e68322e045,Who was the composer of Survivor?,MIRAGE,popqa
+mirage:popqa:d87edc40-cdaf-4d63-b09a-3bbaec060c80,Who was the composer of La permission de dix heures?,MIRAGE,popqa
+mirage:popqa:689b6cbe-8a49-493e-92c3-b5e5957cb95a,Who was the composer of From Above?,MIRAGE,popqa
+mirage:popqa:2607d204-374e-43be-9f77-13da5ba6087e,Who was the composer of Walker?,MIRAGE,popqa
+mirage:popqa:3632a427-d968-4f80-8000-2d3230911edb,Who was the composer of Ode?,MIRAGE,popqa
+mirage:popqa:44fdb180-c8c9-4536-9b47-5196001aca8a,Who was the composer of The Party's Over?,MIRAGE,popqa
+mirage:popqa:3cd52b48-6740-481f-b970-04b8ef14fbe7,Who was the composer of Delta?,MIRAGE,popqa
+mirage:popqa:ae5c5057-80fd-47b2-b994-e5f5f7ad2886,Who was the composer of Shadow?,MIRAGE,popqa
+mirage:popqa:e33a9bf4-1b03-4657-975e-b3cdfde43526,Who was the composer of Dad?,MIRAGE,popqa
+mirage:popqa:c0f7806b-34e9-49f3-b16a-32ce42072ae5,Who was the composer of Candy?,MIRAGE,popqa
+mirage:popqa:1d62d27a-67ad-4722-a1f2-044c550468ab,Who was the composer of Roma?,MIRAGE,popqa
+mirage:popqa:f3068ace-77ce-4293-8486-8190d66db28a,Who was the composer of Celebration?,MIRAGE,popqa
+mirage:popqa:e10e75a4-dd4e-43d0-aa10-b4549bb5fa6c,Who was the composer of Love Story?,MIRAGE,popqa
+mirage:popqa:3f329fcb-ab16-4959-ba75-a6b6362dde5a,Who was the composer of Over There?,MIRAGE,popqa
+mirage:popqa:710c5a95-aeac-4be3-9dd9-1ca94a5ac02b,Who was the composer of Yare Nee Abhimani?,MIRAGE,popqa
+mirage:popqa:70518546-756d-4cc2-909d-7b1cf648c8a1,Who was the composer of Mandira?,MIRAGE,popqa
+mirage:popqa:09f203a0-b3c2-46f8-8910-3beb5d44f9c2,Who was the composer of Smile?,MIRAGE,popqa
+mirage:popqa:cc5fb6eb-f167-4697-829c-5608f2a14de8,Who was the composer of Tales of the Tempest?,MIRAGE,popqa
+mirage:popqa:b8472e62-8fd4-4bdf-ac9a-fc84eba9a30a,Who was the composer of Ek Nari Ek Brahmachari?,MIRAGE,popqa
+mirage:popqa:b9712b52-02cc-43cd-bdac-230b293ca007,Who was the composer of Good News?,MIRAGE,popqa
+mirage:popqa:89c3ec0c-6544-4962-9505-84107f5da704,Who was the composer of Imagination?,MIRAGE,popqa
+mirage:popqa:dd94d721-3b3f-46d2-8c86-b8646b0c0d8f,Who was the composer of Patience?,MIRAGE,popqa
+mirage:popqa:8b04e0ff-4719-49d9-bf4e-73a0cbccd728,Who was the composer of The Wind in the Willows?,MIRAGE,popqa
+mirage:popqa:c6420c20-71ba-4ffe-8a63-88d9aadca7b7,Who was the composer of Aandan Adimai?,MIRAGE,popqa
+mirage:popqa:feb9310e-c2a6-463e-bca1-fa8165b48f74,Who was the composer of Billa?,MIRAGE,popqa
+mirage:popqa:2da3245c-a4f7-426d-806f-824c355981c6,Who was the composer of I Will Be There?,MIRAGE,popqa
+mirage:popqa:9cbe80ee-a29d-4cff-8bfe-2dc815efaa3c,Who was the composer of Hey Ram?,MIRAGE,popqa
+mirage:popqa:ac022d57-9085-46e5-b816-19026880bc40,What is the religion of José Palmeira Lessa?,MIRAGE,popqa
+mirage:popqa:d70be736-29d0-42b5-9642-c0b608f9723b,What is the religion of Northland International University?,MIRAGE,popqa
+mirage:popqa:cbd5ee47-257c-4832-9c86-d215180b848e,What sport does Luciano Vella play?,MIRAGE,popqa
+mirage:popqa:e11062e2-e74d-47cd-8917-58ac4bb3649a,What sport does Dipu Ghosh play?,MIRAGE,popqa
+mirage:popqa:ee3f86ca-4cb9-4192-80e5-2d4df6887680,What sport does Dumitru Hubert play?,MIRAGE,popqa
+mirage:popqa:afb74f5f-cff8-44f8-96e0-c6846c04bf26,What sport does Christophe Ott play?,MIRAGE,popqa
+mirage:popqa:ac37dad8-5702-4b6e-bd48-9649d3e2c5e9,What sport does Stephen Connor play?,MIRAGE,popqa
+mirage:popqa:1de413b9-6c8e-4743-b4d6-36ef7e89a3bc,What sport does David Homoláč play?,MIRAGE,popqa
+mirage:popqa:a6fd90ea-9e4e-4da9-82f1-293b373f421c,What sport does Alex Crombie play?,MIRAGE,popqa
+mirage:popqa:0dd3291a-2613-47bc-a2b1-242c43016c65,What sport does HK Vojvodina play?,MIRAGE,popqa
+mirage:popqa:785e395a-14cd-400b-9c37-6868bd21a673,What sport does Gustavo García play?,MIRAGE,popqa
+mirage:popqa:a2c50c52-de65-4add-ae20-da4ac3d5e0fe,What sport does Mohammed Amine Kabli play?,MIRAGE,popqa
+mirage:popqa:bbd91d43-fa33-49c7-999e-d116d0d4dae0,What sport does Tony Wagstaff play?,MIRAGE,popqa
+mirage:popqa:2469e473-5944-4157-b8d5-3c361dbd1cb9,What sport does Ed Wachter play?,MIRAGE,popqa
+mirage:popqa:a868ae52-6636-4cc5-ab76-5d812e71f25f,What sport does Guilherme Andrade play?,MIRAGE,popqa
+mirage:popqa:91402486-28fe-441d-bcd1-fc4168ddfcb4,What sport does Abdoul Camara play?,MIRAGE,popqa
+mirage:popqa:494dce77-7358-45a8-94b7-350c2e94fc69,What sport does Petr Bříza play?,MIRAGE,popqa
+mirage:popqa:1d046a02-10a2-496e-9d1d-b67cf27324d5,What sport does Hugo Rubio play?,MIRAGE,popqa
+mirage:popqa:53dca5eb-4519-4727-b4b0-aa22f72ddc07,What sport does E Sour El Ghozlane play?,MIRAGE,popqa
+mirage:popqa:bf169ad5-8987-4249-9f10-1bf5fbb2cab4,What sport does Daniel Manzato play?,MIRAGE,popqa
+mirage:popqa:8f48578a-5260-4033-8a02-8be608438c84,What sport does Maxwell Griffin play?,MIRAGE,popqa
+mirage:popqa:fee629d3-487c-4aeb-908a-617767354817,What sport does Ron Douglas play?,MIRAGE,popqa
+mirage:popqa:02b7bcfe-e7e5-48d7-acd1-0a0b7521b9dd,What sport does Marko Vidović play?,MIRAGE,popqa
+mirage:popqa:4517cc68-76af-4b42-b051-e687a40874a3,What sport does Mark Smalley play?,MIRAGE,popqa
+mirage:popqa:0197e925-80f4-4356-b9c0-faee8b4b0178,What sport does Ondřej Kušnír play?,MIRAGE,popqa
+mirage:popqa:937d8cba-da13-45f8-9899-8c7c1e7fc4ed,What sport does Vitālijs Astafjevs play?,MIRAGE,popqa
+mirage:popqa:86309972-2415-471d-be6b-07e57827d438,Who is the author of Watchers at the Strait Gate?,MIRAGE,popqa
+mirage:popqa:a46e59a7-0aa3-44a4-8877-2dc9269a7766,Who is the author of Gone for Good?,MIRAGE,popqa
+mirage:popqa:089c4e1a-55a6-401a-8624-e3f049ea186f,Who is the author of The Last Days?,MIRAGE,popqa
+mirage:popqa:e9fcbd9c-4402-42e3-b48b-4f8e8b09d381,Who is the author of Yellow?,MIRAGE,popqa
+mirage:popqa:b18ac2cd-fe09-4eee-a816-58a6682aeff2,Who is the author of Hard Time?,MIRAGE,popqa
+mirage:popqa:01570018-cd65-4e49-ac6f-a5204a6a7ce2,Who is the author of Dancing After Hours?,MIRAGE,popqa
+mirage:popqa:05774cbc-05a4-4b98-9341-12d1d8fa6327,Who is the author of Mystery?,MIRAGE,popqa
+mirage:popqa:7004e4bc-93dc-4fc6-865a-516768d8229b,Who is the author of Caleb West?,MIRAGE,popqa
+mirage:popqa:a363ac1b-0429-4221-bd53-3a0debc395a5,Who is the author of The New Troy?,MIRAGE,popqa
+mirage:popqa:0baa788e-45b2-4981-9407-35a92164317c,Who is the author of Bodies?,MIRAGE,popqa
+mirage:popqa:d824e688-b083-4e4c-ab36-354809ed54e9,Who is the author of Silence?,MIRAGE,popqa
+mirage:popqa:47724e5c-8d77-4341-8675-f51c8d8855e0,Who is the author of Dancing on Coral?,MIRAGE,popqa
+mirage:popqa:85a87d08-2e02-46e6-bbaa-2d1655fe6cb2,Who is the author of The Wrestling?,MIRAGE,popqa
+mirage:popqa:042790db-bdd5-43d3-a5a0-2170d3ad9c47,Who is the author of O dia das calças roladas?,MIRAGE,popqa
+mirage:popqa:1235f728-dbaf-4b8d-88e0-66de43958b6b,Who is the author of My Life?,MIRAGE,popqa
+mirage:popqa:c43553a1-3a66-40e3-ac8f-2efb8d31db92,Who is the author of Travels?,MIRAGE,popqa
+mirage:popqa:7534027c-b89b-431d-9633-8b8dc7a02610,Who is the author of Out of This World?,MIRAGE,popqa
+mirage:popqa:0f24a189-6dcd-48aa-8f3d-14bf2a16703d,Who is the author of Stiff?,MIRAGE,popqa
+mirage:popqa:568c4ee9-7a68-4525-bb47-63341d9ee546,Who is the author of Deadline?,MIRAGE,popqa
+mirage:popqa:92839fe2-1fda-4ec7-992f-5baf88031c39,Who is the author of One Day at a Time?,MIRAGE,popqa
+mirage:popqa:6b2e773a-71a3-4971-bfb6-a2a625ba3cfc,Who is the author of What's Become of Waring?,MIRAGE,popqa
+mirage:popqa:dbf8d185-094e-4e0d-85a9-0cc841a428f0,Who is the author of Storm?,MIRAGE,popqa
+mirage:popqa:659c272b-c972-4c1d-8a83-ba621db944ce,Who is the author of Over the Edge?,MIRAGE,popqa
+mirage:popqa:dbf5ccdc-e00e-405c-885f-59d862a287d3,Who is the author of Satis Cognitum?,MIRAGE,popqa
+mirage:popqa:badb47d2-d605-4f28-bbbb-6490f65dab0b,Who is the author of What You Make It?,MIRAGE,popqa
+mirage:popqa:3e0c30ec-9d68-48dd-9a61-e08a94d3a4b3,Who is the author of Out of Order?,MIRAGE,popqa
+mirage:popqa:d9a40998-4fb5-48b8-8417-b238bef09155,Who is the author of History?,MIRAGE,popqa
+mirage:popqa:ebec0af6-31f0-4edc-9a97-465c1057cd1d,Who is the author of The Rain Before It Falls?,MIRAGE,popqa
+mirage:popqa:8e3e53a8-74be-4680-a766-b7deeb530906,Who is the author of The Driver?,MIRAGE,popqa
+mirage:popqa:4524b9bd-f736-40b4-904a-4b1d38ae6a1d,Who is the author of Significant Others?,MIRAGE,popqa
+mirage:popqa:a54ca801-5a04-4720-83c8-446d5d46d0ba,Who is the author of Come On Over?,MIRAGE,popqa
+mirage:popqa:c1bd08ae-298f-49ed-8f04-8693bb59f50b,Who is the author of Rose Hip Rose?,MIRAGE,popqa
+mirage:popqa:97854520-b322-439d-9326-6e0b9496ed5d,Who is the author of The Isle of Voices?,MIRAGE,popqa
+mirage:popqa:dab30c53-f82f-4f25-a8f3-e3da41099d65,Who is the author of Prosopography of the Later Roman Empire?,MIRAGE,popqa
+mirage:popqa:aa0619e4-5ce5-4fd9-a9f7-1c0713702a67,Who is the author of Limitations?,MIRAGE,popqa
+mirage:popqa:2715d974-2d19-4200-8348-d055e92a4628,Who is the author of Images?,MIRAGE,popqa
+mirage:popqa:edb58ef8-bd81-4d86-928f-e3e04366c3d2,Who is the author of A Darker Domain?,MIRAGE,popqa
+mirage:popqa:b6204daa-7b82-4dc8-bc8f-269d081d3fb3,Who is the author of Titanic 2020?,MIRAGE,popqa
+mirage:popqa:525e8a1a-fa69-43fd-94a0-b9f6cbdcc9f0,Who is the author of The Chaos Code?,MIRAGE,popqa
+mirage:popqa:31b1bf3a-99e9-44f0-89c5-17d1abf2b942,Who is the author of Crazy?,MIRAGE,popqa
+mirage:popqa:cb6b498a-c5d8-4aca-996b-794a3d11b820,Who is the author of Ally?,MIRAGE,popqa
+mirage:popqa:911dfccd-591c-49f5-9bdc-f05279ed54db,Who is the author of Keeping the Moon?,MIRAGE,popqa
+mirage:popqa:899b027e-601c-44f2-b0ee-036099b2653b,Who is the author of The Secret Diaries of Miss Miranda Cheever?,MIRAGE,popqa
+mirage:popqa:d7c51c1c-81dd-48c2-bc7c-6bc232319662,Who is the author of Rivals?,MIRAGE,popqa
+mirage:popqa:60a024c0-488b-4a05-8273-5e30c327c2e4,Who is the author of Do The Work?,MIRAGE,popqa
+mirage:popqa:d96f1ebe-3d7a-4e14-a4bd-833519608e33,Who is the author of Falling?,MIRAGE,popqa
+mirage:popqa:964f050b-9aa1-401d-b78e-c7c858bf672c,Who is the author of The Sun Chemist?,MIRAGE,popqa
+mirage:popqa:314cefdf-1667-436e-a19f-57f3df655500,Who is the author of Let's Take the Long Way Home?,MIRAGE,popqa
+mirage:popqa:dd56bb69-423f-484f-85ff-0c62015a3968,Who is the author of Plus?,MIRAGE,popqa
+mirage:popqa:6e6ae920-fde8-45de-a62e-b293abf780e6,Who is the author of Chronicon?,MIRAGE,popqa
+mirage:popqa:9d3e398f-70ff-4dcb-8234-e3ad5c774761,Who is the author of Capitol?,MIRAGE,popqa
+mirage:popqa:51a6c382-8f29-45c1-926f-814d1cc9b30f,Who is the author of Lighthouse?,MIRAGE,popqa
+mirage:popqa:aaf5cdb7-7498-406a-a40d-6f971109e977,Who is the author of 8?,MIRAGE,popqa
+mirage:popqa:b2ffc114-9c83-421b-b946-b44c367b7a96,Who is the author of Meltdown?,MIRAGE,popqa
+mirage:popqa:233d6058-1665-43b1-ae2a-13f64c9297c3,Who is the author of Fruits?,MIRAGE,popqa
+mirage:popqa:b694cdaf-9d4d-438a-8626-544752653e89,Who is the author of Federation?,MIRAGE,popqa
+mirage:popqa:a83b2674-0564-48bf-bd1c-f2893cc7d718,Who is the author of K.?,MIRAGE,popqa
+mirage:popqa:2da3c9a2-c12d-42ac-81da-f682286f914e,Who is the author of Up Till Now: The Autobiography?,MIRAGE,popqa
+mirage:popqa:4eac3e62-bd99-4538-9af9-5564d8f68cd3,Who is the author of F?,MIRAGE,popqa
+mirage:popqa:dd6d8011-ff79-4006-9e6e-fe305b965764,Who is the author of Rigged?,MIRAGE,popqa
+mirage:popqa:a5ea2a5f-008c-4995-9e1b-c3979926a1ae,Who is the author of Sweat?,MIRAGE,popqa
+mirage:popqa:85e55799-df58-4ca3-8c37-3ea65325d07f,"Who is the mother of Prince Louis, Duke of Nemours?",MIRAGE,popqa
+mirage:popqa:b59a82e9-320b-4246-ad7b-e8f4300e7295,Who is the mother of Pierre Napoleon Bonaparte?,MIRAGE,popqa
+mirage:popqa:841191be-f9a4-45ee-ac1e-e7ff876ee666,Who is the mother of Wenceslaus IV of Bohemia?,MIRAGE,popqa
+mirage:popqa:a126bce7-abbb-4ba3-badb-99254ea3a3f3,Who is the mother of New Approach?,MIRAGE,popqa
+mirage:popqa:53994b5c-1364-4bd7-b264-2235e65811a6,Who is the mother of Henry of England?,MIRAGE,popqa
+mirage:popqa:c01911e4-f4f7-4b7d-bdd9-d9237e2b5003,Who is the mother of Crispian Mills?,MIRAGE,popqa
+mirage:popqa:f8844ba5-6580-4cd4-a798-97f1b2e80c71,What is the capital of Lys?,MIRAGE,popqa
+mirage:popqa:05d8e8e9-2440-4876-acbe-c443cd937664,What is the capital of Ter?,MIRAGE,popqa
+mirage:popqa:50fb89ca-de5b-46b0-8a09-68089b1a211f,What is the capital of Meta?,MIRAGE,popqa
+mirage:ifqa:53016e33-8f93-4313-ab00-8e4c64b5333e,"If Taiwo Hassan and Sweatshirt had agreed to Christian Rich's original idea for the song ""Chum"", who would have performed the hook?",MIRAGE,ifqa
+mirage:ifqa:69f57866-ee05-4a19-9cb1-38df6a6790e2,"If the Irish gambling site Paddy Power had not changed their initial prediction for the favorite to win Amazon HQ2, which city would have been their top choice?",MIRAGE,ifqa
+mirage:ifqa:35d5d1c3-6d5f-4418-a5d1-b77db3f1894e,"If the farm, which is now the UGA Equestrian Complex, hadn't been constructed until the year it was acquired by the University of Georgia, for which Olympic Games would it not have served as a training site?",MIRAGE,ifqa
+mirage:ifqa:1c243b90-e1c4-4767-9578-c302b92d2ed4,"If Jenifer Ellen Ringer had never relocated from her childhood home, in which state would she currently reside?",MIRAGE,ifqa
+mirage:ifqa:8ee823a9-fefa-476d-ab64-14b2f53fe5c0,"If the seaside resort in Victoria, Australia had retained its original name, what would Torquay be known as today?",MIRAGE,ifqa
+mirage:ifqa:82c47687-7cb8-4c75-b95b-5e19fbb19310,"If Hadise Açıkgöz's parents had given the name ""Hadise"" to the child they originally intended, which of her siblings would have been named ""Hadise""?",MIRAGE,ifqa
+mirage:ifqa:34d1b772-086e-4ff0-931e-4dc1edde22cd,"If the Roman Empire had not arrived in southern Scotland, which tribe would have originally inhabited the River Clyde and its surrounding area?",MIRAGE,ifqa
+mirage:ifqa:cf8fc4bc-b92c-4cbd-814a-3c6f059222ab,"If a south to southeasterly flow, produced by strong high pressure aloft over the desert southwest in connection with the summer monsoon, drives the offshore marine layer up the coastline during the summer, what is this phenomenon known as?",MIRAGE,ifqa
+mirage:ifqa:19e17f6e-10e2-4e27-8336-db37f005f320,"If the Hudson Highland Suspension Bridge Company had successfully built their proposed bridge over the Hudson River in 1868, which two locations would it have connected?",MIRAGE,ifqa
+mirage:ifqa:474587a4-d821-468a-9ac4-1ab7065d7cfa,"If the maritime route hypothesis is accurate and Buddhism remained confined to its original practice areas, which modern-day regions in China would be associated with Buddhism?",MIRAGE,ifqa
+mirage:ifqa:c18ab18d-970a-4969-b662-06ae1a7533a1,"If the Mossad, the Israeli intelligence agency, had proceeded with their initial plan to assassinate a high-ranking Syrian official in London, who would have been the targeted individual?",MIRAGE,ifqa
+mirage:ifqa:417bfda5-a3f0-4fd0-bcda-396c1ec625ad,"If a New York City judge hadn't ruled in favor of Max B, which record label would have been prevented from releasing the album ""Vigilante Season""?",MIRAGE,ifqa
+mirage:ifqa:42368abb-afaa-4c2f-b136-71d3be3c3668,"If the members of Quest Crew hadn't disbanded, which dance troupe would they have continued to perform with?",MIRAGE,ifqa
+mirage:ifqa:4abc0b13-b21f-4652-afef-a8575f029380,"If Adam Chandler hadn't interfered and replaced the sperm donation for Liza Colby's artificial insemination, who would have been the biological father of Colby Marian Martin?",MIRAGE,ifqa
+mirage:ifqa:38f45789-2ef3-4584-b144-03f9c113c5da,"If Percy Cradock had been defeated in the 1950 election for Chairman of the Cambridge Union Society, who would have taken the position?",MIRAGE,ifqa
+mirage:ifqa:2dabe51a-399c-431a-b96a-d7a52d6a661c,"If Larry Adler hadn't been blacklisted in the United States, which 1953 film would have originally credited his work on the soundtrack?",MIRAGE,ifqa
+mirage:ifqa:c3ec9845-61f5-4bd1-8639-673519bb1d67,"If there hadn't been time constraints during the filming of ""Colony"", which scene would have been included in the series?",MIRAGE,ifqa
+mirage:ifqa:74ebf36a-223a-4b8e-acad-30b6d9d9e961,"If Charles Carroll of Carrollton hadn't donated the bricks to the Sulpicians, what was the original intended use for these bricks?",MIRAGE,ifqa
+mirage:ifqa:f680d35f-70bd-4179-8fd1-1e9d282b8614,"If the construction of the Ryugyong Hotel in Pyongyang, North Korea had been completed as initially planned, how many revolving restaurants would it have featured?",MIRAGE,ifqa
+mirage:ifqa:d43bd678-6ba4-496a-b11f-50d4148a9211,"If the name ""Old Trafford"" originated from the existence of two Trafford Halls, Old Trafford Hall and New Trafford Hall, when was Old Trafford Hall demolished?",MIRAGE,ifqa
+mirage:ifqa:afce7501-f4d8-4cd1-9968-ceab9b2f2f59,"If the mu meson had turned out to be the particle that Hideki Yukawa had predicted, what could it have been named?",MIRAGE,ifqa
+mirage:ifqa:c60b7eff-2b9e-4512-b123-e48c791a6178,"If the film ""Blue Steel"" had been produced with its original budget, how much money would have been allocated for its production?",MIRAGE,ifqa
+mirage:drop:5d486cd8-cae8-498b-8c3b-9ee7c6e3dec4,Which team does Qwens play for?,MIRAGE,drop
+mirage:drop:36f6a18e-393e-4ffb-bf73-e28226dbcb6b,"Out of the 50,000 men how many cavalry regiments and infantry battalions were organized?",MIRAGE,drop
+mirage:drop:58010a61-9d18-4bc7-a84f-56d1561192a3,Which age group had the highest population?,MIRAGE,drop
+mirage:drop:205757f1-4e5d-4997-8103-f9f61bf5a418,How widespread was resistance to the conscription upon the introduction of the new law?,MIRAGE,drop
+mirage:drop:990ff6b1-632e-4da1-ab5f-10f6ae57d6ad,What was the age span of men who were eligible for conscription?,MIRAGE,drop
+mirage:drop:473e1586-0f73-4fb9-a3bc-fcbd83f8af90,What are the names of the South Korean pension schemes?,MIRAGE,drop
+mirage:drop:603a1c2d-7c68-4e4c-b5e2-93db7be46f65,How many years after the first Kandyan War did the second Kandyan War happen?,MIRAGE,drop
+mirage:triviaqa:f0f64bbf-ba62-46e0-b1fc-de92ad9fcae9,What was Jane Russell's real first name?,MIRAGE,triviaqa
+mirage:triviaqa:971a1f87-21ec-4347-b1eb-fdb55db6d219,Who played Fusilier Dave Tucker in Soldier Soldier?,MIRAGE,triviaqa
+mirage:triviaqa:5c368ea9-e54d-4dcd-aa9b-7bad2dfe5348,Who were Tom and Barbara's neighbours in The Good Life?,MIRAGE,triviaqa
+mirage:triviaqa:37fc0e5c-95ad-4022-b6fb-896ce980f3d2,What is the name given to the fur of a polecat?,MIRAGE,triviaqa
+mirage:triviaqa:1fb8d252-e1fe-42df-9c10-48eb863e889a,Who is the TV personality brother of radio presenter Janice Long?,MIRAGE,triviaqa
+mirage:triviaqa:7e2a4673-3293-418c-9203-de81cda31dc3,In Rising Damp what was the christian name of Miss Jones?,MIRAGE,triviaqa
+mirage:triviaqa:20f193bb-4bcd-43a3-be07-48f593b9dbe9,Who starred alongside Polly James in the first series of The Liver Birds?,MIRAGE,triviaqa
+mirage:triviaqa:35301663-f56e-4376-a511-7c7916321a60,"Which comedian was the host of the short lived Channel 4 programme, TV Heaven Telly Hell?",MIRAGE,triviaqa
+mirage:triviaqa:ba410c5d-882f-4fff-88f7-bd1ed82646c2,In which year was the Ford Anglia car first produced in the UK?,MIRAGE,triviaqa
+mirage:triviaqa:6be15985-0e47-4019-81a6-e7ef264ad2da,Which playing card is known as ‘Hector’?,MIRAGE,triviaqa
+mirage:triviaqa:5009faa0-2d70-4531-a022-cd46def4fd7d,Singer Doug Trendle is better known by what name?,MIRAGE,triviaqa
+mirage:triviaqa:fac6ba22-ba9d-4f45-8620-15ba46181ea3,"‘Bankable Productions’, an independent film and television production company, was founded by which former model?",MIRAGE,triviaqa
+mirage:triviaqa:db33c04c-5c94-4f8a-a49a-a4c8d536c564,What is the name of the twin sister of the Disney character Donald Duck?,MIRAGE,triviaqa
+mirage:triviaqa:14ac488e-3de8-41eb-9f80-b986d3eb936b,Albert Finney played ‘Sir’ in which 1983 film?,MIRAGE,triviaqa
+mirage:triviaqa:9dfa3dfe-f131-49be-9aaf-a0f25282459f,Laguna del Carbon (Coal Lagoon) is the lowest point in which South American country?,MIRAGE,triviaqa
+mirage:triviaqa:0d10cd84-6073-410c-890d-f2c222e55d6c,Who wrote the 1902 autobiography ‘The Story of My Life’?,MIRAGE,triviaqa
+mirage:triviaqa:6f94e9a2-d9e5-4ae9-a3bd-01b215c3fa23,Who is the patron saint of Winchester Cathedral in England?,MIRAGE,triviaqa
+mirage:triviaqa:b3699144-a68d-41c9-b8da-ebdf61700149,Which is the most northerly of the Met Office shipping forecast areas?,MIRAGE,triviaqa
+mirage:triviaqa:85bb83ac-5350-474b-8d42-a5ece7af1b7a,Who starred as Dan Matthews in ‘Highway Patrol’?,MIRAGE,triviaqa
+mirage:triviaqa:5049053b-e5bd-4966-9e11-84ba7387a427,"Object, Nature, Random, Person, Action and World are terms used in what game?",MIRAGE,triviaqa
+mirage:triviaqa:7d3f06d9-962b-47be-9a42-53afc0861f3a,Which famous trademark can be seen on one of the bottles featured in Manet's canvas The Bar at the Folies-Bergere?,MIRAGE,triviaqa
+mirage:triviaqa:f719ae9a-10c6-45ad-b58b-8018cdf4b9c2,"If a capstan is a winding machine on a vertical axis, what is the equivalent on a horizontal axis?",MIRAGE,triviaqa
+mirage:triviaqa:80257a03-7495-4b98-9f69-5ca800268163,Who is the mother of the actor Toby Stephens ?,MIRAGE,triviaqa
+mirage:triviaqa:89841b00-a949-491a-b739-2da64bc68ee0,Who wrote the song 'I'll See You Again' ?,MIRAGE,triviaqa
+mirage:triviaqa:9695f880-c5df-4dd1-9556-cc3bb6cf738e,"A metal ring or grommet in a sail or other nautical attachment, through which a rope passes is a?",MIRAGE,triviaqa
+mirage:triviaqa:4f03aa18-87b9-4243-af3a-14f4f62b01e2,What game involves throwing rings to get them on or near a pin?,MIRAGE,triviaqa
+mirage:triviaqa:2a724b31-76e5-4b9a-b0ae-a197422ceee0,Why was wrestler Ara Abrahamian of Sweden disqualified by the IOC and stripped of his rejected bronze medal at the 2008 Summer Olympics?,MIRAGE,triviaqa
+mirage:triviaqa:7f9eb1b6-429a-487f-9e06-a98c451e88ce,"The 50.5 km Channel Tunnel, built under the English Channel or, in France, La Manche, to link the UK and France with road and rail access was finally opened in 1994. When was the first official Anglo-French protocol established to create the railway aspect of the link?",MIRAGE,triviaqa
+mirage:triviaqa:2f666af0-2210-4270-9f09-7254eaf2fe3e,"The New Spitalfields Market in Leyton, East London, deals in what?",MIRAGE,triviaqa
+mirage:triviaqa:0dac082a-769d-4f3a-bc2e-0ef1f983bdb4,Ludwig Leichhardt was a Prussian naturalist and explorer explorer of what area between 1842 and 1848?,MIRAGE,triviaqa
+mirage:triviaqa:556fc6de-8add-4dc8-a342-ccd142ca3b5e,"""What does the term """"baroque"""" mean?""",MIRAGE,triviaqa
+mirage:triviaqa:4f5787c7-17d0-4df5-813f-cd6f02a975b7,"The name of the science, mathematics, derives from an ancient Greek word meaning what?",MIRAGE,triviaqa
+mirage:triviaqa:934a66c4-3d88-4a6a-90fd-2d4844d47bd3,Dame Barbara Hepworth is known mainly for her work in sculpture but later in her career was known for work in what other medium?,MIRAGE,triviaqa
+mirage:triviaqa:5dac1b59-b9bc-45fd-bc1e-a4ebd6c2b7e7,"The Camel Cup, first held in 1970 in the dry bed of a river, is held where?",MIRAGE,triviaqa
+mirage:triviaqa:e02d49f4-22c4-49e8-b7b6-693f8ac91f2a,Who were the parents of Ricky Nelson?,MIRAGE,triviaqa
+mirage:triviaqa:1fa27000-9f6d-4e4b-961d-d071e2958556,What is likely to be found in the Pantanal?,MIRAGE,triviaqa
+mirage:triviaqa:f008750a-8a6d-4488-84b2-6a839c26b76b,Which football team play their home games at the Don Valley Stadium?,MIRAGE,triviaqa
+mirage:triviaqa:7c7d1576-bb9b-4d4e-a0f2-41cdd17f1b04,"In warfare, what name is given to a hastily constructed temporary defence or a parapet a few feet high, the name deriving from the approximate height that it is built to?",MIRAGE,triviaqa
+mirage:triviaqa:b61f46d1-7286-4e5d-a59a-4e370a09db2d,Who wrote the novel 'Hungry as the Sea'?,MIRAGE,triviaqa
+mirage:triviaqa:454da1f2-1275-4e13-919c-9ebfa23ef454,Who was replaced by Jonathan Ross as presenter of BBC TV's 'Film Review'?,MIRAGE,triviaqa
+mirage:triviaqa:f5e44827-3ebd-494d-89df-a5bf63b303e6,'Glass's Guide' is a publication to interest a buyer of what?,MIRAGE,triviaqa
+mirage:triviaqa:b4a52f76-b295-416b-adf8-b0a2534beec1,Who has the nickname of the thinking man's crumpet?,MIRAGE,triviaqa
+mirage:triviaqa:bd1f174b-d7d9-423d-a740-3b4af5702143,What nickname did goalkeeper Brian Jansen have?,MIRAGE,triviaqa
+mirage:triviaqa:146f6846-cf24-4f98-a6c2-a06751332d20,'That's Livin' Alright' was the theme song to which TV programme?,MIRAGE,triviaqa
+mirage:triviaqa:b1f18e70-6175-4180-a778-8950c22d5626,In the Diamond Jubilee Thames Pageant what was the name of the boat carrying the Queen?,MIRAGE,triviaqa
+mirage:triviaqa:70bf057e-5dc3-4360-9040-ef079105bf24,"Brown Panther, the winner of the Goodwood Cup in 2013, is owned by which ex-footballer?",MIRAGE,triviaqa
+mirage:triviaqa:61218353-afd8-4dfd-900d-11ec9f341438,What was the nickname of Arsenal and Republic of Ireland footballer Liam Brady?,MIRAGE,triviaqa
+mirage:triviaqa:79c25ba6-e4b2-4c92-8947-740b538fff49,For which Premiership club was Anelka playing when his contract was terminated?,MIRAGE,triviaqa
+mirage:triviaqa:9588db8f-3801-4689-b5bb-00c0b0e7a593,Who narrated the children’s animation called 'Bod'?,MIRAGE,triviaqa
+mirage:triviaqa:92339613-5d2f-40bc-a4f5-c569b6c9e12b,Which Cabinet member is the MP for Runnymede and Weybridge?,MIRAGE,triviaqa
+mirage:triviaqa:8cc0d2fb-5ced-4ea3-9519-2e5dff225734,"""Which comedy actor played 'Uriah Heap' in the 1999 BBC adaptation of """"David Copperfield""""?""",MIRAGE,triviaqa
+mirage:triviaqa:b818173e-f59d-4165-8776-d74bee1a17dd,"Which actor, most famous for the TV series 'Spooks' was the first to play the 17-year-old 'Alan Strang' in the play 'Equus' in 1973?",MIRAGE,triviaqa
+mirage:triviaqa:ded8506e-b8c4-47a9-8d96-0dcbca69314f,Who is the wife of retired footballer Lee Chapman?,MIRAGE,triviaqa
+mirage:triviaqa:b55a77f3-8235-4690-9911-05139adc0318,"In the 1978 film 'International Velvet', who plays the character 'Velvet Brown'?",MIRAGE,triviaqa
+mirage:triviaqa:8a3b14e8-bd88-4621-a7ec-5df348a568da,"""Which English author famously helped to create the """"Go to work on an egg"""" advertising slogan used by the United Kingdom's Egg Marketing Board during the 1950's?""",MIRAGE,triviaqa
+mirage:triviaqa:df71939f-6f8d-4443-bb3a-64868c653cfb,Which post was held by Miss Merlyn Lowther from 1999 to 2003?,MIRAGE,triviaqa
+mirage:triviaqa:12a2cef1-79fe-437a-ac5b-fe0e1c71858e,Over which course is the 'Whitbread Gold Cup' run?,MIRAGE,triviaqa
+mirage:triviaqa:5c0640bb-aeb2-476f-8013-06eca1a63999,The 'Naughty Forty' are/were a gang of football hooligans who supported which Midlands club?,MIRAGE,triviaqa
+mirage:triviaqa:63ed0609-ec2d-4f20-a260-4cfb1d98b844,What is the meaning of the word Cenotaph?,MIRAGE,triviaqa
+mirage:triviaqa:dceb259e-a0ca-4e96-9ea0-d0ab47577577,Of which magazine is Rachel Johnson the editor?,MIRAGE,triviaqa
+mirage:triviaqa:ec00afc7-2010-43c1-8d92-65b994f262c6,"In the film 'Transformers', who plays 'John Keller', the US Secretary of Defence?",MIRAGE,triviaqa
+mirage:triviaqa:418fe703-0592-4959-acd3-3a22f7b9f70e,Which Actress was the mother of the actress Janette Scott?,MIRAGE,triviaqa
+mirage:triviaqa:472709c8-d8ab-412c-82d9-960a7d3b882d,'Juice FM 107.6' broadcasts from which town/city?,MIRAGE,triviaqa
+mirage:triviaqa:1f19a0bb-96c0-4f46-b71f-fd1f9f18dd5a,Who presents the ITV quiz show ‘Take on the Twisters’?,MIRAGE,triviaqa
+mirage:triviaqa:7f07b72b-40f9-462b-9466-ffa224e1c224,Who is the Earl of Merioneth,MIRAGE,triviaqa
+mirage:triviaqa:cf910037-c7ee-4a1a-922b-4a0cec2b5c91,Which actress plays the title role in the TV series Linda Green,MIRAGE,triviaqa
+mirage:triviaqa:684d271c-ae4f-4504-96a3-2b7b13c12246,"Actor Norman Lumsden's most famous role was in an advert, who did he play",MIRAGE,triviaqa
+mirage:triviaqa:0eeadce1-c554-42ad-91c6-277e2a871a4c,Which TV game show was devised by ex Sunday Night at the London Palladium compere Norman Vaughan,MIRAGE,triviaqa
+mirage:triviaqa:27f64c24-3b4c-4578-bcd1-c46433f67c42,Which English footballer was accused and later cleared of stealing an emerald bracelet in Colombia in 1970?,MIRAGE,triviaqa
+mirage:triviaqa:a3ec76ab-0e13-4714-89aa-31f0d6d74def,Who plays Mrs Overall in Acorn Antiques?,MIRAGE,triviaqa
+mirage:triviaqa:bd8d130f-06bb-4772-b474-67fe2dd224b0,"Forcing you to pay $75 to the bank, what is pictured on the Luxury Tax space on a standard Monopoly board?",MIRAGE,triviaqa
+mirage:triviaqa:77ea8160-b564-41b9-881d-82d332910216,What was the name of the first Hollywood movie released by D W Griffith in 1910?,MIRAGE,triviaqa
+mirage:triviaqa:7451b221-1160-42bc-8016-ef623cf03adc,What is the number of the court at Wimbledon which is nicknamed The Graveyard Of Champions due to a large number or seeded players being beaten on it by lower ranked players?,MIRAGE,triviaqa
+mirage:triviaqa:132a6295-b2b3-4784-a113-43c8f6504b7d,Which unlikely country qualified for the 2015 Cricket World Cup Finals by beating Kenya?,MIRAGE,triviaqa
+mirage:triviaqa:33df7b60-ec95-4844-9973-504de49956ba,What is the missing first word in the title of Rose Macauley's novel '… By An Idiot'?,MIRAGE,triviaqa
+mirage:triviaqa:d1dade1f-730a-4cb7-8b7b-08bda3814f56,Japanese haiku poems loosely comprise how many syllables?,MIRAGE,triviaqa
+mirage:triviaqa:d08e24ab-7e8e-453f-9825-dd11ad883bfa,What was the name of Roland Rat's gerbil friend?,MIRAGE,triviaqa
+mirage:triviaqa:ac0223ab-69e0-4d15-aabc-5e15e0ac234f,Which hit programme is filmed in a tent at Harptree Court in Somerset?,MIRAGE,triviaqa
+mirage:triviaqa:b091be28-b860-41b4-8afe-c4841a05f53d,The books were Alice and Jerry in the USA – what were they here?,MIRAGE,triviaqa
+mirage:triviaqa:fd23bc06-3175-4c5f-ab32-dd5b724f4ab5,"Which rust free cars were built in Dunmurry, Northern Ireland in the late 1970s?",MIRAGE,triviaqa
+mirage:triviaqa:3eafa723-9560-40c3-bdd6-f036e23220c9,"'Eureka', the National Children's Museum is in which town?",MIRAGE,triviaqa
+mirage:triviaqa:76bacca3-4f45-482b-a566-e4680c1ef8b2,What was Louise Rednap's maiden name?,MIRAGE,triviaqa
+mirage:triviaqa:6826a007-db7e-4858-99bd-dd66c112a6bc,What nationality was Aristotle Onassis originally,MIRAGE,triviaqa
+mirage:naturalqa:63c32270-cee7-4318-8f20-82f98ce60fb1,the p-wave phase of an electrocardiogram (ecg) represents,MIRAGE,naturalqa
+mirage:naturalqa:049ad3ff-2f8f-4ceb-8528-bc7d248ff0b2,what is the use of symbolic link in linux,MIRAGE,naturalqa
+mirage:naturalqa:9ef73c4f-b016-414b-bf3d-9486822c00fa,when does mark show up in grey anatomy,MIRAGE,naturalqa
+mirage:naturalqa:0723acca-39c2-4abe-9c8c-2b5532c95bbd,what is the significance of the nodes of ranvier,MIRAGE,naturalqa
+mirage:naturalqa:6b126cc6-ee4b-45c2-a75d-9d9331376cb4,guy who played opie on sons of anarchy,MIRAGE,naturalqa
+mirage:naturalqa:05660480-3a84-4fc7-8c6c-65fcb5cdc882,how i met your mother barney 200th girl,MIRAGE,naturalqa
+mirage:naturalqa:20cc6546-752b-4659-a034-53b40175ac9c,what is the main goal of an exploratory committee,MIRAGE,naturalqa
+mirage:naturalqa:b3c09350-0d7e-49b9-bfc9-c05d8134fa32,who did robert hardey play in harry potter,MIRAGE,naturalqa
+mirage:naturalqa:34ed6cd0-26b1-474e-aee9-b1206428da3d,who is the guy that does spongebob's voice,MIRAGE,naturalqa
+mirage:naturalqa:965241ad-626b-4ddb-be22-104ffc813813,who benefits from a quota on imported goods to the u.s,MIRAGE,naturalqa
+mirage:naturalqa:b906bca8-8c5d-4bc2-b2ea-1801081d9531,which amendment guaranteed the equal protection of laws to all american citizens,MIRAGE,naturalqa
+mirage:naturalqa:159bc6b6-38a3-4e53-897e-4b9230c05936,who has been elected as the new president of finland,MIRAGE,naturalqa
+mirage:naturalqa:4508fc4b-500e-4455-80e7-ea4941a8e392,when were seat belts first required in cars,MIRAGE,naturalqa
+mirage:naturalqa:699d81b3-0575-4589-8313-b853b632d144,how much money does bank of america have,MIRAGE,naturalqa
+mirage:naturalqa:ca6079b8-fba4-4ab3-b53a-f6de0eb2829f,who played wally in last of the summer wine,MIRAGE,naturalqa
+mirage:naturalqa:2a704990-d2a3-4368-a5d4-3cc947139f51,who plays the asian girl in deadpool 2,MIRAGE,naturalqa
+mirage:naturalqa:9d64b640-34dd-47b5-9913-a6ddcab71af5,who sings how far i'll go from moana,MIRAGE,naturalqa
+mirage:naturalqa:526986a7-c956-43ad-8cd3-effcb38850ff,where was the first long distance phone call made,MIRAGE,naturalqa
+mirage:naturalqa:b4906f4a-bd14-47ab-9f6b-7660090a0ef0,where does red beans and rice come from,MIRAGE,naturalqa
+mirage:naturalqa:097eb557-bae8-48b2-b281-a1465805ae5b,how many years did moses malone lead the league in rebounds,MIRAGE,naturalqa
+mirage:naturalqa:5de30d25-8d53-4cb7-b866-80c53087d376,which country was the first to adopt communism as the way to develop it economy,MIRAGE,naturalqa
+mirage:naturalqa:88d5ddf3-8316-414c-a8ca-4a233da5b2ab,who owned and controlled the town of pullman,MIRAGE,naturalqa
+mirage:naturalqa:6188e5a3-09eb-4fb9-a13f-13aa1bf5eab1,who sang the original song the last kiss,MIRAGE,naturalqa
+mirage:naturalqa:643c1975-b1a6-4fd5-940a-148a4cc4a33a,why is the game of bridge called bridge,MIRAGE,naturalqa
+mirage:naturalqa:30158556-f797-4b72-beb7-a49bf059e2f6,who did nancy dow play on beverly hillbillies,MIRAGE,naturalqa
+mirage:naturalqa:37fd0f8d-1dd6-4c71-b7e1-f3f1e34220d4,which animal appears on the left side of the abacus on the national emblem of india,MIRAGE,naturalqa
+mirage:naturalqa:d97db4c0-6c2e-4a95-9cc3-0bc391c9b4e3,who played woody from suite life on deck,MIRAGE,naturalqa
+mirage:naturalqa:ac1213b5-4d99-4b81-8f80-eb856385da60,actor who plays david platt in coronation street,MIRAGE,naturalqa
+mirage:naturalqa:7009d6fb-765c-4fb4-9216-96c359be11ba,where did australia come in the winter olympics 2018,MIRAGE,naturalqa
+mirage:naturalqa:004c15be-5a80-4261-a93e-5e92d5e96ac1,when did mac miller release best day ever,MIRAGE,naturalqa
+mirage:naturalqa:571c94a6-54f9-43cd-85c0-59cf9bd81c89,who developed the fundamental principles of document examination,MIRAGE,naturalqa
+mirage:naturalqa:35454d10-6976-4d46-b127-7ff0f79d1322,what year did my pet monster come out,MIRAGE,naturalqa
+mirage:naturalqa:3b30cdfc-a81e-4dd3-aeee-f47e76b54e6f,who is the girl in the we don't talk anymore video,MIRAGE,naturalqa
+mirage:naturalqa:41612a2b-d2e6-451e-8d8c-be0caa57f86e,who wrote the song i love you truly,MIRAGE,naturalqa
+mirage:naturalqa:01bbcb80-eac2-45e9-90e1-00d67dabb6bb,when did bert and ernie first appear on sesame street,MIRAGE,naturalqa
+mirage:naturalqa:a5a5de7b-327a-47a5-bf7d-9ed7e7ee813c,who quarterbacked the minnesota vikings the year they won 15 games,MIRAGE,naturalqa
+mirage:naturalqa:2a409eb3-7029-4229-ab97-5fd77b1b21e7,who wrote in the presence of the lord,MIRAGE,naturalqa
+mirage:naturalqa:e54c408a-9e5e-4d6f-b855-21660539e462,who authored the contract with america plan for government,MIRAGE,naturalqa
+mirage:naturalqa:102fab12-b007-46c7-aba2-88d4f03ba78c,who has written the poem udayavagali cheluva kannada nadu,MIRAGE,naturalqa
+mirage:naturalqa:d10c134c-db33-499e-b9b7-c6b76b23d838,when did the first kitchenaid mixer come out,MIRAGE,naturalqa
+mirage:naturalqa:823e23e0-819b-4155-b2ca-465695dd8975,where did they film the witches of eastwick,MIRAGE,naturalqa
+mirage:naturalqa:63e36b67-dee9-4433-bfee-b03ef90cb0d3,when did the nba 3 second rule start,MIRAGE,naturalqa
+mirage:naturalqa:7b21a3dc-4e7d-4cb6-a256-9a6b66631bee,what year did the movie deuces come out,MIRAGE,naturalqa
+mirage:naturalqa:f965250b-57ac-4cb2-b080-038478aa672a,when did opp by naughty by nature come out,MIRAGE,naturalqa
+mirage:naturalqa:2ff991c3-54a7-47c1-a8e7-0abb7cf443f5,who is the lead singer of all american rejects married to,MIRAGE,naturalqa
+mirage:naturalqa:a5718390-977d-4add-827b-c7b0ed73503a,when does the eagle fly at auburn games,MIRAGE,naturalqa
+mirage:naturalqa:547b9b1b-3b52-4c7b-8c6d-fa26f7b39f0a,who had the rights to the krays book,MIRAGE,naturalqa
+mirage:naturalqa:7baaf2b7-01ef-44c3-ac35-cfda0cb80511,when does carlos find out about the affair,MIRAGE,naturalqa
+mirage:naturalqa:41a67d1f-1a9d-4caa-91d8-a8001154fbfc,when will olaf's frozen adventure be on dvd,MIRAGE,naturalqa
+mirage:naturalqa:7d096820-562b-48b4-9391-0cf074901327,who sings i like it like that yeah baby,MIRAGE,naturalqa
+mirage:naturalqa:4e187ded-2a88-4db7-9ba7-5ecce998c75d,who is she's got a way about,MIRAGE,naturalqa
+mirage:naturalqa:6eddacff-870b-48b3-8acf-050b90b80fe2,who did kyle play in little house on the prairie,MIRAGE,naturalqa
+mirage:naturalqa:a38720a3-adce-460b-bd28-219c6176f283,who was the first doctor to perform a heart transplant,MIRAGE,naturalqa
+mirage:naturalqa:fd7b33a9-7cb6-47b9-97db-4b58b71d3c66,who played too tall in we were soldiers,MIRAGE,naturalqa
+mirage:naturalqa:89c0aa6d-870b-47d3-b110-eba1d74cbbbd,who was the host of jhalak dikhla jaa in season 2,MIRAGE,naturalqa
+mirage:naturalqa:d6c85328-9889-4b8a-b7aa-1e6b22c0d6ce,when did marks and spencer stop using the name st michael,MIRAGE,naturalqa
+mirage:naturalqa:3aaf2382-87d8-4c86-aa9e-24f49f42d943,when did southwest missouri state became missouri state,MIRAGE,naturalqa
+mirage:naturalqa:fffc8943-e9be-4e85-a2a0-dc629503a7a8,where is the rachel maddow show broadcast from,MIRAGE,naturalqa
+mirage:naturalqa:9dfa41dc-e1f7-48a4-ad13-b293165bd8a9,where does the last name oliver originate from,MIRAGE,naturalqa
+mirage:naturalqa:6bb362de-b2fa-4580-a734-d514c25ba36e,who sings i'm gonna hire a wino,MIRAGE,naturalqa
+mirage:naturalqa:a6d0bda3-4722-42d1-88c2-928e778df266,who played alice tinkers sister in vicar of dibley,MIRAGE,naturalqa
+mirage:naturalqa:3c5bc844-540a-4836-83e1-7e86090519a6,when did the fist star wars movie come out,MIRAGE,naturalqa
+mirage:naturalqa:b3f9f339-5cd2-42f3-8bd2-a20c0acfa363,who sang don't you stop the music,MIRAGE,naturalqa
+mirage:naturalqa:3d00609e-ce92-401a-86b6-cfc8d9bfdc9c,the name of the staff used for higher pitches,MIRAGE,naturalqa
+mirage:naturalqa:85f87fbb-5518-4312-a7c6-42c8947b954b,how many soul eater manga books are there,MIRAGE,naturalqa
+mirage:naturalqa:0395ddee-dec7-4a7c-b28a-71e9e7906f79,who played the sheriff in carry on cowboy,MIRAGE,naturalqa
+mirage:naturalqa:dbced2f0-3855-4714-8718-085722225187,where is robb stark in season 3 episode 1,MIRAGE,naturalqa
+mirage:naturalqa:cb9af02c-a9d7-4f5e-9134-10ac8857263b,when did sputnik 2 come back to earth,MIRAGE,naturalqa
+mirage:naturalqa:6d7acfff-dfee-4f0f-b068-48eda89de4b0,who owns acme feed and seed in nashville,MIRAGE,naturalqa
+mirage:naturalqa:13d081f3-29ce-4a8f-8205-2f0424f90ecd,who plays dave coaches in gavin and stacey,MIRAGE,naturalqa
+mirage:naturalqa:8020fa6a-6b32-4987-a170-3249865cfa8c,where did the golden globe awards take place,MIRAGE,naturalqa
+mirage:naturalqa:3b3c474c-f408-49e5-b06e-4d69c60557dd,when was the first sex and the city movie made,MIRAGE,naturalqa
+mirage:naturalqa:85d6c567-6d2c-44a3-a342-a74af916d01e,who discovered neptune in the late 19th century,MIRAGE,naturalqa
+mirage:naturalqa:de608728-a632-4a44-8b15-a4f1e5bbe854,when did the old 7 mile bridge close,MIRAGE,naturalqa
+mirage:naturalqa:d65ffb98-94f9-45b8-9f08-1e00f641698a,when was the first photo of earth from space taken,MIRAGE,naturalqa
+mirage:naturalqa:81281434-5f2c-4a50-ba32-e61d185eef39,how long do eastern tent caterpillars stay in their cocoons,MIRAGE,naturalqa
+mirage:naturalqa:c3f5ae6a-dd40-4028-93cb-bc56b3bd5064,who wrote jesus keep me near the cross,MIRAGE,naturalqa
+mirage:naturalqa:d2184303-8123-4b59-95f1-9a39649b0bf3,where did thank you for your service take place,MIRAGE,naturalqa
+mirage:naturalqa:34274fbd-1193-48ae-9c70-36466f0656d7,when did gst come into effect in australia,MIRAGE,naturalqa
+mirage:naturalqa:0136c6f6-a24a-4cef-a6e0-18c84b30339f,who is the oldest monarch to be crowned,MIRAGE,naturalqa
+mirage:naturalqa:a409db16-a948-4eb6-b5ed-e06316b752b3,who sang theme song for life of brian,MIRAGE,naturalqa
+mirage:naturalqa:c69cfc25-552a-41bc-b500-df0397f63dba,is nursing a blue collar or white collar job,MIRAGE,naturalqa
+mirage:naturalqa:897b974a-350e-4f9a-9a69-0b19d22d5b47,who played lead guitar on still of the night,MIRAGE,naturalqa
+mirage:naturalqa:613c52df-70b4-4454-b767-e61d3886378c,who played uncle arthur in the comedy company,MIRAGE,naturalqa
+mirage:naturalqa:765621c8-3338-4ef6-ae11-aff4b65ab8b6,where is mount etna located on a map,MIRAGE,naturalqa
+mirage:naturalqa:e60db8b0-8b24-428b-8d5e-6f26b28a66b1,who won the raw women's championship at extreme rules,MIRAGE,naturalqa
+mirage:naturalqa:d8a1a300-c805-4961-b937-7b9477a104a7,how long does it take for titan to orbit saturn,MIRAGE,naturalqa
+mirage:naturalqa:cb7199aa-b4db-4840-8a8f-a81f254cf0ab,what type of government does gambia have today,MIRAGE,naturalqa
+mirage:naturalqa:3b95ca01-f683-4cc0-a710-478ecbdaee1b,where do the north and south platte rivers meet,MIRAGE,naturalqa
+mirage:naturalqa:a7fdc3fb-04c2-4ec7-8674-8eb52af57cd5,guy who traded a paper clip for a house,MIRAGE,naturalqa
+mirage:naturalqa:965ae9c0-f80d-44ba-aec1-743a546bf609,who played billy in buffy the vampire slayer,MIRAGE,naturalqa
+mirage:naturalqa:9dff56f7-1741-4006-92df-c99c81c19a99,where did the orange river get its name,MIRAGE,naturalqa
+mirage:naturalqa:fa44cf84-ed6d-43c9-9c15-c786217f30f2,what names are given to the two main types of particle radiation found on earth,MIRAGE,naturalqa
+mirage:naturalqa:fa557665-4187-4246-bfcf-8ce4cff75fa5,when were seats added to the green monster,MIRAGE,naturalqa
+mirage:naturalqa:17db1957-2c95-4281-9951-e643dac1b307,who played in the first monday night nfl game,MIRAGE,naturalqa
+mirage:naturalqa:986cacc6-2df7-4146-af39-c00a9096c49f,what team was case keenum on before the vikings,MIRAGE,naturalqa
+mirage:naturalqa:b519920a-5736-456c-abcb-4bc6c5ee9206,where was the movie the last survivors filmed,MIRAGE,naturalqa
+mirage:naturalqa:6819c2c1-003f-4f3c-9af8-e2a8f1a600eb,who played bill sikes in the 1968 film oliver,MIRAGE,naturalqa
+mirage:naturalqa:9ddc6e83-6283-48b6-925b-6f61a858678d,a word where q is not followed by u,MIRAGE,naturalqa
+mirage:naturalqa:1574ea3c-fa53-4789-9d5f-6c0ce8d0f95d,what is the theme of the song daylight by maroon 5,MIRAGE,naturalqa
+mirage:naturalqa:aa186e10-b48f-421e-8518-0a7c00ea06ef,when was oil first discovered in the north sea,MIRAGE,naturalqa
+mirage:naturalqa:7d300c92-cee6-4c7b-bcf6-ba4d634c1fc1,what type of business is the body shop,MIRAGE,naturalqa
+mirage:naturalqa:3e2d80bd-7cc6-483f-83df-dad192d0a19a,where is jt barrett playing in the nfl,MIRAGE,naturalqa
+mirage:naturalqa:69cbfad9-6a16-442a-a7f5-968fbacd93ac,when did shawn johnson win dancing with the stars,MIRAGE,naturalqa
+mirage:naturalqa:8ae6d7e3-068f-4e2b-bf95-128833177163,when did germany become part of the un,MIRAGE,naturalqa
+mirage:naturalqa:121715b6-9816-4743-b09d-c1799af86318,whats the difference between powerball and powerball plus,MIRAGE,naturalqa
+mirage:naturalqa:25ae824d-691b-47c5-a906-7fa01a7ec346,who played floyd talbert in band of brothers,MIRAGE,naturalqa
+mirage:naturalqa:e7ae8ef3-abca-45b2-9f8e-37d713affe18,who played the doctor on little house on the prairie,MIRAGE,naturalqa
+mirage:naturalqa:82fb9281-4562-4559-b7fe-12232ff8fe30,where did alex karev go to medical school,MIRAGE,naturalqa
+mirage:naturalqa:5813f9fe-7c05-4b0a-ac83-4320275b9f50,what part of the ship is the hull,MIRAGE,naturalqa
+mirage:naturalqa:3198440f-415c-47c4-a28f-43c77de008f1,who wrote we were soldiers once and young,MIRAGE,naturalqa
+mirage:naturalqa:b6f6490e-be77-48e0-8bdd-943b2940bc4e,who sings the cw dare to defy song,MIRAGE,naturalqa
+mirage:naturalqa:e8fe3e87-ea19-404f-ab81-b6b403d0cbd2,who sings did i shave my legs for this,MIRAGE,naturalqa
+mirage:naturalqa:e03eeb82-3cd0-4df9-b257-af31d4877028,who is the actor who plays jj on speechless,MIRAGE,naturalqa
+mirage:naturalqa:356c9212-1584-428c-bf1a-58323ff0dc83,what is the song state of love and trust about,MIRAGE,naturalqa
+mirage:naturalqa:43dbe0e0-354b-49d1-adba-f29f4aafc673,who sings peep and the big wide world theme song,MIRAGE,naturalqa
+mirage:naturalqa:416d22a9-8e4f-4f33-a398-15ba2fc44717,when was the university of south carolina founded,MIRAGE,naturalqa
+mirage:naturalqa:897eb2f1-34f2-4fad-bdae-e33e51107cff,what does sodium pentothal do to the body,MIRAGE,naturalqa
+mirage:naturalqa:c999e1bc-4495-4290-8ec0-5f59053d214a,where does the sand come from on waikiki beach,MIRAGE,naturalqa
+mirage:naturalqa:0f7826f7-1e9a-46b7-ad8c-2d9eacf615e2,where did the last name nettles come from,MIRAGE,naturalqa
+mirage:naturalqa:7466061e-f243-487d-91aa-4909461d82b5,when does the mls all star game start,MIRAGE,naturalqa
+mirage:naturalqa:ec34924b-340b-4a10-8353-aee3ab207869,what type of photography did edward weston do,MIRAGE,naturalqa
+mirage:naturalqa:a693b154-cc3f-474a-8357-7601a8f607da,what is at the top of the portland tram,MIRAGE,naturalqa
+mirage:naturalqa:207e813c-3aa7-4bcf-befe-eb778a417820,when did notre dame go to artificial turf,MIRAGE,naturalqa
+mirage:naturalqa:988a2260-e58c-4a66-86ae-9896c9dc41c2,who won the most money on the game show jeopardy,MIRAGE,naturalqa
+mirage:naturalqa:a3cdfda8-6df7-4279-8d31-d44fbab81340,de novo synthesis of fatty acids occurs in,MIRAGE,naturalqa
+mirage:naturalqa:76f9916a-d3a5-423b-b3bd-050af6e33238,who is the host of world of damce,MIRAGE,naturalqa
+mirage:naturalqa:e52dc891-aefe-4bc9-be18-ba77c3d06977,who was jay z talking about in song cry,MIRAGE,naturalqa
+mirage:naturalqa:c3509189-5457-49fe-8229-2a2ca465537a,who sings give me something to believe in,MIRAGE,naturalqa
+mirage:naturalqa:25fae793-c7ed-4912-9fa1-073a05b5bd1a,sun's halo is produced by the refraction of light in,MIRAGE,naturalqa
+mirage:naturalqa:60625475-c91e-4a7b-be04-fd894b86b602,where are world cup 2018 soccer balls made,MIRAGE,naturalqa
+mirage:naturalqa:d912e200-daf1-4c10-93cf-bdfe9916c74e,when did long service leave start in australia,MIRAGE,naturalqa
+mirage:naturalqa:2a727282-5545-4bec-9f31-93c0fb43b7b8,where is mt isa in australia on the map,MIRAGE,naturalqa
+mirage:naturalqa:3f590c7c-0fbf-4db1-99b8-528b346c67b9,who plays larry on that's so raven,MIRAGE,naturalqa
+mirage:naturalqa:5f5e1a12-46e1-4f6d-841c-c4d52d68563c,chemical processes controlling the carbon flux between the ocean surface and the atmosphere,MIRAGE,naturalqa
+mirage:naturalqa:3bc940ed-3121-4de3-9654-98ac99b0b8c1,when did the red wings move to joe louis arena,MIRAGE,naturalqa
+mirage:naturalqa:bfe8d1d4-42ef-4582-b989-2f17584a2958,who sings rock my world little country girl,MIRAGE,naturalqa
+mirage:naturalqa:07822882-a245-435e-bbd6-2b233bcd9371,what episode of glee does kitty join glee club,MIRAGE,naturalqa
+mirage:naturalqa:c2023837-0edf-4864-8c3d-eb362e046b9c,where is the rodeo held in las vegas,MIRAGE,naturalqa
+mirage:naturalqa:9e688f46-d625-4df5-b914-aadba463290b,when did jenny from the block come out,MIRAGE,naturalqa
+mirage:naturalqa:ef97489b-b0d7-4a19-b70a-e61c65344ae2,who sang the theme song to bat masterson,MIRAGE,naturalqa
+mirage:naturalqa:e402ddc0-afe0-43cc-b826-c0ab2b30b9d0,when was the last time the volcano on hawaii erupted,MIRAGE,naturalqa
+mirage:naturalqa:3509c6a1-c1b2-423f-9d95-8f4f2bff1f80,who is on top of the atlanta capitol building,MIRAGE,naturalqa
+mirage:naturalqa:cc01a280-371c-4792-8939-5a66205ac75b,what is the purpose of embalming a dead body,MIRAGE,naturalqa
+mirage:naturalqa:93182d9c-b689-4351-833d-c3b3eff1a17c,what song did bbd sing on fresh prince,MIRAGE,naturalqa
+mirage:naturalqa:22352a5b-32ec-42ea-b0b5-8431deea815f,what is the meaning of joie de vivre,MIRAGE,naturalqa
+mirage:naturalqa:08d0ba4d-7dc8-4dcd-8fe7-8c5af0bdc3d8,who plays princess jasmine on once upon a time,MIRAGE,naturalqa
+mirage:naturalqa:310977de-b968-47e1-9982-93000e624305,who was the piano player in battlestar galactica,MIRAGE,naturalqa
+mirage:naturalqa:a070a22a-5878-46ce-83df-6e31302d2875,when was the model parliament first called to meet,MIRAGE,naturalqa
+mirage:naturalqa:7ad6e809-3a8f-4ad5-89dc-4158d3c38ff9,who plays james nava in shades of blue,MIRAGE,naturalqa
+mirage:naturalqa:80655729-7765-48eb-9cde-a1eec775cfa9,when did the movie 8 seconds come out,MIRAGE,naturalqa
+mirage:naturalqa:c6a9414d-f63d-4c99-a575-266e1ee98810,what is the biggest recorded earthquake in history,MIRAGE,naturalqa
+mirage:naturalqa:e41c1f17-1e0a-4025-be34-dc1366bc8b7f,who is considered the founder of the theory of evolution,MIRAGE,naturalqa
+mirage:naturalqa:a3446178-90b1-4237-b522-0f81dcd7084b,when is season 3 of bizaardvark coming out,MIRAGE,naturalqa
+mirage:naturalqa:c3fd60af-2487-4f89-be63-7a184f19a44c,when did red marauder win the grand national,MIRAGE,naturalqa
+mirage:naturalqa:19c93e13-70cc-4ac1-995c-bd5b10628efc,who plays sonny kiriakis on days of our lives,MIRAGE,naturalqa
+mirage:naturalqa:23197a05-4e1e-459e-9b64-9bedffa71bf5,who wrote my baby thinks he's a train,MIRAGE,naturalqa
+mirage:naturalqa:1a260832-c421-47d8-b687-32edb6771a8d,where is the witches market in la paz,MIRAGE,naturalqa
+mirage:naturalqa:ba9e0ace-fc7a-42e2-8a04-5be59aedbd3b,what type of radiation leaves earth as outgoing waves,MIRAGE,naturalqa
+mirage:naturalqa:880a4150-7ecb-480f-b0e2-72684e2771a9,when did red solo cups start being made,MIRAGE,naturalqa
+mirage:naturalqa:01a6b1a2-9c39-42d3-95fa-ecff7646063c,who sang the song here comes the judge,MIRAGE,naturalqa
+mirage:naturalqa:94d51804-a58d-4934-96a1-8daa163c1568,where was the tv version of the shining filmed,MIRAGE,naturalqa
+mirage:naturalqa:18db08ec-26da-4e51-a8b2-d249d0c0b74f,the chapters (suras) of the qur'an are arranged roughly in order of,MIRAGE,naturalqa
+mirage:naturalqa:6329e84d-0d26-41ec-bfb7-83970b2bc7b8,what was the supreme court ruling in engel v vitale,MIRAGE,naturalqa
+mirage:naturalqa:c51e6814-80d9-4f45-b26e-05511d4cb103,which plateau lies to the west of sulaiman range,MIRAGE,naturalqa
+mirage:naturalqa:4499a20b-e3ed-49ab-93d4-2059659829df,when does the buyer take title when property is financed under a land sale contract,MIRAGE,naturalqa
+mirage:naturalqa:09f4f102-ed09-4d1d-9434-08cc3c591827,where does the time change on i 65,MIRAGE,naturalqa
+mirage:naturalqa:fa47f5e2-2512-49c9-b358-bfd82a1c3068,who does mark hamill voice in regular show,MIRAGE,naturalqa
+mirage:naturalqa:0684ecaa-2357-4472-871b-0b6069134eb4,who was the voice of hr puff n stuff,MIRAGE,naturalqa
+mirage:naturalqa:61a21667-fe23-4d02-baa6-bbcab3ff3482,who sings even the man in the moon is crying,MIRAGE,naturalqa
+mirage:naturalqa:3c4ffa70-db02-435c-86c7-e322613a3555,where did the convention of 1833 take place,MIRAGE,naturalqa
+mirage:naturalqa:702750a7-d896-4d91-bf9d-d0fe62ff74fd,who did boots grow up with in the orphanage,MIRAGE,naturalqa
+mirage:naturalqa:689e6321-591e-43e0-b365-430749d4ef59,how is bobby related to sam and dean,MIRAGE,naturalqa
+mirage:naturalqa:898bf90e-6221-4822-9a59-02bb3784350b,when was lodge of the four seasons built,MIRAGE,naturalqa
+mirage:naturalqa:b8a8c359-70ea-4c90-a65d-2fc0f10b9c6d,who wrote 13 books of the new testament,MIRAGE,naturalqa
+mirage:naturalqa:ae2e70b8-5c05-4d5a-8e84-4030f07e8e41,when did the first rocket go into space,MIRAGE,naturalqa
+mirage:naturalqa:4d77d0f2-b8a9-4190-b196-d6187003d681,which instrument is used to measure the speed of light,MIRAGE,naturalqa
+mirage:naturalqa:b8a10639-1adc-4043-9f99-87d5f1e0868d,when did iced coffee become popular in the us,MIRAGE,naturalqa
+mirage:naturalqa:094a8214-1820-4895-89c2-d636ef0857be,when did the king kong ride burn down,MIRAGE,naturalqa
+mirage:naturalqa:d88fce1e-0c89-431a-a4c6-41469a39717c,when was the women's boat race first televised,MIRAGE,naturalqa
+mirage:naturalqa:078e62ea-415d-47f3-914b-60372be5446f,who was the last pow released from vietnam,MIRAGE,naturalqa
+mirage:naturalqa:b0e02070-ee57-42b0-ba91-663e5058b77a,where is mesh placed in inguinal hernia repair,MIRAGE,naturalqa
+mirage:naturalqa:f269053b-c1c1-4ba9-a2ef-3373907592fc,an important ottonian church was built at hildesheim under,MIRAGE,naturalqa
+mirage:naturalqa:ff312569-6162-430b-b8a5-6bf4f990a2b6,who sang with you i'm born again,MIRAGE,naturalqa
+mirage:naturalqa:9b067deb-0fde-49bd-b865-1ac0bbfceccf,which property is used ti identify the electric charge on the object,MIRAGE,naturalqa
+mirage:naturalqa:21761f0b-8ca2-4d79-a3a0-d34e05e9557e,what does it mean to be in the catbird seat,MIRAGE,naturalqa
+mirage:naturalqa:b59de824-c591-43f7-b2f4-a6fb0ca08678,who sang i won't take less than your love,MIRAGE,naturalqa
+mirage:naturalqa:0a0a947c-8a31-439f-ba99-914d5b0f3eb0,where is the ogden hotel in las vegas,MIRAGE,naturalqa
+mirage:naturalqa:c0ed32dd-aeeb-42be-b405-4cc50f1eb808,where was indian independence league formed in 1942,MIRAGE,naturalqa
+mirage:naturalqa:a85f5b8e-48e4-4a90-9a28-760efab61959,when was the last time wales won the rugby world cup sevens,MIRAGE,naturalqa
+mirage:naturalqa:047ac0cf-32cd-49a0-ab9b-82bc8f1ad06c,who is the girl in the video i don't want this night to end,MIRAGE,naturalqa
+mirage:naturalqa:0b3ee7f9-5168-4bc6-9285-270b9405372b,when did the samsung galaxy core prime come out,MIRAGE,naturalqa
+mirage:naturalqa:17392fe3-674c-4d82-8517-f0ce5e4ed18e,when is the major league baseball home run hitting contest,MIRAGE,naturalqa
+mirage:naturalqa:753a8701-a8a7-48a3-993d-395bfa1fbe34,what is the plain of jars in laos,MIRAGE,naturalqa
+mirage:naturalqa:b6d01f7e-0ca4-41a1-be1d-befc70dc6e5f,who is the president of the university of virginia,MIRAGE,naturalqa
+mirage:naturalqa:182ace3f-a5cb-4c45-8a16-dd43a38fc0da,what movie has the song upside down in it,MIRAGE,naturalqa
+mirage:naturalqa:25585196-92c3-4dc0-a2ec-8e1b6dad7a5f,the movement of an aircraft about its normal axis is called,MIRAGE,naturalqa
+mirage:naturalqa:091f53db-c331-4001-8bf4-2b07fb16b997,what mountain range runs along the borders of italy france and switzerland,MIRAGE,naturalqa
+mirage:naturalqa:eb540a6d-57e7-4190-806a-f74af6ff84f4,who sings if i could kiss you tonight,MIRAGE,naturalqa
+mirage:naturalqa:885c0289-9396-4441-ad0a-d1a98211a415,who played the role of 'chandrakanta' in the serial 'chandrakanta',MIRAGE,naturalqa
+mirage:naturalqa:43c19a3d-bc52-44b1-9df1-6a0d896a2037,where is the great british sewing bee filmed,MIRAGE,naturalqa
+mirage:naturalqa:56fd9866-0d01-4b33-8c0f-04f76eef66fa,who said if you find yourself in a hole stop digging,MIRAGE,naturalqa
+mirage:naturalqa:d96876d6-ec2f-456e-a319-af2b6cd8cfa0,who does the coal mining safety & health act apply to,MIRAGE,naturalqa
+mirage:naturalqa:d82b8870-816d-4678-9b06-fe8c964a665e,who is trying to kill bea in wentworth,MIRAGE,naturalqa
+mirage:naturalqa:91d77555-a3b3-4820-9ae0-33f6e1d73772,who did villanova lose to in the 2017 tournament,MIRAGE,naturalqa
+mirage:naturalqa:22e27b13-75a5-4ee1-a3ff-904d66e4934c,where was the music video what if filmed,MIRAGE,naturalqa
+mirage:naturalqa:b64bd6bf-d850-48da-a973-6e998ca0c3ce,at the apex of cahokia the population stood at,MIRAGE,naturalqa
+mirage:naturalqa:7affc6ae-c3e8-48a8-a39e-f486b5baecf9,why was the deed of cession important to fijis history,MIRAGE,naturalqa
+mirage:naturalqa:1f2e9113-e95e-4e92-835d-9ac21a2db146,who is the first to flee in the battle of maldon and why did he flee,MIRAGE,naturalqa
+mirage:naturalqa:34a6287a-fce1-40f2-9c6f-cbe5a8a0d5e6,when did the first syrian refugees come to canada,MIRAGE,naturalqa
+mirage:naturalqa:f4d3ee51-76ac-43d6-ad7c-75d05b08b4a9,what is the song brown eyed girl about,MIRAGE,naturalqa
+mirage:naturalqa:19782307-c8a7-4c17-acf7-54bb9588aa35,where does the term here here come from,MIRAGE,naturalqa
+mirage:naturalqa:6d74c873-2ec0-43ba-a22b-81ff70793a78,what episode of supernatural does crowley first appear in,MIRAGE,naturalqa
+mirage:naturalqa:af631df5-5d2f-41f3-93e7-5d67f1216123,the inventor of the popular roll-film camera was,MIRAGE,naturalqa
+mirage:naturalqa:fff7cdd5-0db0-4988-ba9d-ef63bb69037c,who does lennie choose in the sky is everywhere,MIRAGE,naturalqa
+mirage:naturalqa:485c5175-a817-4f9f-a2fc-34f3c078356b,who was the last woman to be hanged in ireland,MIRAGE,naturalqa
+mirage:naturalqa:e8fb65da-96e8-435e-b168-1f70626b2762,where was the headquarters for the continental army,MIRAGE,naturalqa
+mirage:naturalqa:230ec1d1-d73a-4c2b-bf85-ebb3e22caf2c,what u.s. legend of the old west became a sports editor for the new york morning telegraph,MIRAGE,naturalqa
+mirage:naturalqa:d4910723-c05e-4835-a0b4-0bee6b79245b,when does the movie dog days come out,MIRAGE,naturalqa
+mirage:naturalqa:2f91082d-b7c9-43ba-9ea1-31d5a492b2e2,the land of steady habits where was it filmed,MIRAGE,naturalqa
+mirage:naturalqa:d6d9e5ab-3f18-4425-929f-9de3c5becf44,who is wennerstrom in the girl with the dragon tattoo,MIRAGE,naturalqa
+mirage:naturalqa:1dbaeda1-c31c-4a5e-8ff9-0964615e898e,where does rabbit live in winnie the pooh,MIRAGE,naturalqa
+mirage:naturalqa:12d5802b-7847-4472-be38-8909f1845608,when was the palace pier in brighton built,MIRAGE,naturalqa
+mirage:naturalqa:25c42a87-e8f4-4ead-be03-49b0d3105c5e,what is the percentage of upper middle class in america,MIRAGE,naturalqa
+mirage:naturalqa:46e72572-f384-4470-a5d9-3ea6211be802,when did grand theft auto 3 come out,MIRAGE,naturalqa
+mirage:naturalqa:34873f04-1fcf-43c4-ac27-d59edd8daabe,when did the new alex box stadium open,MIRAGE,naturalqa
+mirage:naturalqa:7e65f2cc-54c6-4d62-9568-897114473726,who sings i'll do anything for you,MIRAGE,naturalqa
+mirage:naturalqa:66d24fbd-9e2b-4e1d-903d-b369ee640a19,who sang my name is jack and i live in the back,MIRAGE,naturalqa
+mirage:naturalqa:5d39c0b9-f7fc-4211-96d6-aecaa7accd3d,who played mary ellen rogers on leave it to beaver,MIRAGE,naturalqa
+mirage:naturalqa:e57198d9-ce60-4dc8-8d2f-4324d57cd115,where are the new winchester model 70s made,MIRAGE,naturalqa
+mirage:naturalqa:d21f3cf0-93ce-4ba7-8e2f-808b5d059110,what is richard's last name in tommy boy,MIRAGE,naturalqa
+mirage:naturalqa:da1964c7-75b6-49aa-91b9-417e394852c5,what kind of government does israel have today,MIRAGE,naturalqa
+mirage:naturalqa:5aa8d2cb-fbf5-4379-b314-ca401f59aa0a,who is credited as the founder of entomology as a science,MIRAGE,naturalqa
+mirage:naturalqa:875a9750-e201-4a32-9fd5-db924d53cf57,who plays ron in a very potter musical,MIRAGE,naturalqa
+mirage:naturalqa:b0207003-97cb-4fb7-8def-82b20593ce0d,what is the discovery institute's center for science and culture agenda with regard to evolution,MIRAGE,naturalqa
+mirage:naturalqa:e95b966b-52c2-44b0-bf23-2ff2268aab3d,la belle indifference describes which feature of a psychological disorder,MIRAGE,naturalqa
+mirage:naturalqa:ccb2c894-d0d7-4f6a-acaf-ae0a65100e5a,who is merle haggard singing about in the song leonard,MIRAGE,naturalqa
+mirage:naturalqa:96c5ff0e-4028-4126-b9fe-0b6263e6fa93,purpose of the rule of nines when treating burn victims,MIRAGE,naturalqa
+mirage:naturalqa:27cd7f54-0199-403b-a578-3636809d45ef,what is the name of the plain in westmoreland,MIRAGE,naturalqa
+mirage:naturalqa:cc5d17f9-eeae-400d-bfbb-e1b3b2a8ccd0,where is area code 931 located in usa,MIRAGE,naturalqa
+mirage:naturalqa:f1176802-8811-4e33-ba79-0791a39b7158,when was the last time sunderland were relegated,MIRAGE,naturalqa
+mirage:naturalqa:168fdba9-05e4-46b3-96b8-05a8fe84e48f,a language used for describing the appearance of a printed page is called,MIRAGE,naturalqa
+mirage:naturalqa:00acbdb7-0afa-4f62-81b7-a95e501336a4,in day of the locust where is tod hackett originally from,MIRAGE,naturalqa
+mirage:naturalqa:249b38ec-8714-4f78-968d-0cc56b1c4b69,joanne froggatt coronation street who did she play,MIRAGE,naturalqa
+mirage:naturalqa:3142f090-64e6-49a6-8ad1-6e6ad7e3ab37,what does the letters in sos stand for,MIRAGE,naturalqa
+mirage:naturalqa:f9c12c42-028c-4ea2-b293-62447a64bdfb,the stimulus package proposed by the bush administration in early 2008 relied upon,MIRAGE,naturalqa
+mirage:naturalqa:c6578205-2313-46a1-8361-a5022839fae3,who was chris fountains partner on dancing on ice,MIRAGE,naturalqa
+mirage:naturalqa:63755016-b0e1-4404-a2ea-3d0c0b712513,in what year did brothers first start selling pear cider at glastonbury festival,MIRAGE,naturalqa
+mirage:naturalqa:4305bd96-d43b-4259-8672-10af706af8d8,what is the average gaa in the nhl,MIRAGE,naturalqa
+mirage:naturalqa:2f112c05-7aa2-4890-bec1-56205fddc5dd,how many episodes of sea patrol are there,MIRAGE,naturalqa
+mirage:naturalqa:48c22313-3ec0-409d-a9e9-d6d166d32f06,the ataxic form of cerebral palsy results from damage to the,MIRAGE,naturalqa
+mirage:naturalqa:2a478916-5e0f-43cf-9af3-e71d1ddd0734,when was st patrick's day first celebrated,MIRAGE,naturalqa
+mirage:naturalqa:92a2b999-e5b7-428c-933e-4761b5545342,who controlled the house and senate in 2010,MIRAGE,naturalqa
+mirage:naturalqa:aeee945e-0d03-4a9a-be8e-9395ad3f4177,when does women's world cup qualifying start,MIRAGE,naturalqa
+mirage:naturalqa:9da99def-8733-4992-8b42-72b4ffe0bccd,who sang one tin soldier in billy jack,MIRAGE,naturalqa
+mirage:naturalqa:b0bdbe59-c98e-4497-9629-b6b09e41b141,when was sociology's code of ethics first published quizlet,MIRAGE,naturalqa
+mirage:naturalqa:8cbd9a37-be30-47a1-a163-298e2a749772,who wrote the song mary in the morning,MIRAGE,naturalqa
+mirage:naturalqa:f1c6bf84-73a4-40e1-9e5e-e92a97cbbbe0,where is the statue from midnight in the garden of good and evil,MIRAGE,naturalqa
+mirage:naturalqa:226b1acb-52ac-4bca-81c7-8b16391b4718,when did ju ju on that beat come out,MIRAGE,naturalqa
+mirage:naturalqa:3c516f41-fdb5-4fa4-a335-d4e41449ce7a,when does the next series of lucky man start,MIRAGE,naturalqa
+mirage:naturalqa:5ce13428-48a1-485f-bb28-4755533e9734,who did kansas city lose to last year in the playoffs,MIRAGE,naturalqa
+mirage:naturalqa:aaf0b598-dd5f-4e81-b118-98c8105b1484,where is the steve harvey talk show filmed at,MIRAGE,naturalqa
+mirage:naturalqa:d92ac055-3bc1-4011-abf1-ed1e9e79d0af,who sang if the devil danced in empty pockets,MIRAGE,naturalqa
+mirage:naturalqa:26716559-3194-48b4-aee1-139e664ad211,who sings jesus and momma always loved me,MIRAGE,naturalqa
+mirage:naturalqa:aea13642-1d77-4f87-95cc-6d9fbf3139ec,who wrote the song good directions by billy currington,MIRAGE,naturalqa
+mirage:naturalqa:1e242b00-32ce-4823-b196-7a01d355ad99,who sings something coming in west side story,MIRAGE,naturalqa
+mirage:naturalqa:893c6c38-3aa0-4eea-bc68-67d01e6dd2fa,the african prime minister who first came to power in ghana,MIRAGE,naturalqa
+mirage:naturalqa:91fd22b3-ac1d-4144-b710-945f723cbb98,how much points did lavar ball average in college,MIRAGE,naturalqa
+mirage:naturalqa:02556af3-b594-4f08-82a7-b9f7fb3be2b3,who wrote the song dimming of the day,MIRAGE,naturalqa
+mirage:naturalqa:fea914cf-2cd1-432e-bf8f-1d098788b747,who is on the cover of the contra album,MIRAGE,naturalqa
+mirage:naturalqa:1b1625d5-c1bc-415f-bda7-e600a7a174c3,who plays david harrington on the haves and have nots,MIRAGE,naturalqa
+mirage:naturalqa:698f933a-b21f-4933-bc47-1936a72987fc,who wrote the theme song for the tv show mash,MIRAGE,naturalqa
+mirage:naturalqa:b2a41fa5-eb35-4178-81b4-5c53ad750cde,who sings the song everybody's talkin at me,MIRAGE,naturalqa
+mirage:naturalqa:e9303a95-d00a-4d9a-9fb1-00437794daac,where was one more from the road recorded,MIRAGE,naturalqa
+mirage:naturalqa:bd3f5241-f77b-479e-a353-639b6bbb0c85,when did the eminem show cd come out,MIRAGE,naturalqa
+mirage:naturalqa:1f48639b-8d9c-46fc-bd3e-3436be0cb6a9,who wrote the love that i have is all that i have,MIRAGE,naturalqa
+mirage:naturalqa:e374a01d-19d4-4df2-9299-27875d6d9ac0,who sang for the rest of my life,MIRAGE,naturalqa
+mirage:naturalqa:cff6d951-cb4e-4789-a303-90e082143dec,when was the golden nugget in atlantic city built,MIRAGE,naturalqa
+mirage:naturalqa:218eb4ed-22b7-4ec0-9571-7715fb4dc193,when does jack of red hearts come out,MIRAGE,naturalqa
+mirage:naturalqa:e1b51ea8-13c0-4069-9782-dbc8e648f777,who won the battle of fisher's hill,MIRAGE,naturalqa
+mirage:naturalqa:76779d21-4f61-4246-bd60-62b2df0166cc,what is the canada us air quality agreement,MIRAGE,naturalqa
+mirage:naturalqa:0c0d211e-4342-4dee-a1b2-dd5e15c6478c,how many hotels are in new york city,MIRAGE,naturalqa
+mirage:naturalqa:7a3470f2-fd9c-4738-981e-1bc6871150ca,when was new super mario bros wii made,MIRAGE,naturalqa
+mirage:naturalqa:2d6293c8-b242-42e3-90fe-02ff15d78e55,who plays sally on flight of the conchords,MIRAGE,naturalqa
+mirage:naturalqa:c2680d33-86ae-4834-a374-4adf545d9882,who did natalie hall play in pretty little liars,MIRAGE,naturalqa
+mirage:naturalqa:1136dc83-04cb-478a-b12f-8bb53f229636,who played julia on as the world turns,MIRAGE,naturalqa
+mirage:naturalqa:cc610800-361b-4d86-bc54-122f8ed8fa08,when did every light in the house is on come out,MIRAGE,naturalqa
+mirage:naturalqa:4a0ab616-1fca-4c99-9824-5046d78b39e4,where is the town of fortitude supposed to be,MIRAGE,naturalqa
+mirage:naturalqa:c8083789-0407-48ac-8daa-6e64884378d5,when was the last time two hurricanes hit the united states,MIRAGE,naturalqa
+mirage:naturalqa:e60375f8-6bd0-4bd0-9ae9-91bcd1af0917,when did rugby league go professional in australia,MIRAGE,naturalqa
+mirage:naturalqa:304a7164-2cb5-4b67-a7b6-a4fd29c93502,who pays for paid family leave in california,MIRAGE,naturalqa
+mirage:naturalqa:3a1fe6a4-7d3f-466a-a228-db5d9599f17e,what is the population of the fargo moorhead area,MIRAGE,naturalqa
+mirage:naturalqa:7005fccb-e475-453e-b6a7-fbbf35d8411b,what is the function of pharyngeal pouches in aquatic chordates,MIRAGE,naturalqa
+mirage:naturalqa:c391025b-16f7-4a5c-a570-763f519c0fdf,in india which businessman had pilot license number one,MIRAGE,naturalqa
+mirage:naturalqa:d1f55c61-e4e5-4d12-8be2-edc4f88d674b,journal of the kansas entomological society impact factor,MIRAGE,naturalqa
+mirage:naturalqa:ccdfdb68-a8c5-4883-8d5e-6225bf727ecf,how abundant is calcium in the earth's crust,MIRAGE,naturalqa
+mirage:naturalqa:e3d1f213-84e2-4c15-b482-f8bb6f642b61,who wrote i'm a dreamer by living joy,MIRAGE,naturalqa
+mirage:naturalqa:861b9c66-3d01-4c41-8076-b78a320e9f78,who is the girl in she's so lovely video,MIRAGE,naturalqa
+mirage:naturalqa:f70c5393-3020-482b-af4f-bb84d7f68b99,who sings let it rock let it roll,MIRAGE,naturalqa
+mirage:naturalqa:74eda7a1-b2d2-4827-a036-a3db3ae85ba9,when was golf first played in the olympics,MIRAGE,naturalqa
+mirage:naturalqa:6e823b86-3a80-4210-bc4f-b66993899e1a,how much did matt damon win in rounders,MIRAGE,naturalqa
+mirage:naturalqa:d4430b18-0bfa-418b-b76b-7af07cc7d8bb,where does the last name ruiz come from,MIRAGE,naturalqa
+mirage:naturalqa:f2b708dd-ff6d-4538-9b91-ac39f99be3d7,who was considered for the role of gabbar first,MIRAGE,naturalqa
+mirage:naturalqa:3d3bf5e8-5c1b-489b-b66f-9e11169f1d81,who plays missy in love's enduring promise,MIRAGE,naturalqa
+mirage:naturalqa:2c65462c-487f-4e8d-be23-419959730567,animal that live both on land and in water,MIRAGE,naturalqa
+mirage:naturalqa:f76c15e5-7b1f-4825-a20e-0f7398d7da06,what breed of dog has won the most best in show crufts,MIRAGE,naturalqa
+mirage:naturalqa:bcaa83dd-a97c-4bf6-9d1a-81eac5110ce8,what do you get with my coke rewards,MIRAGE,naturalqa
+mirage:naturalqa:015a400e-89bc-49fc-8404-1de3238b795e,where does fight the good fight come from,MIRAGE,naturalqa
+mirage:naturalqa:770751a2-f87f-4bf2-a8e7-2a23fa7d19c9,what is the real name of karan luthra,MIRAGE,naturalqa
+mirage:naturalqa:02e79187-40dd-4fe8-954f-1f299cb842d7,when did the first episode of rugrats air,MIRAGE,naturalqa
+mirage:naturalqa:a210c249-21d6-4b1a-9d9f-fd29730c94db,what was sarah lancaster name in coronation street,MIRAGE,naturalqa
+mirage:naturalqa:d613acae-736b-48fd-9afe-59f4b1240c34,when did the jaguar e pace come out,MIRAGE,naturalqa
+mirage:naturalqa:73a186a1-cba8-4380-9dc7-a97d0b4878a4,where was beneath the 12 mile reef filmed,MIRAGE,naturalqa
+mirage:naturalqa:d1e5c00c-656a-439e-884a-4c9fdb86fb64,who drained the marshes of medoc in bordeaux france planting small vineyards,MIRAGE,naturalqa
+mirage:naturalqa:7206e993-346a-4b3a-8ed3-65c67dff6dc5,where does the uterine artery anastomoses with the ovarian artery,MIRAGE,naturalqa
+mirage:naturalqa:b64f6208-298f-4ff3-85f0-dd835af2af7b,when did the movie country bears come out,MIRAGE,naturalqa
+mirage:naturalqa:f72369ec-6291-4de9-8f7c-cfcff9e52a28,where did the story so far get their name,MIRAGE,naturalqa
+mirage:naturalqa:5b37bc6b-2071-4ff8-8bf8-2ddd23163c75,what was commemoration day in uae earlier known as,MIRAGE,naturalqa
+mirage:naturalqa:531be208-88e0-4b43-b91b-96a6ba97ab66,who is the male singer in total eclipse of the heart,MIRAGE,naturalqa
+mirage:naturalqa:d0315d2c-2bc6-482f-9283-e07b03fef1e6,what is the meaning of the name adelaide,MIRAGE,naturalqa
+mirage:naturalqa:26932980-5c82-4edc-83d0-71f5aacd2502,where did the gabbie show go to college,MIRAGE,naturalqa
+mirage:naturalqa:73166935-0790-4832-a775-3b979ddefdb0,when does the twenty one pilots tour end,MIRAGE,naturalqa
+mirage:naturalqa:a0c16e84-43da-461c-aaf6-a82809c96cb7,who is frank supposed to be in donnie darko,MIRAGE,naturalqa
+mirage:naturalqa:e314765b-003c-472d-a1a9-6fb523febc92,the development of a mid-latitude cyclone according to the norwegian model begins along the​,MIRAGE,naturalqa
+mirage:naturalqa:46c60080-3898-4e9e-8a4c-e22184408f64,who is the actress that plays the darkness in supernatural,MIRAGE,naturalqa
+mirage:naturalqa:8eb0d8e4-fcb5-4b75-a469-5509672d953d,formal balance is another word for which type of balance,MIRAGE,naturalqa
+mirage:naturalqa:09e2931c-09fa-4db9-a4b5-39c2f97d7cb6,where is the american athletic conference championship game held,MIRAGE,naturalqa
+mirage:naturalqa:523963b0-6f8b-4427-b67d-b04b8542c271,where is the calf of the leg located,MIRAGE,naturalqa
+mirage:naturalqa:56c2113e-6eef-4704-b207-6a20d7cbfd99,who lives the longest in the united states,MIRAGE,naturalqa
+mirage:naturalqa:f5e7f92e-b375-4b1b-8c2b-bbebbe6f088d,whats the name of the kellogg's rooster,MIRAGE,naturalqa
+mirage:naturalqa:3773d9b3-8b65-4ea7-9bc0-6f5d630a9157,who wrote i always get lucky with you,MIRAGE,naturalqa
+mirage:naturalqa:29945fae-1d47-4ec8-914e-2f5503690316,in which topology is the central connecting device known as a multistation access unit (mau),MIRAGE,naturalqa
+mirage:naturalqa:e1ff5db2-763f-42dd-8c30-9ad311a99bc3,where is port au prince located in haiti,MIRAGE,naturalqa
+mirage:naturalqa:051d0674-57d0-4858-8a7e-edc2f540c4bd,who bombed guernica during the spanish civil war,MIRAGE,naturalqa
+mirage:naturalqa:54323a49-f4c1-44a9-b839-c63e1315795c,when did wirral postcode change from l to ch,MIRAGE,naturalqa
+mirage:naturalqa:5030660f-c2de-4bb2-a1f1-613c48fcd8f3,who did man city beat to win the league,MIRAGE,naturalqa
+mirage:naturalqa:815a3cc3-fb1d-4e54-86fd-e74ff42c6470,in the canterbury tales who is the prioress,MIRAGE,naturalqa
+mirage:naturalqa:f1c1176e-4ae9-4ed1-9220-89ad1a64396a,where does lost in the barrens take place,MIRAGE,naturalqa
+mirage:naturalqa:152dca22-09f0-4340-acb4-e32ce05c16dd,what three main things does a soundscape include,MIRAGE,naturalqa
+mirage:naturalqa:d4d369d2-a8e6-4aba-9d96-9fee7f4adc22,when did the dockers play in the grand final,MIRAGE,naturalqa
+mirage:naturalqa:c62a29de-1805-488b-b434-a44360118e04,who plays aladdin in once upon a time,MIRAGE,naturalqa
+mirage:naturalqa:688355ce-81bb-43d2-86c1-0d44dddfa5ed,who founded the first early childhood education program,MIRAGE,naturalqa
+mirage:naturalqa:04615435-ce54-410d-abb5-35bce105132d,how many hms hood's have there been,MIRAGE,naturalqa
+mirage:naturalqa:7cd1f303-e11a-414d-a554-0e4115cebf8c,who played guitar on midnight at the oasis,MIRAGE,naturalqa
+mirage:naturalqa:20bf4a26-5973-4095-b296-2e358cf3b14e,when is vip 2 release date in india,MIRAGE,naturalqa
+mirage:naturalqa:72e13db3-1f37-40be-afbd-bc1d12b4819b,who is betagold in the gospel according to larry,MIRAGE,naturalqa
+mirage:naturalqa:2a02748f-f4e7-4d5f-953c-a0a5305d18e1,who does yankumi end up with in gokusen,MIRAGE,naturalqa
+mirage:naturalqa:b505c6f7-4440-4848-9651-6b8ac9ffb4d2,who sings new york city with the chainsmokers,MIRAGE,naturalqa
+mirage:naturalqa:7809a3bf-da7a-4af6-8745-773a62e19649,how many shipwrecks are there in the great lakes,MIRAGE,naturalqa
+mirage:naturalqa:6915c9b5-98b7-4bd9-8505-8506c34c8a49,where are hogs and pigs raised in the world,MIRAGE,naturalqa
+mirage:naturalqa:99a3f862-71d4-41e0-8cd6-8492e383513b,in quebec which bill of rights takes precedence that of quebec or that of canada,MIRAGE,naturalqa
+mirage:naturalqa:6f1aa1db-dc9a-4afc-8a56-a6f425bd967f,what season of big brother was vanessa on,MIRAGE,naturalqa
+mirage:naturalqa:021fb235-0c79-40f0-ae6b-cce4d3cc08dd,what do you call a car without a roof,MIRAGE,naturalqa
+mirage:naturalqa:0de2924f-f178-49dd-ad81-73f12d1cdbc9,what is the biggest cash crop in kentucky,MIRAGE,naturalqa
+mirage:naturalqa:2e8868d3-7056-41ae-9eaa-1202b7e56ef7,where are the green mountains located on a map,MIRAGE,naturalqa
+mirage:naturalqa:5e1a5ef8-b61b-4c70-bcca-a1df4361dcdd,where does thunder bay get its name from,MIRAGE,naturalqa
+mirage:naturalqa:c9821152-e4ad-4d74-ad2b-d135aee10ece,what was added to the illinois state flag in 1969,MIRAGE,naturalqa
+mirage:naturalqa:4a2d0e3e-0a2a-4153-a675-1d3230b4c54c,when was the first ever zumba instructor training conducted,MIRAGE,naturalqa
+mirage:naturalqa:e3afa1f9-49db-44f4-b45a-a43edca52284,who does the voiceover for ice road truckers,MIRAGE,naturalqa
+mirage:naturalqa:5b52b353-87e5-4bcc-a1c1-0131a2a067ba,what is the meaning of bandar in english,MIRAGE,naturalqa
+mirage:naturalqa:5f4e44ba-b3df-4f2c-ad8d-4ff9ab42946b,who is the managing director of access bank,MIRAGE,naturalqa
+mirage:naturalqa:7aa1d8c3-0fe9-4b5e-ab14-c32deb8a79b8,who brought the first lemon seeds to america,MIRAGE,naturalqa
+mirage:naturalqa:7f0c5861-b758-4b93-8772-fee18d10ea1a,where was a major strike held in poland,MIRAGE,naturalqa
+mirage:naturalqa:d9f492c3-1d13-4ca7-ad9c-2b9c90d67898,what do they call snowboarders in johnny tsunami,MIRAGE,naturalqa
+mirage:naturalqa:245117b1-0d57-41b8-b4b5-6556234ad020,uae minister of foreign affairs and international cooperation,MIRAGE,naturalqa
+mirage:naturalqa:c846b978-a3dc-4995-ab3a-bbef2fe0af23,where are the walking legs of crustaceans found,MIRAGE,naturalqa
+mirage:naturalqa:43a0fd28-97c4-4d61-ae56-a5be74703b47,misfits who does simon lose his virginity to,MIRAGE,naturalqa
+mirage:naturalqa:9f8fcf86-032a-4143-aadc-7c9337d56dd4,how many horse hairs are on a violin bow,MIRAGE,naturalqa
+mirage:naturalqa:505cebdd-1d75-435a-ae53-6e7940ef82c2,when were electric trains introduced in the uk,MIRAGE,naturalqa
+mirage:naturalqa:0e721a84-eb90-4963-b8b1-5545cfd445e2,where is battleground 2017 going to be at,MIRAGE,naturalqa
+mirage:naturalqa:43098409-2266-4a7b-8ec6-f82973449e38,the kinked demand curve in oligopoly is used to explain,MIRAGE,naturalqa
+mirage:naturalqa:8cdc687d-016f-43b7-9c5e-27f6242502c6,official residence of south african president in cape town,MIRAGE,naturalqa
+mirage:naturalqa:dded9671-7952-4b74-8a33-a9f6fc09b358,where are chief cells found in the stomach,MIRAGE,naturalqa
+mirage:naturalqa:ebd70ce3-d9bc-4649-b008-cffad43345d8,what type of chemicals are dhea and androstenedione,MIRAGE,naturalqa
+mirage:naturalqa:c45ba315-e340-4d12-8088-c02f5fcc147f,when was the last time china was in the world cup,MIRAGE,naturalqa
+mirage:naturalqa:8830b86a-46bf-467d-8cd3-be7fe70fc28d,the school of gymnastics is called in athens as,MIRAGE,naturalqa
+mirage:naturalqa:69ee4b9d-a056-450d-af8d-7d667ec0b444,who played larry mondello in leave it to beaver,MIRAGE,naturalqa
+mirage:naturalqa:5b37b2fc-3915-474f-947a-3f9e0e9e2646,how many islands are there in the polynesian triangle,MIRAGE,naturalqa
+mirage:naturalqa:7e0df936-63c5-48b8-a0dd-e249b9937563,who plays noel kahn in pretty little liars,MIRAGE,naturalqa
+mirage:naturalqa:b3304fa8-c8d7-459e-b7c3-99c7de8236b9,who sang the original version of my maria,MIRAGE,naturalqa
+mirage:naturalqa:55ef4a51-9f59-4102-a803-0d28424a21fd,where does laughter come from in the body,MIRAGE,naturalqa
+mirage:naturalqa:027feee9-fcd1-448d-9dd3-d0db11d75431,who sang if you're looking for a way out,MIRAGE,naturalqa
+mirage:naturalqa:63947709-9039-44b4-99d6-5b00d6a8d9f2,tenderness on pressure at mcburney point is a diagnostic indicator of,MIRAGE,naturalqa
+mirage:naturalqa:aa8c4e25-28af-4ade-b29b-badbb76049ff,man's best friend movie what kind of dog,MIRAGE,naturalqa
+mirage:naturalqa:ceca0598-8e1a-4131-95d6-3dd364401ff8,man who ran for president with boot on head,MIRAGE,naturalqa
+mirage:naturalqa:79ad5f3d-6431-4d05-9b12-a2cfe1cddbc0,who played the role of shakuni in mahabharat 2013,MIRAGE,naturalqa
+mirage:naturalqa:758fc9ad-29a3-4fa5-bb61-7102f6d4f36d,what is the largest outdoor mall in america,MIRAGE,naturalqa
+mirage:naturalqa:653737fc-1f49-417d-9a02-d700beefa86c,where did they film hot tub time machine,MIRAGE,naturalqa
+mirage:naturalqa:297af2a1-2dc9-41c6-836c-5722890287af,when does kindred spirits come back on 2017,MIRAGE,naturalqa
+mirage:naturalqa:6f8e96a6-b18b-4618-887f-8bf41c1cccf9,who is alma the younger in the book of mormon,MIRAGE,naturalqa
+mirage:naturalqa:f5058627-5b62-42df-b21d-3d64558e8862,when were state pensions introduced in the uk,MIRAGE,naturalqa
+mirage:naturalqa:de809bce-d245-4dc6-be3d-a6f9ee629a51,how many villages are there in phek district,MIRAGE,naturalqa
+mirage:naturalqa:4efa7b5a-078b-4f42-aeec-e682f6cc8395,when did baseball players stop leaving their gloves on the field,MIRAGE,naturalqa
+mirage:naturalqa:55b7dd57-02fe-4ab1-9265-b79705942fda,who migrated to south australia in the colonial era,MIRAGE,naturalqa
+mirage:naturalqa:bf91f1bb-7a30-430c-89f2-fcfbd94851bb,where was the first world youth day held,MIRAGE,naturalqa
+mirage:naturalqa:f96199f8-822a-4da3-875c-9b9e93ed486c,where is shoal creek golf course in alabama,MIRAGE,naturalqa
+mirage:naturalqa:1212eef7-c458-4ebf-9590-f02668dc3661,when did amsterdam become capital of the netherlands,MIRAGE,naturalqa
+mirage:naturalqa:99d22ddd-b4d4-4853-b664-3e405a891b81,when was new york taken by the british,MIRAGE,naturalqa
+mirage:naturalqa:9be437c6-dc80-4b15-8780-7641a0ee9e44,miss world japan 2016 is a great grand child of a former chief minister of,MIRAGE,naturalqa
+mirage:naturalqa:a71de356-b407-484f-9eae-849e4df3df51,rick and morty episode where rick freezes time,MIRAGE,naturalqa
+mirage:naturalqa:2c3670b4-8b36-45c0-a4b3-ca45128d9a29,who plays doug witter on dawson's creek,MIRAGE,naturalqa
+mirage:naturalqa:3d41cf3a-aeb0-45a8-b6b3-5a13493b0dcc,who played mr dewey on saved by the bell,MIRAGE,naturalqa
+mirage:naturalqa:d0479c19-fc57-4c1c-ae73-acba64f75bc5,where does the last name calderon originate from,MIRAGE,naturalqa
+mirage:naturalqa:2377edfe-7f7e-4120-8bd2-146528ba34ec,first blues artist to play the electric guitar,MIRAGE,naturalqa
+mirage:naturalqa:7fc233f3-14f0-4d6c-85b5-76bd3f5b8ec4,where had the man set a fire in 2006 for which he was also arrested and charged,MIRAGE,naturalqa
+mirage:naturalqa:69dd219c-1710-4040-bfec-fc7f552b853a,who gets cut in half in bone tomahawk,MIRAGE,naturalqa
+mirage:naturalqa:1f28ec36-e8ac-4dcb-8153-3a4ebf9925e9,who sings tell me if you still care,MIRAGE,naturalqa
+mirage:naturalqa:21205cca-d5ee-466f-ae7f-d3ae6b628066,when was the first open university established in india,MIRAGE,naturalqa
+mirage:naturalqa:a4dd402e-2495-481b-bd05-b098edf9e66a,who sang amen in lilies of the field,MIRAGE,naturalqa
+mirage:naturalqa:d3e3f147-13b5-4dba-a612-1bc61b326ece,what kind of clams are used for clam strips,MIRAGE,naturalqa
+mirage:naturalqa:f9d9a717-8917-47ea-8542-51c7911335a1,when does the school year start in taiwan,MIRAGE,naturalqa
+mirage:naturalqa:24707889-4468-40eb-9a43-8a9ef7fc92d3,who was donald fisher married to in home and away,MIRAGE,naturalqa
+mirage:naturalqa:f641f3cd-33f7-4b94-97a4-43d648ab108a,according to daniel 7 what did daniel see in his dream,MIRAGE,naturalqa
+mirage:naturalqa:e4e23bd6-581d-4273-907b-5d0d4238ecbd,what ocean zone does the frilled shark live in,MIRAGE,naturalqa
+mirage:naturalqa:7dbdf842-410c-464c-aace-fc26bdb21953,who sings must be the music that's turning me on,MIRAGE,naturalqa
+mirage:naturalqa:c95dc789-b9ab-4cff-8104-bea8f86c9a05,how many games did the oakland raiders win last year,MIRAGE,naturalqa
+mirage:naturalqa:eaad3ff2-057a-4129-b451-3742dadc5835,when does edge of the empire take place,MIRAGE,naturalqa
+mirage:naturalqa:4920affd-3eb6-4499-a91b-0e17c5f2d89e,who sang i got bills i gotta pay,MIRAGE,naturalqa
+mirage:naturalqa:4b6e2d40-14c0-4da3-8e61-3f2d72999cee,who plays the voice of steel in max steel,MIRAGE,naturalqa
+mirage:naturalqa:60aeb348-bbab-4b05-8048-b4f978842084,where was the trail of the lonesome pine filmed,MIRAGE,naturalqa
+mirage:naturalqa:d5d2f72d-5e8e-4bcf-84ee-b7fc35445d00,who sings the song you light up my life,MIRAGE,naturalqa
+mirage:naturalqa:b4da35f5-eef5-4203-ac34-1c8f3fc55360,where is the mls all star game being played,MIRAGE,naturalqa
+mirage:naturalqa:a855c125-211a-4d2d-bb2f-cbef2aa13484,when was here i am to worship written,MIRAGE,naturalqa
+mirage:naturalqa:68874f28-11d5-46a7-89aa-231747eef6fe,who has the most home runs in red sox history,MIRAGE,naturalqa
+mirage:naturalqa:2a59ea78-bd80-4e16-9fe6-16475ca0be32,who won last year’s timico cheltenham gold cup,MIRAGE,naturalqa
+mirage:naturalqa:542da057-8afa-4e86-bc3e-b923edfc30d0,who played superman in the hindi version of the film in 1987,MIRAGE,naturalqa
+mirage:naturalqa:39d87ea8-d472-493e-99a7-98eb293bbcac,what is the meaning of the name fernanda,MIRAGE,naturalqa
+mirage:naturalqa:c215ffca-72fa-45d2-ab78-15efe0ff46ad,who wrote all the way home tamar braxton,MIRAGE,naturalqa
+mirage:naturalqa:29f38b3b-2a85-48b3-9ad6-dbd683358700,where are caucasus mountains located on a map,MIRAGE,naturalqa
+mirage:naturalqa:56ae02be-a365-4ece-8bb1-aed30a46b89b,when was the first comprehensive school opened in england,MIRAGE,naturalqa
+mirage:naturalqa:94046dae-dcd1-47f5-9247-d852c67d8718,who played mary mae ward on general hospital,MIRAGE,naturalqa
+mirage:naturalqa:4811110c-2c79-4067-ae44-8e13574691d6,where was the very first tarzan movie filmed in 1917,MIRAGE,naturalqa
+mirage:naturalqa:31d11be4-235d-44a3-b1da-45daae35bd8d,what is a cake of raisins in the bible,MIRAGE,naturalqa
+mirage:naturalqa:31d55f9e-7c5c-4064-8315-0c82eb486fdf,when was the place de la bastille built,MIRAGE,naturalqa
+mirage:naturalqa:f57eedf4-d73d-4898-874c-334ee249b0ec,what episode of adventure time is lemongrab in,MIRAGE,naturalqa
+mirage:naturalqa:e44e6bbb-d6d5-427b-b5ab-6dd529d9cd2a,who played chips girlfriend polly on my three sons,MIRAGE,naturalqa
+mirage:naturalqa:7c245f5a-537b-4ed2-a34d-b666bb67ed50,where did they film the movie summer rental,MIRAGE,naturalqa
+mirage:naturalqa:3e2ff7f9-e444-4b0d-be53-d4b8c782fb01,when was the last time mount cameroon erupted,MIRAGE,naturalqa
+mirage:naturalqa:3bc5db08-7df7-48f5-a51a-586bdebe6956,who does michael marry in the wedding plan,MIRAGE,naturalqa
+mirage:naturalqa:c2e8d677-ef0d-413f-88d1-3d0b4c818c87,what is the meaning of nilesh in hindi,MIRAGE,naturalqa
+mirage:naturalqa:b9472c74-98e5-4d0e-af17-4b799008badc,when do you need a hearing conservation program,MIRAGE,naturalqa
+mirage:naturalqa:278653a4-47ed-4113-a1b0-2399a1ceaf14,what year did molissa fenley perform state of darkness,MIRAGE,naturalqa
+mirage:naturalqa:0df93d33-2d5b-4276-873b-eb757ad32a85,who sings she only smokes when she drinks,MIRAGE,naturalqa
+mirage:naturalqa:d831815b-772d-4089-a583-a1a5b50e7611,where does the last name atkinson come from,MIRAGE,naturalqa
+mirage:naturalqa:8f8d7e0b-8910-4c87-b3a6-c6a2f80c4030,who voiced uncle ted on bobby's world,MIRAGE,naturalqa
+mirage:naturalqa:95738924-bcfc-45f8-bd29-48c03c6c4770,when does the champions league group stages start,MIRAGE,naturalqa
+mirage:naturalqa:09ee1c68-7198-4fe8-8164-71a171cbd490,what is the top of a pyramid called,MIRAGE,naturalqa
+mirage:naturalqa:8c3bf1c1-dc01-45df-b7fa-371dc469aac3,according to john hopkins university what is the color of the universe,MIRAGE,naturalqa
+mirage:naturalqa:4b5cd469-ce39-4ef4-ac9b-c7b2a0776cb2,what type of currency is used in afghanistan,MIRAGE,naturalqa
+mirage:naturalqa:4c371d64-def0-4cf3-b08e-3fbf3b823aea,who sings zoom zoom zoom and a boom boom,MIRAGE,naturalqa
+mirage:naturalqa:4af0944d-c3ec-4a31-b9f0-2bc7dda1f463,who owns the old course hotel st andrews,MIRAGE,naturalqa
+mirage:naturalqa:5e819854-8c5e-4dd1-b07f-27b8c227547e,who is talking at the beginning of wale matrimony,MIRAGE,naturalqa
+mirage:naturalqa:d4cd764f-d408-48e1-93e8-ce9efb4de994,where is the nehru boat race held in india,MIRAGE,naturalqa
+mirage:naturalqa:5e0cc0b2-9bcf-48a2-bce3-87c75710cfb2,when was the temple of hercules victor built,MIRAGE,naturalqa
+mirage:naturalqa:3bc6802b-a987-4fca-8105-275e75e77017,who plays papi jr in beverly hills chihuahua 2,MIRAGE,naturalqa
+mirage:naturalqa:07eace9c-2b78-4d0e-9858-a8a26501981d,the barkana waterfalls is located in which state,MIRAGE,naturalqa
+mirage:naturalqa:e0d764cc-dc8f-4ef2-baed-7af0d5496c70,how many seasons of young dracula are there,MIRAGE,naturalqa
+mirage:naturalqa:85313a78-700a-4773-aed0-25ea0b6f74a2,where did andy sail to in the office,MIRAGE,naturalqa
+mirage:naturalqa:815e1bd7-6f6f-4027-9e7b-de4a9b24f493,when is the jim jefferies show coming back to comedy central,MIRAGE,naturalqa
+mirage:naturalqa:5bb53fb4-f1ab-4334-bfa6-9577eea20b05,when was model secondary school for the deaf founded,MIRAGE,naturalqa
+mirage:naturalqa:358f7131-e164-4fd7-98d0-bf5522e53fcb,what is the death penalty in south korea,MIRAGE,naturalqa
+mirage:naturalqa:63a37092-fc9d-4c24-95a2-8e14187ec1b2,who owns the golden lamb in lebanon ohio,MIRAGE,naturalqa
+mirage:naturalqa:bd0ae995-90b7-4337-8b2e-11f7be1516c5,who wrote lord have mercy on the working man,MIRAGE,naturalqa
+mirage:naturalqa:6cc74acc-ff73-4f4c-bfd4-43176e1144e1,who killed missy in a bend in the road,MIRAGE,naturalqa
+mirage:naturalqa:09dacc5e-8897-4d63-94d8-fadfcfad51b1,who said have you no sense of decency,MIRAGE,naturalqa
+mirage:naturalqa:316834da-31b3-4e50-a7b6-15ddf4c3272e,why was the battle of carnifex ferry important,MIRAGE,naturalqa
+mirage:naturalqa:702a5f8b-b978-47c5-8db3-fae23e5dc6e6,where did the battle of corinth take place,MIRAGE,naturalqa
+mirage:naturalqa:889f4bb9-3edd-418c-85ba-2dacc801fd56,when did brent barry won the dunk contest,MIRAGE,naturalqa

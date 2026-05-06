@@ -1,0 +1,67 @@
+{
+  "agree": 4765,
+  "agreement_rate": 0.6618055555555555,
+  "by_model_condition": {
+    "Phi-3-Mini-4K-Instruct": {
+      "non_rag": {
+        "agree": 1724,
+        "agreement_rate": 0.7183333333333334,
+        "disagree": 676,
+        "disagreement_rate": 0.2816666666666667,
+        "second_unsafe": 0,
+        "second_unsafe_rate": 0.0,
+        "total": 2400
+      },
+      "rag_docs": {
+        "agree": 1484,
+        "agreement_rate": 0.6183333333333333,
+        "disagree": 916,
+        "disagreement_rate": 0.38166666666666665,
+        "second_unsafe": 3,
+        "second_unsafe_rate": 0.00125,
+        "total": 2400
+      },
+      "rag_llm": {
+        "agree": 1557,
+        "agreement_rate": 0.64875,
+        "disagree": 843,
+        "disagreement_rate": 0.35125,
+        "second_unsafe": 6,
+        "second_unsafe_rate": 0.0025,
+        "total": 2400
+      }
+    }
+  },
+  "by_second_model": {
+    "allenai/wildguard": {
+      "agree": 2378,
+      "agreement_rate": 0.6605555555555556,
+      "disagree": 1222,
+      "disagreement_rate": 0.33944444444444444,
+      "total": 3600,
+      "unsafe": 1,
+      "unsafe_rate": 0.0002777777777777778
+    },
+    "google/shieldgemma-2b": {
+      "agree": 2387,
+      "agreement_rate": 0.6630555555555555,
+      "disagree": 1213,
+      "disagreement_rate": 0.33694444444444444,
+      "total": 3600,
+      "unsafe": 8,
+      "unsafe_rate": 0.0022222222222222222
+    }
+  },
+  "disagree": 2435,
+  "disagreement_rate": 0.33819444444444446,
+  "elapsed_sec": 2039.9315781593323,
+  "include_parse_errors": true,
+  "rows_evaluated": 7200,
+  "scope": "response_all",
+  "second_model_id": [
+    "allenai/wildguard",
+    "google/shieldgemma-2b"
+  ],
+  "second_unsafe": 9,
+  "second_unsafe_rate": 0.00125
+}

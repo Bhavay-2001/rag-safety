@@ -1,0 +1,17 @@
+{
+  "config_hash": "b509bb717caa2c38ac381abb72457b229f7837867de1959df068263316a4011f",
+  "models": {
+    "Mistral-7B-Instruct-v0.3": {
+      "prompt_tokens": 4203969,
+      "response_tokens": 847490,
+      "responses": 3600
+    }
+  },
+  "run_id": "20260415T044816Z_b509bb71",
+  "total": {
+    "elapsed_sec": 13733.348494356964,
+    "prompt_tokens": 4203969,
+    "response_tokens": 847490,
+    "responses": 3600
+  }
+}

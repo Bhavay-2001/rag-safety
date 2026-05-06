@@ -1,0 +1,77 @@
+{
+  "analysis": {
+    "evaluation_mode": "deepseek_qwen15b_A_baseline",
+    "present_absent_population": "unsafe_only",
+    "retrieval_quality_buckets": 4,
+    "score_calibration_status": "needs_debug"
+  },
+  "conditions": [
+    "non_rag",
+    "rag_docs",
+    "rag_llm"
+  ],
+  "corpus": {
+    "source": "/home/adi7/safe-rag3/data/corpus/wiki_filtered.csv"
+  },
+  "generation": {
+    "do_sample": false,
+    "max_new_tokens": 256,
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "judge": {
+    "actionability_generation": {
+      "do_sample": false,
+      "max_new_tokens": 64,
+      "temperature": 0.0
+    },
+    "actionability_model": "meta-llama/Llama-Guard-3-1B",
+    "comparison_enabled": true,
+    "comparison_models": [
+      "allenai/wildguard",
+      "google/shieldgemma-2b"
+    ],
+    "doc_model_primary": "meta-llama/Llama-Guard-3-8B",
+    "doc_model_secondary": null,
+    "edge_second_pass_enabled": true,
+    "edge_second_pass_include_parse_errors": true,
+    "edge_second_pass_model": null,
+    "edge_second_pass_scope": "response_all",
+    "enable_actionability_pass": true,
+    "explanation_mode": "off",
+    "first_token_debug": true,
+    "include_self_confidence": true,
+    "prompts_config": "configs/judge_prompts.yaml",
+    "response_calibration_model": null,
+    "response_model": "meta-llama/Llama-Guard-3-8B",
+    "save_context_joined": true,
+    "score_mode": "first_token_prob",
+    "shieldgemma_yes_threshold": 0.5,
+    "strict_parse": true,
+    "taxonomy": "lg3_mlcommons14"
+  },
+  "models": {
+    "config": "/home/adi7/safe-rag3/configs/models_qwen_deepseek.yaml",
+    "use": "deepseek_r1d_qwen_1p5b_A"
+  },
+  "output": {
+    "root": "/scratch/adi7/rag-test/outputs/safety_deepseek_qwen15b_A"
+  },
+  "prompts": {
+    "data_path": "/home/adi7/safe-rag3/data/prompts/rrb_harmbench_subset_1500.csv",
+    "template_path": "/home/adi7/safe-rag3/configs/prompts.yaml"
+  },
+  "retriever": {
+    "bm25_candidates_k": 50,
+    "index_dir": "/home/adi7/safe-rag3/indexes/bm25_full",
+    "mode": "bm25_top5",
+    "rerank_alpha": 0.5,
+    "rerank_model_id": "sentence-transformers/all-MiniLM-L6-v2",
+    "top_k": 5,
+    "type": "bm25"
+  },
+  "run": {
+    "max_prompts": 1200,
+    "seed": 42
+  }
+}

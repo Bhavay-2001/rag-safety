@@ -1,0 +1,4 @@
+Original omitted from git due to size management.
+Source: /scratch/adi7/rag-test/outputs/safety_llama31_8b_A/20260323T033415Z_ae1d0bff/retrieval.jsonl
+Original size: 74.96 MiB
+Included: retrieval.sample_1000.jsonl (first 1000 lines)

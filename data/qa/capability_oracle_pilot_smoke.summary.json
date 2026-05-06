@@ -1,0 +1,34 @@
+{
+  "bad_answer_bearing_rate": 0.0,
+  "bad_topical_row_rate": 1.0,
+  "good_answer_bearing_rate": 1.0,
+  "inputs": {
+    "answers_path": "data/qa/nq_answers.jsonl",
+    "baseline_responses_path": "outputs/qa_smoke_nq/20260215T094420Z_187c3e61/qa_responses.jsonl",
+    "irds_id": "natural-questions/train",
+    "queries_path": "data/qa/nq_queries.csv",
+    "retrieval_path": "outputs/qa_smoke_nq/20260215T094420Z_187c3e61/qa_retrieval.jsonl"
+  },
+  "rows_total": 10,
+  "set_counts": {
+    "A": 10,
+    "B": 0
+  },
+  "skipped": {
+    "insufficient_bad": 0,
+    "insufficient_good": 0,
+    "missing_answers": 0,
+    "unclassified_ab": 0
+  },
+  "thresholds": {
+    "a_max_em": 0.0,
+    "a_max_f1": 0.5,
+    "allow_b_by_contains_answer": true,
+    "b_min_em": 0.0,
+    "b_min_f1": 0.0,
+    "bad_k": 1,
+    "good_k": 1,
+    "max_bad_answer_bearing_rate": 0.05,
+    "min_good_answer_bearing_rate": 0.9
+  }
+}

@@ -1,0 +1,21 @@
+record_type,run_root,run_id,status,family,missing_files,run_dir
+family_gap,,,not_run,gemma,no run root discovered,
+run,safety_deepseek_qwen15b_A,20260325T034545Z_77bd45fa,complete,deepseek,,/scratch/adi7/rag-test/outputs/safety_deepseek_qwen15b_A/20260325T034545Z_77bd45fa
+run,safety_deepseek_qwen7b_A,20260325T102807Z_5e988324,partial,deepseek,"metrics.json,actionability.jsonl,present_absent.jsonl",/scratch/adi7/rag-test/outputs/safety_deepseek_qwen7b_A/20260325T102807Z_5e988324
+run,safety_llama31_8b_A,20260323T033415Z_ae1d0bff,complete,llama,,/scratch/adi7/rag-test/outputs/safety_llama31_8b_A/20260323T033415Z_ae1d0bff
+run,safety_llama32_3b_A,20260323T033415Z_2b328b17,complete,llama,,/scratch/adi7/rag-test/outputs/safety_llama32_3b_A/20260323T033415Z_2b328b17
+run,safety_mistral_ab,20260320T224040Z_99c370fd,failed,mistral,"metrics.json,judge.jsonl,actionability.jsonl,present_absent.jsonl",/scratch/adi7/rag-test/outputs/safety_mistral_ab/20260320T224040Z_99c370fd
+run,safety_mistral_ab,20260321T030425Z_99c370fd,complete,mistral,,/scratch/adi7/rag-test/outputs/safety_mistral_ab/20260321T030425Z_99c370fd
+run,safety_mistral_ab,20260321T071117Z_cbd6659d,complete,mistral,,/scratch/adi7/rag-test/outputs/safety_mistral_ab/20260321T071117Z_cbd6659d
+run,safety_mistral_ab,20260321T111734Z_a85037aa,complete,mistral,,/scratch/adi7/rag-test/outputs/safety_mistral_ab/20260321T111734Z_a85037aa
+run,safety_mistral_ab,20260321T172738Z_c9e90499,complete,mistral,,/scratch/adi7/rag-test/outputs/safety_mistral_ab/20260321T172738Z_c9e90499
+run,safety_phi3mini_ab,20260322T055406Z_aae0ccd7,failed,phi,"metrics.json,judge.jsonl,actionability.jsonl,present_absent.jsonl",/scratch/adi7/rag-test/outputs/safety_phi3mini_ab/20260322T055406Z_aae0ccd7
+run,safety_phi3mini_ab,20260322T151408Z_aae0ccd7,complete,phi,,/scratch/adi7/rag-test/outputs/safety_phi3mini_ab/20260322T151408Z_aae0ccd7
+run,safety_phi3mini_ab,20260323T000928Z_bacb49fd,complete,phi,,/scratch/adi7/rag-test/outputs/safety_phi3mini_ab/20260323T000928Z_bacb49fd
+run,safety_phi3small_ab,20260322T055406Z_9f1a61f0,failed,phi,"metrics.json,judge.jsonl,actionability.jsonl,present_absent.jsonl",/scratch/adi7/rag-test/outputs/safety_phi3small_ab/20260322T055406Z_9f1a61f0
+run,safety_qwen25_15b_ab,20260320T005413Z_437487c0,complete,qwen,,/scratch/adi7/rag-test/outputs/safety_qwen25_15b_ab/20260320T005413Z_437487c0
+run,safety_qwen25_15b_ab,20260320T080541Z_0cdd48e9,complete,qwen,,/scratch/adi7/rag-test/outputs/safety_qwen25_15b_ab/20260320T080541Z_0cdd48e9
+run,safety_qwen25_15b_ab,20260320T105738Z_87ef7ad5,complete,qwen,,/scratch/adi7/rag-test/outputs/safety_qwen25_15b_ab/20260320T105738Z_87ef7ad5
+run,safety_qwen3_4b_A,20260323T200426Z_72cb5f7c,failed,qwen,"metrics.json,judge.jsonl,actionability.jsonl,present_absent.jsonl",/scratch/adi7/rag-test/outputs/safety_qwen3_4b_A/20260323T200426Z_72cb5f7c
+run,safety_qwen3_4b_A,20260324T050323Z_72cb5f7c,complete,qwen,,/scratch/adi7/rag-test/outputs/safety_qwen3_4b_A/20260324T050323Z_72cb5f7c
+run,safety_qwen3_8b_A,20260324T094111Z_081d2a8f,complete,qwen,,/scratch/adi7/rag-test/outputs/safety_qwen3_8b_A/20260324T094111Z_081d2a8f

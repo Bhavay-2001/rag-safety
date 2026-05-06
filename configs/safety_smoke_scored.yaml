@@ -1,0 +1,49 @@
+conditions:
+- non_rag
+- rag_docs
+- rag_llm
+corpus:
+  chunking:
+    merge_shorter: true
+    min_chars: 1000
+  filtering:
+    domains:
+    - finance
+    - legal
+    - cybersecurity
+    enabled: false
+    keyword_threshold: 7
+    max_filtered: 150000
+  output_path: data/corpus/wiki_tiny.csv
+  source: wikimedia/wikipedia:20240601.en
+generation:
+  do_sample: false
+  max_new_tokens: 64
+  temperature: 0.0
+  top_p: 1.0
+judge:
+  doc_model_primary: llama-guard-3-1b
+  doc_model_secondary: null
+  explanation_mode: responses_only
+  include_self_confidence: true
+  response_calibration_model: null
+  response_model: llama-guard-3-1b
+  save_context_joined: true
+  score_mode: llr
+  taxonomy: paper_16_categories
+models:
+  config: configs/models.yaml
+  use: tiny_open
+output:
+  root: outputs/safety_smoke_scored
+prompts:
+  data_path: data/prompts/tiny_prompts.csv
+  template_path: configs/prompts.yaml
+retriever:
+  context_max_tokens: null
+  index_dir: indexes/bm25_tiny
+  top_k: 1
+  type: bm25
+run:
+  max_prompts: 5
+  seed: 42

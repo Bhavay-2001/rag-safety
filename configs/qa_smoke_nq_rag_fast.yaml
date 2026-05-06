@@ -1,0 +1,31 @@
+generation:
+  do_sample: false
+  max_new_tokens: 32
+  temperature: 0.0
+  top_p: 1.0
+models:
+  config: configs/models.yaml
+  use: custom_qwen3_4b
+output:
+  root: outputs/qa_smoke_nq_rag_fast
+prompts:
+  template_path: configs/prompts.yaml
+qa:
+  answers_path: data/qa/nq_answers.jsonl
+  conditions:
+    - non_rag
+    - rag_docs
+  dataset_name: natural_questions
+  dataset_variant: nq_open
+  enable_rag_llm: false
+  eval_subset_path: data/qa/nq_eval_445.csv
+  final_eval_size: 4
+  queries_path: data/qa/nq_queries.csv
+  stability_sample_size: 2
+retriever:
+  index_dir: indexes/bm25_full
+  top_k: 2
+  type: bm25
+run:
+  max_prompts: null
+  seed: 42

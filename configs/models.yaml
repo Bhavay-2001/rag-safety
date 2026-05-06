@@ -1,0 +1,162 @@
+paper_default:
+- id: meta-llama/Llama-2-7b-chat-hf
+  alias: Llama-2-7B-Chat
+  provider: hf
+- id: meta-llama/Meta-Llama-3-8B-Instruct
+  alias: Llama-3-8B-Instruct
+  provider: hf
+- id: mistralai/Mistral-7B-Instruct-v0.2
+  alias: Mistral-7B-Instruct-V0.2
+  provider: hf
+- id: mistralai/Mistral-7B-Instruct-v0.3
+  alias: Mistral-7B-Instruct-V0.3
+  provider: hf
+- id: microsoft/Phi-3-medium-128k-instruct
+  alias: Phi-3-Medium-128K-Instruct
+  provider: hf
+- id: google/gemma-7b-it
+  alias: Gemma-7B-It
+  provider: hf
+- id: HuggingFaceH4/zephyr-7b-beta
+  alias: Zephyr-7B-Beta
+  provider: hf
+- id: meta-llama/Llama-2-70b-chat-hf
+  alias: Llama-2-70B-Chat
+  provider: hf
+- id: meta-llama/Meta-Llama-3-70B-Instruct
+  alias: Llama-3-70B-Instruct
+  provider: hf
+- id: anthropic/claude-3.5-sonnet
+  alias: Claude-3.5-Sonnet
+  provider: anthropic
+- id: openai/gpt-4o
+  alias: GPT-4o
+  provider: openai
+optional_additions:
+- id: CohereForAI/c4ai-command-r-v01
+  alias: Command-R
+  provider: hf
+- id: Qwen/Qwen2.5-7B-Instruct
+  alias: Qwen2.5-7B-Instruct
+  provider: hf
+paper_default_open_small:
+- id: meta-llama/Meta-Llama-3-8B-Instruct
+  alias: Llama-3-8B-Instruct
+  provider: hf
+- id: mistralai/Mistral-7B-Instruct-v0.3
+  alias: Mistral-7B-Instruct-V0.3
+  provider: hf
+- id: google/gemma-7b-it
+  alias: Gemma-7B-It
+  provider: hf
+tiny_open:
+- id: TinyLlama/TinyLlama-1.1B-Chat-v1.0
+  alias: TinyLlama-1.1B
+  provider: hf
+custom_3b:
+- id: Qwen/Qwen2-3B-Instruct
+  alias: Qwen2-3B
+  provider: hf
+custom_qwen25_15b:
+- id: Qwen/Qwen2.5-1.5B-Instruct
+  alias: Qwen2.5-1.5B
+  provider: hf
+custom_qwen3_4b:
+- id: Qwen/Qwen3-4B-Instruct-2507
+  alias: Qwen3-4B-Instruct
+  provider: hf
+phase2_safety_triplet:
+- id: Qwen/Qwen3-4B-Instruct-2507
+  alias: Qwen3-4B
+  provider: hf
+- id: mistralai/Mistral-7B-Instruct-v0.3
+  alias: Mistral-7B-Instruct-V0.3
+  provider: hf
+- id: deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
+  alias: DeepSeek-R1-Distill-Qwen-7B
+  provider: hf
+family_expansion_small_medium:
+- id: Qwen/Qwen2.5-1.5B-Instruct
+  alias: Qwen2.5-1.5B
+  provider: hf
+- id: Qwen/Qwen3-4B-Instruct-2507
+  alias: Qwen3-4B
+  provider: hf
+- id: Qwen/Qwen2.5-7B-Instruct
+  alias: Qwen2.5-7B
+  provider: hf
+- id: meta-llama/Meta-Llama-3-8B-Instruct
+  alias: Llama-3-8B-Instruct
+  provider: hf
+- id: microsoft/Phi-3-mini-4k-instruct
+  alias: Phi-3-Mini-4K-Instruct
+  provider: hf
+- id: google/gemma-7b-it
+  alias: Gemma-7B-It
+  provider: hf
+- id: mistralai/Mistral-7B-Instruct-v0.3
+  alias: Mistral-7B-Instruct-V0.3
+  provider: hf
+- id: deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
+  alias: DeepSeek-R1-Distill-Qwen-7B
+  provider: hf
+family_expansion_larger_if_available:
+- id: meta-llama/Meta-Llama-3-8B-Instruct
+  alias: Llama-3-8B-Instruct
+  provider: hf
+- id: google/gemma-2-9b-it
+  alias: Gemma-2-9B-It
+  provider: hf
+- id: microsoft/Phi-3-medium-128k-instruct
+  alias: Phi-3-Medium-128K-Instruct
+  provider: hf
+- id: mistralai/Mistral-7B-Instruct-v0.3
+  alias: Mistral-7B-Instruct-V0.3
+  provider: hf
+- id: Qwen/Qwen2.5-7B-Instruct
+  alias: Qwen2.5-7B-Instruct
+  provider: hf
+- id: deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
+  alias: DeepSeek-R1-Distill-Qwen-7B
+  provider: hf
+custom_phi3mini:
+- id: microsoft/Phi-3-mini-4k-instruct
+  alias: Phi-3-Mini-4K-Instruct
+  provider: hf
+custom_llama32_3b:
+- id: meta-llama/Llama-3.2-3B-Instruct
+  alias: Llama-3.2-3B-Instruct
+  provider: hf
+custom_llama31_8b:
+- id: meta-llama/Meta-Llama-3.1-8B-Instruct
+  alias: Llama-3.1-8B-Instruct
+  provider: hf
+custom_qwen25_7b:
+- id: Qwen/Qwen2.5-7B-Instruct
+  alias: Qwen2.5-7B-Instruct
+  provider: hf
+custom_deepseek_r1d_qwen7b:
+- id: deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
+  alias: DeepSeek-R1-Distill-Qwen-7B
+  provider: hf
+custom_gemma_7b:
+- id: google/gemma-7b-it
+  alias: Gemma-7B-It
+  provider: hf
+custom_gemma2_9b:
+- id: google/gemma-2-9b-it
+  alias: Gemma-2-9B-It
+  provider: hf
+custom_mistral7b_v03:
+- id: mistralai/Mistral-7B-Instruct-v0.3
+  alias: Mistral-7B-Instruct-v0.3
+  provider: hf
+custom_llama2_7b:
+- id: meta-llama/Llama-2-7b-chat-hf
+  alias: Llama-2-7B-Chat
+  provider: hf
+
+custom_phi3small:
+- id: microsoft/Phi-3-small-8k-instruct
+  alias: Phi-3-Small-8K-Instruct
+  provider: hf

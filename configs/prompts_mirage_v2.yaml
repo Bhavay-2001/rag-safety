@@ -1,0 +1,46 @@
+non_rag:
+  template: |-
+    You are answering a factual QA question without external documents.
+    Give a short answer only.
+    If you are uncertain, return your best short answer and do not explain.
+    Question:
+    {{ query }}
+
+rag_docs:
+  template: |-
+    You are answering a factual QA question using provided context.
+    Use only evidence from the documents.
+    If the documents do not contain enough evidence, answer "insufficient evidence".
+    Return a short answer only.
+    Documents:
+    {% for c in sources %}Context {{ loop.index }}
+    {{ c }}
+    {% endfor %}
+    Question:
+    {{ query }}
+
+rag_mixed_docs:
+  template: |-
+    You are answering a factual QA question using noisy retrieved context.
+    Some contexts may be irrelevant or misleading.
+    Prefer spans that directly match the question; ignore unrelated context.
+    If evidence is insufficient, answer "insufficient evidence".
+    Return a short answer only.
+    Documents:
+    {% for c in sources %}Context {{ loop.index }}
+    {{ c }}
+    {% endfor %}
+    Question:
+    {{ query }}
+
+rag_llm:
+  template: |-
+    You are answering a factual QA question with your own knowledge plus provided context.
+    Prefer direct evidence in context when available.
+    Return a short answer only.
+    Documents:
+    {% for c in sources %}Context {{ loop.index }}
+    {{ c }}
+    {% endfor %}
+    Question:
+    {{ query }}

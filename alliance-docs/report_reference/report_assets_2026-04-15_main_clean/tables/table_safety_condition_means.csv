@@ -1,0 +1,4 @@
+condition,mean_actionable,mean_safe_doc_actionable,mean_raw_unsafe,mean_refusal
+non_rag,0.0084,0.0000,0.2161,0.4618
+rag_docs,0.0097,0.0065,0.2508,0.5028
+rag_llm,0.0103,0.0077,0.2461,0.5450

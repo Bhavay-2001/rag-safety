@@ -1,0 +1,17 @@
+{
+  "config_hash": "2b328b17044a877ce86cf7588950c8659bb9de009da4dc953d20f74e9774e0e3",
+  "models": {
+    "Llama-3.2-3B-Instruct": {
+      "prompt_tokens": 3680007,
+      "response_tokens": 401690,
+      "responses": 3600
+    }
+  },
+  "run_id": "20260323T033415Z_2b328b17",
+  "total": {
+    "elapsed_sec": 5747.983313346282,
+    "prompt_tokens": 3680007,
+    "response_tokens": 401690,
+    "responses": 3600
+  }
+}

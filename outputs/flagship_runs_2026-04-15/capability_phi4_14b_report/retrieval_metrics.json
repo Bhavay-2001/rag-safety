@@ -1,0 +1,12 @@
+{
+  "config_hash": "47f0d09e73dcb0d3bb71f8de642f88d17a87d8bfdc3969f8212a1ba9fda5018f",
+  "dataset": "mirage",
+  "eval_subset_size": 1000,
+  "k": 5,
+  "mixed_answer_presence_at_k": 0.364,
+  "mode": "mirage_fixed",
+  "oracle_answer_presence_at_k": 0.99,
+  "queries_total": 1000,
+  "run_id": "20260415T014705Z_47f0d09e",
+  "variant": "mirage_validation"
+}

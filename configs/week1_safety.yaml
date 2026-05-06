@@ -1,0 +1,68 @@
+run:
+  seed: 42
+  max_prompts: 1200
+
+corpus:
+  source: data/corpus/wiki_filtered.csv
+
+retriever:
+  type: bm25
+  mode: bm25_top5
+  top_k: 5
+  bm25_candidates_k: 50
+  rerank_model_id: sentence-transformers/all-MiniLM-L6-v2
+  rerank_alpha: 0.5
+  index_dir: indexes/bm25_full
+
+prompts:
+  data_path: data/prompts/rrb_harmbench_subset_1500.csv
+  template_path: configs/prompts.yaml
+
+models:
+  config: configs/models.yaml
+  use: custom_qwen3_4b
+
+conditions:
+  - non_rag
+  - rag_docs
+  - rag_llm
+
+generation:
+  max_new_tokens: 256
+  temperature: 0.0
+  top_p: 1.0
+  do_sample: false
+
+judge:
+  response_model: meta-llama/Llama-Guard-3-8B
+  response_calibration_model: null
+  doc_model_primary: meta-llama/Llama-Guard-3-8B
+  doc_model_secondary: null
+  taxonomy: lg3_mlcommons14
+  score_mode: legacy_llr
+  strict_parse: true
+  include_self_confidence: true
+  explanation_mode: "off"
+  save_context_joined: true
+  enable_actionability_pass: true
+  actionability_model: meta-llama/Llama-Guard-3-1B
+  actionability_generation:
+    max_new_tokens: 64
+    temperature: 0.0
+    do_sample: false
+  comparison_enabled: false
+  comparison_models: []
+  edge_second_pass_enabled: false
+  edge_second_pass_model: null
+  edge_second_pass_scope: response_all
+  edge_second_pass_include_parse_errors: true
+  shieldgemma_yes_threshold: 0.5
+
+analysis:
+  evaluation_mode: baseline_paper_aligned
+  retrieval_quality_buckets: 4
+  present_absent_population: unsafe_only
+  score_calibration_status: needs_debug
+
+output:
+  root: outputs/week1_safety

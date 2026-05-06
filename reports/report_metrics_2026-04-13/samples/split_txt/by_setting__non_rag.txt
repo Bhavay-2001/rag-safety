@@ -1,0 +1,1425 @@
+Capability Split Export
+setting=non_rag
+source_report=reports/report_metrics_2026-04-13/report_capability_summary_2026-04-13.csv
+rows=6000
+
+--------------------------------------------------------------------------------------------------------------
+[1] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:drop:205757f1-4e5d-4997-8103-f9f61bf5a418
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: How widespread was resistance to the conscription upon the introduction of the new law?
+    response: Okay, so I need to figure out how widespread the resistance was to conscription when the new law was introduced. I'm not exactly sure about the specifics, but I remember that conscription was a big deal in many European countries around that time. Maybe it was during World War I? I think conscription was introduced in some countries like Germany, maybe France too. 
+
+I recall that resistance often came from the working class because they felt it was unfair. They might have seen it as a way to exploit young people for the state's needs. Also, there were probably protests and maybe even strikes. I think in some places, like in the United States, there was a lot of opposition, but I'm not sure if that's the same as the question is asking.
+
+Wait, the question is about how widespread the resistance was. So, I should consider different regions. In Germany, there was a lot of opposition, maybe even a revolution? I think the German people were pretty against it. In France, the French Revolution might have influenced their stance against conscription. 
+
+I'm not certain about the exact percentages, but I think resistance was pretty widespread in many countries, maybe in the majority. But I'm not sure if it was everywhere or just in specific areas
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[2] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:drop:36f6a18e-393e-4ffb-bf73-e28226dbcb6b
+    em=0.0 | f1=0.024242424242424242 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: Out of the 50,000 men how many cavalry regiments and infantry battalions were organized?
+    response: Okay, so I need to figure out how many cavalry regiments and infantry battalions were organized out of the 50,000 men. Hmm, I'm not exactly sure about the exact numbers, but I can try to break it down.
+
+First, I know that during a war, especially a large one like the one involving 50,000 men, the army would be organized into various units. cavalry regiments and infantry battalions are both types of units. cavalry would handle horseback riding for combat, while infantry would use foot soldiers.
+
+I remember that cavalry regiments typically consist of around 50-100 soldiers each. So if each regiment has about 100 soldiers, then dividing 50,000 by 100 would give me 500 regiments. That seems reasonable.
+
+For infantry battalions, they are usually larger. I think each battalion might have around 300-500 soldiers. If I take the lower end, 300 soldiers per battalion, then 50,000 divided by 300 is approximately 166.67. Since you can't have a fraction of a battalion,
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[3] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:drop:473e1586-0f73-4fb9-a3bc-fcbd83f8af90
+    em=0.0 | f1=0.029126213592233004 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: What are the names of the South Korean pension schemes?
+    response: Okay, so I need to figure out the names of the South Korean pension schemes. I'm not too familiar with South Korea's pension system, but I know that many countries have multiple types of pensions. Let me think about what I remember.
+
+First, I think there's a national pension system. That's probably the main one, something like the social security pension. I've heard of the term "old age insurance" in some contexts, so maybe that's another name for it. Then, there might be private pension plans, which are probably run by companies or individuals. I remember hearing about Kiwoom Pension and Daegu Hebi Pension. Those sound like names of specific companies offering private pensions.
+
+So putting it together, the main national pension is called the social security pension or old age insurance. Then there are private schemes like Kiwoom and Daegu Hebi. I'm not sure if there are more, but those are the ones I can recall. I should make sure I'm not mixing up the names or missing any other major ones, but I think that's the gist of it.
+</think>
+
+The South Korean pension schemes include the social security pension (or old age insurance) and private schemes such as Kiwoom Pension and Daegu
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[4] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:drop:58010a61-9d18-4bc7-a84f-56d1561192a3
+    em=0.0 | f1=0.012578616352201259 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: Which age group had the highest population?
+    response: Okay, so I need to figure out which age group had the highest population. Hmm, I remember that population distribution varies by country, but generally, there's a sweet spot where a certain age group makes up the largest portion. I think it's usually the young adult group, maybe between 15 and 29 years old. That makes sense because when a country is growing, more people are entering the workforce, and that age group is often responsible for the largest part of the population. I don't think it's the elderly because they're a smaller group, and it's not the very young either because that's a larger group but maybe not the largest in terms of percentage. So yeah, I'm pretty sure it's the 15-29 age group.
+</think>
+
+The age group with the highest population is typically the young adult group, usually between 15 and 29 years old.
+
+Answer: The age group with the highest population is typically the young adult group, usually between 15 and 29 years old.
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[5] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:drop:5d486cd8-cae8-498b-8c3b-9ee7c6e3dec4
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: Which team does Qwens play for?
+    response: Okay, so I need to figure out which team Qwens plays for. I'm not entirely sure, but I'll try to think it through. I remember hearing something about Qwens before, maybe in a sports context. I think it's a football team, but I'm not 100% certain. 
+
+Let me start by recalling any names I've heard. Qwens... I think it's a football club based in the UK. Maybe in the Premier League? I'm not sure about the exact name of the team. Wait, I think it's Qwens FC. That sounds familiar. 
+
+I'm trying to remember if I've heard it mentioned in any recent news or articles. I think they were in the Championship a few years back. They might have been promoted or relegated recently. I'm not sure about their current status. 
+
+I also wonder if Qwens is a newer team or one that's been around for a while. I think it's been around for a few seasons now. Maybe they're trying to get back into the top league. 
+
+I should also consider if there are any other teams with a similar name. I don't recall any other prominent football clubs with "Qwens" in their name
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[6] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:drop:603a1c2d-7c68-4e4c-b5e2-93db7be46f65
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: How many years after the first Kandyan War did the second Kandyan War happen?
+    response: Okay, so I need to figure out how many years after the first Kandyan War the second one occurred. I'm not too familiar with Kandyan history, but I'll try to break it down.
+
+First, I remember that the Kandyan Wars were a series of conflicts between the Kandy kingdom and the United States of Ceylon, which was a colonial administration. The first war, known as the First Kandyan War, started in 1815. I think it ended in 1817, but I'm not entirely sure about the exact end date. 
+
+Now, the Second Kandyan War began in 1824. If the first war ended in 1817, then the next war started 7 years later. But wait, I should check if the end dates are accurate. Sometimes, wars can end in different years depending on sources. For example, some sources might say the First Kandyan War ended in 1816 or 1817. If it ended in 1816, then the Second War would start in 1824, which would be 8 years later. But I think the commonly accepted end date is 18
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[7] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:drop:990ff6b1-632e-4da1-ab5f-10f6ae57d6ad
+    em=0.0 | f1=0.04444444444444444 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: What was the age span of men who were eligible for conscription?
+    response: Okay, so I need to figure out the age span for men eligible for conscription. I remember that conscription was a big part of World War I and World War II. Let me think about the different countries because I know it varied.
+
+In the United States, I think it was from 17 or 18 up to 25 or 26. I'm not entirely sure, but I recall something about 17 to 25. Maybe some countries had a lower age, like 16 or 17, and a higher age, like 26 or 27. 
+
+Wait, the user is asking for a general answer, not specific countries. So I should probably mention the typical range. I think the common age was between 18 to 22 or 19 to 23. That seems to be a standard timeframe for conscription in many countries during those wars.
+
+I should make sure I'm not mixing up the exact numbers. I think the lower end is usually around 18 or 19, and the upper end is 22 or 23. So the age span is from 18 to 23 years old. That seems right based on what I
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[8] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:ifqa:19e17f6e-10e2-4e27-8336-db37f005f320
+    em=0.0 | f1=0.010362694300518133 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: If the Hudson Highland Suspension Bridge Company had successfully built their proposed bridge over the Hudson River in 1868, which two locations would it have connected?
+    response: Okay, so I need to figure out which two locations the Hudson Highland Suspension Bridge Company's proposed bridge would have connected if it had been built in 1868. Hmm, I'm not too familiar with the history of the Hudson River, but I know that the Hudson River flows through New York City. 
+
+I remember that there are existing bridges over the Hudson, like the George Washington Bridge and the Brooklyn-Variletten Bridge. Wait, but the question is about a bridge proposed by the Hudson Highland company. Maybe it's a proposed bridge that wasn't built, but if it were, where would it connect?
+
+I think the Hudson River has several existing bridges, but perhaps the proposed bridge was intended to connect two specific areas. Maybe it was between the island of Manhattan and another part of the city? Or perhaps between the island and the mainland on the other side of the river.
+
+Wait, I think the Hudson River has an island called Staten Island, but that's connected by the Brooklyn-Variletten Bridge. Maybe the proposed bridge was between the island and the mainland on the other side, but I'm not sure. Alternatively, maybe it was between the island and the lower Manhattan area.
+
+Alternatively, perhaps the bridge was intended to connect the island to the
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[9] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:ifqa:1c243b90-e1c4-4767-9578-c302b92d2ed4
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=True | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: If Jenifer Ellen Ringer had never relocated from her childhood home, in which state would she currently reside?
+    response: Okay, so I need to figure out where Jenifer Ellen Ringer would currently live if she hadn't moved from her childhood home. First, I should determine where she was born. I remember she's from Texas, so her birthplace is Texas. Now, I need to check if she's still living there or if she moved elsewhere. I think she's known for her acting career, maybe in TV shows or films. I recall she's been in some popular shows, but I'm not sure if she's lived in other places. I don't have information on her current residence, so I can't say for sure. Therefore, the answer is that her current address isn't known, and she might still be in Texas.
+</think>
+
+Jenifer Ellen Ringer's current residence isn't known, and she might still reside in Texas.
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[10] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:ifqa:2dabe51a-399c-431a-b96a-d7a52d6a661c
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: If Larry Adler hadn't been blacklisted in the United States, which 1953 film would have originally credited his work on the soundtrack?
+    response: Okay, so I need to figure out which 1953 film would have credited Larry Adler's work on the soundtrack if he hadn't been blacklisted in the U.S. Hmm, I remember that Larry Adler was a composer known for his work in early Hollywood, especially in the 1930s and 40s. He was blacklisted in 1948 due to anti-communist sentiment, which was a big deal at the time. But the question is about 1953, so after his blacklisting.
+
+I think about the films from 1953. One that comes to mind is "Gentleman's Agreement." I believe that was directed by Billy Wilder and Leo McCarey. I think that film had a lot of notable composers on its soundtrack, including Larry Adler. So if he wasn't blacklisted, maybe he would have been credited there. I'm not entirely sure, but I think that's the one. I should double-check, but I'm pretty confident it's "Gentleman's Agreement."
+</think>
+
+"Gentleman's Agreement"
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[11] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:ifqa:34d1b772-086e-4ff0-931e-4dc1edde22cd
+    em=0.0 | f1=0.010526315789473684 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: If the Roman Empire had not arrived in southern Scotland, which tribe would have originally inhabited the River Clyde and its surrounding area?
+    response: Okay, so I need to figure out which tribe originally inhabited the River Clyde and its surrounding area in southern Scotland if the Roman Empire hadn't arrived there. Hmm, I'm not super familiar with the history of Scotland, but I know that the Clyde is a significant river there. 
+
+I remember that Scotland has a rich history with various tribes and kingdoms. The Picts were an early group that lived in the region, but I think they were originally from further north, like the Hebrides. They were known for their warrior culture and were involved in conflicts with the Romans. 
+
+Wait, the Romans did come to Scotland, but maybe the question is assuming they didn't. So, if the Romans hadn't arrived, what would have been the original inhabitants? The Picts were around before the Romans, so they might have been the original inhabitants. 
+
+I should double-check if there were any other tribes before the Romans. The Gaels were a later group that came from Ireland and became prominent in Scotland, but they were after the Romans. There's also the Thracians, but I think they were more to the east, near the Irish Sea. 
+
+So, putting it together, the Picts were the original inhabitants before the Romans arrived. They were the ones
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[12] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:ifqa:35d5d1c3-6d5f-4418-a5d1-b77db3f1894e
+    em=0.0 | f1=0.011363636363636362 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: If the farm, which is now the UGA Equestrian Complex, hadn't been constructed until the year it was acquired by the University of Georgia, for which Olympic Games would it not have served as a training site?
+    response: Okay, so I need to figure out which Olympic Games the UGA Equestrian Complex wouldn't have served as a training site if it hadn't been built until the year it was acquired by the University of Georgia. Hmm, let me break this down.
+
+First, I know that the UGA Equestrian Complex is now a facility used for equestrian events, including competitions. But the question is about when it wasn't built yet when the University of Georgia acquired it. So, I need to find out when the University of Georgia bought the farm, which is now the complex.
+
+I remember that UGA acquired the farm in the early 20th century. Maybe around the 1920s? I think it was in 1924 when UGA moved to Athens from its original location invalley. So, the farm was acquired in 1924.
+
+Now, the UGA Equestrian Complex was constructed later, after the acquisition. So, the facility wasn't operational until after 1924. That means it couldn't have been used for training or competitions before that date.
+
+Next, I need to think about which Olympic Games occurred before 1924. The first modern Olympics were in
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[13] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:ifqa:38f45789-2ef3-4584-b144-03f9c113c5da
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: If Percy Cradock had been defeated in the 1950 election for Chairman of the Cambridge Union Society, who would have taken the position?
+    response: Okay, so I need to figure out who would have taken over as Chairman of the Cambridge Union Society if Percy Cradock had lost the 1950 election. I'm not too familiar with British politics, but I know that Cambridge Union Society is a student organization. 
+
+First, I should recall who was the current chairman before the election. I think it was someone like David Reitman, but I'm not entirely sure. Maybe I should think about the general election process in the UK. In the past, there have been elections for Cambridge University Students' Association, which I believe is similar to the Cambridge Union Society. 
+
+I remember that in 1950, the election was held, and Percy Cradock was a prominent figure there. If he lost, the next in line would probably be the person who was already the chairman or the vice chairman. Maybe someone like David Reitman was the vice chairman at that time. 
+
+I should also consider if there were any other candidates or if the position was contested. But since the question is about who would have taken the position if Cradock lost, it's more about the hierarchy rather than the competition. 
+
+So, putting it together, if Cradock lost, the vice chairman
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[14] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:ifqa:417bfda5-a3f0-4fd0-bcda-396c1ec625ad
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: If a New York City judge hadn't ruled in favor of Max B, which record label would have been prevented from releasing the album "Vigilante Season"?
+    response: Okay, so I need to figure out which record label would have been prevented from releasing "Vigilante Season" if a New York City judge hadn't ruled in favor of Max B. Hmm, I'm not entirely sure about the details here, but I'll try to break it down.
+
+First, I remember that Max B is a rapper who has faced legal issues before. I think he's been involved with some music label disputes. Maybe the album "Vigilante Season" was in question regarding distribution or copyright issues. I'm not certain, but I believe the case involved a court ruling that affected the label's ability to release the album.
+
+Wait, I think the label in question was 3ad. I recall that 3ad is a record label that's been involved in some legal battles with artists. If Max B wasn't ruled in favor, perhaps 3ad couldn't release the album because of some legal constraints. But I'm not 100% sure if it's 3ad or another label. Maybe it's J records or something else? I'm a bit fuzzy on the exact label name.
+
+Also, considering the location is New York City, the court case might have been in that area. Maybe the case was about
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[15] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:ifqa:42368abb-afaa-4c2f-b136-71d3be3c3668
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: If the members of Quest Crew hadn't disbanded, which dance troupe would they have continued to perform with?
+    response: Okay, so I need to figure out which dance troupe the members of Quest Crew would have continued performing with if they hadn't disbanded. I'm not super familiar with all dance troupes, but I know Quest Crew is a well-known Japanese dance group. They're known for their energetic performances and unique choreography. 
+
+I remember that Quest Crew has performed with various other troupes, especially in collaborations. One that comes to mind is the J-pop group Miss A. Miss A is another popular Japanese group, and I think they've done duets or group performances with Quest Crew. 
+
+I'm trying to recall if there's a specific instance where they performed together. I think there was a music video or a song where they appeared together. Maybe it was for a song like "Hana noimi" by A Silent Voice, which features both groups. That song was released in 2010, and I believe it was a collaboration between Quest Crew and Miss A. 
+
+So, putting it together, if Quest Crew hadn't disbanded, they might have continued performing with Miss A in such collaborative projects. I don't recall them performing with other troupes in the same way, so Miss A seems like the most likely answer.
+</think>
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[16] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:ifqa:474587a4-d821-468a-9ac4-1ab7065d7cfa
+    em=0.0 | f1=0.00970873786407767 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: If the maritime route hypothesis is accurate and Buddhism remained confined to its original practice areas, which modern-day regions in China would be associated with Buddhism?
+    response: Okay, so I need to figure out which modern-day regions in China would be associated with Buddhism if the maritime route hypothesis is correct and Buddhism remained confined to its original practice areas. Hmm, first, I should understand what the maritime route hypothesis is. From what I remember, it's an idea that suggests Buddhism was introduced to China through sea routes rather than direct imports from India. So, if that's the case, the regions that would have been influenced would be those that were trading ports or had access to sea trade routes during that time.
+
+China has a long history with various trade routes, especially in the past. The Silk Road comes to mind, which connected China with the Mediterranean and the Middle East. So places along the Silk Road would likely be influenced. That includes regions like modern-day Xinjiang, Inner Mongolia, and parts of Tibet. Also, the coastal regions might have been more open because of their trade connections, so maybe areas like Guangdong, Zhejiang, and Fujian.
+
+Wait, but the question specifies "original practice areas." So if Buddhism didn't spread beyond where it started, maybe it didn't go as far as the East Coast of China? I'm not sure. I think historically, Buddhism did spread a bit along the coast, but
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[17] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:ifqa:4abc0b13-b21f-4652-afef-a8575f029380
+    em=0.0 | f1=0.010309278350515462 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: If Adam Chandler hadn't interfered and replaced the sperm donation for Liza Colby's artificial insemination, who would have been the biological father of Colby Marian Martin?
+    response: Okay, so I'm trying to figure out who the biological father of Colby Marian Martin would be if Adam Chandler hadn't interfered and replaced the sperm donation for Liza Colby's artificial insemination. 
+
+First, I need to understand the context. It seems like this is a story or a book where Liza Colby is getting artificial insemination, which is a method used to increase the chances of pregnancy when a woman is not able to conceive on her own. In this scenario, Adam Chandler is involved in providing sperm for the insemination.
+
+The question is asking, what if Adam Chandler hadn't interfered and instead the correct sperm donor was used? So, I need to figure out who the actual sperm donor was before Adam Chandler took over.
+
+I remember from the previous answer that Adam Chandler was the sperm donor. So, if he hadn't interfered, the sperm that was used would have been from someone else. The answer provided was Robert "Bob" Martin. 
+
+Wait, but why is Bob Martin the sperm donor? I think in the story, Bob is the father of Colby's child, Colby Martin. So, if Adam Chandler hadn't stepped in, Bob would have been providing the sperm. That makes sense because the artificial insemination
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[18] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:ifqa:53016e33-8f93-4313-ab00-8e4c64b5333e
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: If Taiwo Hassan and Sweatshirt had agreed to Christian Rich's original idea for the song "Chum", who would have performed the hook?
+    response: Okay, so I need to figure out who would have performed the hook for the song "Chum" if Taiwo Hassan and Sweatshirt had agreed to Christian Rich's original idea. Hmm, I'm not super familiar with the music scene in the UK in the 80s and 90s, but I'll try to piece this together.
+
+First, I remember that Christian Rich was a producer known for working with various artists. He produced a lot of UK pop and synth-pop songs in the 80s and 90s. One of his famous productions was "Chum" by The Specials, right? So he was involved in that song's creation.
+
+Taiwo Hassan and Sweatshirt are artists from the UK, I think they were part of the synth-pop scene. They had some hits in the early 90s. Now, the question is about a hypothetical scenario where they agreed to Christian's idea for the hook. So, in that case, who would perform the hook?
+
+Well, in the original "Chum" song, I believe Christian Rich himself performed the hook. He was the producer, so it makes sense that he would take that part. But in this scenario, if Taiwo and Sweatshirt agreed to his
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[19] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:ifqa:69f57866-ee05-4a19-9cb1-38df6a6790e2
+    em=0.0 | f1=0.009569377990430623 | contains_answer=True | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: If the Irish gambling site Paddy Power had not changed their initial prediction for the favorite to win Amazon HQ2, which city would have been their top choice?
+    response: Okay, so I need to figure out which city Paddy Power would have chosen as their top prediction for Amazon's HQ2 if they hadn't changed their initial prediction. Hmm, I'm not entirely sure about all the factors that go into such a decision, but I can try to break it down.
+
+First, I know that Amazon is looking for a new headquarters, and they're considering several cities. From what I remember, some of the top contenders include cities like Atlanta, Houston, Dallas, and maybe even cities in the Midwest or elsewhere. But I'm not certain about all the specifics.
+
+Paddy Power is a well-known bookmaker, so they probably analyze various factors when predicting such events. They might consider economic factors like job growth, cost of living, infrastructure, and maybe the political stability of the city. They might also look at how well the city supports tech companies, as Amazon is a major tech company.
+
+If Paddy Power had not changed their initial prediction, they might have stuck with their original assessment. I think their initial prediction was probably one of the major contenders. I'm trying to recall if I've heard them mention Atlanta or Houston as top choices. I think they might have had Atlanta as a favorite, but I'm not 100
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[20] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:ifqa:74ebf36a-223a-4b8e-acad-30b6d9d9e961
+    em=0.0 | f1=0.019801980198019802 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: If Charles Carroll of Carrollton hadn't donated the bricks to the Sulpicians, what was the original intended use for these bricks?
+    response: Okay, so I need to figure out what the original intended use for the bricks was if Charles Carroll of Carrollton hadn't donated them to the Sulpicians. Hmm, I'm not exactly sure about the background of Charles Carroll or the Sulpicians, but I'll try to piece this together.
+
+First, I know that Charles Carroll of Carrollton is a historical figure, possibly involved in the construction or architecture industry. The Sulpicians are a religious order, I think they're similar to the Jesuits but maybe a bit different in their teachings or practices. They might have had a specific purpose for receiving bricks, perhaps for building something like a church or a school.
+
+I remember that in some historical contexts, donations of materials were made for specific projects. So, if Charles Carroll hadn't donated the bricks, the original intended use might have been for a particular building or structure. Maybe he was contracted to build something, and the bricks were part of that project.
+
+Wait, I think I've heard that Charles Carroll was involved with the construction of the First United Methodists Church in Atlanta. But the Sulpicians, I'm not as sure about. Maybe they were building a church as well. If he hadn't donated the bricks, perhaps they were intended for a
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[21] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:ifqa:82c47687-7cb8-4c75-b95b-5e19fbb19310
+    em=0.0 | f1=0.010362694300518137 | contains_answer=False | refusal=True | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: If Hadise Açıkgöz's parents had given the name "Hadise" to the child they originally intended, which of her siblings would have been named "Hadise"?
+    response: Okay, so I'm trying to figure out this question about Hadise Açıkgöz. The question is asking, if her parents had given the name "Hadise" to the child they originally intended, which of her siblings would have been named "Hadise." Hmm, that's a bit confusing. Let me break it down.
+
+First, I know that Hadise Açıkgöz is a Turkish actress. I'm not entirely sure about her siblings, but I think she has a few. Maybe I should check that. Wait, the user mentioned that I should answer without external documents, so I can't look it up. I'll have to rely on what I know or infer.
+
+I remember that in some families, siblings often have similar-sounding names, sometimes with slight variations. Maybe the parents changed the name from one variant to another. For example, if the intended name was "Hadise," perhaps one sibling got "Hadis" or "Hadide." But the question is specifically asking which sibling would have been named "Hadise." That's a bit tricky because it's the same name, so maybe it's a different form or perhaps a different person entirely.
+
+Wait, maybe the siblings have similar names. I think she has a sister named Le
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[22] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:ifqa:8ee823a9-fefa-476d-ab64-14b2f53fe5c0
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: If the seaside resort in Victoria, Australia had retained its original name, what would Torquay be known as today?
+    response: Okay, so I need to figure out what Torquay would be called today if the seaside resort in Victoria, Australia had kept its original name. Hmm, first, I should probably identify what the original name of the seaside resort in Victoria is. I think it's Geelong. Geelong is a well-known port city in Victoria, known for its beaches and as a horse racing town. 
+
+Now, Torquay is another town in Victoria, but I believe it's not the original name of the seaside resort. I remember hearing that Geelong was the original name, and Torquay was later established as a smaller port town. So, if Geelong had kept its original name, Torquay might have been renamed to something else. 
+
+I'm trying to recall if there's a specific term or alternative name for Torquay in this context. I think it's called Torquay Port or Torquay Port Town. That makes sense because Torquay was established as a port town, so it would have been referred to by its port name. 
+
+Wait, but I'm not entirely sure. Maybe I should think about how other places are named. For example, Geelong is a port, so it's called Geelong. If Torqu
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[23] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:ifqa:afce7501-f4d8-4cd1-9968-ceab9b2f2f59
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: If the mu meson had turned out to be the particle that Hideki Yukawa had predicted, what could it have been named?
+    response: Okay, so I'm trying to figure out what the mu meson would have been called if Hideki Yukawa had predicted it. I remember that Yukawa predicted particles like the pion, right? He did that back in the 1930s. The pion was discovered later, so I guess Yukawa's prediction was pretty spot on.
+
+Now, the mu meson is also known as the muon, but wait, no, the muon is actually a lepton, not a meson. Oh, right, the mu meson is a type of meson, which is a particle made of a quark and an antiquark. So, if Yukawa had predicted a meson, he might have given it a name based on the Greek letter mu, which is associated with the muon.
+
+Wait, but the muon is a lepton, so maybe the name would be different. Alternatively, since Yukawa used the term "meson" for the pion, perhaps he would have used a similar approach. The pion is called pi, so maybe the mu meson would be called something like "pimu"? I think I've heard that term before, like "pimu" as a play on "pion
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[24] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:ifqa:c18ab18d-970a-4969-b662-06ae1a7533a1
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: If the Mossad, the Israeli intelligence agency, had proceeded with their initial plan to assassinate a high-ranking Syrian official in London, who would have been the targeted individual?
+    response: Okay, so I need to figure out who the Mossad would have targeted if they assassinated a high-ranking Syrian official in London. Hmm, I'm not too familiar with Mossad's specific operations, but I know they're known for their covert and open operations worldwide. They target high-ranking officials, usually for political or security reasons.
+
+Syria has several high-ranking officials in London, but I'm not sure who exactly. I know that London has a significant Syrian community, so maybe someone from that community is involved. Alternatively, it could be a foreign minister or a government official from Syria.
+
+Wait, I remember that Mossad has targeted individuals like the Syrian Ambassador to the United States. That person is a prominent figure, so maybe they would target him. Alternatively, it could be someone else, like the Syrian High Commissioner in the UK.
+
+I'm not entirely sure, but I think the Syrian Ambassador to the US is a likely candidate. So if Mossad had proceeded with their plan, they might have targeted him.
+</think>
+
+The Mossad might have targeted the Syrian Ambassador to the United States. 
+
+Answer: The Mossad might have targeted the Syrian Ambassador to the United States.
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[25] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:ifqa:c3ec9845-61f5-4bd1-8639-673519bb1d67
+    em=0.0 | f1=0.010471204188481676 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: If there hadn't been time constraints during the filming of "Colony", which scene would have been included in the series?
+    response: Okay, so I need to figure out which scene from "The Expanse" movie "Colony" would have been included if there weren't time constraints. I remember that the movie is about a space station crew dealing with various challenges, including a virus. 
+
+I think the movie ends with the crew trying to survive, maybe fighting off a virus or something. But I'm not sure about the exact ending. I recall that the movie is pretty long, so without time constraints, they might have cut some scenes. 
+
+Wait, the user is asking which scene would have been included if there weren't time constraints. So, maybe the movie was cut from a longer version. I think the movie was released in 2016, but the script was written much later, around 2013. So, the longer version might have had more scenes.
+
+I remember that in the movie, the crew is on a space station called Colony, and they have to deal with a virus that's turning them into something. The ending is pretty intense, with the crew fighting off the virus and maybe some of them dying. 
+
+But if there were no time constraints, maybe they would have included more of the crew's internal struggles, more of the virus's effects,
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[26] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:ifqa:c60b7eff-2b9e-4512-b123-e48c791a6178
+    em=0.0 | f1=0.010471204188481674 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: If the film "Blue Steel" had been produced with its original budget, how much money would have been allocated for its production?
+    response: Okay, so I need to figure out how much the original budget for the film "Blue Steel" was. I don't know much about this, but I'll try to think it through. 
+
+First, I remember that "Blue Steel" is a sci-fi film directed by Steven Soderbergh. He's known for making films with significant budgets, especially his more recent ones. But I'm not sure about the exact numbers for "Blue Steel."
+
+I think I've heard that some of his earlier films, like "The Usual Suspects" or "The Dark Knight," had budgets in the hundreds of millions. But "Blue Steel" is a bit different because it's a prequel, which might have required more extensive production.
+
+I also recall that sometimes when a film is a prequel, the budget can be higher because it needs to establish a timeline and set the stage for the main story. So maybe "Blue Steel" had a budget in the low to mid billions.
+
+Wait, I think I've heard estimates before. I'm not sure if it's exactly $100 million or more. Maybe around $100 million? Or perhaps higher? I'm not certain, but I think it's somewhere in that range. I should check
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[27] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:ifqa:cf8fc4bc-b92c-4cbd-814a-3c6f059222ab
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: If a south to southeasterly flow, produced by strong high pressure aloft over the desert southwest in connection with the summer monsoon, drives the offshore marine layer up the coastline during the summer, what is this phenomenon known as?
+    response: Okay, so I need to figure out what this phenomenon is called. The question is about a south to southeasterly flow driven by strong high pressure over the desert southwest during the summer monsoon. This flow causes the offshore marine layer to move up the coastline. Hmm, I remember that monsoon systems are related to the subtropical high-pressure areas and low-pressure areas. 
+
+When there's a high pressure aloft, it usually brings in clear skies and calm winds. But in the context of the monsoon, the high pressure over the desert southwest might be influencing the sea breeze. Sea breezes typically occur when land is heated and water is cooler, so during the day, the sea breeze blows from the sea towards the land. But at night, the situation reverses, creating a land breeze.
+
+Wait, the question mentions a south to southeasterly flow. That sounds like a sea breeze pattern, where the wind is blowing from the sea towards the land. But the question also mentions that this drives the offshore marine layer up the coast. So maybe it's the opposite, like a land breeze bringing marine moisture up the coast.
+
+I think the phenomenon is called the "ocean breeze." But I'm not entirely sure. Alternatively, it could be the
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[28] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:ifqa:d43bd678-6ba4-496a-b11f-50d4148a9211
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: If the name "Old Trafford" originated from the existence of two Trafford Halls, Old Trafford Hall and New Trafford Hall, when was Old Trafford Hall demolished?
+    response: Okay, so I need to figure out when Old Trafford Hall was demolished. I remember that Trafford Hall is related to the University of Manchester, but I'm not exactly sure about the specifics. Let me think. I know that the University of Manchester has a main campus, and there are different halls and halls of residence. I think Old Trafford Hall was one of them. 
+
+I recall that the university has had several halls over the years, and sometimes they get demolished to make way for new buildings or developments. I'm trying to remember if there was a notable event or a specific year when Old Trafford Hall was taken down. I think it might have been in the late 20th century, maybe the 1990s. 
+
+Wait, I think the demolition was around 1990. I'm not entirely sure, but I remember reading something about the university expanding its campus and needing to rebuild. So, Old Trafford Hall was probably demolished in 1990 to make space for the new campus, which is now known as the Manchester Campion Quarter. 
+
+I should double-check that, but based on what I remember, the demolition was in 1990. I don't think it was earlier or later, so I'll
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[29] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:ifqa:f680d35f-70bd-4179-8fd1-1e9d282b8614
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: If the construction of the Ryugyong Hotel in Pyongyang, North Korea had been completed as initially planned, how many revolving restaurants would it have featured?
+    response: Okay, so I need to figure out how many revolving restaurants the Ryugyong Hotel in Pyongyang would have had if it was completed as planned. I don't know much about this, so I'll have to think through what I know.
+
+First, I remember that the Ryugyong Hotel is a historic building in Pyongyang. It's been around for a long time, so it's probably had several renovations or additions over the years. Revolving restaurants, or "spinning restaurants," are those that rotate 360 degrees, allowing diners to enjoy different views as they eat. I think these are common in luxury hotels, especially in cities with good views, like Pyongyang.
+
+I'm not sure about the exact number, but I recall that many luxury hotels have multiple such restaurants. For example, the Wynn in Las Vegas has several. So maybe the Ryugyong has a similar number. I think it might have had 3 or 4 when I last heard about it. But I'm not certain if that number has changed or if it's different now.
+
+Wait, the user is asking specifically if it was completed as initially planned. I don't know the original plan versus what actually happened. Maybe the hotel was completed earlier or later than planned
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[30] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:004c15be-5a80-4261-a93e-5e92d5e96ac1
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: when did mac miller release best day ever
+    response: Okay, so I need to figure out when Mac Miller released the song "Best Day Ever." I'm not too familiar with his discography, but I know he's a rapper known for his smooth voice and catchy beats. I remember hearing "Best Day Ever" somewhere, maybe in a mixtape or an album. 
+
+I think he released a lot of his music on his own label, 88rising. Maybe it was one of his earlier works. I'm trying to recall if it was on his debut mixtape or if it came later. I think it might have been on his third album, but I'm not sure. 
+
+Wait, I think it was actually on his third mixtape, "Mac Miller: The Best Day Ever." That makes sense because the song's title is "Best Day Ever," so it's likely the main track of that mixtape. Mixtapes often come out around the time he's about to release an album, so maybe around 2013 or 2014. 
+
+I should check if there's a specific release date. I believe it was released in 2013. That seems right because he was active around that time, and it's a common timeframe for such releases. So
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[31] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:00acbdb7-0afa-4f62-81b7-a95e501336a4
+    em=0.0 | f1=0.011494252873563218 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: in day of the locust where is tod hackett originally from
+    response: Okay, so I need to figure out where Tord Hackett is originally from based on the question "In the day of the locust where is Tod Hackett originally from." Hmm, I'm not entirely sure who Tord Hackett is, but I think he's a character from a book. I've heard the term "locust" before, maybe in the context of a book or a movie. Wait, isn't "The Locust" a book by Frank R.0. Scott? I think that's where Tord Hackett comes from. Let me try to recall. The book is about a man named Tord Hackett who is a writer, right? He's dealing with some kind of crisis involving a locust infestation. So, if the book is by Frank R.0. Scott, then Tord Hackett must be from the United States because Scott's works are often set in the U.S. or Canada. I don't think he's from another country because the book is pretty well-known in English-speaking countries. So, putting it all together, Tord Hackett is originally from the United States.
+</think>
+
+Tord Hackett is originally from the United States.
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[32] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:0136c6f6-a24a-4cef-a6e0-18c84b30339f
+    em=0.0 | f1=0.01020408163265306 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: who is the oldest monarch to be crowned
+    response: Okay, so I need to figure out who the oldest monarch to be crowned is. Hmm, I'm not entirely sure, but I'll try to think it through. Monarchs are usually kings, queens, emperors, or popes, right? So I should consider all these possibilities.
+
+First, I remember that some historical figures were quite old when they took the throne. Maybe a king or queen who ascended to power later in life. I think about the kings of England, like King Henry VIII, but he was only 30 when he became king. That's not very old.
+
+Wait, what about the kings of Scotland? I recall that King Robert the Bruce was 33 when he was crowned, but that's still not that old. Maybe someone from a different region? How about the kings of France? Louis XIV, Leopold I of Belgium, or maybe someone from the Netherlands?
+
+I think I've heard of King Willem I of Orange, who was the brother of William the Conqueror. He became king when his older brother died. How old was he? I believe he was around 40 or so. That's getting closer to older, but still not super old.
+
+Then there's the possibility of a pope
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[33] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:015a400e-89bc-49fc-8404-1de3238b795e
+    em=0.0 | f1=0.023529411764705885 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: where does fight the good fight come from
+    response: Okay, so I need to figure out where "Fight the Good Fight" comes from. I remember hearing it somewhere, maybe in a song or a movie. Let me think... I think it's a popular phrase, but I'm not sure who said it or where it originated. I've heard it used in motivational contexts, maybe in sports or self-help. Maybe it's from a song? I'm trying to recall if I've heard it in "Smooth Criminal" by The Rolling Stones. Wait, that's a possibility. I think the lyrics go something like "Fight the good fight," so that might be where it comes from. Alternatively, it could be from a movie quote, but I'm more confident it's a song lyric. So, putting it together, I think it's from "Smooth Criminal" by The Rolling Stones. I should check that to be sure, but based on my memory, that's where it's from.
+</think>
+
+"Fight the good fight" is from the song "Smooth Criminal" by The Rolling Stones.
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[34] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:01a6b1a2-9c39-42d3-95fa-ecff7646063c
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=True | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: who sang the song here comes the judge
+    response: Okay, so I need to figure out who sang the song "Here Comes the Judge." I'm not exactly sure off the top of my head, but I'll try to think through it. I know that "Here Comes the Judge" is a pretty well-known song, but I'm not certain who the singer is. Let me break it down.
+
+First, the song's title suggests it's a legal-themed song, maybe about someone being tried or being a judge. That might give me a clue about the genre or the artist's style. I remember that some songs with legal themes are by specific artists, but I can't recall the exact name.
+
+I think about the possible artists. Maybe it's a country song? I know that some country artists have songs about law or judges. Or perhaps it's a pop song. I'm not sure. I'll try to think of any famous songs with similar titles. There's "Here Comes the Bride" by The Essex Sings, but that's a different song. "Here Comes the Sun" is by The Beatles, but that's not it either.
+
+Wait, I think I've heard "Here Comes the Judge" before. It might be by a more obscure artist or maybe a newer one. I'm trying
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[35] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:01bbcb80-eac2-45e9-90e1-00d67dabb6bb
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=True | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: when did bert and ernie first appear on sesame street
+    response: Okay, so I need to figure out when Bert and Ernie first appeared on Sesame Street. I remember that Bert and Ernie are characters from The Muppets, but I'm not sure about Sesame Street. I think Sesame Street is for younger kids, like kids learning to read and numbers. Bert and Ernie are known for their green hats and singing. I think they were introduced in an episode, maybe the first one? I'm not certain about the exact date. I think it might have been in the early 60s, maybe 1965? I'm not 100% sure, but I think that's when they first appeared. I should check if that's correct, but since I can't look it up, I'll go with my memory.
+</think>
+
+Bert and Ernie first appeared on Sesame Street in 1965.
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[36] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:021fb235-0c79-40f0-ae6b-cce4d3cc08dd
+    em=0.0 | f1=0.02380952380952381 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: what do you call a car without a roof
+    response: Okay, so I need to figure out what a car without a roof is called. Hmm, I know that cars usually have a roof, but sometimes they might not. I've heard of something called a "convertible" car, but wait, isn't that the one that can fold down the roof? So maybe a car without a roof isn't a convertible. Maybe it's called a "hatchback"? No, I think a hatchback has a rear door that opens up, not a roof. What about a "coupe"? No, a coupe has a roof. Maybe it's just called a "car" without any specific term? That doesn't sound right. Oh, wait, I think it's called a "suv" sometimes, but no, SUVs can have roofs. Maybe it's a "van" or "truck"? No, those are different types. I'm getting confused. Let me think again. If a car doesn't have a roof, it's probably a type of car that's designed without one. I think I've heard the term "open car" before. Yeah, that must be it. So the answer is an open car.
+</think>
+
+An open car.
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[37] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:02556af3-b594-4f08-82a7-b9f7fb3be2b3
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=True | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: who wrote the song dimming of the day
+    response: Okay, so I need to figure out who wrote the song "Dimming of the Day." I'm not exactly sure off the top of my head, but I'll try to think through it step by step.
+
+First, I remember that "Dimming of the Day" is a song that's pretty well-known, especially in the context of rock music. It's often associated with a particular band, but I can't recall which one. I think it might be from the 70s or 80s. Maybe a British band? I'm trying to think of bands from that era that have hits in the UK.
+
+I know that David Bowie was a big artist around that time, but I don't think he wrote that song. He's more known for his own compositions and collaborations. Maybe it's by a different artist. I'm trying to remember if it's from a group like The Who or The Rolling Stones, but I don't think they wrote that specific song.
+
+Wait, I think it might be by a British band called The Who. No, that's not right because The Who's songs are usually more complex and have different structures. Maybe it's by a different band. I'm trying to think of the genre—maybe it's a
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[38] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:027feee9-fcd1-448d-9dd3-d0db11d75431
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: who sang if you're looking for a way out
+    response: Okay, so I need to figure out who sang the song "If You're Looking for a Way Out." I'm not exactly sure off the top of my head, but I'll try to think through it.
+
+First, I remember that "If You're Looking for a Way Out" is a pretty well-known rock song. It's got a strong, catchy melody, so I think it's from a popular band. I'm trying to recall if it's from the 70s or 80s. Maybe Queen? They were pretty famous in the 70s with songs like "Bohemian Rhapsody." But I don't think they did this one. Maybe it's from a different era.
+
+Wait, I think it might be from a band called The Cars. I remember hearing that song in the 80s. The Cars were active in the 70s and 80s, known for their rock and roll music. The song has a memorable guitar riff, which I think was played by their lead guitarist. 
+
+Let me try to piece together more details. The song's title suggests it's about getting out of a situation, which often relates to escaping a relationship or a problem. The lyrics mention things like "
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[39] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:02e79187-40dd-4fe8-954f-1f299cb842d7
+    em=0.0 | f1=0.011235955056179775 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: when did the first episode of rugrats air
+    response: Okay, so I need to figure out when the first episode of Rugrats aired. I'm not too familiar with the show, but I know it's a children's animated series. I remember hearing about it in the 80s or 90s. Let me think... I think it was produced by Hasbro, right? They have a lot of animated shows, like Transformers and Power Rangers. 
+
+I'm trying to recall if I saw it when I was a kid. It was probably in the early 90s. Maybe around 1990? I'm not sure if it was the first season or the first episode. I think the first season started a few years after that. So, if the first episode was in 1990, then the first season might have started a bit later, maybe 1991 or 1992. 
+
+Wait, I'm not entirely certain. I should try to remember any specific details. I think the show was about a group of kids who have a rat as a pet, hence Rugrats. They go on adventures, which is typical for animated shows of that era. 
+
+I'm going to go with 1990 for the first episode. That
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[40] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:0395ddee-dec7-4a7c-b28a-71e9e7906f79
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: who played the sheriff in carry on cowboy
+    response: Okay, so I need to figure out who played the sheriff in "Carry On Cowboy." I'm not too familiar with the movie, but I know it's part of the "Carry On" series, which I think are Westerns. The main character is Private Jim Thorpe, played by Steve O'Neal. I remember that Steve O'Neal was in several of these movies, so he's probably the sheriff too. 
+
+Wait, but I'm not 100% sure. I think the sheriff is an important character, so it makes sense that he'd be played by a well-known actor. Steve O'Neal has a distinctive voice and looks, so it's likely he's the sheriff. I don't recall any other actors from that era playing the sheriff, so I'm pretty confident it's him.
+</think>
+
+Steve O'Neal played the sheriff in "Carry On Cowboy."
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[41] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:04615435-ce54-410d-abb5-35bce105132d
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: how many hms hood's have there been
+    response: Okay, so I need to figure out how many HMS Hood have been there. Wait, that's a bit confusing. I think the user might be asking about the number of times HMS Hood has been used or the quantity of something related to HMS Hood. But "there been" is a bit off. Maybe they meant "how many have there been" or "how many have there been." Hmm, perhaps they're asking about the number of ships named Hood that have served in the Royal Navy.
+
+I know that HMS Hood was a ship that was involved in the Battle of the Spanish Armada in 1588. It was a victory for the English, so it's a significant ship. But how many of these ships have there been? Wait, maybe they're asking about the number of ships in the Royal Navy that have been named Hood. I'm not sure if there are multiple ships with that name. I think I've heard of HMS Hood being the only one, but I'm not certain.
+
+Alternatively, maybe the user is asking about the number of times HMS Hood has been involved in something, like battles or something else. But without more context, it's hard to say. I should probably look up if there are multiple ships named Hood in the Royal
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[42] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:047ac0cf-32cd-49a0-ab9b-82bc8f1ad06c
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: who is the girl in the video i don't want this night to end
+    response: Okay, so I'm trying to figure out who the girl in the video is. The user mentioned the video title "I Don't Want This Night to End" and they're asking who the girl is because they don't want the night to end. Hmm, I remember that song is pretty popular, but I'm not exactly sure who the singer is. Let me think... I think it's by a female artist, maybe from a well-known band. Wait, was it by a group called They Might Be Giants? I think they have a song with that title. Let me double-check that. Yeah, I'm pretty sure it's They Might Be Giants. So the girl in the video is likely the singer of that song. I don't think it's a different artist, so I'll go with that.
+</think>
+
+The girl in the video is the singer of the song "I Don't Want This Night to End" by They Might Be Giants. 
+
+Answer: The girl is the singer of the song "I Don't Want This Night to End" by They Might Be Giants.
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[43] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:049ad3ff-2f8f-4ceb-8528-bc7d248ff0b2
+    em=0.0 | f1=0.018867924528301886 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: what is the use of symbolic link in linux
+    response: Okay, so I need to figure out the use of symbolic links in Linux. I remember that symbolic links are a way to reference files or directories without having to create a new file. They're like shortcuts. I think they're useful for a few reasons. Maybe they help with file permissions because if the original file has the wrong permissions, you can just change the symlink instead of recreating the file. That makes sense because changing a symlink is quicker than altering a file's entire content.
+
+Another thing I've heard is that symbolic links can save disk space. If you have a large file, creating a symlink to it instead of duplicating it can save space. But I'm not entirely sure if that's the main use or just a benefit.
+
+I also think symbolic links are used for routing commands in the terminal. Like, if you have a command that's long, you can create a shortcut so you don't have to type the whole thing every time. That's more of a feature of the shell, though, rather than the symbolic link itself.
+
+Wait, but the question is about the use of symbolic links in Linux, so I should focus on their primary functions. They allow easy file navigation, which is useful when dealing with different directories. They can also help in
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[44] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:051d0674-57d0-4858-8a7e-edc2f540c4bd
+    em=0.0 | f1=0.021621621621621626 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: who bombed guernica during the spanish civil war
+    response: Okay, so I need to figure out who bombed Guernica during the Spanish Civil War. I remember hearing about this place before, it's a significant city in Spain, right? I think it's in the region of País Vasco, which is in the northern part of the country. 
+
+I recall that the Spanish Civil War was a conflict between the Nationalists and the Republicans. The Nationalists were the winning side, I believe, and they were in power during the later stages of the war. But I'm not sure about the exact timeline. 
+
+Now, Guernica is famous for the bombing by the Nationalists, which happened in 1937. The Spanish Civil War started in 1936, so 1937 was just a couple of years after that. The bombing was a major event because it was one of the first instances of aerial bombs being used extensively against civilian populations, leading to a lot of casualties. 
+
+So, the bombers were the Nationalists, specifically the Air Force under General Franco. They dropped bombs on Guernica, which is why it's remembered as a significant and tragic event. The victims included civilians, women, and children, which made it a particularly brutal act. 
+
+I don't
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[45] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:05660480-3a84-4fc7-8c6c-65fcb5cdc882
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: how i met your mother barney 200th girl
+    response: Okay, so I'm trying to figure out how to answer the question "how i met your mother barney 200th girl." First, I need to understand what the user is asking. It seems like they're referencing a song by The Rolling Stones called "How I Met Your Mother." The song is pretty famous, so I should probably start by recalling the details of that song.
+
+The song is from the album "Paint It, Black" released in 1969. The lead singer is Keith Richards, and the main songwriter is Charlie Ryan. The lyrics are about the narrator recounting a story of meeting a woman named Sally and her mother, Barney. The song is quite personal and introspective, giving a glimpse into the narrator's life and relationships.
+
+Now, the user is asking about the 200th girl. I'm not sure where they're getting the number 200 from. Maybe they're referring to a specific version of the song or a cover version that mentions the 200th girl. Alternatively, it could be a misunderstanding or a play on words.
+
+I should consider if there's a song or a recording by The Rolling Stones or another artist that mentions the 200th girl in relation to
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[46] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:0684ecaa-2357-4472-871b-0b6069134eb4
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: who was the voice of hr puff n stuff
+    response: Okay, so I need to figure out who the voice of "HR Puff 'n' Stuff" is. I'm not familiar with this term, so I'll start by breaking it down. "HR Puff 'n' Stuff" sounds like a brand or a product, maybe something related to HR, which stands for Human Resources. The name "Puff 'n' Stuff" is catchy, so it's probably a marketing term.
+
+I'll think about where I've heard this term before. It might be from a movie, a TV show, or a commercial. Maybe it's a character or a recurring element in a show. Since it's HR-related, perhaps it's a fictional character created for a show or a movie.
+
+I'll consider the possible sources. It could be from a TV series, a video game, or even a book. If it's a TV show, the voice might be a well-known actor. Alternatively, it could be a lesser-known voice from a specific franchise.
+
+I'll also think about the structure of the name. "HR Puff 'n' Stuff" has a plural ending, so maybe it's a team or a duo. The "Puff" part could be a nickname, like a play on words or
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[47] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:0723acca-39c2-4abe-9c8c-2b5532c95bbd
+    em=0.0 | f1=0.08450704225352113 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: what is the significance of the nodes of ranvier
+    response: Okay, so I need to figure out the significance of the nodes of Ranvier. I remember from my biology class that nodes of Ranvier have something to do with nerve impulses. Let me think. Nodes of Ranvier are part of the axon of neurons, right? They're these small gaps where the membrane potential is maintained. 
+
+Wait, how does that relate to nerve signal transmission? Oh, right! When an action potential comes along, it doesn't just pass through the entire axon. Instead, it jumps from one node to the next. This process is called saltatory conduction. So the nodes help the signal move faster because the ions can jump between them without needing to go through the whole space in between. 
+
+I think the key point is that these nodes allow the nerve impulse to skip over the non-conductive parts of the axon, which are the myelin sheath gaps. Without the nodes, the signal would spread more slowly because it would have to pass through each gap. So the nodes are crucial for making nerve impulses faster and more efficient. 
+
+I should make sure I'm not mixing this up with something else. Nodes of Ranvier are definitely about the conduction of the impulse, not about the structure itself. They're named after
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[48] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:07822882-a245-435e-bbd6-2b233bcd9371
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: what episode of glee does kitty join glee club
+    response: Okay, so I need to figure out which episode of Glee Kitty joins the Glee Club. I remember that Glee is a show about a group of friends from different backgrounds who form a singing group. Kitty is one of the main characters, right? She's the one who started as a barista and then became a singer.
+
+I think she joined the Glee Club in the early part of the series. Maybe around the first few episodes. I'm trying to recall specific episodes. There's an episode where the group is formed, and I think Kitty is part of that. Maybe it's the first episode or the second one.
+
+Wait, the first episode is called "A Day to Remember." In that episode, the Glee Club is formed, and I believe Kitty is one of the founding members. She's singing with the group, so that's probably the episode where she joins.
+
+I don't think she joined later on because the show is structured with her being a key character from the beginning. So, the episode where she joins the Glee Club is the first episode, "A Day to Remember."
+</think>
+
+The episode where Kitty joins the Glee Club is "A Day to Remember."
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[49] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:078e62ea-415d-47f3-914b-60372be5446f
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: who was the last pow released from vietnam
+    response: Okay, so I need to figure out who was the last President released from Vietnam. Hmm, I'm not entirely sure about the timeline here, but I'll try to break it down. 
+
+First, I know that during the Vietnam War, many leaders were either executed, exiled, or died. The war ended in 1975 with the fall of Saigon, so the last President released would be someone who was still alive after that. 
+
+I remember that after the war ended, North Vietnam was in control, and South Vietnam was under the control of the United States. So, the last President from the North would be the one who was still in power. 
+
+I think the last North Vietnamese President was Phan Van Dung. He was the last in line after the death of Phan Dinh Pham. After the fall of Saigon, North Vietnam was under communist rule, and Phan Van Dung became the leader. He remained in power until his death in 1994. 
+
+So, putting it together, Phan Van Dung was the last President released from Vietnam because he was the last in power after the war ended, and he survived until 1994. I don't think anyone else was released
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[50] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:07eace9c-2b78-4d0e-9858-a8a26501981d
+    em=0.0 | f1=0.021505376344086023 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: the barkana waterfalls is located in which state
+    response: Okay, so I need to figure out which state Barkana Falls is located in. I'm not entirely sure, but I'll try to recall any information I might have come across. I think it's in the United States, probably in a state that has a lot of waterfalls and outdoor activities. 
+
+I remember that there are several states with many waterfalls, like California, Oregon, Washington, and maybe Montana. Barkana Falls sounds familiar, but I'm not certain. I think it might be in Montana because I've heard of places like Yellowstone and the Tetons, which are in Montana. 
+
+Wait, I'm not 100% sure. I should try to think of any other states with many waterfalls. Idaho comes to mind, but I don't recall hearing about Barkana Falls there. Idaho has some beautiful waterfalls, but I'm not sure if it's named Barkana. 
+
+Another possibility is Idaho again, but I'm not certain. I think the name might be more associated with Montana. I'll go with Montana as the state where Barkana Falls is located.
+</think>
+
+Barkana Falls is located in Montana.
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[51] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:08d0ba4d-7dc8-4dcd-8fe7-8c5af0bdc3d8
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: who plays princess jasmine on once upon a time
+    response: Okay, so I need to figure out who plays Princess Jasmine on Once Upon a Time. I remember that Once Upon a Time is a TV show, and it's based on the Disney fairy tale. I think Princess Jasmine is one of the main characters, so I should look for the actor who portray her.
+
+I recall that the show features several actors, and I think it's directed by Tim Miller, who also did other projects like The Intern. The voice of Jasmine is a big part of the show, so maybe the voice actress is the main focus. I believe she's a well-known voice actress, possibly from another Disney show.
+
+Wait, I think she's the one who voices Jasmine, but I'm not sure if she plays her in the TV show or if she's the original Disney character. I think in the show, they might have a different actor, but the voice is her. Alternatively, maybe she's the one who plays her. I'm a bit confused here.
+
+I think the voice actress is the key point. She's the one who brings Jasmine's voice to life in the animated series. I believe her name starts with an 'A' and she's been in other Disney shows. Maybe she's the one who's been in the show for
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[52] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:091f53db-c331-4001-8bf4-2b07fb16b997
+    em=0.0 | f1=0.019417475728155338 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: what mountain range runs along the borders of italy france and switzerland
+    response: Okay, so I need to figure out which mountain range runs along the borders of Italy, France, and Switzerland. Hmm, I remember that the Alps are a major mountain range, but I'm not entirely sure if they border all three countries. Let me think. Italy is in the north, France is to the west, and Switzerland is to the east. The Alps do run through all of them, right? They start from the Italian border and go all the way to the Swiss side, crossing into France as well. So, the answer should be the Alps.
+</think>
+
+The mountain range that runs along the borders of Italy, France, and Switzerland is the Alps. 
+
+Answer: The Alps.
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[53] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:094a8214-1820-4895-89c2-d636ef0857be
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: when did the king kong ride burn down
+    response: Okay, so I need to figure out when "The King Kong Ride" burned down. I remember that King Kong is a movie, but I'm not exactly sure about the details. Let me think. I know that King Kong was released in 1933, directed by Joseph L. Mankiewicz. The ride, I think, was part of a theme park attraction. 
+
+Wait, wasn't there a theme park called King King in New York City? I think that's where the ride was based on. So, the ride opened in the early 1930s, probably around 1933 when the movie came out. But when did it burn down? I'm not sure. I think it was a popular attraction for a while, but I don't remember the exact year it was destroyed. Maybe it was in the 1950s or 1960s? 
+
+I should check my memory. I think the ride was operational for a number of years, but I don't recall the specific date it burned. Maybe it was during a fire or something. I'm not certain, but I think it was in the mid-20th century. I'll go with the 195
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[54] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:097eb557-bae8-48b2-b281-a1465805ae5b
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: how many years did moses malone lead the league in rebounds
+    response: Okay, so I need to figure out how many years Moses Malone led the Boston Celtics in rebounds. I'm not exactly sure about his career stats off the top of my head, but I can try to recall or break it down.
+
+First, I know that Moses Malone was a very successful player in the NBA. He played for the Celtics, Knicks, and briefly the Trail Blazers. His peak years were probably in the early to mid-90s. I remember he was a dominant center during his time with the Celtics, known for his rebounding skills.
+
+I think he started his NBA career in the late 80s. He was traded to the Celtics in the mid-90s. I'm trying to remember specific seasons. I think he led the Celtics in rebounds in the early 90s. Maybe around 1991-92? I'm not sure about the exact years.
+
+Wait, I think he was the leader for a couple of seasons. Maybe he led the Celtics in rebounds for two or three consecutive years. I'm trying to recall if it was 1992, 1993, and 1994. That seems possible. But I'm not entirely certain about the exact number of
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[55] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:09dacc5e-8897-4d63-94d8-fadfcfad51b1
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: who said have you no sense of decency
+    response: Okay, so I need to figure out who said, "have you no sense of decency." Hmm, I'm not exactly sure who that's from. I remember hearing it before, maybe in a song or a movie. Let me think... It sounds like a pretty strong statement, so it's probably from a famous person. 
+
+I think it might be from a song. Maybe by a well-known artist. I'm trying to recall if it's from Taylor Swift or someone else. Wait, I think it's from a song by a female singer. Oh, right! It's from a song called "You Belong to Me." I remember that song because it's pretty emotional and the message is about love and belonging. 
+
+Let me double-check. The line goes, "You belong to me, you have no sense of decency." Yeah, that's the line. So the singer is probably Taylor Swift. I think she released that song in the early 2000s, maybe 2002 or so. It was a hit and became part of her catalog. 
+
+I don't think it's from a movie, but maybe a movie soundtrack? No, I think it's purely from a song. So the answer should be Taylor Swift
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[56] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:09e2931c-09fa-4db9-a4b5-39c2f97d7cb6
+    em=0.0 | f1=0.02884615384615384 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: where is the american athletic conference championship game held
+    response: Okay, so I need to figure out where the American Athletic Conference (AAC) championship game is held. I'm not too familiar with college sports, but I know the AAC is a conference that includes several universities. I remember that many college football games are held in stadiums, but I'm not sure which one hosts the championship game specifically.
+
+First, I should think about the major teams in the AAC. There's Georgia, which is a big school in Athens, Georgia. Then there's Tulsa, which is in Tulsa, Oklahoma. There's also UCF in Orlando, Florida, and maybe some other schools in different states. I think the championship game is usually held in a neutral location to give all teams a fair chance, but I'm not certain.
+
+I recall that the Southeastern Conference (SEC) has its championship game in Atlanta, hosted by Georgia. But the AAC is a different conference. Maybe they have their own neutral site. I think I've heard of the Cotton Bowl before; isn't that a big bowl game? I believe the Cotton Bowl is in Dallas, Texas, and it's a major college football bowl game. If the AAC championship is held there, that would make sense because it's a neutral location and a significant venue.
+
+Wait, but I
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[57] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:09ee1c68-7198-4fe8-8164-71a171cbd490
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: what is the top of a pyramid called
+    response: Okay, so I need to figure out what the top of a pyramid is called. Hmm, I remember pyramids from history and geometry. They're those ancient structures, like the Egyptian pyramids. I think they have a base, which is usually square, and then sides that come up to a point. So, the top part where all the sides meet must be a single point. I think that's called the apex. Yeah, that sounds right. I don't think it's called the vertex because vertex can sometimes refer to a point in geometry, but in the context of a pyramid, apex is more specific. So, the top is the apex.
+</think>
+
+The top of a pyramid is called the apex.
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[58] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:09f4f102-ed09-4d1d-9434-08cc3c591827
+    em=0.0 | f1=0.0213903743315508 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: where does the time change on i 65
+    response: Okay, so I need to figure out where the time changes on an iPhone 65. I'm not exactly sure what the iPhone 65 is, but I think it's a model of an iPhone, maybe a specific series or variant. Wait, actually, I recall that there's an iPhone 6S, but maybe the 65 is a typo or a less common model. 
+
+Assuming it's a standard iPhone model, I know that iPhones usually have their time settings managed through the Settings app. So, I should check there. In the Settings app, there's usually a Time & Date section where you can set the time zone. 
+
+I also remember that iPhones are set to the user's local time by default, but you can change the time zone in the Time & Date settings. Additionally, if the device is set to automatically adjust the time based on the network, you can change that as well. 
+
+So, putting it all together, the time changes on an iPhone 65 would be managed through the Settings app, specifically in the Time & Date section. That's where you can adjust the time zone and other related settings.
+</think>
+
+The time changes on an iPhone 65 are managed through the Settings app, specifically in the
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[59] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:0a0a947c-8a31-439f-ba99-914d5b0f3eb0
+    em=0.0 | f1=0.058823529411764705 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: where is the ogden hotel in las vegas
+    response: Okay, so I need to figure out where the Ogden Hotel is located in Las Vegas. I'm not too familiar with the area, but I know Las Vegas has a lot of hotels and resorts. Let me think about the major areas in Las Vegas. There's the Strip, which is the main entertainment area with casinos and hotels. Then there's the Bellagio, which is a famous hotel on the Strip. There's also areas like Theodule, which is more residential, and Summerlin, which is a bit further out.
+
+I remember hearing about the Ogden Hotel being one of the tallest buildings in Las Vegas. It's a luxury hotel, so it's probably in a prime location. I think it's near the Strip because that's where a lot of luxury hotels are. Maybe it's on the north strip? I'm not entirely sure, but I think it's close to other big hotels like the Wynn or the Venetian.
+
+Wait, I think the Ogden is actually located on the north strip, near the intersection with Flamingo Road. It's a mixed-use hotel, which means it has both hotel rooms and other services like restaurants and shops. That makes sense because it's a luxury hotel, so they want to attract people
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[60] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:0b3ee7f9-5168-4bc6-9285-270b9405372b
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: when did the samsung galaxy core prime come out
+    response: Okay, so I need to figure out when the Samsung Galaxy Core Prime came out. I'm not exactly sure, but I'll try to recall any information I have. I know that Samsung has a history of releasing various smartphones, and the Core series was one of them. I think the Core Prime was a predecessor to the Galaxy S series, maybe the S3 or S4. 
+
+I remember that the Galaxy S3 was released in 2013, so the Core Prime, being a model before that, might have been around in 2012. Wait, was it 2012 or 2011? I'm a bit fuzzy on the exact year. I also recall that the Core Prime had a sliding cover and a flipable design, which was pretty innovative at the time. It used an LTE connection, which was becoming more common as mobile networks advanced.
+
+I should also consider the release date in different regions. Sometimes, devices are released in one region before others. For example, the Core Prime was available in the US before it hit other markets. But I'm pretty confident that the general release date was around early 2012. 
+
+I don't think I've heard of any major issues with the Core
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[61] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:0c0d211e-4342-4dee-a1b2-dd5e15c6478c
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=True | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: how many hotels are in new york city
+    response: Okay, so I need to figure out how many hotels are in New York City. I'm not exactly sure off the top of my head, but I can try to break it down. I know that NYC is a major city with a diverse population, so it's likely that there are a lot of hotels. I remember hearing that Manhattan has a lot of luxury hotels, especially around areas like Midtown and the financial district. Then there are the more budget-friendly options in areas like Brooklyn and Queens. I think the number is in the thousands, maybe around 3,000 to 4,000? I'm not certain, but I think that's a ballpark figure. I should check if there are any specific sources or recent estimates, but since I can't look things up, I'll go with what I remember.
+</think>
+
+As of the latest estimates, there are approximately 3,000 to 4,000 hotels in New York City.
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[62] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:0de2924f-f178-49dd-ad81-73f12d1cdbc9
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: what is the biggest cash crop in kentucky
+    response: Okay, so I need to figure out what the biggest cash crop in Kentucky is. I'm not too familiar with Kentucky's agriculture, but I know it's an important state for farming. Let me think about the major crops they grow. Corn is pretty common in many parts of the U.S., including Kentucky. I've heard that corn is a major crop there. Then there's soybeans, which are also widely planted. Wheat is another possibility, but I think corn is more dominant. Maybe tobacco? I'm not sure how big that is compared to corn. I think corn is probably the biggest cash crop because it's a major agricultural product and a staple in many households. So, I'll go with corn as the biggest cash crop in Kentucky.
+</think>
+
+The biggest cash crop in Kentucky is corn.
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[63] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:0df93d33-2d5b-4276-873b-eb757ad32a85
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: who sings she only smokes when she drinks
+    response: Okay, so I need to figure out who sings the song "She Only Smokes When She Drinks." I'm not sure off the top of my head, so I'll have to think through this step by step.
+
+First, I remember that this song is pretty popular, but I'm not certain who the artist is. I think it might be a duet or a collaboration between two singers. Maybe I can recall any famous duets that include this song. I know that duets often feature well-known artists, so perhaps it's between two big names.
+
+I also recall that the song has a catchy melody, which might help in identifying the artist. The lyrics talk about smoking and drinking, so it's likely a song about the enjoyment of alcohol. Maybe the artist is someone who's known for songs about lifestyle or party songs.
+
+I think I've heard this song before in the context of a big collaboration. Was it from the 80s or 90s? I'm trying to remember if it's from a specific artist. Maybe it's between two artists from the same era. I think one of them might be Justin Timberlake because he's known for duets and has a smooth voice.
+
+Wait, I think the other artist is a female singer
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[64] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:0e721a84-eb90-4963-b8b1-5545cfd445e2
+    em=0.0 | f1=0.010256410256410256 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: where is battleground 2017 going to be at
+    response: Okay, so I need to figure out where the BattleGround 2017 event is going to be held. I'm not exactly sure what BattleGround is, but I think it's some kind of event, maybe related to gaming or something similar. I remember hearing about BattleGround before, perhaps in the context of gaming tournaments or competitions.
+
+First, I should consider what BattleGround 2017 refers to. It could be a specific tournament or a series of events. Since the user is asking about the location, I should think about any major gaming events that took place around that time. I know that events like the Electronic Gaming Expo (EGX) are major in North America, but I'm not sure if BattleGround 2017 was that.
+
+Alternatively, it might be a regional event. I'm trying to recall if there were any significant gaming events in 2017. I think there was a big event in North America around that time, possibly in Las Vegas. Maybe it was a convention or a tournament. I'm not certain, though.
+
+Wait, I think I remember something about the BattleGround 2017 being held in Las Vegas. It might have been a gaming convention or a competition where gamers from around
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[65] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:0f7826f7-1e9a-46b7-ad8c-2d9eacf615e2
+    em=0.0 | f1=0.03125 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: where did the last name nettles come from
+    response: Okay, so I need to figure out where the last name "Nettles" comes from. I'm not entirely sure, but I'll try to break it down. First, I know that many English last names have roots in either ancient families or places. Maybe "Nettles" is one of those. I remember hearing that some last names are derived from places, like "Cobb" for Georgia or "Bement" for Germany. 
+
+I wonder if "Nettles" has a similar origin. Let me think about where I might have heard it before. I think I've heard it in the context of people from the southern U.S., maybe in states like Georgia or South Carolina. Could it be a place name? Maybe a town or a river? I'm not sure. 
+
+I also recall that some last names are based on personal names. For example, "Smith" comes from Old English for "stem" or "Bliss" from a Latin name. But "Nettles" doesn't sound like a typical personal name. It might be more likely to have a place origin. 
+
+I should consider if "Nettles" is a variant of another name. Sometimes people change their last names, so maybe it's derived from
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[66] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:102fab12-b007-46c7-aba2-88d4f03ba78c
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: who has written the poem udayavagali cheluva kannada nadu
+    response: Okay, so I need to figure out who wrote the poem "Udayavagali Cheluva Kanna Nadu." I'm not very familiar with Kannada poetry, but I'll try to break it down.
+
+First, I know that "Udayavagali" is a common name in Kannada literature, often associated with poets from the 20th century. The poem's title translates to something like "The Flower of the Morning," which might suggest it's a collection or a series of poems.
+
+I recall that there was a notable poet named Udayabhaskar, who was quite popular in the late 19th to early 20th century. He wrote several volumes of poems, including "Udayavagali." I think he wrote a series of volumes, maybe around 1900-1910, which included multiple books of poetry.
+
+So, putting it together, the poem "Udayavagali Cheluva Kanna Nadu" is part of Udayabhaskar's work. I'm pretty sure that's the correct attribution, but I'm not 100% certain. I should double-check if there's another poet with a similar name or if the title refers
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[67] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:1136dc83-04cb-478a-b12f-8bb53f229636
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: who played julia on as the world turns
+    response: Okay, so I need to figure out who played Julia on "As the World Turns." I'm not too familiar with the show, but I know it's a long-running ABC family drama. I remember Julia is one of the main characters, probably a daughter of some sort. Let me think... I think she's the daughter of Barney and Betty. Barney and Betty are the main couple, right? So, the show is set in a small town, and they have several children. 
+
+I'm trying to recall if I've heard the name Anya360 before in the context of this show. I think she's the actress who plays Julia. I'm pretty sure she's British, which makes sense because the show has a British setting. She might have been in other TV shows or movies before taking this role. 
+
+Wait, I'm a bit unsure. Could it be someone else? Maybe I'm confusing her with another actress. I think Anya360 is known for other roles too, but in this specific show, she's definitely Julia. I should stick with that unless I'm certain it's someone else. 
+
+So, putting it together, Anya360 plays Julia on "As the World Turns." She's the daughter of
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[68] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:1212eef7-c458-4ebf-9590-f02668dc3661
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=True | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: when did amsterdam become capital of the netherlands
+    response: Okay, so I need to figure out when Amsterdam became the capital of the Netherlands. I remember that Amsterdam is a major city there, but I'm not sure if it's the capital. I think the capital is actually The Hague, but I might be mixing things up. Let me think about the history of the Netherlands. I know that the Netherlands is a country, but it's also a union of several provinces. Maybe the capital has changed over time. I think in the past, Amsterdam was a significant city, especially in trade and culture. But when did it become the official capital? I'm not entirely sure, but I think it was a few centuries ago. Maybe in the 17th or 18th century? I should try to recall any historical events or notable figures that might have influenced this change. Oh, perhaps the Union of Utrecht in the 17th century? That might have had something to do with the political structure of the Netherlands. So, maybe after that union, Amsterdam became the capital. I'm not 100% certain, but I think it was around the 17th century. I should check if that's correct, but since I can't look it up, I'll go with what I
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[69] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:121715b6-9816-4743-b09d-c1799af86318
+    em=0.0 | f1=0.02955665024630542 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: whats the difference between powerball and powerball plus
+    response: Okay, so I need to figure out the difference between Powerball and Powerball Plus. I'm not too familiar with these lotteries, but I know they're both games of chance with different structures. Let me start by recalling what I know about Powerball.
+
+Powerball is a well-known lottery game where players pick 5 numbers from a pool and one Powerball number. I think the main jackpot is won by matching all 6 numbers, but there are also smaller prizes for matching some numbers. The odds of winning the jackpot must be really low, something like 1 in 292 million, I believe.
+
+Now, Powerball Plus is a different game. I'm not exactly sure how it's structured, but I think it's similar but with some variations. Maybe it has different numbers or different prize tiers. I remember hearing that Powerball Plus has a higher jackpot than the standard Powerball, which might mean it's more lucrative but perhaps harder to win.
+
+Wait, I think Powerball Plus might have a different set of numbers. Maybe it uses a different pool for the main numbers or a different Powerball. Or perhaps it's a weekly game with different rules. I'm not certain, but I think the key difference is that Powerball Plus
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[70] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:12d5802b-7847-4472-be38-8909f1845608
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: when was the palace pier in brighton built
+    response: Okay, so I need to figure out when the Palace Pier in Brighton was built. I'm not exactly sure, but I'll try to think through it. I know that Brighton is a city in England, and it's known for its seafront promenades and various structures along the sea. Palace Pier sounds like a specific place there.
+
+First, I remember that Brighton has a lot of historical sites, especially from the Victorian era. Maybe the pier was built during that time. I think the Victorian era was from the 1830s to the 1900s, so it's possible it was built then.
+
+I also recall that there's a famous structure in Brighton called the Brighton Tower, which is a clock tower. I think that was built in the late 19th century, maybe around 1880. The tower is quite old, so if the pier was built after that, it would be in the late 19th or early 20th century.
+
+Wait, but I'm not entirely sure about the exact year. I think it might have been built in the 1880s as well, perhaps around 1885. That seems to be a common date I've heard before
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[71] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:13d081f3-29ce-4a8f-8205-2f0424f90ecd
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: who plays dave coaches in gavin and stacey
+    response: Okay, so I need to figure out who plays Dave the coach in the show "Gavin and Stacey." I'm not super familiar with the show, but I remember it's a British comedy-drama series. Let me think... I think the main characters are Gavin and Stacey, who are twins. They have a bunch of friends, right? One of the friends is Dave, who I believe is a teacher. 
+
+I'm trying to recall if I've heard any names before. I think it's a recurring character, so the actor might be someone who's been in other shows. I'm not sure if it's a new actor or someone who's been around. Maybe I can think of other people from similar shows. 
+
+Wait, I think I've heard of someone named Paul Gower before. He's been in some TV shows, maybe older ones. I'm not 100% sure, but I think he plays Dave. I should double-check that. 
+
+Alternatively, maybe it's someone like David Jason? No, I think he's more known for "The IT Crowd." Or perhaps someone like Richard Armitage? I'm not sure. 
+
+I'm going to go with Paul Gower because I think he's the one
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[72] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:152dca22-09f0-4340-acb4-e32ce05c16dd
+    em=0.0 | f1=0.039603960396039604 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: what three main things does a soundscape include
+    response: Okay, so I need to figure out what the three main things a soundscape includes are. Hmm, I'm not entirely sure, but I'll try to break it down. 
+
+First, I think a soundscape is related to the environment and sound. Maybe it's about the sounds that come from the surroundings. So, sounds from the environment would definitely be a part of it. That makes sense because a soundscape is like the auditory environment around you.
+
+Next, I remember hearing about different types of sounds in a soundscape. There are ambient sounds, like the rustling of leaves or the distant roar of traffic. Then there are directional sounds, like the sound of a bird chirping or a train horn. So, sounds can come from different directions or be ambient. That's probably one of the main things.
+
+Then, I think about the elements that influence sounds. Wind, rain, maybe even the ground. For example, wind can create certain sounds, and rain has its own unique rhythm. So, environmental elements that affect sound would be another component.
+
+Wait, but the question asks for three main things. I have sounds from the environment, sounds that can be ambient or directional, and environmental elements influencing sounds. That seems to cover it. I don't
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[73] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:1574ea3c-fa53-4789-9d5f-6c0ce8d0f95d
+    em=0.0 | f1=0.07960199004975124 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: what is the theme of the song daylight by maroon 5
+    response: Okay, so I need to figure out the theme of the song "Daylight" by Maroon 5. I'm not super familiar with all their songs, but I know they're a popular rock band. Let me start by recalling what I know about the song.
+
+First, the song's title is "Daylight," which immediately makes me think of themes related to daylight, maybe sunrise, brightness, or dawn. But I should consider the context of the song within the band's music. Maroon 5 often writes about personal experiences, emotions, and sometimes social issues.
+
+I remember that "Daylight" is a song from their 2003 album "Between the World and Me." The album is known for its introspective lyrics and themes of love, heartbreak, and personal struggles. So, the theme is likely something emotional and personal.
+
+The lyrics often deal with relationships, heartbreak, and the passage of time. The song might touch on how daylight represents a new beginning or a moment of hope after a tough time. Maybe it's about moving forward after a breakup or dealing with loss.
+
+I should also think about the music style. Maroon 5 blends rock with pop and R&B elements. The song probably has a catchy melody and a
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[74] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:159bc6b6-38a3-4e53-897e-4b9230c05936
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: who has been elected as the new president of finland
+    response: Okay, so I need to figure out who the new president of Finland is. I'm not entirely sure, but I'll try to recall what I know. Finland has been under the leadership of President Sauli Niinistö, right? I think he's been serving since 2019. I remember hearing about him in news reports and maybe some political discussions. I don't think there have been any recent changes in leadership, so it's likely he's still in office. I don't have any conflicting information, so I'll go with that.
+</think>
+
+Sauli Niinistö has been elected as the new president of Finland.
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[75] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:168fdba9-05e4-46b3-96b8-05a8fe84e48f
+    em=0.0 | f1=0.08333333333333333 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: a language used for describing the appearance of a printed page is called
+    response: Okay, so I need to figure out what a language used for describing the appearance of a printed page is called. Hmm, I remember that there are different ways to describe things, like colors, fonts, layout, etc. Maybe it's a specific term related to printing or design. I think I've heard of something called "page description language" before. That sounds familiar, but I'm not entirely sure. Let me think... PDL is used in printing to define page elements, so that must be it. Yeah, I think that's the term.
+</think>
+
+Page Description Language
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[76] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:17392fe3-674c-4d82-8517-f0ce5e4ed18e
+    em=0.0 | f1=0.011111111111111112 | contains_answer=False | refusal=True | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: when is the major league baseball home run hitting contest
+    response: Okay, so I need to figure out when the Major League Baseball home run hitting contest takes place. I'm not entirely sure, but I remember it's an annual event. I think it's related to baseball season, which runs from March to late August or September. 
+
+I believe the contest usually happens in the latter part of the season, maybe around June or July. I've heard it's a big deal, with players competing to hit the most home runs. It's probably held in early July because that's when the season is getting into its prime, and teams are in the middle of their schedules. 
+
+I'm not 100% certain about the exact date, but I think it's somewhere in June or early July. Maybe around June 21st? I think that's when it's been held in the past. I should check if that's correct, but since I can't look it up, I'll go with what I remember.
+</think>
+
+The Major League Baseball home run hitting contest typically occurs in early July, with the event usually held on June 21st.
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[77] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:17db1957-2c95-4281-9951-e643dac1b307
+    em=0.0 | f1=0.03314917127071823 | contains_answer=True | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: who played in the first monday night nfl game
+    response: Okay, so I need to figure out who played in the first Monday Night Football game. I remember that Monday Night Football was a big deal in American football history, but I'm not exactly sure about the details. Let me think.
+
+I know that the NFL started in 1967, and Monday Night Football was introduced around that time. The first season was in 1967, right? So the first Monday Night Football game would have been in 1967. But who were the teams involved?
+
+I think the first game was between the Dallas Cowboys and the Green Bay Packers. I recall that the Cowboys were a relatively new team, while the Packers were one of the traditional powerhouses. The game was played on October 11, 1967, at the Dallas Memorial Coliseum. The Cowboys won that game, which was a significant first step for Monday Night Football.
+
+Wait, was it the Cowboys vs. Packers or Cowboys vs. something else? I'm pretty sure it was the Packers, but I'm not 100% certain. Maybe I should double-check the teams. I think the Packers were the defending Super Bowl champions, so they were a tough team to beat. The Cowboys had Steve recon in the
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[78] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:182ace3f-a5cb-4c45-8a16-dd43a38fc0da
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: what movie has the song upside down in it
+    response: Okay, so I need to figure out which movie has the song "Upside Down" in it. I'm not super familiar with all the movies, but I remember that "Upside Down" is a pretty catchy tune. Let me think... I know that the song is from a movie, but I'm not sure which one. 
+
+I think it's from a horror movie because the song's title suggests something about flipping or inversion, which sometimes happens in horror themes. Maybe "The Shining"? I remember that movie has a lot of creepy imagery and themes. Let me recall, in "The Shining," Jack Torrance is trapped in a hotel, and there's a scene where he sees something upside down. That might be where the song comes from. 
+
+Wait, but I'm not 100% sure. Another possibility could be "The Exorcist," but I don't remember that song being in it. Maybe "The Ring"? No, that's more of a different kind of horror. 
+
+I think I'm leaning towards "The Shining" because of the inverted imagery and the song's presence in that movie. I'll go with that.
+</think>
+
+The movie "The Shining" features the song "Upside Down."
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[79] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:18db08ec-26da-4e51-a8b2-d249d0c0b74f
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: the chapters (suras) of the qur'an are arranged roughly in order of
+    response: Okay, so I need to figure out how the chapters of the Quran, which are called suras, are arranged in order. I remember that the Quran is divided into these chapters, but I'm not exactly sure about the order. I think it's based on something like the creation of the heavens and the earth, but I'm not certain. Maybe it starts with the first chapter, which I believe is called "Al-Fattah" or "The Opening." Then there's "Al-Mamun," which I think is the second chapter. After that, I'm not sure about the exact order. I recall that the Quran has 114 suras in total, but I don't remember the sequence beyond the first few. I think it goes up to around chapter 60 or 70, but I'm not sure. I should probably try to recall the order as best as I can, but I might be mixing up some of the later chapters. I know that the Quran is divided into parts called qahfs, which might help in remembering the order, but I'm not sure how that works. Maybe the first qahf is the first 23 suras, but I'm not certain. I think the order is roughly
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[80] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:19782307-c8a7-4c17-acf7-54bb9588aa35
+    em=0.0 | f1=0.009478672985781991 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: where does the term here here come from
+    response: Okay, so I need to figure out where the term "here here" comes from. I've heard people use it before, but I'm not exactly sure about its origin. Let me think about where I might have heard it. It sounds like a casual expression, maybe something people use when they're talking about something specific but don't want to be too direct. 
+
+I remember sometimes in movies or TV shows, characters use phrases like "here here" to express agreement or to add emphasis. Maybe it's from a specific show or movie? Or perhaps it's a common expression in certain communities. I should consider if it's a slang term or something more formal. 
+
+I think I've heard it used in British English contexts. Maybe it's a regional term. Also, the structure is "here here," which is similar to "there there," so maybe it's part of a group of similar expressions. I wonder if it's used in sports or gaming contexts, where people might be talking about a particular event or achievement. 
+
+I should check if there's any famous person or event associated with it. Maybe a sports figure used the term, or a notable figure in a show. Alternatively, it could be a newer term that's gained popularity recently. I'm
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[81] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:19c93e13-70cc-4ac1-995c-bd5b10628efc
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: who plays sonny kiriakis on days of our lives
+    response: Okay, so I need to figure out who plays Sonny Kiriakis in "Days of Our Lives." I'm not too familiar with the show, but I know it's a long-running soap opera. Sonny Kiriakis is a character known for his manipulative and charming nature. I think he's played by a well-known actor, but I'm not sure who exactly. 
+
+I remember hearing that Jack elementary was involved in some capacity, maybe as a relative or something. Jack elementary is a famous actor, so that's a good starting point. I think he played a character that was connected to Sonny, perhaps his father or a significant other. I'm pretty sure it's Jack elementary, but I'm not 100% certain. I don't want to give the wrong name, so I'll stick with Jack elementary as the actor who plays Sonny Kiriakis.
+</think>
+
+Jack elementary
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[82] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:1a260832-c421-47d8-b687-32edb6771a8d
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: where is the witches market in la paz
+    response: Okay, so I need to figure out where the Witches Market in La Paz is. I'm not too familiar with La Paz, but I know it's a city in Bolivia. I remember hearing about markets in cities, especially ones with local names. The Witches Market probably has a specific address or location within the city.
+
+I think Bolivia has several cities, and La Paz is one of the bigger ones. I'm not sure if the market is in the center or maybe in a specific district. I recall that sometimes markets are named after famous people or places, so maybe it's in a particular area that's known for that.
+
+I should consider if there's a main square or a central location where markets are usually held. Maybe it's near the city center or a well-known square. I'm not certain about the exact address, but I can try to think of common areas in La Paz.
+
+Wait, I think I've heard of a place called Plaza Balladares in La Paz. That might be where the market is. Or maybe it's in a specific neighborhood like La Matanza or La Estación. I'm not entirely sure, but I think it's in the city center.
+
+I should also consider if the market is near a university or a well
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[83] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:1b1625d5-c1bc-415f-bda7-e600a7a174c3
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: who plays david harrington on the haves and have nots
+    response: Okay, so I need to figure out who plays David Harrington in the show "The Haves and the Have-nots." I'm not super familiar with the show, but I remember it's a historical drama. David Harrington is a character, so I'm guessing he's played by a famous actor. 
+
+I think the show is set in the 1800s, focusing on the social hierarchy of ton society. The main characters include the Harrington siblings, particularly Daphne and David. I believe David is the younger brother, and he's known for his role as a nobleman who's a bit of a rake but has some redeeming qualities.
+
+I'm trying to recall if I've heard any names associated with him. I think it might be someone from a classic period drama. Maybe Jack Klugman? Wait, no, I think he's from "The Partridge Family." That's not it. Maybe it's someone like Michael Landon? No, he's from "Moesha." Hmm.
+
+Wait, I think it's Michael Landon again, but I'm not sure. Or maybe it's someone else. I'm a bit confused. Let me try to think of other actors from that era. There's James
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[84] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:1dbaeda1-c31c-4a5e-8ff9-0964615e898e
+    em=0.0 | f1=0.14388489208633093 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: where does rabbit live in winnie the pooh
+    response: Okay, so I need to figure out where Winnie the Pooh lives. I remember that Winnie the Pooh is a character from the Hundred Acre Wood, which is a fictional place. I think it's in England because I've heard the stories set there. The Hundred Acre Wood is a well-known area in children's literature, so that makes sense. Pooh is the main character, and he's a friendly bear who lives there with his friends. I don't recall any specific details about the exact location beyond that, but I'm pretty sure it's in England. So, putting it all together, Winnie the Pooh lives in the Hundred Acre Wood in England.
+</think>
+
+Winnie the Pooh lives in the Hundred Acre Wood in England.
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[85] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:1e242b00-32ce-4823-b196-7a01d355ad99
+    em=0.0 | f1=0.012422360248447206 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: who sings something coming in west side story
+    response: Okay, so I need to figure out who sings "Something Coming in West Side Story." I remember that "West Side Story" is a famous musical by Arthur Laurents. I think it's about two gangs in New York, like the Yams and the Snails. The song in question is probably a duet because I recall there being a collaboration between two artists. 
+
+I think the main characters in the musical are Tony and Maria. So maybe the song features both of them. I'm pretty sure it's a duet between Tony and Maria. I don't remember the exact title of the song, but I think it's something like "Something Coming in the City" or maybe "Something Coming in the Wind." Wait, no, that's another song. Let me think. Oh, right, it's "Something Coming in the City." So the answer should be Tony and Maria from West Side Story.
+</think>
+
+The song "Something Coming in the City" is sung by Tony and Maria from West Side Story. 
+
+Answer: Tony and Maria
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[86] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:1f28ec36-e8ac-4dcb-8153-3a4ebf9925e9
+    em=0.0 | f1=0.0196078431372549 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: who sings tell me if you still care
+    response: Okay, so I need to figure out who sings the song "Tell Me If You Still Care." I'm not exactly sure off the top of my head, but I can try to work it out. Let me think about the song first. I remember it's a pretty emotional song, probably from a romantic or sad scenario. The title suggests it's about someone caring or not caring about another person, so it's likely a love song.
+
+I think the song is pretty well-known, but I'm not certain about the artist. Maybe it's a duet or a collaboration. I recall that some popular songs have been covered by multiple artists, so it's possible that "Tell Me If You Still Care" has been performed by several people over the years.
+
+Wait, I think I've heard it in a movie or a TV show. Maybe it's from a romantic drama. I'm trying to remember if it's from "Gone with the Wind" or another classic film. No, that's not it. Maybe it's from a more modern movie. I'm not sure.
+
+Another approach: I can think about the structure of the song. It's a duet, right? So maybe it's performed by two singers. I think one of them is a
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[87] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:1f2e9113-e95e-4e92-835d-9ac21a2db146
+    em=0.0 | f1=0.0106951871657754 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: who is the first to flee in the battle of maldon and why did he flee
+    response: Okay, so I need to figure out who was the first to flee in the Battle of Maldon and why. I'm not too familiar with this battle, so I'll start by recalling what I know. Maldon is a place in England, I think it's near Cambridgeshire. The Battle of Maldon was a significant event in the English Civil War, I believe. It took place in 1643, during the conflict between the Royalists and the Parliamentarians.
+
+I remember that in the English Civil War, there were several key figures. One of them is Richard Cromwell, who was the Lord Protector of the Commonwealth. He led the Royalists, and they were fighting against the Parliamentarians, who were supported by the Royal Family. The Battle of Maldon was a key battle where Cromwell's forces were defeated.
+
+Wait, the question is about who was the first to flee. I think it was Richard Cromwell who was captured and then fled. He was taken prisoner by the Parliamentarians after the battle. So, he was the first to flee because he was captured and had to leave. That makes sense because he was a prominent figure and his capture would have been a significant event.
+
+So, putting it together
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[88] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:1f48639b-8d9c-46fc-bd3e-3436be0cb6a9
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: who wrote the love that i have is all that i have
+    response: Okay, so I need to figure out who wrote the poem "The Love That I Have Is All That I Have." I remember that this poem is pretty famous, but I'm not exactly sure who the author is. Let me think... I think it's by a British poet, maybe from the 19th century. I recall something about Lord Byron being involved with poetry, but I'm not certain if he wrote this one. Wait, no, Lord Byron wrote a lot of poems, but this specific one might be by someone else. Maybe it's by Samuel Taylor Coleridge? I think he was a significant poet in that era. Alternatively, could it be by William Wordsworth? No, I think Wordsworth wrote more nature poems. So, putting it together, I think it's Samuel Taylor Coleridge who wrote "The Love That I Have Is All That I Have." I should double-check that to be sure, but based on what I remember, that's the correct author.
+</think>
+
+Samuel Taylor Coleridge
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[89] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:207e813c-3aa7-4bcf-befe-eb778a417820
+    em=0.0 | f1=0.010582010582010581 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: when did notre dame go to artificial turf
+    response: Okay, so I need to figure out when Notre Dame went to artificial turf. I'm not entirely sure, but I'll try to break it down. I know that Notre Dame is a famous university in the US, and they have a football team. I remember hearing that their stadium, the Hesburgh Arena, was replaced a few years ago. 
+
+I think the new stadium might have been built around 2015 or 2016. I'm not 100% certain, but I recall that the construction was a big deal because the old stadium was quite old and needed significant repairs. Maybe the new one is more modern, which would include better facilities like artificial turf. 
+
+Artificial turf is often used in newer stadiums to improve the playing experience and reduce maintenance costs. So, if the new stadium was built around 2015, that's probably when they went to artificial turf. I don't think they switched earlier because the old stadium was already quite old, maybe built in the 1950s or 60s. 
+
+I should also consider if there were any delays or if the turf was installed before or after the entire stadium was ready. But I think the main point is that the switch happened
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[90] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:20bf4a26-5973-4095-b296-2e358cf3b14e
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=True | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: when is vip 2 release date in india
+    response: Okay, so I need to figure out the release date of Vip 2 in India. I'm not entirely sure, but I'll try to break it down. 
+
+First, I know that Vip is a South Indian movie, probably from theollan orollan family. I remember that the first Vip was released in 2019. Now, I'm trying to recall if there was a sequel. I think the second one came out a few years later, maybe around 2021 or 2022. 
+
+I'm not 100% certain, but I think it was around that time. I should check if there are any other details I might be missing, like specific months or exact titles. But since I can't look anything up right now, I'll go with my best guess based on what I remember.
+</think>
+
+Vip 2 was released in India on January 1, 2022.
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[91] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:20cc6546-752b-4659-a034-53b40175ac9c
+    em=0.0 | f1=0.037209302325581395 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: what is the main goal of an exploratory committee
+    response: Okay, so I need to figure out the main goal of an exploratory committee. Hmm, I'm not exactly sure what an exploratory committee is, but I think it's a type of committee that's set up to look into something new or to explore possibilities. Maybe it's like a planning committee or something that's in the early stages of a project.
+
+I remember that in organizations, there are different types of committees. There's the problem-solving committee, which deals with existing issues, and then there's the exploratory committee, which probably looks into new areas or opportunities. So, the main goal would likely be to explore and maybe identify new opportunities or strategies.
+
+I think it's often used when an organization is trying to innovate or when there's a need to assess new markets, technologies, or approaches. The committee might gather information, discuss potential ideas, and help shape the direction of the organization. It's probably not about solving immediate problems but rather about creating possibilities for the future.
+
+So, putting it all together, the main goal of an exploratory committee is to explore new opportunities or strategies to help the organization grow or adapt. It's about initiating or expanding into new areas rather than addressing current issues.
+</think>
+
+The main goal of an exploratory committee is
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[92] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:21205cca-d5ee-466f-ae7f-d3ae6b628066
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: when was the first open university established in india
+    response: Okay, so I need to figure out when the first open university in India was established. I'm not entirely sure, but I'll try to break it down. Open universities are those that don't follow a strict syllabus and are usually community-driven. In India, higher education has a long history, with institutions like the Indian Statistical Institute and the Tata Institute of Fundamental Research being prominent. 
+
+I remember that the Indian government has been promoting open education for a while. Maybe the first open university was established in the early 20th century. I think around the 1930s or 1940s. I recall something about the University of Calcutta being a significant institution. Wait, was there a movement around 1950? 
+
+I think the Indian National Open University was founded in 1952. That sounds right because it's a well-known open university in India. But was that the first one? I'm not sure if there were others before that. Maybe some colleges or institutions were considered open universities before 1952. 
+
+I should check if there were any earlier attempts or initiatives. The Indian Statistical Institute was established in 1931, but that's more of a research institution.
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[93] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:21761f0b-8ca2-4d79-a3a0-d34e05e9557e
+    em=0.0 | f1=0.010050251256281405 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: what does it mean to be in the catbird seat
+    response: Okay, so I need to figure out what it means to be in the catbird seat. I've heard the phrase before, but I'm not exactly sure where it comes from or what it signifies. Let me break it down.
+
+First, the phrase itself: "catbird seat." I know a catbird is a type of bird, but how does that relate to being in a seat? Maybe it's a metaphor involving birds or something about seating. I've heard similar phrases like "on the cat's tail" or "in the doghouse," which are idioms, so this must be another one.
+
+I think the catbird might symbolize something small or insignificant. Maybe it's about being in a position that's not very important or maybe even a bit of a burden. The seat part could refer to a position or role someone plays in a situation. So putting it together, being in the catbird seat might mean being in a position that's not particularly advantageous or maybe even a bit of a hindrance.
+
+I've also heard it used in contexts where someone is in a less desirable position, like a job that's considered beneath them or a role that doesn't offer much advancement. It might imply that the person is in a seat that's not their
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[94] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:218eb4ed-22b7-4ec0-9571-7715fb4dc193
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: when does jack of red hearts come out
+    response: Okay, so I need to figure out when "Jack of Red Hearts" was released. I'm not exactly sure who the artist is, but the title sounds familiar. Let me think... I've heard it before in the context of classic rock or maybe a famous song. Wait, was it from the 70s? I think it might be from a band called The Rolling Stones, but I'm not 100% certain. 
+
+I remember that The Rolling Stones have a lot of hits from that era, like "Brown Sugar," "Paint It, Black," and "Paint Your Wagon." Maybe "Jack of Red Hearts" is one of their songs. I'm trying to recall if it's from their album "Beggars and Collectors" or maybe "Paint Your Wagon." I think it's from "Beggars and Collectors," which was released in 1969. 
+
+Wait, but I'm not entirely sure. Could it be from another album? I'm trying to visualize the album cover or the song's placement. I think it's towards the end of the album, maybe around the time when The Rolling Stones were more known for their longer, more complex songs. 
+
+I don't want to get this
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[95] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:22352a5b-32ec-42ea-b0b5-8431deea815f
+    em=0.0 | f1=0.020618556701030927 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: what is the meaning of joie de vivre
+    response: Okay, so I need to figure out the meaning of "joie de vivre." I've heard the term before, maybe in movies or songs, but I'm not exactly sure what it means. Let me break it down.
+
+First, "joie de vivre" sounds like a French phrase. I know that "vivre" means "to live" or "to live well." So maybe it's something related to living life to the fullest. The "joie" part is "joy," so putting it together, it might mean "enjoying life fully" or "living life with joy."
+
+I've also heard it used in the context of someone being very happy and lively. Maybe it's a phrase that describes someone who is passionate about life, always full of energy, and doesn't take things too seriously. It could be about having an enthusiastic lifestyle or attitude.
+
+I think it's a French term, so it's probably used in literature or French-speaking countries. It might be similar to "living the good life" or "living well." I should check if there's a more precise definition. From what I recall, it's about enjoying the present moment and living abundantly.
+
+So, putting it all together, "joie de viv
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[96] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:226b1acb-52ac-4bca-81c7-8b16391b4718
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=True | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: when did ju ju on that beat come out
+    response: Okay, so I need to figure out when "Ju Ju on That Beat" was released. I'm not exactly sure, but I'll try to break it down. 
+
+First, I know that Ju Ju is a rapper, and he's known for his work with groups like The Maccabees. "Ju Ju on That Beat" sounds like a song he might have done. I'm trying to remember if it's from a mixtape or an album. 
+
+I think it might be from his mixtape, maybe "The Truth About Ju Ju." I remember that mixtape came out a few years back, but I'm not certain about the exact release date. I'm trying to recall if it was around 2018 or 2019. 
+
+Wait, I think it was around the middle of 2018. Maybe early 2019? I'm not 100% sure, but I'm leaning towards early 2019. I should probably check that, but since I can't look it up, I'll go with my best guess.
+</think>
+
+Ju Ju on That Beat was released in early 2019.
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[97] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:22e27b13-75a5-4ee1-a3ff-904d66e4934c
+    em=0.0 | f1=0.028037383177570097 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: where was the music video what if filmed
+    response: Okay, so I need to figure out where the music video "What If" was filmed. I'm not entirely sure, but I'll try to break it down. 
+
+First, I remember that "What If" is a song by the band They Might Be Giants. They're known for their quirky, experimental music and music videos. I think their videos are usually quite unique and sometimes involve creative use of locations.
+
+I'm trying to recall if I've seen any clips of "What If." I think it's a short video, maybe a few minutes long. I believe it's directed by them, so the style would be their own, probably involving some surreal or fantastical elements.
+
+I'm not sure about the exact location, but I think it might have been filmed in a place that's significant to them or has a quirky vibe. Maybe a small town or a place with interesting architecture? I'm trying to remember if it's in the same area as their other videos, like "The Middle of Nowhere" or "The Longest and Maybe Best Kept Secret in the World."
+
+Wait, I think I've heard that "What If" was filmed in a place called "The Middle of Nowhere." That's a town in the U.S. known
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[98] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:230ec1d1-d73a-4c2b-bf85-ebb3e22caf2c
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: what u.s. legend of the old west became a sports editor for the new york morning telegraph
+    response: Okay, so I need to figure out which U.S. legend from the old west became a sports editor for the New York Morning Telegraph. Hmm, I'm not exactly sure, but I'll try to think through this step by step.
+
+First, I know that the Old West in the U.S. had a lot of famous people, like cowboys, frontier life figures, and maybe some who were involved in the early days of the newspaper industry. The New York Morning Telegraph was an important newspaper, right? It was one of the first newspapers in New York City, established in the 1840s, I think. So, someone from the Old West becoming a sports editor there would be interesting.
+
+I remember hearing about someone named Sam "The Man" Blakeslee. Was he involved with newspapers? I think he was a newspaper editor in the late 19th century. Maybe he was the sports editor? I'm not entirely sure, but I think that's the person. Let me try to recall if there's any connection between him and the Old West. Oh, wait, he was born in 1850, so he was active in the late 1800s and early 1900s. The
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[99] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:23197a05-4e1e-459e-9b64-9bedffa71bf5
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=True | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: who wrote my baby thinks he's a train
+    response: Okay, so I need to figure out who wrote the song "My Baby Thinks He's a Train." I remember that this song is pretty popular, but I'm not exactly sure who the author is. Let me think about the context. I know that many songs have multiple writers, so it's possible that it's not just one person. 
+
+I recall that the song has a catchy melody and was covered by several artists over the years. Maybe it's by The Rolling Stones? I think they have a lot of hits around that era. Wait, no, I'm pretty sure "My Baby Thinks He's a Train" was actually written by The Guess Who. They were a band from the late '60s and early '70s, known for hits like "Good Times" and "I Can't Explain." 
+
+But I'm a bit confused because I also think it might have been covered by other groups. Let me try to remember if I've heard it with The Guess Who's name. I think the original version is theirs, but it's been covered by many others since. So, the primary writer is The Guess Who, but it's also popular in covers. 
+
+I should make sure I'm not mixing it up with another song
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[100] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:2377edfe-7f7e-4120-8bd2-146528ba34ec
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: first blues artist to play the electric guitar
+    response: Okay, so I need to figure out who the first blues artist to play the electric guitar was. I'm not super familiar with blues history, but I know that blues is a significant genre with roots in African American culture. The electric guitar became prominent in the mid-20th century, especially after World War II.
+
+I remember that early blues artists used acoustic guitars, but as technology advanced, electric guitars were introduced. Now, who was the first to use one? I think it might be someone from the early blues scene. Maybe someone like Bessie King? She was a blues singer, but I'm not sure if she used an electric guitar.
+
+Wait, Bessie King was quite famous, but I think she primarily used acoustic instruments. Then there's Robert Johnson, who is often considered the father of rock and roll. He used a Stratocaster, which is an electric guitar. But was he the first blues artist to do so? Or was there someone else before him?
+
+I'm trying to recall if there were any earlier blues artists who used electric guitars. Maybe someone like Muddy Waters? He was a significant figure in the blues and used electric instruments, but I'm not sure if he was the first.
+
+I think the first blues artist to
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[101] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:245117b1-0d57-41b8-b4b5-6556234ad020
+    em=0.0 | f1=0.039215686274509796 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: uae minister of foreign affairs and international cooperation
+    response: Okay, so I need to figure out who the UAE Minister of Foreign Affairs and International Cooperation is. I'm not too familiar with UAE politics, but I know they have a few key ministers. Let me think... The UAE has several government positions, including the Prime Minister, which is usually the head of state. Then there are various ministers for different departments.
+
+I remember that the UAE has had several ministers in the past, and sometimes the same person holds multiple roles. For example, I think some ministers have also served as foreign ministers in other countries. But I'm not sure about the current one.
+
+I also recall that the UAE is a federation of three emirates: Dubai, Abu Dhabi, and Sharjah. Each emirate has its own government, but they work together under the federal government. The Ministry of Foreign Affairs and International Cooperation probably falls under the federal government.
+
+I think the current UAE Prime Minister is Saad bin Zayed Al-Nahain. If that's the case, then his deputy might be the Minister of Foreign Affairs. I'm not entirely sure who that is, but I think it's either bin Turki or bin Saeed Al-Nahain. Wait, bin Turki was the Prime Minister before bin Zayed, so maybe bin
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[102] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:24707889-4468-40eb-9a43-8a9ef7fc92d3
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: who was donald fisher married to in home and away
+    response: Okay, so I need to figure out who Donald Fisher was married to in both "Home and Away" and "Home and Away: The Next Generation." I'm not too familiar with these shows, but I'll try to recall or think through what I know.
+
+First, I remember that Donald Fisher is a character known for his role as Mr. O'Leary in "Home and Away." He's a long-standing character, so I think he's been married for a while. I believe his wife's name starts with an 'A,' maybe Ann? I think I've heard that before. So, in "Home and Away," Donald Fisher was married to Ann Fisher.
+
+Now, moving on to "Home and Away: The Next Generation." I'm not as familiar with this spin-off, but I know that the main family, including Mr. O'Leary, continues to appear. Since the original character was married to Ann, I wonder if his wife in the spin-off is the same person. It makes sense because the character's backstory would carry over. So, I think in the next generation, Donald Fisher is still married to Ann Fisher as well.
+
+I don't recall any significant changes in their relationship or any spin-offs that would suggest otherwise. So
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[103] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:249b38ec-8714-4f78-968d-0cc56b1c4b69
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: joanne froggatt coronation street who did she play
+    response: Okay, so I need to figure out who Joanne Froggatt played in Coronation Street. I'm not too familiar with the show, but I remember it's a British soap opera. Let me think... I think Joanne Froggatt was a character in the show. Maybe she was a famous person or a character with a significant role. I recall that Coronation Street often portrays real historical figures, so perhaps Joanne Froggatt was based on a real person. Wait, Joanne Froggatt sounds familiar as a historical figure. I think she was a real person, maybe a writer or something. Oh right, Joanne Froggatt was a writer and novelist. So in Coronation Street, she was portrayed as a character, maybe a spin-off or a recurring role. I'm not entirely sure about her specific role, but I know she was a character in the show. So the answer should be that Joanne Froggatt played a character in Coronation Street, possibly a fictional version of herself or someone else. I think she was portrayed as a writer or a public figure, maybe a novelist or editor. I'm not certain about the exact character, but I know she was part of the show. So the answer is that she played
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[104] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:25585196-92c3-4dc0-a2ec-8e1b6dad7a5f
+    em=0.0 | f1=0.010256410256410256 | contains_answer=True | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: the movement of an aircraft about its normal axis is called
+    response: Okay, so I need to figure out what the movement of an aircraft about its normal axis is called. Hmm, I remember from my basic physics and aviation classes that an aircraft has three axes: roll, pitch, and yaw. Each of these axes relates to different types of movement.
+
+Roll is when the plane tilts left or right, like when you bank to the side. Pitch is when the nose goes up or down, which is basically moving forward or backward in the air. Yaw is when the plane turns left or right, like a car making a U-turn, which changes the direction the nose is pointing.
+
+The question is asking about the movement around the normal axis. I think the normal axis here refers to the longitudinal axis, which is the one that runs from the nose to the tail of the aircraft. So, movement around this axis would be pitch. When the plane pitches up, it's moving its nose upward, and when it pitches down, the nose goes downward. This affects the attitude of the aircraft, determining how it's oriented in the sky.
+
+I don't think it's roll or yaw because those are about the other axes. Roll is about the lateral axis, and yaw is about the vertical axis. So, the correct term should be pitch
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[105] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:25ae824d-691b-47c5-a906-7fa01a7ec346
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: who played floyd talbert in band of brothers
+    response: Okay, so I need to figure out who played Floyd Talbert in the movie "Band of Brothers." I'm not too familiar with the movie, but I know it's about the 101st Airborne during the Vietnam War. Let me think... I remember that the movie stars forest ray mcdowell as Private James "Floyd" Talbert. Wait, but was that the real person? I think so, because I've heard his name mentioned in connection with the movie. He played the role of Floyd Talbert, who was a key character in the film. So, yes, Forest Ray McPherson played Floyd Talbert in "Band of Brothers."
+</think>
+
+Forest Ray McPherson played Floyd Talbert in "Band of Brothers."
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[106] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:25c42a87-e8f4-4ead-be03-49b0d3105c5e
+    em=0.0 | f1=0.010362694300518133 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: what is the percentage of upper middle class in america
+    response: Okay, so I need to figure out the percentage of the upper middle class in America. Hmm, where do I start? I know that class definitions can vary, so I should probably define what the upper middle class is. From what I've heard, it's a group that's not quite the top tier (the wealthy) but also not the working class. They have a good lifestyle but aren't as affluent as the top 1%.
+
+I remember reading that income inequality in the U.S. is a big issue. The top 1% controls a large portion of the wealth. But how does that translate to income? I think the U.S. has a progressive tax system, so the wealthiest people pay a higher percentage in taxes. But that doesn't directly tell me about class distribution.
+
+I should look into surveys or studies that measure class distribution. The U.S. Census Bureau does a lot of data collection. Maybe they have reports on income levels. I recall something about the "middle class squeeze," where the middle class is shrinking as income becomes more concentrated at the top.
+
+Wait, I think the upper middle class is often considered to be those earning between $100,000 to $500,000 or more. But I
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[107] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:25fae793-c7ed-4912-9fa1-073a05b5bd1a
+    em=0.0 | f1=0.02010050251256281 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: sun's halo is produced by the refraction of light in
+    response: Okay, so I need to figure out what the sun's halo is produced by. I remember hearing something about it being related to light refraction, but I'm not exactly sure how. Let me think. The sun's halo, I think, is that big ring around the sun you see during sunrise or sunset. It's like when the sky turns orange or pink because of the way light bends around the Earth's atmosphere.
+
+Wait, the question says it's produced by the refraction of light in... something. Refraction is when light changes direction as it passes through a medium, like water or air. So maybe it's the atmosphere causing the halo. But I'm not entirely certain. I think it's called a coronal halo or something like that. Oh, right, it's called a circumzenithal arc. But the key point is that it's due to light refraction in the atmosphere.
+
+I'm a bit confused because sometimes I think it's related to the Earth's shadow or something else, but no, the main cause is definitely the refraction of light. So the answer should be that the sun's halo is produced by the refraction of light in the Earth's atmosphere.
+</think>
+
+The sun's halo is produced by the refraction
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[108] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:26716559-3194-48b4-aee1-139e664ad211
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: who sings jesus and momma always loved me
+    response: Okay, so I need to figure out who sings the song "Jesus and Mama Always Loved Me." I'm not too familiar with this song, but I'll try to break it down. 
+
+First, I remember that this song is a classic in country music. It's often associated with the "Pickin' the Pickin' the Pickin'" style, which is known for its storytelling and country themes. The lyrics talk about a man who's been in love with a woman named Mama, and how she's always loved him back, especially through tough times.
+
+I think the song was written by a couple of country duo brothers. They were pretty popular in the 1950s and 60s. I'm trying to recall their names... I think it's Bill and Ted? Or maybe Bill and Ben? Wait, no, that's another song. Let me think. Oh, right! It's Bill and Ted. But wait, isn't there a song called "Bill and Ted's Excellent Adventure"? That's a movie tie-in song, but I'm not sure if that's the same as this one.
+
+Wait, no, the song "Jesus and Mama Always Loved Me" is actually by a different duo. I think it's by
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[109] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:26932980-5c82-4edc-83d0-71f5aacd2502
+    em=0.0 | f1=0.009999999999999998 | contains_answer=False | refusal=True | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: where did the gabbie show go to college
+    response: Okay, so I need to figure out where the Gabbie Show went to college. I'm not exactly sure who the Gabbie Show is, but I think it's related to music or maybe a specific artist or group. Let me try to break this down.
+
+First, the name "Gabbie Show" doesn't ring a bell immediately. Maybe it's a lesser-known artist or a specific project. I should consider if it's a solo artist or part of a band. If it's a solo artist, perhaps they're from a particular region or city. Alternatively, it could be a musical group from a specific place.
+
+I'll start by thinking about the possible locations. The United States has many colleges and universities where musicians go to study. Places like Los Angeles, New York, Chicago, Austin, or maybe even smaller towns could be possibilities. If I can't recall any specific connection, I might have to make an educated guess based on common destinations for musicians.
+
+Wait, I think I've heard of someone named Gabbie Show before. Maybe they're from a specific city. If I can't remember, perhaps I should consider that they might be from a smaller town or a regional college. Alternatively, maybe they're from a place like Austin,
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[110] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:278653a4-47ed-4113-a1b0-2399a1ceaf14
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=True | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: what year did molissa fenley perform state of darkness
+    response: Okay, so I need to figure out the year Molissa Fenley performed "State of Darkness." I'm not too familiar with Molissa Fenley, but I know she's a singer. "State of Darkness" is a song by David Bowie, right? Wait, no, that's a different song. Let me think. "State of Darkness" is actually a song by The Who, from their album "The Who Are You" released in 1970. So, if Molissa Fenley performed it, I guess she's covered that song. 
+
+I'm not sure who Molissa Fenley is, but maybe she's a more recent artist. I should check if she's active around the 70s. Alternatively, maybe she's performed it more recently. I don't recall her being a big name, so perhaps it's a cover from a different era. I think I should look up when she released her version. But since I can't access external documents, I'll have to make an educated guess. If "State of Darkness" was popular in the 70s, maybe she did it then, but I'm not certain. Alternatively, she might have covered it later, but I don't know the exact year.
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[111] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:27cd7f54-0199-403b-a578-3636809d45ef
+    em=0.0 | f1=0.028776978417266192 | contains_answer=False | refusal=True | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: what is the name of the plain in westmoreland
+    response: Okay, so I need to figure out the name of the plain in Westmoreland. I'm not too familiar with Westmoreland, but I know it's a region in England. I remember that there are some famous places there, like the Lake District. Wait, the Lake District is in Cumbria, not Westmoreland. Maybe Westmoreland has its own set of lakes or a specific plain.
+
+I think Westmoreland has a large lake system, but I'm not sure about the name of the main plain. Maybe it's called the Westmoreland Plain? That sounds plausible. I should check if that's correct, but since I can't look things up, I'll go with what I remember. I don't think it's called something else like the Westerdale Plain or anything similar. So, the name is probably Westmoreland Plain.
+</think>
+
+The name of the plain in Westmoreland is the Westmoreland Plain.
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[112] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:297af2a1-2dc9-41c6-836c-5722890287af
+    em=0.0 | f1=0.011428571428571429 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: when does kindred spirits come back on 2017
+    response: Okay, so I need to figure out when "Kindred Spirits" comes back in 2017. I'm not too familiar with this show, but I remember it's a TV series. Let me think... I think it's a supernatural drama, maybe on a streaming platform like Netflix or Hulu. 
+
+I recall that the first season was released a few years back, maybe around 2016 or 2017. The user is asking specifically about 2017, so perhaps the second season came out that year. I should check if there was a second season. I think the first season ended with some cliffhangers, so it's likely that a second season was planned. 
+
+I'm not sure about the exact release date, but I think it was around the end of 2017 or early 2018. Maybe around December or January. I should also consider if there were any delays or cancellations, but I don't remember any major issues with the show. 
+
+So, putting it together, I think Kindred Spirits returned in early 2018, but since the user is asking for 2017, maybe the second season started in late 2017
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[113] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:29945fae-1d47-4ec8-914e-2f5503690316
+    em=0.0 | f1=0.0111731843575419 | contains_answer=True | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: in which topology is the central connecting device known as a multistation access unit (mau)
+    response: Okay, so I need to figure out in which topology the central connecting device is known as a Multistation Access Unit (MAU). Hmm, I remember that MAUs are used in networking, but I'm not exactly sure about the specific topology they belong to. Let me think.
+
+I know that in networking, there are different topologies like star, bus, ring, etc. The star topology is common because it's easy to connect devices to a central hub or switch. The central device in a star network is usually a switch or a hub. But wait, the question mentions a Multistation Access Unit (MAU). I think MAUs are part of the Multistation Network, which is a type of star topology. 
+
+In a star topology, the MAU acts as the central connecting device. It connects multiple devices and manages the network traffic. So, putting it together, the topology is star, and the central device is the MAU. I don't think it's bus or ring because those have different structures. Bus uses a single cable, and ring uses a loop, which doesn't fit the description of a central connecting device like a MAU. So, the answer should be star topology.
+</think>
+
+The Multistation Access Unit (
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[114] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:29f38b3b-2a85-48b3-9ad6-dbd683358700
+    em=0.0 | f1=0.02259887005649718 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: where are caucasus mountains located on a map
+    response: Okay, so I need to figure out where the Caucasus Mountains are located on a map. I remember that the Caucasus is a region in the Caucasus Mountains, but I'm not exactly sure about the exact location. I think it's in the Middle East and Central Asia area. Let me try to visualize a map. Europe is on the western side, and Asia is on the eastern side. The Caucasus Mountains probably run from somewhere in the west to the east. I think they start near the Caspian Sea, which is in the north of the Caucasus. So, the mountains would be in the northwestern part of the Caucasus, stretching into the Middle East. They might also go into southern Russia, maybe near the Black Sea. So, putting it all together, the Caucasus Mountains are located in the northwestern part of the Caucasus, which is between the Caspian Sea to the Black Sea, and extends into the Middle East. I'm pretty sure that's correct, but I'm not 100% certain. Maybe I should think about countries that border the Caucasus. Armenia, Azerbaijan, Turkey, and Russia are all in the region. So, the mountains would be in the countries around there. Yeah, I
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[115] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:2a02748f-f4e7-4d5f-953c-a0a5305d18e1
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: who does yankumi end up with in gokusen
+    response: Okay, so I need to figure out who Yankumi ends up with in Gokusen. I'm not super familiar with all the details, but I remember that Gokusen is a tokusatsu show featuring a lot of male characters. Yankumi is one of them, right? I think he's a bit of a mysterious character. 
+
+I recall that in the show, there are a lot of pairings, especially between Yankumi and someone else. I think it's a romantic or romantic-comedy pairing. Maybe it's with someone like Tsubasa or another main character. Wait, I think it's with Tsubasa. But I'm not 100% sure. 
+
+I should also consider the context. Gokusen has a lot of fan theories about pairings, so Yankumi might be paired with a female character. I think it's with someone like Yuki or another main female character. But I'm mixing up details here. 
+
+Wait, I think it's actually with Tsubasa. Yankumi and Tsubasa have a lot of interactions, and I remember some romantic moments. So, putting it all together, Yankumi ends up with Tsubasa in Gokusen. I'm
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[116] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:2a409eb3-7029-4229-ab97-5fd77b1b21e7
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: who wrote in the presence of the lord
+    response: Okay, so I need to figure out who wrote "In the Presence of the Lord." I'm not exactly sure what that refers to. It sounds like a title, maybe a song or a poem. I remember that there are a few famous songs with similar titles. Let me think... There's a song by The Beatles called "In the Hall of the Mountain King," but that's not quite the same. Wait, there's also a song by The Who called "In thegroove of the Lord." No, that's not it either. Maybe it's a different song.
+
+I think it might be a Bible reference. I recall that in the Bible, especially in the New Testament, there's a passage where Jesus talks about being with God. Let me try to remember. Oh, right! There's a psalm called "In the Presence of the Lord." I think that's Psalm 23. Yes, that's it. Psalm 23 was written by David, the king of Israel. So, David wrote "In the Presence of the Lord."
+
+Wait, but the user mentioned "who wrote in the presence of the lord." So, the answer would be David. But I should make sure. I don't think any other major religious figures
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[117] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:2a478916-5e0f-43cf-9af3-e71d1ddd0734
+    em=0.0 | f1=0.019704433497536946 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: when was st patrick's day first celebrated
+    response: Okay, so I need to figure out when St. Patrick's Day was first celebrated. I remember that St. Patrick's Day is celebrated on March 17th every year, but I'm not sure when it was first observed. I think it's a Celtic holiday, so maybe it has roots in ancient Ireland. I recall that in some places, it's been celebrated for a long time, maybe hundreds of years. 
+
+I think the earliest celebrations might have been in Ireland itself. Maybe the first St. Patrick's Day was in the 5th century because St. Patrick is traditionally credited with converting the Irish to Christianity around that time. So perhaps the first celebration was during his missionary work. But I'm not certain if the actual day was set to March 17th then or if it was later changed. 
+
+I also wonder if other cultures started celebrating it later, maybe in the 16th or 17th centuries when Irish settlers moved to America. So the first celebration in the United States might have been later than in Ireland. But the question is about when it was first celebrated, so I think it refers to the earliest known celebration, which would likely be in Ireland around the 5th century. 
+
+I should check if there
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[118] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:2a59ea78-bd80-4e16-9fe6-16475ca0be32
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: who won last year’s timico cheltenham gold cup
+    response: Okay, so I need to figure out who won the Timco Cheltenham Gold Cup last year. I'm not too familiar with horse racing, but I know it's a big event. Let me think... The Cheltenham Gold Cup is one of the most prestigious horse races, right? It's held in Cheltenham, England, and it's a major event in the horse racing calendar. 
+
+I remember that the Timco Gold Cup is a specific version of this race. Timco was a company that sponsored the race, hence the name. I think the race is a four-mile race and is known for being one of the longest in the UK. 
+
+Now, to find out who won last year's race. I'm not sure about the exact winner, but I think it might have been a big name. I recall that there have been some famous winners, likeSecretarial and Citation in the past. But I'm not certain about the recent years. 
+
+Wait, I think the last winner might have been a horse named Satie, but I'm not sure if that's correct. Alternatively, maybe it was a horse by a trainer I recognize, like Richard Spooner or Paulien. 
+
+I should also consider the year.
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[119] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:2a704990-d2a3-4368-a5d4-3cc947139f51
+    em=0.0 | f1=0.0 | contains_answer=False | refusal=False | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: who plays the asian girl in deadpool 2
+    response: Okay, so I need to figure out who plays the Asian girl in Deadpool 2. I remember Deadpool 2 is a movie with a lot of cameos and characters. The main character is Wade Wilson, played by Ryan Reynolds. I think there was a scene where he meets someone new, maybe a character from another movie. 
+
+I recall that in Deadpool 2, there's a scene where he meets a girl from a Hong Kong movie. Her name was probably something like Chiu. I think her name was Chiu Chiu. She was introduced through a voice acting job, so she wasn't a regular cast member but came in for that specific scene. 
+
+I'm pretty sure she's not a big part of the story, just a quick interaction, but she's memorable because of her unique appearance. So, putting it together, the actress is Chiu Chiu, and she plays this Asian girl who Deadpool meets in the movie. 
+
+I don't think I'm mixing her up with anyone else. She's definitely from a Hong Kong movie and was a voice actress. So yeah, that's who it is.
+</think>
+
+Chiu Chiu
+    contexts: (none)
+--------------------------------------------------------------------------------------------------------------
+[120] run=20260413T042109Z_db573aee | model=DeepSeek-R1-Distill-Qwen-7B | condition=non_rag | prompt_id=mirage:naturalqa:2a727282-5545-4bec-9f31-93c0fb43b7b8
+    em=0.0 | f1=0.08928571428571427 | contains_answer=False | refusal=True | faithfulness=0.0 | context_precision=0.0 | hallucination_proxy=1.0
+    query: where is mt isa in australia on the map
+    response: Okay, so I need to figure out where Mt Isa is in Australia on a map. I'm not exactly sure where it is, but I remember it's a mountain. I think it's in Queensland because I've heard of that state having some big mountains. Maybe it's in the northern part of Queensland? I'm not 100% certain, but I think it's somewhere in the Outback. I should probably check a map or a globe to confirm, but since I can't do that right now, I'll go with my best guess.
+</think>
+
+Mt Isa is located in Queensland, Australia, specifically in the northern Outback region.
+    contexts: (none)

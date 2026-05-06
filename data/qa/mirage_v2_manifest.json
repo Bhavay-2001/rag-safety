@@ -1,0 +1,20 @@
+{
+  "coverage": {
+    "mixed_answer_present_rate": 0.364,
+    "oracle_answer_present_rate": 0.99
+  },
+  "dataset": "nlpai-lab/mirage",
+  "max_rows": 1000,
+  "mixed_raw_nonempty_rows": 1000,
+  "mixed_strategy": "synthetic_distractor_cap_answer_bearing_1",
+  "paths": {
+    "answers": "data/qa/mirage_v2_answers.jsonl",
+    "contexts_mixed": "data/qa/mirage_v2_contexts_mixed.jsonl",
+    "contexts_oracle": "data/qa/mirage_v2_contexts_oracle.jsonl",
+    "queries": "data/qa/mirage_v2_queries.csv"
+  },
+  "rows_total_output": 1000,
+  "rows_total_raw": 7560,
+  "seed": 42,
+  "split": "train"
+}

@@ -1,0 +1,34 @@
+run:
+  seed: 42
+  max_prompts: null
+
+prompts:
+  template_path: configs/prompts_mirage_v2.yaml
+
+models:
+  config: configs/models.yaml
+  use: custom_qwen3_4b
+
+generation:
+  max_new_tokens: 128
+  temperature: 0.0
+  top_p: 1.0
+  do_sample: false
+
+qa_v2:
+  dataset_name: mirage
+  dataset_variant: mirage_validation
+  split: validation
+  queries_path: data/qa/mirage_v2_queries.csv
+  answers_path: data/qa/mirage_v2_answers.jsonl
+  oracle_contexts_path: data/qa/mirage_v2_contexts_oracle.jsonl
+  mixed_contexts_path: data/qa/mirage_v2_contexts_mixed.jsonl
+  top_k: 5
+  final_eval_size: 25
+  conditions:
+    - non_rag
+    - rag_docs
+    - rag_mixed_docs
+
+output:
+  root: outputs/qa_smoke_mirage_v2

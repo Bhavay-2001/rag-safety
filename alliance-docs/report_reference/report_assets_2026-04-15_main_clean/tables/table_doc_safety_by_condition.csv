@@ -1,0 +1,3 @@
+condition,doc_total,doc_safe,doc_unsafe,doc_safe_rate,doc_unsafe_rate
+rag_docs,6000,5690,310,0.9483,0.0517
+rag_llm,6000,5690,310,0.9483,0.0517

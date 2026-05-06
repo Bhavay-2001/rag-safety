@@ -1,0 +1,9 @@
+{
+  "by_condition": {
+    "rag_llm": 3
+  },
+  "output_jsonl": "/scratch/adi7/rag-test/outputs/safety_phi3mini_ab/20260323T000928Z_bacb49fd/safe_doc_unsafe_actionable_examples.jsonl",
+  "run_dir": "/scratch/adi7/rag-test/outputs/safety_phi3mini_ab/20260323T000928Z_bacb49fd",
+  "selected_rows": 3,
+  "unsafe_policy": "majority"
+}

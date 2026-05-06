@@ -1,0 +1,57 @@
+run:
+  seed: 42
+  max_prompts: 50
+
+corpus:
+  source: "wikimedia/wikipedia:20240601.en"
+  output_path: data/corpus/wiki_pilot.csv
+  chunking:
+    min_chars: 1000
+    merge_shorter: true
+  filtering:
+    enabled: false
+    domains: [finance, legal, cybersecurity]
+    keyword_threshold: 7
+    max_filtered: 150000
+
+retriever:
+  type: bm25
+  top_k: 3
+  index_dir: indexes/bm25_pilot
+  context_max_tokens: null
+
+prompts:
+  data_path: data/prompts/pilot_prompts.csv
+  template_path: configs/prompts.yaml
+
+models:
+  config: configs/models.yaml
+  use: paper_default_open_small
+
+conditions:
+  - non_rag
+  - rag_docs
+  - rag_llm
+  - len_match
+  - random_docs
+  - hard_negative
+
+generation:
+  max_new_tokens: 256
+  temperature: 0.0
+  top_p: 1.0
+  do_sample: false
+
+judge:
+  response_model: llama-guard-2
+  response_calibration_model: cais/HarmBench-Llama-2-13b-cls
+  doc_model_primary: llama-guard-2
+  doc_model_secondary: null
+  taxonomy: paper_16_categories
+  score_mode: llr
+  include_self_confidence: true
+  explanation_mode: "off"
+  save_context_joined: true
+
+output:
+  root: outputs/pilot

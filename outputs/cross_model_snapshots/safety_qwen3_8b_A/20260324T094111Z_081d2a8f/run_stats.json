@@ -1,0 +1,17 @@
+{
+  "config_hash": "081d2a8fa333e2d5c7168daa9cacbbffdd658cd787334eedb4561c96a17cb08e",
+  "models": {
+    "Qwen3-8B": {
+      "prompt_tokens": 3732919,
+      "response_tokens": 921076,
+      "responses": 3600
+    }
+  },
+  "run_id": "20260324T094111Z_081d2a8f",
+  "total": {
+    "elapsed_sec": 21765.739179254997,
+    "prompt_tokens": 3732919,
+    "response_tokens": 921076,
+    "responses": 3600
+  }
+}
