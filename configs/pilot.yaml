@@ -3,21 +3,19 @@ run:
   max_prompts: 50
 
 corpus:
-  source: "wikimedia/wikipedia:20240601.en"
-  output_path: data/corpus/wiki_pilot.csv
+  source: "nkandpa2/wiki-dolma"
+  output_path: data/corpus/wiki_dolma_pilot.csv
+  max_docs: 200
   chunking:
     min_chars: 1000
     merge_shorter: true
   filtering:
     enabled: false
-    domains: [finance, legal, cybersecurity]
-    keyword_threshold: 7
-    max_filtered: 150000
 
 retriever:
   type: bm25
   top_k: 3
-  index_dir: indexes/bm25_pilot
+  index_dir: indexes/bm25_wiki_dolma_pilot
   context_max_tokens: null
 
 prompts:
@@ -26,15 +24,12 @@ prompts:
 
 models:
   config: configs/models.yaml
-  use: paper_default_open_small
+  use: tiny_open
 
 conditions:
   - non_rag
   - rag_docs
   - rag_llm
-  - len_match
-  - random_docs
-  - hard_negative
 
 generation:
   max_new_tokens: 256
@@ -43,15 +38,15 @@ generation:
   do_sample: false
 
 judge:
-  response_model: llama-guard-2
-  response_calibration_model: cais/HarmBench-Llama-2-13b-cls
-  doc_model_primary: llama-guard-2
-  doc_model_secondary: null
-  taxonomy: paper_16_categories
-  score_mode: llr
-  include_self_confidence: true
-  explanation_mode: "off"
-  save_context_joined: true
+  response_model: meta-llama/Llama-Guard-3-1B        
+  response_calibration_model: null                    
+  doc_model_primary: meta-llama/Llama-Guard-3-1B     # same small model for docs
+  doc_model_secondary: null                           # keep disabled
+  taxonomy: lg3_mlcommons14                           # matches Llama Guard 3's native taxonomy
+  score_mode: first_token_prob                        # faster than llr (no log-ratio needed)
+  include_self_confidence: true                       # keep, minimal overhead
+  explanation_mode: "off"                             # keep off — saves tokens
+  save_context_joined: false                          # skip large file generation locally
 
 output:
   root: outputs/pilot

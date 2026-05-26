@@ -3,7 +3,9 @@
   max_prompts: null
 
 corpus:
-  source: "wikimedia/wikipedia:20240601.en"
+  source: "nkandpa2/wiki-dolma"
+  output_path: data/corpus/wiki_dolma.csv
+  max_docs: 200000
   chunking:
     min_chars: 1000
     merge_shorter: true
@@ -20,6 +22,7 @@ retriever:
   bm25_candidates_k: 50
   rerank_model_id: sentence-transformers/all-MiniLM-L6-v2
   rerank_alpha: 0.5
+  index_dir: indexes/bm25_wiki_dolma
   context_max_tokens: null
 
 prompts:

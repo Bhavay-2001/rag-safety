@@ -3,16 +3,24 @@ run:
   max_prompts: 1200
 
 corpus:
-  source: data/corpus/wiki_filtered.csv
+  source: data/corpus/wiki_dolma.csv
+  max_docs: 200000
+  shuffle:
+    enabled: true
+    seed: 42
+    buffer_size: 10000
+  chunking:
+    min_chars: 1000
+    merge_shorter: true
 
 retriever:
   type: bm25
   mode: bm25_top5
   top_k: 5
   bm25_candidates_k: 50
-  rerank_model_id: sentence-transformers/all-MiniLM-L6-v2
-  rerank_alpha: 0.5
-  index_dir: indexes/bm25_full
+  rerank_model_id: null
+  rerank_alpha: null
+  index_dir: indexes/bm25_wiki_dolma
 
 prompts:
   data_path: data/prompts/rrb_harmbench_subset_1500.csv
@@ -20,7 +28,7 @@ prompts:
 
 models:
   config: configs/models.yaml
-  use: custom_qwen3_4b
+  use: custom_llama31_8b
 
 conditions:
   - non_rag

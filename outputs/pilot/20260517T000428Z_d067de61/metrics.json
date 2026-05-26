@@ -1,0 +1,297 @@
+{
+  "actionability_summaries": {},
+  "by_model_condition": {
+    "TinyLlama-1.1B": {
+      "non_rag": {
+        "category_counts": {},
+        "refusal": 0,
+        "refusal_rate": 0.0,
+        "safe_doc_total": 0,
+        "safe_doc_unsafe": 0,
+        "safe_doc_unsafe_actionable": 0,
+        "safe_doc_unsafe_actionable_rate": 0.0,
+        "safe_doc_unsafe_actionable_rate_any": 0.0,
+        "safe_doc_unsafe_actionable_rate_majority": 0.0,
+        "safe_doc_unsafe_rate": 0.0,
+        "safe_doc_unsafe_rate_any": 0.0,
+        "safe_doc_unsafe_rate_majority": 0.0,
+        "safe_doc_unsafe_raw_rate": 0.0,
+        "total": 5,
+        "unsafe": 0,
+        "unsafe_actionable": 0,
+        "unsafe_actionable_rate": 0.0,
+        "unsafe_actionable_rate_any": 0.0,
+        "unsafe_actionable_rate_majority": 0.0,
+        "unsafe_actionable_rate_primary": 0.0,
+        "unsafe_actionable_rate_unanimous": 0.0,
+        "unsafe_rate": 0.0,
+        "unsafe_rate_any": 0.0,
+        "unsafe_rate_majority": 0.0,
+        "unsafe_rate_primary": 0.0,
+        "unsafe_rate_unanimous": 0.0,
+        "unsafe_raw_rate": 0.0
+      },
+      "rag_docs": {
+        "category_counts": {},
+        "refusal": 0,
+        "refusal_rate": 0.0,
+        "safe_doc_total": 5,
+        "safe_doc_unsafe": 0,
+        "safe_doc_unsafe_actionable": 0,
+        "safe_doc_unsafe_actionable_rate": 0.0,
+        "safe_doc_unsafe_actionable_rate_any": 0.0,
+        "safe_doc_unsafe_actionable_rate_majority": 0.0,
+        "safe_doc_unsafe_rate": 0.0,
+        "safe_doc_unsafe_rate_any": 0.0,
+        "safe_doc_unsafe_rate_majority": 0.0,
+        "safe_doc_unsafe_raw_rate": 0.0,
+        "total": 5,
+        "unsafe": 0,
+        "unsafe_actionable": 0,
+        "unsafe_actionable_rate": 0.0,
+        "unsafe_actionable_rate_any": 0.0,
+        "unsafe_actionable_rate_majority": 0.0,
+        "unsafe_actionable_rate_primary": 0.0,
+        "unsafe_actionable_rate_unanimous": 0.0,
+        "unsafe_rate": 0.0,
+        "unsafe_rate_any": 0.0,
+        "unsafe_rate_majority": 0.0,
+        "unsafe_rate_primary": 0.0,
+        "unsafe_rate_unanimous": 0.0,
+        "unsafe_raw_rate": 0.0
+      },
+      "rag_llm": {
+        "category_counts": {},
+        "refusal": 0,
+        "refusal_rate": 0.0,
+        "safe_doc_total": 5,
+        "safe_doc_unsafe": 0,
+        "safe_doc_unsafe_actionable": 0,
+        "safe_doc_unsafe_actionable_rate": 0.0,
+        "safe_doc_unsafe_actionable_rate_any": 0.0,
+        "safe_doc_unsafe_actionable_rate_majority": 0.0,
+        "safe_doc_unsafe_rate": 0.0,
+        "safe_doc_unsafe_rate_any": 0.0,
+        "safe_doc_unsafe_rate_majority": 0.0,
+        "safe_doc_unsafe_raw_rate": 0.0,
+        "total": 5,
+        "unsafe": 0,
+        "unsafe_actionable": 0,
+        "unsafe_actionable_rate": 0.0,
+        "unsafe_actionable_rate_any": 0.0,
+        "unsafe_actionable_rate_majority": 0.0,
+        "unsafe_actionable_rate_primary": 0.0,
+        "unsafe_actionable_rate_unanimous": 0.0,
+        "unsafe_rate": 0.0,
+        "unsafe_rate_any": 0.0,
+        "unsafe_rate_majority": 0.0,
+        "unsafe_rate_primary": 0.0,
+        "unsafe_rate_unanimous": 0.0,
+        "unsafe_raw_rate": 0.0
+      }
+    }
+  },
+  "by_retrieval_mode": {
+    "bm25_top5": {
+      "total": 15,
+      "unsafe": 0,
+      "unsafe_rate": 0.0
+    }
+  },
+  "meta": {
+    "config_hash": "d067de61b34898ed1947d793d74e5cacd1d36493cd6b2faa7769fc0991923a21",
+    "corpus_source": "nkandpa2/wiki-dolma",
+    "corpus_source_sha256": null,
+    "evaluation_mode": "baseline_paper_aligned",
+    "generated_at": "2026-05-17T03:49:32Z",
+    "judge_comparison_enabled": false,
+    "judge_comparison_models": [],
+    "judge_doc_primary": "meta-llama/Llama-Guard-3-1B",
+    "judge_doc_secondary": null,
+    "judge_edge_second_pass_enabled": false,
+    "judge_edge_second_pass_model": null,
+    "judge_edge_second_pass_scope": "unsafe_or_safe_doc_unsafe",
+    "judge_explanation_mode": "off",
+    "judge_include_self_confidence": true,
+    "judge_response_model": "meta-llama/Llama-Guard-3-1B",
+    "judge_save_context_joined": false,
+    "judge_score_mode": "first_token_prob",
+    "model_ids": [
+      "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
+    ],
+    "models_config": "D:\\MASTERS\\GRADUATE PROJECT\\rag-safety\\configs\\models.yaml",
+    "models_config_sha256": "41b6eb2557f8a7b43d97c4b44c187318fc560681357866aae70e6c79daaff132",
+    "models_use": "tiny_open",
+    "output_root": "D:\\MASTERS\\GRADUATE PROJECT\\rag-safety\\outputs\\pilot",
+    "prompts_path": "D:\\MASTERS\\GRADUATE PROJECT\\rag-safety\\data\\prompts\\pilot_prompts.csv",
+    "prompts_sha256": "f4ae2427978d354b4429afceb6275f340d79df07f1ac6d59a6ac83dfe81af157",
+    "retriever_mode": "bm25_top5",
+    "retriever_top_k": 3,
+    "run_id": "20260517T000428Z_d067de61",
+    "score_calibration_status": "needs_debug",
+    "templates_path": "D:\\MASTERS\\GRADUATE PROJECT\\rag-safety\\configs\\prompts.yaml",
+    "templates_sha256": "99edc5af1b32bda87cd1d5effd857ea38a7f54ca2fa73848e9bfac42f550e93a"
+  },
+  "present_absent": {},
+  "present_absent_meta": {
+    "population": "unsafe_only",
+    "rows_considered": 0,
+    "rows_with_labels": 0
+  },
+  "present_absent_population": "unsafe_only",
+  "present_absent_total_rows_considered": 0,
+  "retrieval_quality_buckets": {
+    "q1": {
+      "total": 0,
+      "unsafe": 0,
+      "unsafe_rate": 0.0
+    },
+    "q2": {
+      "total": 0,
+      "unsafe": 0,
+      "unsafe_rate": 0.0
+    },
+    "q3": {
+      "total": 6,
+      "unsafe": 0,
+      "unsafe_rate": 0.0
+    },
+    "q4": {
+      "total": 4,
+      "unsafe": 0,
+      "unsafe_rate": 0.0
+    }
+  },
+  "score_summaries": {
+    "docs_by_condition": {},
+    "responses_by_model_condition": {
+      "TinyLlama-1.1B:non_rag": {
+        "self_confidence": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "min": null
+        },
+        "unsafe_prob_first_token": {
+          "count": 5,
+          "max": 1.1874362826347351e-08,
+          "mean": 1.1874362826347351e-08,
+          "median": 1.1874362826347351e-08,
+          "min": 1.1874362826347351e-08
+        },
+        "unsafe_prob_first_token_norm": {
+          "count": 5,
+          "max": 0.5,
+          "mean": 0.5,
+          "median": 0.5,
+          "min": 0.5
+        },
+        "unsafe_prob_llr": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "min": null
+        }
+      },
+      "TinyLlama-1.1B:rag_docs": {
+        "self_confidence": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "min": null
+        },
+        "unsafe_prob_first_token": {
+          "count": 5,
+          "max": 1.1874362826347351e-08,
+          "mean": 1.1874362826347351e-08,
+          "median": 1.1874362826347351e-08,
+          "min": 1.1874362826347351e-08
+        },
+        "unsafe_prob_first_token_norm": {
+          "count": 5,
+          "max": 0.5,
+          "mean": 0.5,
+          "median": 0.5,
+          "min": 0.5
+        },
+        "unsafe_prob_llr": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "min": null
+        }
+      },
+      "TinyLlama-1.1B:rag_llm": {
+        "self_confidence": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "min": null
+        },
+        "unsafe_prob_first_token": {
+          "count": 5,
+          "max": 1.1874362826347351e-08,
+          "mean": 1.1874362826347351e-08,
+          "median": 1.1874362826347351e-08,
+          "min": 1.1874362826347351e-08
+        },
+        "unsafe_prob_first_token_norm": {
+          "count": 5,
+          "max": 0.5,
+          "mean": 0.5,
+          "median": 0.5,
+          "min": 0.5
+        },
+        "unsafe_prob_llr": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "min": null
+        }
+      }
+    }
+  },
+  "second_pass_by_model_condition": {
+    "TinyLlama-1.1B": {
+      "non_rag": {
+        "disagreement_rate": 0.0,
+        "rows_second_evaluated": 0,
+        "total": 5,
+        "unsafe_rate_consensus_any": 0.0,
+        "unsafe_rate_consensus_both": 0.0,
+        "unsafe_rate_primary": 0.0,
+        "unsafe_rate_second_any": 0.0,
+        "unsafe_rate_second_majority": 0.0,
+        "unsafe_rate_second_unanimous": 0.0
+      },
+      "rag_docs": {
+        "disagreement_rate": 0.0,
+        "rows_second_evaluated": 0,
+        "total": 5,
+        "unsafe_rate_consensus_any": 0.0,
+        "unsafe_rate_consensus_both": 0.0,
+        "unsafe_rate_primary": 0.0,
+        "unsafe_rate_second_any": 0.0,
+        "unsafe_rate_second_majority": 0.0,
+        "unsafe_rate_second_unanimous": 0.0
+      },
+      "rag_llm": {
+        "disagreement_rate": 0.0,
+        "rows_second_evaluated": 0,
+        "total": 5,
+        "unsafe_rate_consensus_any": 0.0,
+        "unsafe_rate_consensus_both": 0.0,
+        "unsafe_rate_primary": 0.0,
+        "unsafe_rate_second_any": 0.0,
+        "unsafe_rate_second_majority": 0.0,
+        "unsafe_rate_second_unanimous": 0.0
+      }
+    }
+  }
+}

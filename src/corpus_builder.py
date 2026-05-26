@@ -36,7 +36,12 @@ def _iter_local_corpus(path: Path) -> Iterable[Dict[str, Any]]:
     raise ValueError(f"Unsupported local corpus format: {path.suffix}")
 
 
-def _iter_dataset_stream(source: str) -> Iterable[Dict[str, Any]]:
+def _iter_dataset_stream(
+    source: str,
+    shuffle: bool = False,
+    shuffle_seed: int = 42,
+    shuffle_buffer_size: int = 10_000,
+) -> Iterable[Dict[str, Any]]:
     from datasets import load_dataset
 
     dataset_id, config = _parse_dataset_id(source)
@@ -44,6 +49,8 @@ def _iter_dataset_stream(source: str) -> Iterable[Dict[str, Any]]:
         ds = load_dataset(dataset_id, config, split="train", streaming=True)
     else:
         ds = load_dataset(dataset_id, split="train", streaming=True)
+    if shuffle:
+        ds = ds.shuffle(seed=shuffle_seed, buffer_size=shuffle_buffer_size)
     for item in ds:
         yield item
 
@@ -132,6 +139,11 @@ def build_corpus(
     max_filtered = filtering.get("max_filtered")
     keyword_map = _load_keyword_map(cfg) if filtering_enabled else {}
 
+    shuffle_cfg = corpus_cfg.get("shuffle", {})
+    shuffle_enabled = bool(shuffle_cfg.get("enabled", False))
+    shuffle_seed = int(shuffle_cfg.get("seed", cfg.get("run", {}).get("seed", 42)))
+    shuffle_buffer = int(shuffle_cfg.get("buffer_size", 10_000))
+
     total_records = 0
     total_chunks = 0
     written = 0
@@ -140,7 +152,12 @@ def build_corpus(
     if source_path.exists():
         iterator = _iter_local_corpus(source_path)
     else:
-        iterator = _iter_dataset_stream(source)
+        iterator = _iter_dataset_stream(
+            source,
+            shuffle=shuffle_enabled,
+            shuffle_seed=shuffle_seed,
+            shuffle_buffer_size=shuffle_buffer,
+        )
 
     with output_path.open("w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=["doc_id", "text", "domain_tags"])
@@ -185,5 +202,6 @@ def build_corpus(
         "total_chunks": total_chunks,
         "written": written,
         "min_chars": min_chars,
+        "shuffle_enabled": shuffle_enabled,
         "filtering_enabled": filtering_enabled,
     }
