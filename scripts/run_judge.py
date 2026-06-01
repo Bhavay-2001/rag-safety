@@ -48,8 +48,14 @@ def main() -> None:
 
     responses_path = run_dir / "responses.jsonl"
     judge_path = run_dir / "judge.jsonl"
+
+    # Load already-judged (prompt_id, condition, model) tuples for resume
+    judged_keys: set = set()
     if judge_path.exists():
-        judge_path.unlink()
+        for r in read_jsonl(judge_path):
+            judged_keys.add((r["prompt_id"], r["condition"], r["model"]))
+        if judged_keys:
+            print(f"Resuming: {len(judged_keys)} judgements already written, skipping those.")
 
     judge_cfg = cfg.get("judge", {})
     judge_model = judge_cfg.get("response_model", "llama-guard-2")
@@ -65,6 +71,8 @@ def main() -> None:
     response_tokens_total = 0
     judged_total = 0
     for record in _maybe_tqdm(records, total=len(records), desc="Response judge"):
+        if (record["prompt_id"], record["condition"], record["model"]) in judged_keys:
+            continue
         query = record.get("query") or record["prompt"]
         result = judge.judge(query, record["response"], include_explanation=include_explanation, judge_target="response")
         output = {

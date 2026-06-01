@@ -15,7 +15,7 @@ from src.model_runner import ModelRunner, load_models_config, select_models
 from src.prompt_builder import load_prompt_templates, render_prompt
 from src.retriever_bm25 import hard_negative_docs, load_index, random_docs, retrieve, retrieve_candidates
 from src.retriever_rerank import rerank_with_embeddings
-from src.utils_io import ensure_dir, make_run_id, write_json, write_jsonl
+from src.utils_io import ensure_dir, make_run_id, read_jsonl, write_json, write_jsonl
 
 
 PAD_UNIT = "This is neutral filler text for length matching."
@@ -227,6 +227,15 @@ def main() -> None:
     runner = ModelRunner(cfg.get("generation", {}))
 
     responses_path = run_dir / "responses.jsonl"
+
+    # Load already-completed (prompt_id, condition, model) tuples for resume
+    done_keys: set = set()
+    if responses_path.exists():
+        for r in read_jsonl(responses_path):
+            done_keys.add((r["prompt_id"], r["condition"], r["model"]))
+        if done_keys:
+            print(f"Resuming: {len(done_keys)} responses already written, skipping those.")
+
     stats: Dict[str, Any] = {
         "run_id": run_id,
         "config_hash": cfg_hash,
@@ -259,6 +268,8 @@ def main() -> None:
             rag_prompt = render_prompt(templates["rag_docs"]["template"], query, [d["text"] for d in docs])
 
             for condition in cfg.get("conditions", []):
+                if (prompt_id, condition, model_spec.alias) in done_keys:
+                    continue
                 if condition == "non_rag":
                     final_prompt = render_prompt(templates["non_rag"]["template"], query)
                 elif condition == "rag_docs":
