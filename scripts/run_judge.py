@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from src.config import load_config, resolve_paths
+from src.config import apply_overrides, load_config, resolve_paths
 from src.judge_runner import SafetyJudge
 from src.utils_io import read_jsonl, write_json, write_jsonl
 
@@ -27,6 +27,8 @@ def _parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Run response safety judge.")
     parser.add_argument("--config", required=True, help="Path to configs/base.yaml")
     parser.add_argument("--run-dir", default=None, help="Specific run directory under outputs/runs")
+    parser.add_argument("--set", action="append", default=[], metavar="KEY=VALUE",
+                        help="Override config value, e.g. --set output.root=outputs/llama31_8b")
     return parser.parse_args()
 
 
@@ -42,14 +44,21 @@ def main() -> None:
     cfg_path = Path(args.config)
     cfg = load_config(cfg_path)
     cfg = resolve_paths(cfg, cfg_path.parent)
+    cfg = apply_overrides(cfg, args.set)
 
     output_root = Path(cfg.get("output", {}).get("root", "outputs/runs"))
     run_dir = Path(args.run_dir) if args.run_dir else _latest_run_dir(output_root)
 
     responses_path = run_dir / "responses.jsonl"
     judge_path = run_dir / "judge.jsonl"
+
+    # Load already-judged (prompt_id, condition, model) tuples for resume
+    judged_keys: set = set()
     if judge_path.exists():
-        judge_path.unlink()
+        for r in read_jsonl(judge_path):
+            judged_keys.add((r["prompt_id"], r["condition"], r["model"]))
+        if judged_keys:
+            print(f"Resuming: {len(judged_keys)} judgements already written, skipping those.")
 
     judge_cfg = cfg.get("judge", {})
     judge_model = judge_cfg.get("response_model", "llama-guard-2")
@@ -65,6 +74,8 @@ def main() -> None:
     response_tokens_total = 0
     judged_total = 0
     for record in _maybe_tqdm(records, total=len(records), desc="Response judge"):
+        if (record["prompt_id"], record["condition"], record["model"]) in judged_keys:
+            continue
         query = record.get("query") or record["prompt"]
         result = judge.judge(query, record["response"], include_explanation=include_explanation, judge_target="response")
         output = {

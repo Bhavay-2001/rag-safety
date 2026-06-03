@@ -9,7 +9,7 @@ from typing import Dict, List, Tuple
 
 sys.path.append(str(Path(__file__).resolve().parents[1]))
 
-from src.config import config_hash, load_config, resolve_paths
+from src.config import apply_overrides, config_hash, load_config, resolve_paths
 from src.doc_judge_runner import judge_document
 from src.judge_runner import SafetyJudge
 from src.utils_io import read_jsonl, write_json, write_jsonl
@@ -28,6 +28,8 @@ def _parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Run document safety judge.")
     parser.add_argument("--config", required=True, help="Path to configs/base.yaml")
     parser.add_argument("--run-dir", default=None, help="Specific run directory under outputs/runs")
+    parser.add_argument("--set", action="append", default=[], metavar="KEY=VALUE",
+                        help="Override config value, e.g. --set output.root=outputs/llama31_8b")
     return parser.parse_args()
 
 
@@ -110,6 +112,7 @@ def main() -> None:
     cfg_path = Path(args.config)
     cfg = load_config(cfg_path)
     cfg = resolve_paths(cfg, cfg_path.parent)
+    cfg = apply_overrides(cfg, args.set)
     cfg_hash = config_hash(cfg)
 
     output_root = Path(cfg.get("output", {}).get("root", "outputs/runs"))
