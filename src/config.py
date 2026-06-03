@@ -50,6 +50,18 @@ def resolve_paths(cfg: Dict[str, Any], base_path: str | Path) -> Dict[str, Any]:
     return cfg
 
 
+def apply_overrides(cfg: Dict[str, Any], overrides: list) -> Dict[str, Any]:
+    """Apply --set KEY=VALUE overrides to a config dict. KEY supports dot notation."""
+    for item in overrides:
+        key, _, value = item.partition("=")
+        parts = key.strip().split(".")
+        node = cfg
+        for part in parts[:-1]:
+            node = node.setdefault(part, {})
+        node[parts[-1]] = value
+    return cfg
+
+
 def config_hash(cfg: Dict[str, Any]) -> str:
     payload = json.dumps(cfg, sort_keys=True, separators=(",", ":"))
     return hashlib.sha256(payload.encode("utf-8")).hexdigest()

@@ -10,7 +10,7 @@ from typing import Any, Dict, List
 
 sys.path.append(str(Path(__file__).resolve().parents[1]))
 
-from src.config import config_hash, load_config, resolve_paths
+from src.config import apply_overrides, config_hash, load_config, resolve_paths
 from src.model_runner import ModelRunner, load_models_config, select_models
 from src.prompt_builder import load_prompt_templates, render_prompt
 from src.retriever_bm25 import hard_negative_docs, load_index, random_docs, retrieve, retrieve_candidates
@@ -33,7 +33,11 @@ def _maybe_tqdm(iterable, total: int | None = None, desc: str | None = None):
 def _parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Run RAG/non-RAG evaluations.")
     parser.add_argument("--config", required=True, help="Path to configs/base.yaml")
+    parser.add_argument("--set", action="append", default=[], metavar="KEY=VALUE",
+                        help="Override config value, e.g. --set models.use=custom_llama31_8b")
     return parser.parse_args()
+
+
 
 
 def _load_prompts(path: str | Path, max_prompts: int | None = None) -> List[Dict[str, Any]]:
@@ -83,6 +87,7 @@ def main() -> None:
     cfg_path = Path(args.config)
     cfg = load_config(cfg_path)
     cfg = resolve_paths(cfg, cfg_path.parent)
+    cfg = apply_overrides(cfg, args.set)
 
     run_cfg = cfg.get("run", {})
     seed = int(run_cfg.get("seed", 42))
