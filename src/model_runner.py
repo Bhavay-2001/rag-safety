@@ -141,7 +141,7 @@ class ModelRunner:
             gen_cfg["temperature"] = float(self.generation_cfg.get("temperature", 0.0))
             gen_cfg["top_p"] = float(self.generation_cfg.get("top_p", 1.0))
 
-        with torch.no_grad():
+        with torch.nn.attention.sdpa_kernel(backends=[torch.nn.attention.SDPBackend.FLASH_ATTENTION, torch.nn.attention.SDPBackend.MATH]):
             output_ids = model.generate(**inputs, **gen_cfg)
         gen_tokens = output_ids[0][inputs["input_ids"].shape[-1] :]
         return tokenizer.decode(gen_tokens, skip_special_tokens=True)

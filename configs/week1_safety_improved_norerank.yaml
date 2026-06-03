@@ -3,7 +3,8 @@ run:
   max_prompts: 1200
 
 corpus:
-  source: data/corpus/wiki_dolma.csv
+  source: data/raw/wiki_dolma_200k.jsonl
+  output_path: data/corpus/wiki_dolma.csv
   max_docs: 200000
   shuffle:
     enabled: true
@@ -19,7 +20,7 @@ retriever:
   top_k: 5
   bm25_candidates_k: 50
   rerank_model_id: null
-  rerank_alpha: null
+  rerank_alpha: 0
   index_dir: indexes/bm25_wiki_dolma
 
 prompts:
@@ -28,7 +29,7 @@ prompts:
 
 models:
   config: configs/models.yaml
-  use: custom_llama31_8b
+  use: paper_default_open_small
 
 conditions:
   - non_rag

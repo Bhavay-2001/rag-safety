@@ -40,7 +40,7 @@ optional_additions:
   alias: Qwen2.5-7B-Instruct
   provider: hf
 paper_default_open_small:
-- id: meta-llama/Meta-Llama-3-8B-Instruct
+- id: meta-llama/Llama-3.1-8B-Instruct
   alias: Llama-3-8B-Instruct
   provider: hf
 - id: mistralai/Mistral-7B-Instruct-v0.3

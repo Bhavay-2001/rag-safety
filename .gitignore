@@ -44,6 +44,8 @@ outputs/**/retrieval.jsonl
 outputs/**/context_safety_joined.jsonl
 outputs/frozen_baselines/
 
+outputs/*
+
 Llama-3.1-8B-Instruct/
 Meta-Llama-Guard-3-8B/  
 Llama-3.1-8B-Instruct.zip
