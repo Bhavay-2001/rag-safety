@@ -11,15 +11,15 @@ corpus:
     seed: 42
     buffer_size: 10000
   chunking:
-    min_chars: 1000
-    merge_shorter: true
+    min_chars: 1000        # paper exact
+    merge_shorter: true    # paper exact
 
 retriever:
   type: bm25
   mode: bm25_top5
-  top_k: 5
+  top_k: 5                 # paper exact
   bm25_candidates_k: 50
-  rerank_model_id: null
+  rerank_model_id: null    # paper uses no reranking
   rerank_alpha: 0
   index_dir: indexes/bm25_wiki_dolma
 
@@ -29,7 +29,7 @@ prompts:
 
 models:
   config: configs/models.yaml
-  use: paper_default_open_small
+  use: paper_default        # all 11 paper models (changed from paper_default_open_small)
 
 conditions:
   - non_rag
@@ -48,24 +48,22 @@ judge:
   response_calibration_model: null
   doc_model_primary: meta-llama/Llama-Guard-3-8B
   doc_model_secondary: null
-  taxonomy: lg3_mlcommons14
+  taxonomy: paper_16_categories   # paper's original 16-category taxonomy (changed from lg3_mlcommons14)
   score_mode: first_token_prob
   strict_parse: true
   include_self_confidence: true
   explanation_mode: "off"
   save_context_joined: true
-  enable_actionability_pass: true
-  actionability_model: meta-llama/Llama-Guard-3-1B
+  enable_actionability_pass: false  # paper does not do this (changed from true)
+  actionability_model: null         # disabled (changed from Llama-Guard-3-1B)
   actionability_generation:
     max_new_tokens: 64
     temperature: 0.0
     do_sample: false
   first_token_debug: true
-  comparison_enabled: true
-  comparison_models:
-    - allenai/wildguard
-    - google/shieldgemma-2b
-  edge_second_pass_enabled: true
+  comparison_enabled: false         # paper does not do this (changed from true)
+  comparison_models: []             # disabled (changed from wildguard + shieldgemma)
+  edge_second_pass_enabled: false   # paper does not do this (changed from true)
   edge_second_pass_model: null
   edge_second_pass_scope: response_all
   edge_second_pass_include_parse_errors: true
@@ -78,4 +76,4 @@ analysis:
   score_calibration_status: needs_debug
 
 output:
-  root: outputs/week1_safety_improved
+  root: outputs/wikidolma_dataset  # renamed to distinguish from improved runs
