@@ -61,9 +61,11 @@ judge:
     temperature: 0.0
     do_sample: false
   first_token_debug: true
-  comparison_enabled: false         # paper does not do this (changed from true)
-  comparison_models: []             # disabled (changed from wildguard + shieldgemma)
-  edge_second_pass_enabled: false   # paper does not do this (changed from true)
+  comparison_enabled: true         # majority-vote of judge models
+  comparison_models: 
+    - allenai/wildguard
+    - google/shieldgemma-9b            # disabled (changed from wildguard + shieldgemma)
+  edge_second_pass_enabled: true   # paper does not do this (changed from true)
   edge_second_pass_model: null
   edge_second_pass_scope: response_all
   edge_second_pass_include_parse_errors: true
