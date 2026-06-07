@@ -22,22 +22,34 @@ print(f"Routing all Hugging Face downloads to: {os.environ['HF_HOME']}\n")
 # MODEL CONFIGURATION LIST
 # =====================================================================
 models_to_download = [
+    # {
+    #     "repo_id": "meta-llama/Llama-Guard-3-8B",
+    #     "local_dir": "./Meta-Llama-Guard-3-8B"
+    # },
+    # {
+    #     "repo_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    #     "local_dir": "./Llama-3-8B-Instruct"
+    # },
+    # {
+    #     "repo_id": "mistralai/Mistral-7B-Instruct-v0.3",
+    #     "local_dir": "./Mistral-7B-Instruct-V0.3"
+    # },
+    # {
+    #     "repo_id": "google/gemma-7b-it",
+    #     "local_dir": "./Gemma-7B-It"
+    # },
     {
-        "repo_id": "meta-llama/Llama-Guard-3-8B",
-        "local_dir": "./Meta-Llama-Guard-3-8B"
+        "repo_id": "microsoft/Phi-3-medium-128k-instruct",
+        "local_dir": "./Phi-3-Medium-128K-Instruct-14B"
     },
     {
-        "repo_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
-        "local_dir": "./Llama-3-8B-Instruct"
+        "repo_id": "allenai/wildguard",
+        "local_dir": "./allenai-wildguard-7B"
     },
     {
-        "repo_id": "mistralai/Mistral-7B-Instruct-v0.3",
-        "local_dir": "./Mistral-7B-Instruct-V0.3"
+        "repo_id": "google/shieldgemma-9b",
+        "local_dir": "./google-shieldgemma-9B"
     },
-    {
-        "repo_id": "google/gemma-7b-it",
-        "local_dir": "./Gemma-7B-It"
-    }
 ]
 
 # =====================================================================

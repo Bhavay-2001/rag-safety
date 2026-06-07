@@ -89,9 +89,13 @@ OUT_ROOT="${OUTPUT_DIR:-outputs/week1_safety_improved}"
 RUN_DIR="$(ls -td ${OUT_ROOT}/* | head -n 1)"
 echo "Run dir: $RUN_DIR"
 
-# ── Step 4: Judge retrieved documents ─────────────────────────────────────────
-echo "=== [4/6] Judging retrieved documents ==="
-python3 scripts/run_doc_judge.py --config "$CONFIG" --run-dir "$RUN_DIR" $SET_ARGS
+# ── Step 4: Judge retrieved documents (skip if already done) ──────────────────
+if [ -f "$RUN_DIR/doc_safety.jsonl" ]; then
+    echo "=== [4/6] doc_safety.jsonl already exists, skipping ==="
+else
+    echo "=== [4/6] Judging retrieved documents ==="
+    python3 scripts/run_doc_judge.py --config "$CONFIG" --run-dir "$RUN_DIR" $SET_ARGS
+fi
 
 # ── Step 5: Judge responses ───────────────────────────────────────────────────
 echo "=== [5/6] Judging responses ==="
