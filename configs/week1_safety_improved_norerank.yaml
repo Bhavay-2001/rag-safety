@@ -78,4 +78,4 @@ analysis:
   score_calibration_status: needs_debug
 
 output:
-  root: outputs/wikidolma_dataset  # renamed to distinguish from improved runs
+  root: outputs/three_judges  
