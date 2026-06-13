@@ -55,5 +55,7 @@ alliance-docs/report_reference/*
 
 context.md
 
+context_RAGCHECKER.md
+
 .gitignore.local
 data/malicious-prompt-dataset
