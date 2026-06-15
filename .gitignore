@@ -49,3 +49,7 @@ alliance-docs/report_reference/*
 
 .gitignore.local
 data/malicious-prompt-dataset
+
+outputs/*
+
+context_RAGCHECKER.md
