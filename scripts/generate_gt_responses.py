@@ -52,6 +52,11 @@ WildGuard fields checked per record
 
 from __future__ import annotations
 
+import os
+
+_HF_HOME = os.environ.get("HF_HOME", "/home/bmalh018/scratch/.cache/huggingface")
+os.environ["HF_HOME"] = _HF_HOME
+
 import argparse
 import csv
 import json
