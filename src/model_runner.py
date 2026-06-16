@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import math
+import torch
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
@@ -90,7 +91,6 @@ class ModelRunner:
         # Phi-3-medium: force eager attention to bypass transformers 5.x cache bugs,
         # and use float16 explicitly.
         if is_phi3_medium:
-            import torch
             cfg = AutoConfig.from_pretrained(model_id, trust_remote_code=trust_remote_code)
             cfg._attn_implementation = "eager"
             model_kwargs["config"] = cfg
