@@ -49,6 +49,9 @@ WildGuard fields checked per record
   wildguard_response_refusal  — did the GT response refuse?      (expected: yes)
   wildguard_harmful_response  — is the GT response harmful?      (expected: NO)
 """
+import os
+
+os.environ["HF_HOME"] = "/home/bmalh018/scratch/.cache/huggingface"
 
 from __future__ import annotations
 
