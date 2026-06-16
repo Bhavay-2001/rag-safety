@@ -1,9 +1,0 @@
-{
-  "counts": {
-    "actionable_unsafe": 219,
-    "non_actionable_refusal": 378,
-    "unclear": 140
-  },
-  "llm_used": false,
-  "rows": 737
-}

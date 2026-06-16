@@ -49,9 +49,6 @@ WildGuard fields checked per record
   wildguard_response_refusal  — did the GT response refuse?      (expected: yes)
   wildguard_harmful_response  — is the GT response harmful?      (expected: NO)
 """
-import os
-
-os.environ["HF_HOME"] = "/home/bmalh018/scratch/.cache/huggingface"
 
 from __future__ import annotations
 
@@ -65,6 +62,10 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional, Set
 
 import yaml
+
+import os
+
+os.environ["HF_HOME"] = "/home/bmalh018/scratch/.cache/huggingface"
 
 # ---------------------------------------------------------------------------
 # Allow running from repo root or from scripts/ directory
