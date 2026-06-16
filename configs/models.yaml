@@ -155,8 +155,11 @@ custom_llama2_7b:
 - id: meta-llama/Llama-2-7b-chat-hf
   alias: Llama-2-7B-Chat
   provider: hf
-
 custom_phi3small:
 - id: microsoft/Phi-3-small-8k-instruct
   alias: Phi-3-Small-8K-Instruct
+  provider: hf
+custom_qwen3_30b:
+- id: Qwen/Qwen3-30B-A3B-Instruct-2507
+  alias: Qwen3-30B-A3B-Instruct
   provider: hf
