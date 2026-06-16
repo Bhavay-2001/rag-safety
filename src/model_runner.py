@@ -59,8 +59,9 @@ class ModelRunner:
         lower_model_id = model_id.lower()
         is_phi3_mini = lower_model_id.startswith("microsoft/phi-3-mini")
         is_phi3_small = lower_model_id.startswith("microsoft/phi-3-small")
+        is_phi3_medium = lower_model_id.startswith("microsoft/phi-3-medium")
 
-        # Phi-3-small requires remote code; Phi-3-mini is handled without remote code.
+        # Phi-3-small/medium require remote code; Phi-3-mini is handled without remote code.
         trust_remote_code = not is_phi3_mini
 
         try:
@@ -76,7 +77,7 @@ class ModelRunner:
             "trust_remote_code": trust_remote_code,
         }
 
-        # Only Phi-3-mini gets explicit config patch.
+        # Phi-3-mini: patch rope_scaling to satisfy transformers 4.x schema.
         if is_phi3_mini:
             cfg = AutoConfig.from_pretrained(model_id, trust_remote_code=trust_remote_code)
             if isinstance(getattr(cfg, "rope_scaling", None), dict):
@@ -85,6 +86,15 @@ class ModelRunner:
                     rs["type"] = rs.get("rope_type", "longrope")
                 cfg.rope_scaling = rs
             model_kwargs["config"] = cfg
+
+        # Phi-3-medium: force eager attention to bypass transformers 5.x cache bugs,
+        # and use float16 explicitly.
+        if is_phi3_medium:
+            import torch
+            cfg = AutoConfig.from_pretrained(model_id, trust_remote_code=trust_remote_code)
+            cfg._attn_implementation = "eager"
+            model_kwargs["config"] = cfg
+            model_kwargs["torch_dtype"] = torch.float16
 
         # Important: Phi-3-small must load native config from remote code (no explicit config passed).
         model = AutoModelForCausalLM.from_pretrained(model_id, **model_kwargs)
