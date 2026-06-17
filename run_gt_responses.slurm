@@ -30,6 +30,11 @@ source $HOME/my_env/bin/activate
 export HF_HOME=/home/bmalh018/scratch/.cache/huggingface
 mkdir -p "$HF_HOME"
 
+# HuggingFace auth token — required for gated models (Llama, WildGuard, etc.)
+# Store the token in ~/.hf_token so it is never hardcoded in this script.
+export HUGGING_FACE_HUB_TOKEN=$(cat ~/.hf_token)
+export HF_TOKEN=$HUGGING_FACE_HUB_TOKEN
+
 export PYTHONPATH=$(pwd):${PYTHONPATH:-}
 export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 
