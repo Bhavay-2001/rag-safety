@@ -39,17 +39,17 @@ models_to_download = [
     #     "local_dir": "./Gemma-7B-It"
     # },
     {
-        "repo_id": "microsoft/Phi-3-medium-128k-instruct",
-        "local_dir": "./Phi-3-Medium-128K-Instruct-14B"
+        "repo_id": "microsoft/Phi-4-mini-instruct",
+        "local_dir": "./Phi-4-mini-Instruct"
     },
-    {
-        "repo_id": "allenai/wildguard",
-        "local_dir": "./allenai-wildguard-7B"
-    },
-    {
-        "repo_id": "google/shieldgemma-9b",
-        "local_dir": "./google-shieldgemma-9B"
-    },
+    # {
+    #    "repo_id": "allenai/wildguard",
+    #    "local_dir": "./allenai-wildguard-7B"
+    # },
+    #{
+    #    "repo_id": "google/shieldgemma-9b",
+    #    "local_dir": "./google-shieldgemma-9B"
+    #},
 ]
 
 # =====================================================================

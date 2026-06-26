@@ -163,3 +163,7 @@ custom_phi3medium128k:
 - id: microsoft/Phi-3-medium-128k-instruct
   alias: Phi-3-Medium-128K-Instruct
   provider: hf
+custom_phi4mini:
+- id: microsoft/Phi-4-mini-instruct
+  alias: Phi-4-Mini-Instruct
+  provider: hf
