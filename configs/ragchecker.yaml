@@ -1,0 +1,67 @@
+# ragchecker.yaml
+# Configuration for scripts/run_ragchecker.py
+#
+# Run:
+#   python scripts/run_ragchecker.py \
+#       --config configs/ragchecker.yaml \
+#       --run-dir outputs/week1_safety_improved/<run_id>
+#
+#   # build input JSON only (no API call, useful for debugging or CLI use)
+#   python scripts/run_ragchecker.py --config configs/ragchecker.yaml \
+#       --run-dir <path> --build-only
+
+# ---------------------------------------------------------------------------
+# Ground-truth responses (produced by generate_gt_responses.py)
+# ---------------------------------------------------------------------------
+gt_responses:
+  path: outputs/gt/gt_safe_responses.jsonl
+
+# ---------------------------------------------------------------------------
+# Run directory — where responses.jsonl and retrieval.jsonl live.
+# Update this to point at the specific run you want to evaluate.
+# Can be overridden with --run-dir on the CLI.
+# ---------------------------------------------------------------------------
+run:
+  # Example paths — set to your actual run directory:
+  #   outputs/week1_safety_improved/20260323T033415Z_ae1d0bff
+  #   outputs/cross_model_snapshots/safety_llama31_8b_A/20260323T033415Z_ae1d0bff
+  output_root: outputs/week1_safety_improved   # used only if run_dir is not set
+  # run_dir: outputs/week1_safety_improved/<run_id>   # ← uncomment and set this
+
+# ---------------------------------------------------------------------------
+# Evaluation settings
+# ---------------------------------------------------------------------------
+evaluation:
+  # Only rag_docs is evaluated (requires retrieved context).
+  # non_rag has no retrieval, so retriever metrics are not meaningful.
+  condition: rag_docs
+
+# ---------------------------------------------------------------------------
+# RAGChecker model settings
+# ---------------------------------------------------------------------------
+# extractor_name / checker_name follow the RefChecker / LiteLLM convention:
+#   hf/<hub-id>           — loads via HuggingFace transformers (uses HF_HOME cache)
+#   openai/<model>        — OpenAI API  (set OPENAI_API_KEY)
+#   bedrock/<model-id>    — AWS Bedrock (set AWS credentials)
+#
+# For the local Qwen3-30B already in HF_HOME cache, use the Hub repo ID with
+# the hf/ prefix — transformers will find the weights without downloading.
+ragchecker:
+  extractor_name: hf/Qwen/Qwen3-30B-A3B-Instruct-2507
+  checker_name:   hf/Qwen/Qwen3-30B-A3B-Instruct-2507
+
+  # Batch size for claim extraction and checking.
+  # Lower if you hit GPU OOM; higher for faster throughput.
+  batch_size_extractor: 8
+  batch_size_checker:   8
+
+# ---------------------------------------------------------------------------
+# Output
+# ---------------------------------------------------------------------------
+output:
+  dir: outputs/ragchecker
+
+  # Files written:
+  #   ragchecker_input.json    — formatted input (reusable with ragchecker-cli)
+  #   ragchecker_results.json  — full per-record claim details from RAGChecker
+  #   ragchecker_metrics.json  — clean metric summary (overall + retriever + generator)
