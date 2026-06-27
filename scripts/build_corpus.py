@@ -32,7 +32,8 @@ def main() -> None:
     output_path = args.output or cfg.get("corpus", {}).get(
         "output_path", "data/corpus/wiki_filtered.csv"
     )
-    stats = build_corpus(cfg, output_path, max_docs=args.max_docs)
+    max_docs = args.max_docs or cfg.get("corpus", {}).get("max_docs")
+    stats = build_corpus(cfg, output_path, max_docs=max_docs)
     stats["config_hash"] = config_hash(cfg)
 
     meta_path = Path(output_path).with_suffix(".meta.json")

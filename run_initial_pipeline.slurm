@@ -53,6 +53,7 @@ echo "Working dir: $(pwd)"
 echo "Config:      $CONFIG"
 echo "Model key:   ${MODEL_KEY:-<from config>}"
 echo "Output dir:  ${OUTPUT_DIR:-<from config>}"
+echo "Set args:    ${SET_ARGS:-<none>}"
 echo "Job ID:      $SLURM_JOB_ID"
 echo "Started:     $(date)"
 

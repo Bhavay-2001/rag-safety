@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from src.config import config_hash, load_config, resolve_paths
+from src.config import apply_overrides, config_hash, load_config, resolve_paths
 from src.metrics import compute_doc_set_labels, compute_metrics
 from src.utils_io import read_jsonl, sha256_file, write_json
 
@@ -324,6 +324,13 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument("--config", required=True, help="Path to configs/base.yaml")
     parser.add_argument("--run-dir", default=None, help="Specific run directory under outputs/runs")
     parser.add_argument("--present-absent", default=None, help="Optional present/absent CSV path")
+    parser.add_argument(
+        "--set",
+        action="append",
+        default=[],
+        metavar="KEY=VALUE",
+        help="Override config value, e.g. --set output.root=outputs/gemma_7b",
+    )
     return parser.parse_args()
 
 
@@ -348,6 +355,7 @@ def main() -> None:
     cfg_path = Path(args.config)
     cfg = load_config(cfg_path)
     cfg = resolve_paths(cfg, cfg_path.parent)
+    cfg = apply_overrides(cfg, args.set)
 
     output_root = Path(cfg.get("output", {}).get("root", "outputs/runs"))
     run_dir = Path(args.run_dir) if args.run_dir else _latest_run_dir(output_root)

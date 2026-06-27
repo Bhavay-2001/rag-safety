@@ -10,12 +10,12 @@ from typing import Any, Dict, List
 
 sys.path.append(str(Path(__file__).resolve().parents[1]))
 
-from src.config import config_hash, load_config, resolve_paths
+from src.config import apply_overrides, config_hash, load_config, resolve_paths
 from src.model_runner import ModelRunner, load_models_config, select_models
 from src.prompt_builder import load_prompt_templates, render_prompt
 from src.retriever_bm25 import hard_negative_docs, load_index, random_docs, retrieve, retrieve_candidates
 from src.retriever_rerank import rerank_with_embeddings
-from src.utils_io import ensure_dir, make_run_id, write_json, write_jsonl
+from src.utils_io import ensure_dir, make_run_id, read_jsonl, write_json, write_jsonl
 
 
 PAD_UNIT = "This is neutral filler text for length matching."
@@ -33,6 +33,13 @@ def _maybe_tqdm(iterable, total: int | None = None, desc: str | None = None):
 def _parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Run RAG/non-RAG evaluations.")
     parser.add_argument("--config", required=True, help="Path to configs/base.yaml")
+    parser.add_argument(
+        "--set",
+        action="append",
+        default=[],
+        metavar="KEY=VALUE",
+        help="Override config value, e.g. --set models.use=custom_llama31_8b",
+    )
     return parser.parse_args()
 
 
@@ -83,6 +90,7 @@ def main() -> None:
     cfg_path = Path(args.config)
     cfg = load_config(cfg_path)
     cfg = resolve_paths(cfg, cfg_path.parent)
+    cfg = apply_overrides(cfg, args.set)
 
     run_cfg = cfg.get("run", {})
     seed = int(run_cfg.get("seed", 42))
@@ -227,6 +235,14 @@ def main() -> None:
     runner = ModelRunner(cfg.get("generation", {}))
 
     responses_path = run_dir / "responses.jsonl"
+
+    done_keys: set = set()
+    if responses_path.exists():
+        for r in read_jsonl(responses_path):
+            done_keys.add((r["prompt_id"], r["condition"], r["model"]))
+        if done_keys:
+            print(f"Resuming: {len(done_keys)} responses already written, skipping those.")
+
     stats: Dict[str, Any] = {
         "run_id": run_id,
         "config_hash": cfg_hash,
@@ -259,6 +275,8 @@ def main() -> None:
             rag_prompt = render_prompt(templates["rag_docs"]["template"], query, [d["text"] for d in docs])
 
             for condition in cfg.get("conditions", []):
+                if (prompt_id, condition, model_spec.alias) in done_keys:
+                    continue
                 if condition == "non_rag":
                     final_prompt = render_prompt(templates["non_rag"]["template"], query)
                 elif condition == "rag_docs":
