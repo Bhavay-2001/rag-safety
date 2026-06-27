@@ -10,8 +10,8 @@ retriever:
   mode: bm25_top5
   top_k: 5
   bm25_candidates_k: 50
-  rerank_model_id: sentence-transformers/all-MiniLM-L6-v2
-  rerank_alpha: 0.5
+  rerank_model_id: null
+  rerank_alpha: 0
   index_dir: indexes/bm25_full
 
 prompts:
@@ -20,7 +20,7 @@ prompts:
 
 models:
   config: configs/models.yaml
-  use: custom_qwen3_4b
+  use: custom_llama31_8b
 
 conditions:
   - non_rag
