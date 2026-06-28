@@ -62,6 +62,27 @@ def load_index(index_dir: str | Path) -> Tuple[BM25Okapi, List[str], List[str]]:
     return data["bm25"], data["doc_ids"], data["doc_texts"]
 
 
+def rank_query(bm25: BM25Okapi, query: str) -> List[Tuple[int, float]]:
+    query_tokens = _tokenize(query)
+    scores = bm25.get_scores(query_tokens)
+    return sorted(
+        ((idx, float(score)) for idx, score in enumerate(scores)),
+        key=lambda x: x[1],
+        reverse=True,
+    )
+
+
+def _pairs_to_docs(
+    pairs: List[Tuple[int, float]],
+    doc_ids: List[str],
+    doc_texts: List[str],
+) -> List[Dict[str, Any]]:
+    return [
+        {"doc_id": doc_ids[idx], "score": score, "text": doc_texts[idx]}
+        for idx, score in pairs
+    ]
+
+
 def retrieve(
     bm25: BM25Okapi,
     doc_ids: List[str],
@@ -69,13 +90,7 @@ def retrieve(
     query: str,
     top_k: int,
 ) -> List[Dict[str, Any]]:
-    query_tokens = _tokenize(query)
-    scores = bm25.get_scores(query_tokens)
-    ranked = sorted(enumerate(scores), key=lambda x: x[1], reverse=True)[:top_k]
-    results: List[Dict[str, Any]] = []
-    for idx, score in ranked:
-        results.append({"doc_id": doc_ids[idx], "score": float(score), "text": doc_texts[idx]})
-    return results
+    return _pairs_to_docs(rank_query(bm25, query)[:top_k], doc_ids, doc_texts)
 
 
 def retrieve_candidates(
@@ -85,8 +100,45 @@ def retrieve_candidates(
     query: str,
     top_k: int,
 ) -> List[Dict[str, Any]]:
-    # Utility for modes that retrieve a larger candidate pool and rerank later.
     return retrieve(bm25, doc_ids, doc_texts, query, top_k=top_k)
+
+
+def hard_negative_from_ranked(
+    ranked: List[Tuple[int, float]],
+    doc_ids: List[str],
+    doc_texts: List[str],
+    top_k: int,
+) -> List[Dict[str, Any]]:
+    positive = [(idx, score) for idx, score in ranked if score > 0.0]
+    positive.sort(key=lambda x: x[1])
+    selected = positive[:top_k]
+    if not selected:
+        return []
+    return _pairs_to_docs(selected, doc_ids, doc_texts)
+
+
+def retrieve_docs_for_query(
+    bm25: BM25Okapi,
+    doc_ids: List[str],
+    doc_texts: List[str],
+    query: str,
+    top_k: int,
+    candidates_k: int | None = None,
+    seed: int | None = None,
+) -> Dict[str, Any]:
+    """Score the query once and derive BM25 top-k, candidate pool, and hard negatives."""
+    pool_k = candidates_k if candidates_k is not None else top_k
+    ranked = rank_query(bm25, query)
+    candidates = _pairs_to_docs(ranked[:pool_k], doc_ids, doc_texts)
+    hard = hard_negative_from_ranked(ranked, doc_ids, doc_texts, top_k)
+    if not hard:
+        hard = random_docs(doc_ids, doc_texts, top_k, seed=seed)
+    return {
+        "ranked": ranked,
+        "candidates": candidates,
+        "top_k": candidates[:top_k],
+        "hard_negative": hard,
+    }
 
 
 def random_docs(
@@ -106,12 +158,10 @@ def hard_negative_docs(
     doc_texts: List[str],
     query: str,
     top_k: int,
+    ranked: List[Tuple[int, float]] | None = None,
 ) -> List[Dict[str, Any]]:
-    query_tokens = _tokenize(query)
-    scores = bm25.get_scores(query_tokens)
-    scored = [(idx, float(score)) for idx, score in enumerate(scores) if score > 0.0]
-    scored.sort(key=lambda x: x[1])
-    selected = scored[:top_k]
-    if not selected:
+    ranked = ranked if ranked is not None else rank_query(bm25, query)
+    hard = hard_negative_from_ranked(ranked, doc_ids, doc_texts, top_k)
+    if not hard:
         return random_docs(doc_ids, doc_texts, top_k)
-    return [{"doc_id": doc_ids[i], "score": s, "text": doc_texts[i]} for i, s in selected]
+    return hard

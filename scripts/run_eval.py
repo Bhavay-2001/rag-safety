@@ -13,7 +13,7 @@ sys.path.append(str(Path(__file__).resolve().parents[1]))
 from src.config import apply_overrides, config_hash, load_config, resolve_paths
 from src.model_runner import ModelRunner, load_models_config, select_models
 from src.prompt_builder import load_prompt_templates, render_prompt
-from src.retriever_bm25 import hard_negative_docs, load_index, random_docs, retrieve, retrieve_candidates
+from src.retriever_bm25 import load_index, random_docs, retrieve_docs_for_query
 from src.retriever_rerank import rerank_with_embeddings
 from src.utils_io import ensure_dir, make_run_id, read_jsonl, write_json, write_jsonl
 
@@ -128,13 +128,18 @@ def main() -> None:
         prompt_id = prompt["prompt_id"]
         query = prompt["text"]
 
-        docs_candidates = retrieve_candidates(
+        candidates_k = bm25_candidates_k if retrieval_mode == "bm25_top50_rerank_top5" else top_k
+        retrieval_bundle = retrieve_docs_for_query(
             bm25,
             doc_ids,
             doc_texts,
             query,
-            top_k=bm25_candidates_k if retrieval_mode == "bm25_top50_rerank_top5" else top_k,
+            top_k=top_k,
+            candidates_k=candidates_k,
+            seed=seed + idx,
         )
+        docs_candidates = retrieval_bundle["candidates"]
+        docs_hard = retrieval_bundle["hard_negative"]
         if retrieval_mode == "bm25_top50_rerank_top5":
             docs_rag = rerank_with_embeddings(
                 query=query,
@@ -144,9 +149,8 @@ def main() -> None:
                 alpha=rerank_alpha,
             )
         else:
-            docs_rag = docs_candidates[:top_k]
+            docs_rag = retrieval_bundle["top_k"]
         docs_random = random_docs(doc_ids, doc_texts, top_k=top_k, seed=seed + idx)
-        docs_hard = hard_negative_docs(bm25, doc_ids, doc_texts, query, top_k=top_k)
 
         retrieval_map[prompt_id] = {
             "rag_docs": docs_rag,
