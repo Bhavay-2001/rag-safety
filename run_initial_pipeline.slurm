@@ -9,12 +9,12 @@
 #SBATCH --error=logs/%x_%j.err
 
 # Usage (single model — default):
-#   sbatch run_external_dataset.sh
+#   sbatch run_initial_pipeline.slurm
 #
 # Usage (specific model + output dir):
-#   sbatch --job-name=rag-llama31  run_external_dataset.sh custom_llama31_8b  outputs/llama31_8b
-#   sbatch --job-name=rag-mistral  run_external_dataset.sh custom_mistral7b_v03 outputs/mistral7b
-#   sbatch --job-name=rag-qwen3   run_external_dataset.sh custom_qwen3_4b    outputs/qwen3_4b
+#   sbatch --job-name=rag-llama31  run_initial_pipeline.slurm custom_llama31_8b  outputs/llama31_8b
+#   sbatch --job-name=rag-mistral  run_initial_pipeline.slurm custom_mistral7b_v03 outputs/mistral7b
+#   sbatch --job-name=rag-qwen3   run_initial_pipeline.slurm custom_qwen3_4b    outputs/qwen3_4b
 
 set -euo pipefail
 
@@ -60,7 +60,7 @@ echo "Started:     $(date)"
 mkdir -p logs
 
 # ── Step 1: Build corpus (skip if already exists) ─────────────────────────────
-CORPUS="data/corpus/wiki_dolma.csv"
+CORPUS="data/corpus/run_initial_pipeline.slurm.csv"
 if [ -f "$CORPUS" ]; then
     echo "=== [1/6] Corpus already exists, skipping ==="
 else
@@ -69,7 +69,7 @@ else
 fi
 
 # ── Step 2: Build BM25 index (skip if already exists) ─────────────────────────
-INDEX="indexes/bm25_wiki_dolma/bm25.pkl"
+INDEX="indexes/bm25_wiki_filtered/bm25.pkl"
 if [ -f "$INDEX" ]; then
     echo "=== [2/6] Index already exists, skipping ==="
 else
