@@ -60,7 +60,7 @@ echo "Started:     $(date)"
 mkdir -p logs
 
 # ── Step 1: Build corpus (skip if already exists) ─────────────────────────────
-CORPUS="data/corpus/run_initial_pipeline.slurm.csv"
+CORPUS="data/corpus/wiki_filtered.csv"
 if [ -f "$CORPUS" ]; then
     echo "=== [1/6] Corpus already exists, skipping ==="
 else
