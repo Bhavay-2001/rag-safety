@@ -39,8 +39,9 @@ evaluation:
 # ---------------------------------------------------------------------------
 # RAGChecker model settings
 # ---------------------------------------------------------------------------
-# extractor_name / checker_name follow the RefChecker / LiteLLM convention:
-#   hf/<hub-id>           — loads via HuggingFace transformers (uses HF_HOME cache)
+# extractor_name / checker_name follow the RefChecker / LiteLLM convention.
+# Provider examples:
+#   huggingface/<hub-id>  — Hugging Face provider via LiteLLM
 #   openai/<model>        — OpenAI API  (set OPENAI_API_KEY)
 #   bedrock/<model-id>    — AWS Bedrock (set AWS credentials)
 #

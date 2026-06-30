@@ -100,6 +100,24 @@ def _parse_args() -> argparse.Namespace:
 # Helpers
 # ---------------------------------------------------------------------------
 
+def _normalize_llm_name(name: str) -> str:
+    """
+    Normalize model naming conventions to what downstream libs expect.
+
+    This repo historically used:
+      - hf/<org>/<repo>  (intended as "HuggingFace")
+    However, RAGChecker/RefChecker invoke LiteLLM, which expects provider-prefixed
+    model names like:
+      - huggingface/<model>
+      - openai/<model>
+      - bedrock/<model-id>
+    """
+    n = (name or "").strip()
+    if n.startswith("hf/"):
+        return "huggingface/" + n[len("hf/") :]
+    return n
+
+
 def _load_config(path: str | Path) -> Dict[str, Any]:
     with Path(path).open("r", encoding="utf-8") as f:
         return yaml.safe_load(f)
@@ -299,6 +317,10 @@ def main() -> None:
         "extractor_name", "hf/Qwen/Qwen3-30B-A3B-Instruct-2507"
     )
     checker_name: str = args.checker_name or cfg.get("ragchecker", {}).get("checker_name", extractor_name)
+
+    # Normalize naming to what LiteLLM expects (prevents: "LLM Provider NOT provided").
+    extractor_name = _normalize_llm_name(extractor_name)
+    checker_name = _normalize_llm_name(checker_name)
     batch_size_extractor: int = int(cfg.get("ragchecker", {}).get("batch_size_extractor", 8))
     batch_size_checker:   int = int(cfg.get("ragchecker", {}).get("batch_size_checker", 8))
 
