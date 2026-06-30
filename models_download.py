@@ -22,10 +22,10 @@ print(f"Routing all Hugging Face downloads to: {os.environ['HF_HOME']}\n")
 # MODEL CONFIGURATION LIST
 # =====================================================================
 models_to_download = [
-    # {
-    #     "repo_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
-    #     "local_dir": "./Qwen3-30B-A3B-Instruct-2507"
-    # },
+    {
+        "repo_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+        "local_dir": "./Qwen3-30B-A3B-Instruct-2507"
+    },
     # {
     #     "repo_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
     #     "local_dir": "./Llama-3-8B-Instruct"
