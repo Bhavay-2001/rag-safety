@@ -85,6 +85,14 @@ def _parse_args() -> argparse.Namespace:
         "--build-only", action="store_true", dest="build_only",
         help="Build and save ragchecker_input.json only; skip the evaluation API call.",
     )
+    parser.add_argument(
+        "--extractor-name", default=None, dest="extractor_name",
+        help="Override ragchecker.extractor_name from config.",
+    )
+    parser.add_argument(
+        "--checker-name", default=None, dest="checker_name",
+        help="Override ragchecker.checker_name from config (defaults to extractor).",
+    )
     return parser.parse_args()
 
 
@@ -287,12 +295,10 @@ def main() -> None:
     out_dir = _resolve(out_dir_str, _REPO_ROOT)
     ensure_dir(out_dir)
 
-    extractor_name: str = cfg.get("ragchecker", {}).get(
+    extractor_name: str = args.extractor_name or cfg.get("ragchecker", {}).get(
         "extractor_name", "hf/Qwen/Qwen3-30B-A3B-Instruct-2507"
     )
-    checker_name: str = cfg.get("ragchecker", {}).get(
-        "checker_name", extractor_name
-    )
+    checker_name: str = args.checker_name or cfg.get("ragchecker", {}).get("checker_name", extractor_name)
     batch_size_extractor: int = int(cfg.get("ragchecker", {}).get("batch_size_extractor", 8))
     batch_size_checker:   int = int(cfg.get("ragchecker", {}).get("batch_size_checker", 8))
 
