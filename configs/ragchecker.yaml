@@ -48,13 +48,13 @@ evaluation:
 # For the local Qwen3-30B already in HF_HOME cache, use the Hub repo ID with
 # the hf/ prefix — transformers will find the weights without downloading.
 ragchecker:
-  extractor_name: hf/Qwen/Qwen3-30B-A3B-Instruct-2507
-  checker_name:   hf/Qwen/Qwen3-30B-A3B-Instruct-2507
+  extractor_name: hf/Llama-3-8B-Instruct
+  checker_name:   hf/Llama-3-8B-Instruct
 
   # Batch size for claim extraction and checking.
   # Lower if you hit GPU OOM; higher for faster throughput.
-  batch_size_extractor: 8
-  batch_size_checker:   8
+  batch_size_extractor: 4
+  batch_size_checker:   4
 
 # ---------------------------------------------------------------------------
 # Output
