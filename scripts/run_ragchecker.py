@@ -58,6 +58,7 @@ import yaml
 _REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(_REPO_ROOT))
 
+from src.model_names import model_slug, normalize_litellm_model
 from src.utils_io import ensure_dir, read_jsonl, write_json
 
 
@@ -93,30 +94,20 @@ def _parse_args() -> argparse.Namespace:
         "--checker-name", default=None, dest="checker_name",
         help="Override ragchecker.checker_name from config (defaults to extractor).",
     )
+    parser.add_argument(
+        "--run-name", default=None, dest="run_name",
+        help="Logical run label (used in metrics and default output path).",
+    )
+    parser.add_argument(
+        "--output-dir", default=None, dest="output_dir",
+        help="Directory for ragchecker_input/results/metrics JSON outputs.",
+    )
     return parser.parse_args()
 
 
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
-
-def _normalize_llm_name(name: str) -> str:
-    """
-    Normalize model naming conventions to what downstream libs expect.
-
-    This repo historically used:
-      - hf/<org>/<repo>  (intended as "HuggingFace")
-    However, RAGChecker/RefChecker invoke LiteLLM, which expects provider-prefixed
-    model names like:
-      - huggingface/<model>
-      - openai/<model>
-      - bedrock/<model-id>
-    """
-    n = (name or "").strip()
-    if n.startswith("hf/"):
-        return "huggingface/" + n[len("hf/") :]
-    return n
-
 
 def _load_config(path: str | Path) -> Dict[str, Any]:
     with Path(path).open("r", encoding="utf-8") as f:
@@ -309,18 +300,28 @@ def main() -> None:
 
     condition: str = cfg.get("evaluation", {}).get("condition", "rag_docs")
 
-    out_dir_str = cfg.get("output", {}).get("dir", "outputs/ragchecker")
-    out_dir = _resolve(out_dir_str, _REPO_ROOT)
-    ensure_dir(out_dir)
+    models_config = cfg.get("models", {}).get("config", "configs/models.yaml")
+    if not Path(models_config).is_absolute():
+        models_config = str(_REPO_ROOT / models_config)
 
     extractor_name: str = args.extractor_name or cfg.get("ragchecker", {}).get(
-        "extractor_name", "hf/Qwen/Qwen3-30B-A3B-Instruct-2507"
+        "extractor_name", "Llama-3-8B-Instruct"
     )
     checker_name: str = args.checker_name or cfg.get("ragchecker", {}).get("checker_name", extractor_name)
 
-    # Normalize naming to what LiteLLM expects (prevents: "LLM Provider NOT provided").
-    extractor_name = _normalize_llm_name(extractor_name)
-    checker_name = _normalize_llm_name(checker_name)
+    extractor_litellm = normalize_litellm_model(extractor_name, models_config)
+    checker_litellm = normalize_litellm_model(checker_name, models_config)
+
+    run_name = args.run_name or cfg.get("run", {}).get("name")
+    if args.output_dir:
+        out_dir = _resolve(args.output_dir, _REPO_ROOT)
+    elif run_name:
+        out_root = cfg.get("output", {}).get("root", "outputs/ragchecker")
+        out_dir = _resolve(out_root, _REPO_ROOT) / run_name / model_slug(extractor_name, models_config)
+    else:
+        out_dir_str = cfg.get("output", {}).get("dir", "outputs/ragchecker")
+        out_dir = _resolve(out_dir_str, _REPO_ROOT)
+    ensure_dir(out_dir)
     batch_size_extractor: int = int(cfg.get("ragchecker", {}).get("batch_size_extractor", 8))
     batch_size_checker:   int = int(cfg.get("ragchecker", {}).get("batch_size_checker", 8))
 
@@ -375,13 +376,13 @@ def main() -> None:
     print(f"\n{'='*60}")
     print(f"PHASE 3 — RAGChecker evaluation")
     print(f"{'='*60}")
-    print(f"  Extractor : {extractor_name}")
-    print(f"  Checker   : {checker_name}")
+    print(f"  Extractor : {extractor_litellm}")
+    print(f"  Checker   : {checker_litellm}")
 
     rag_results = _run_ragchecker(
         input_dict,
-        extractor_name,
-        checker_name,
+        extractor_litellm,
+        checker_litellm,
         batch_size_extractor,
         batch_size_checker,
     )
@@ -410,10 +411,15 @@ def main() -> None:
         if key in full:
             metrics[key] = full[key]
     metrics["run_dir"]   = str(run_dir)
+    metrics["run_name"]  = run_name
+    metrics["output_dir"] = str(out_dir)
     metrics["gt_path"]   = str(gt_path)
     metrics["condition"] = condition
     metrics["n_records"] = len(joined)
-    metrics["extractor"] = extractor_name
+    metrics["extractor"] = extractor_litellm
+    metrics["checker"]   = checker_litellm
+    metrics["extractor_config"] = extractor_name
+    metrics["checker_config"]   = checker_name
     write_json(metrics_path, metrics)
 
     print(f"  Full results → {results_path}")
