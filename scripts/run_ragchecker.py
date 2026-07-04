@@ -281,12 +281,11 @@ def _run_ragchecker(
         ragchecker_kwargs["extractor_name"] = extractor_spec.id
         ragchecker_kwargs["checker_name"] = checker_spec.id
     elif inference == "vllm":
+        api_base = extractor_api_base or checker_api_base or "http://127.0.0.1:8000/v1"
         ragchecker_kwargs["extractor_name"] = f"openai/{extractor_hub_id}"
         ragchecker_kwargs["checker_name"] = f"openai/{checker_hub_id}"
-        ragchecker_kwargs["extractor_api_base"] = extractor_api_base
-        ragchecker_kwargs["checker_api_base"] = checker_api_base or extractor_api_base
-        if not ragchecker_kwargs["extractor_api_base"]:
-            raise ValueError("vllm inference requires ragchecker.extractor_api_base in config.")
+        ragchecker_kwargs["extractor_api_base"] = api_base
+        ragchecker_kwargs["checker_api_base"] = checker_api_base or api_base
     else:
         ragchecker_kwargs["extractor_name"] = extractor_hub_id
         ragchecker_kwargs["checker_name"] = checker_hub_id
@@ -365,8 +364,16 @@ def main() -> None:
     extractor_max_new_tokens: int = int(
         ragchecker_cfg.get("extractor_max_new_tokens", generation_cfg["max_new_tokens"])
     )
-    extractor_api_base = ragchecker_cfg.get("extractor_api_base")
-    checker_api_base = ragchecker_cfg.get("checker_api_base")
+    extractor_api_base = (
+        ragchecker_cfg.get("extractor_api_base")
+        or os.environ.get("RAGCHECKER_EXTRACTOR_API_BASE")
+        or os.environ.get("VLLM_API_BASE")
+    )
+    checker_api_base = (
+        ragchecker_cfg.get("checker_api_base")
+        or os.environ.get("RAGCHECKER_CHECKER_API_BASE")
+        or extractor_api_base
+    )
 
     run_name = args.run_name or cfg.get("run", {}).get("name")
     if args.output_dir:
@@ -425,6 +432,9 @@ def main() -> None:
     if args.build_only:
         print("\n--build-only set; stopping before evaluation.")
         return
+
+    if inference == "vllm":
+        os.environ.setdefault("OPENAI_API_KEY", str(ragchecker_cfg.get("vllm_api_key", "sk-local")))
 
     # ========================================================================
     # PHASE 3 — Run RAGChecker
