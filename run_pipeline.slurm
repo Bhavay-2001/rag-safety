@@ -18,7 +18,7 @@
 #   (e.g. Llama-3-8B-Instruct) or full hub id (e.g. hf/Qwen/Qwen3-30B-A3B-Instruct-2507).
 #
 # Outputs go to:
-#   outputs/ragchecker/<run_name>/<model_slug>/
+#   outputs/ragchecker/<run_name>/
 
 set -euo pipefail
 
@@ -47,19 +47,7 @@ export HF_TOKEN=$HUGGING_FACE_HUB_TOKEN
 export PYTHONPATH=$(pwd):${PYTHONPATH:-}
 export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 
-if [ -n "$RAGCHECKER_MODEL" ]; then
-    MODEL_FOR_SLUG="$RAGCHECKER_MODEL"
-else
-    MODEL_FOR_SLUG=$(python3 - <<'PY'
-import yaml
-from pathlib import Path
-cfg = yaml.safe_load(Path("configs/ragchecker.yaml").read_text(encoding="utf-8"))
-print(cfg.get("ragchecker", {}).get("extractor_name", "Llama-3-8B-Instruct"))
-PY
-)
-fi
-MODEL_SLUG=$(python3 -c "from src.model_names import model_slug; print(model_slug('$MODEL_FOR_SLUG'))")
-RAGCHECKER_OUTPUT_DIR="outputs/ragchecker/${RUN_NAME}/${MODEL_SLUG}"
+RAGCHECKER_OUTPUT_DIR="outputs/ragchecker/${RUN_NAME}"
 
 # ── Sanity checks ─────────────────────────────────────────────────────────────
 echo "=== Environment ready ==="
@@ -69,7 +57,6 @@ echo "Job ID        : $SLURM_JOB_ID"
 echo "Run name      : $RUN_NAME"
 echo "Run dir       : $RUN_DIR"
 echo "RAG model     : ${RAGCHECKER_MODEL:-<from configs/ragchecker.yaml>}"
-echo "Model slug    : $MODEL_SLUG"
 echo "RAG output dir: $RAGCHECKER_OUTPUT_DIR"
 echo "Started       : $(date)"
 mkdir -p logs "$RAGCHECKER_OUTPUT_DIR"

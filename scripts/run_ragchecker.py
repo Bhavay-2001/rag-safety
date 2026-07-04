@@ -58,7 +58,7 @@ import yaml
 _REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(_REPO_ROOT))
 
-from src.model_names import model_slug, normalize_litellm_model
+from src.model_names import normalize_litellm_model
 from src.utils_io import ensure_dir, read_jsonl, write_json
 
 
@@ -317,7 +317,7 @@ def main() -> None:
         out_dir = _resolve(args.output_dir, _REPO_ROOT)
     elif run_name:
         out_root = cfg.get("output", {}).get("root", "outputs/ragchecker")
-        out_dir = _resolve(out_root, _REPO_ROOT) / run_name / model_slug(extractor_name, models_config)
+        out_dir = _resolve(out_root, _REPO_ROOT) / run_name
     else:
         out_dir_str = cfg.get("output", {}).get("dir", "outputs/ragchecker")
         out_dir = _resolve(out_dir_str, _REPO_ROOT)

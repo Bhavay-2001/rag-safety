@@ -17,8 +17,8 @@
 #       --extractor-name Qwen3-30B-A3B-Instruct
 #
 # Output layout (when --run-name is set):
-#   outputs/ragchecker/<run_name>/<model_slug>/
-#   e.g. outputs/ragchecker/phi4/llama-3-8b-instruct/
+#   outputs/ragchecker/<run_name>/
+#   e.g. outputs/ragchecker/phi4/
 
 # ---------------------------------------------------------------------------
 # Ground-truth responses (produced by generate_gt_responses.py)
@@ -53,8 +53,8 @@ models:
 # Use an alias from models.yaml or hf/<org>/<repo>.
 # ---------------------------------------------------------------------------
 ragchecker:
-  extractor_name: Llama-3-8B-Instruct
-  checker_name:   Llama-3-8B-Instruct
+  extractor_name: custom_llama31_8b
+  checker_name:   custom_llama31_8b
   batch_size_extractor: 4
   batch_size_checker:   4
 
