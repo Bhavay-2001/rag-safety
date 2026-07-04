@@ -58,7 +58,8 @@ import yaml
 _REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(_REPO_ROOT))
 
-from src.model_names import normalize_litellm_model
+from src.model_names import normalize_litellm_model, resolve_model_spec
+from src.ragchecker_local import make_local_llm_api_func
 from src.utils_io import ensure_dir, read_jsonl, write_json
 
 
@@ -229,10 +230,19 @@ def _build_ragchecker_input(joined: List[Dict[str, Any]]) -> Dict[str, Any]:
 
 def _run_ragchecker(
     input_dict: Dict[str, Any],
+    *,
+    inference: str,
     extractor_name: str,
     checker_name: str,
+    extractor_hub_id: str,
+    checker_hub_id: str,
     batch_size_extractor: int,
     batch_size_checker: int,
+    extractor_max_new_tokens: int,
+    generation_cfg: Dict[str, Any],
+    models_config: str,
+    extractor_api_base: Optional[str] = None,
+    checker_api_base: Optional[str] = None,
 ) -> Any:
     try:
         from ragchecker import RAGResults, RAGChecker
@@ -246,14 +256,44 @@ def _run_ragchecker(
 
     rag_results = RAGResults.from_dict(input_dict)
 
-    evaluator = RAGChecker(
-        extractor_name=extractor_name,
-        checker_name=checker_name,
-        batch_size_extractor=batch_size_extractor,
-        batch_size_checker=batch_size_checker,
-    )
+    ragchecker_kwargs: Dict[str, Any] = {
+        "batch_size_extractor": batch_size_extractor,
+        "batch_size_checker": batch_size_checker,
+        "extractor_max_new_tokens": extractor_max_new_tokens,
+    }
 
-    print(f"  Running RAGChecker (extractor={extractor_name}) ...")
+    if inference == "local":
+        extractor_spec = resolve_model_spec(extractor_name, models_config)
+        checker_spec = resolve_model_spec(checker_name, models_config)
+        if extractor_spec.id != checker_spec.id:
+            raise ValueError(
+                "Local inference requires the same hub model for extractor and checker "
+                f"(got {extractor_spec.id!r} vs {checker_spec.id!r})."
+            )
+        if extractor_spec.provider != "hf":
+            raise ValueError(
+                f"Local inference only supports provider=hf models (got {extractor_spec.provider!r})."
+            )
+        print(f"  Loading local model from HF cache: {extractor_spec.id}")
+        ragchecker_kwargs["custom_llm_api_func"] = make_local_llm_api_func(
+            extractor_spec, generation_cfg
+        )
+        ragchecker_kwargs["extractor_name"] = extractor_spec.id
+        ragchecker_kwargs["checker_name"] = checker_spec.id
+    elif inference == "vllm":
+        ragchecker_kwargs["extractor_name"] = f"openai/{extractor_hub_id}"
+        ragchecker_kwargs["checker_name"] = f"openai/{checker_hub_id}"
+        ragchecker_kwargs["extractor_api_base"] = extractor_api_base
+        ragchecker_kwargs["checker_api_base"] = checker_api_base or extractor_api_base
+        if not ragchecker_kwargs["extractor_api_base"]:
+            raise ValueError("vllm inference requires ragchecker.extractor_api_base in config.")
+    else:
+        ragchecker_kwargs["extractor_name"] = extractor_hub_id
+        ragchecker_kwargs["checker_name"] = checker_hub_id
+
+    evaluator = RAGChecker(**ragchecker_kwargs)
+
+    print(f"  Running RAGChecker (inference={inference}, model={ragchecker_kwargs['checker_name']}) ...")
     evaluator.evaluate(rag_results, all_metrics)
     return rag_results
 
@@ -305,12 +345,28 @@ def main() -> None:
         models_config = str(_REPO_ROOT / models_config)
 
     extractor_name: str = args.extractor_name or cfg.get("ragchecker", {}).get(
-        "extractor_name", "Llama-3-8B-Instruct"
+        "extractor_name", "custom_llama31_8b"
     )
     checker_name: str = args.checker_name or cfg.get("ragchecker", {}).get("checker_name", extractor_name)
 
+    ragchecker_cfg = cfg.get("ragchecker", {})
+    inference: str = str(ragchecker_cfg.get("inference", "local")).lower()
+    extractor_spec = resolve_model_spec(extractor_name, models_config)
+    checker_spec = resolve_model_spec(checker_name, models_config)
+    extractor_hub_id = extractor_spec.id
+    checker_hub_id = checker_spec.id
     extractor_litellm = normalize_litellm_model(extractor_name, models_config)
     checker_litellm = normalize_litellm_model(checker_name, models_config)
+    generation_cfg: Dict[str, Any] = dict(ragchecker_cfg.get("generation", {}))
+    generation_cfg.setdefault("max_new_tokens", int(ragchecker_cfg.get("extractor_max_new_tokens", 1000)))
+    generation_cfg.setdefault("do_sample", False)
+    generation_cfg.setdefault("temperature", 0.0)
+    generation_cfg.setdefault("top_p", 1.0)
+    extractor_max_new_tokens: int = int(
+        ragchecker_cfg.get("extractor_max_new_tokens", generation_cfg["max_new_tokens"])
+    )
+    extractor_api_base = ragchecker_cfg.get("extractor_api_base")
+    checker_api_base = ragchecker_cfg.get("checker_api_base")
 
     run_name = args.run_name or cfg.get("run", {}).get("name")
     if args.output_dir:
@@ -322,8 +378,8 @@ def main() -> None:
         out_dir_str = cfg.get("output", {}).get("dir", "outputs/ragchecker")
         out_dir = _resolve(out_dir_str, _REPO_ROOT)
     ensure_dir(out_dir)
-    batch_size_extractor: int = int(cfg.get("ragchecker", {}).get("batch_size_extractor", 8))
-    batch_size_checker:   int = int(cfg.get("ragchecker", {}).get("batch_size_checker", 8))
+    batch_size_extractor: int = int(ragchecker_cfg.get("batch_size_extractor", 8))
+    batch_size_checker:   int = int(ragchecker_cfg.get("batch_size_checker", 8))
 
     responses_path = run_dir / "responses.jsonl"
     retrieval_path = run_dir / "retrieval.jsonl"
@@ -376,15 +432,30 @@ def main() -> None:
     print(f"\n{'='*60}")
     print(f"PHASE 3 — RAGChecker evaluation")
     print(f"{'='*60}")
-    print(f"  Extractor : {extractor_litellm}")
-    print(f"  Checker   : {checker_litellm}")
+    print(f"  Inference : {inference}")
+    if inference == "local":
+        print(f"  Model     : {extractor_hub_id} (HF cache via transformers)")
+    elif inference == "vllm":
+        print(f"  Extractor : openai/{extractor_hub_id} @ {extractor_api_base}")
+        print(f"  Checker   : openai/{checker_hub_id} @ {checker_api_base or extractor_api_base}")
+    else:
+        print(f"  Extractor : {extractor_litellm}")
+        print(f"  Checker   : {checker_litellm}")
 
     rag_results = _run_ragchecker(
         input_dict,
-        extractor_litellm,
-        checker_litellm,
-        batch_size_extractor,
-        batch_size_checker,
+        inference=inference,
+        extractor_name=extractor_name,
+        checker_name=checker_name,
+        extractor_hub_id=extractor_hub_id,
+        checker_hub_id=checker_hub_id,
+        batch_size_extractor=batch_size_extractor,
+        batch_size_checker=batch_size_checker,
+        extractor_max_new_tokens=extractor_max_new_tokens,
+        generation_cfg=generation_cfg,
+        models_config=models_config,
+        extractor_api_base=extractor_api_base,
+        checker_api_base=checker_api_base,
     )
 
     # ========================================================================
@@ -416,8 +487,9 @@ def main() -> None:
     metrics["gt_path"]   = str(gt_path)
     metrics["condition"] = condition
     metrics["n_records"] = len(joined)
-    metrics["extractor"] = extractor_litellm
-    metrics["checker"]   = checker_litellm
+    metrics["inference"] = inference
+    metrics["extractor"] = extractor_hub_id if inference == "local" else extractor_litellm
+    metrics["checker"]   = checker_hub_id if inference == "local" else checker_litellm
     metrics["extractor_config"] = extractor_name
     metrics["checker_config"]   = checker_name
     write_json(metrics_path, metrics)

@@ -50,13 +50,22 @@ models:
 
 # ---------------------------------------------------------------------------
 # RAGChecker model settings (default; override via run_pipeline arg 3)
-# Use an alias from models.yaml or hf/<org>/<repo>.
+# inference:
+#   local  — load from HF_HOME cache via transformers (default, no API credits)
+#   hf_api — Hugging Face Inference API via LiteLLM (uses monthly HF credits)
+#   vllm   — OpenAI-compatible local server; set extractor_api_base
 # ---------------------------------------------------------------------------
 ragchecker:
-  extractor_name: custom_llama31_8b
-  checker_name:   custom_llama31_8b
+  inference: local
+  extractor_name: Llama-3.1-8B-Instruct
+  checker_name:   Llama-3.1-8B-Instruct
   batch_size_extractor: 4
   batch_size_checker:   4
+  extractor_max_new_tokens: 1000
+  generation:
+    max_new_tokens: 1000
+    do_sample: false
+    temperature: 0.0
 
 # ---------------------------------------------------------------------------
 # Output
