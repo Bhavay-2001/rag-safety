@@ -51,7 +51,7 @@ judge:
   response_model: llama-guard-2
   response_calibration_model: cais/HarmBench-Llama-2-13b-cls
   doc_model_primary: llama-guard-2
-  doc_model_secondary: meta-llama/Meta-Llama-3-70B-Instruct
+  doc_model_secondary: meta-llama/Llama-3-70B-Instruct
   taxonomy: lg3_mlcommons14
   score_mode: legacy_llr
   strict_parse: true

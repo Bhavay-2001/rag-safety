@@ -2,7 +2,7 @@ paper_default:
 - id: meta-llama/Llama-2-7b-chat-hf
   alias: Llama-2-7B-Chat
   provider: hf
-- id: meta-llama/Meta-Llama-3-8B-Instruct
+- id: meta-llama/Llama-3.1-8B-Instruct
   alias: Llama-3-8B-Instruct
   provider: hf
 - id: mistralai/Mistral-7B-Instruct-v0.2
@@ -23,7 +23,7 @@ paper_default:
 - id: meta-llama/Llama-2-70b-chat-hf
   alias: Llama-2-70B-Chat
   provider: hf
-- id: meta-llama/Meta-Llama-3-70B-Instruct
+- id: meta-llama/Llama-3-70B-Instruct
   alias: Llama-3-70B-Instruct
   provider: hf
 - id: anthropic/claude-3.5-sonnet
@@ -40,7 +40,7 @@ optional_additions:
   alias: Qwen2.5-7B-Instruct
   provider: hf
 paper_default_open_small:
-- id: meta-llama/Meta-Llama-3-8B-Instruct
+- id: meta-llama/Llama-3.1-8B-Instruct
   alias: Llama-3-8B-Instruct
   provider: hf
 - id: mistralai/Mistral-7B-Instruct-v0.3
@@ -85,7 +85,7 @@ family_expansion_small_medium:
 - id: Qwen/Qwen2.5-7B-Instruct
   alias: Qwen2.5-7B
   provider: hf
-- id: meta-llama/Meta-Llama-3-8B-Instruct
+- id: meta-llama/Llama-3.1-8B-Instruct
   alias: Llama-3-8B-Instruct
   provider: hf
 - id: microsoft/Phi-3-mini-4k-instruct
@@ -101,7 +101,7 @@ family_expansion_small_medium:
   alias: DeepSeek-R1-Distill-Qwen-7B
   provider: hf
 family_expansion_larger_if_available:
-- id: meta-llama/Meta-Llama-3-8B-Instruct
+- id: meta-llama/Llama-3.1-8B-Instruct
   alias: Llama-3-8B-Instruct
   provider: hf
 - id: google/gemma-2-9b-it
@@ -128,7 +128,7 @@ custom_llama32_3b:
   alias: Llama-3.2-3B-Instruct
   provider: hf
 custom_llama31_8b:
-- id: meta-llama/Meta-Llama-3.1-8B-Instruct
+- id: meta-llama/Llama-3.1-8B-Instruct
   alias: Llama-3.1-8B-Instruct
   provider: hf
 custom_qwen25_7b:

@@ -27,8 +27,8 @@ models_to_download = [
         "local_dir": "./Qwen3-30B-A3B-Instruct-2507"
     },
     # {
-    #     "repo_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
-    #     "local_dir": "./Llama-3-8B-Instruct"
+    #     "repo_id": "meta-llama/Llama-3.1-8B-Instruct",
+    #     "local_dir": "./Llama-3.1-8B-Instruct"
     # },
     # {
     #     "repo_id": "mistralai/Mistral-7B-Instruct-v0.3",
