@@ -15,7 +15,7 @@
 #       <run_name> <run_dir> [ragchecker_model_name]
 #
 # Model name (arg 3 or configs/ragchecker.yaml): alias from configs/models.yaml
-#   (e.g. Llama-3-8B-Instruct) or full hub id (e.g. hf/Qwen/Qwen3-30B-A3B-Instruct-2507).
+#   (e.g. Llama-3.1-8B-Instruct) or full hub id (e.g. hf/Qwen/Qwen3-30B-A3B-Instruct-2507).
 #
 # Outputs go to:
 #   outputs/ragchecker/<run_name>/
@@ -68,7 +68,7 @@ mkdir -p logs "$RAGCHECKER_OUTPUT_DIR"
 # python3 scripts/generate_gt_responses.py --config configs/gt_responses.yaml
 
 # =============================================================================
-# SECTION B — RAGChecker Evaluation (vLLM + local HF cache)
+# SECTION B — RAGChecker Evaluation
 # =============================================================================
 echo "=== [B] RAGChecker evaluation ==="
 
@@ -77,61 +77,6 @@ python3 -c "import ragchecker" 2>/dev/null || {
     pip install ragchecker --quiet
     python3 -m spacy download en_core_web_sm --quiet
 }
-
-python3 -c "import vllm" 2>/dev/null || {
-    echo "Installing vllm..."
-    pip install vllm --quiet
-}
-
-MODEL_ALIAS="${RAGCHECKER_MODEL:-Llama-3.1-8B-Instruct}"
-VLLM_HUB_ID=$(python3 -c "
-import sys
-sys.path.insert(0, '.')
-from src.model_names import resolve_model_spec
-print(resolve_model_spec('${MODEL_ALIAS}', 'configs/models.yaml').id)
-")
-
-VLLM_PORT=8000
-VLLM_API_KEY=sk-local
-VLLM_API_BASE="http://127.0.0.1:${VLLM_PORT}/v1"
-VLLM_LOG="logs/vllm_${SLURM_JOB_ID}.log"
-
-echo "Starting vLLM: ${VLLM_HUB_ID} on port ${VLLM_PORT}"
-python3 -m vllm.entrypoints.openai.api_server \
-    --model "$VLLM_HUB_ID" \
-    --dtype auto \
-    --gpu-memory-utilization 0.90 \
-    --port "$VLLM_PORT" \
-    --api-key "$VLLM_API_KEY" \
-    > "$VLLM_LOG" 2>&1 &
-VLLM_PID=$!
-
-cleanup() {
-    if kill -0 "$VLLM_PID" 2>/dev/null; then
-        echo "Stopping vLLM (pid $VLLM_PID)..."
-        kill "$VLLM_PID" 2>/dev/null || true
-    fi
-}
-trap cleanup EXIT
-
-echo "Waiting for vLLM..."
-for _ in $(seq 1 90); do
-    if curl -sf "${VLLM_API_BASE}/models" -H "Authorization: Bearer ${VLLM_API_KEY}" >/dev/null; then
-        echo "vLLM ready."
-        break
-    fi
-    if ! kill -0 "$VLLM_PID" 2>/dev/null; then
-        echo "ERROR: vLLM exited early. Log:"
-        tail -50 "$VLLM_LOG"
-        exit 1
-    fi
-    sleep 10
-done
-
-export OPENAI_API_KEY="$VLLM_API_KEY"
-export VLLM_API_BASE="$VLLM_API_BASE"
-export RAGCHECKER_EXTRACTOR_API_BASE="$VLLM_API_BASE"
-export RAGCHECKER_CHECKER_API_BASE="$VLLM_API_BASE"
 
 RAG_ARGS=(
     --run-name "$RUN_NAME"

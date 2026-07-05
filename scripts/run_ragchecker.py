@@ -241,8 +241,8 @@ def _run_ragchecker(
     extractor_max_new_tokens: int,
     generation_cfg: Dict[str, Any],
     models_config: str,
-    extractor_api_base: Optional[str] = None,
-    checker_api_base: Optional[str] = None,
+    extractor_litellm: str,
+    checker_litellm: str,
 ) -> Any:
     try:
         from ragchecker import RAGResults, RAGChecker
@@ -280,15 +280,9 @@ def _run_ragchecker(
         )
         ragchecker_kwargs["extractor_name"] = extractor_spec.id
         ragchecker_kwargs["checker_name"] = checker_spec.id
-    elif inference == "vllm":
-        api_base = extractor_api_base or checker_api_base or "http://127.0.0.1:8000/v1"
-        ragchecker_kwargs["extractor_name"] = f"openai/{extractor_hub_id}"
-        ragchecker_kwargs["checker_name"] = f"openai/{checker_hub_id}"
-        ragchecker_kwargs["extractor_api_base"] = api_base
-        ragchecker_kwargs["checker_api_base"] = checker_api_base or api_base
     else:
-        ragchecker_kwargs["extractor_name"] = extractor_hub_id
-        ragchecker_kwargs["checker_name"] = checker_hub_id
+        ragchecker_kwargs["extractor_name"] = extractor_litellm
+        ragchecker_kwargs["checker_name"] = checker_litellm
 
     evaluator = RAGChecker(**ragchecker_kwargs)
 
@@ -364,16 +358,6 @@ def main() -> None:
     extractor_max_new_tokens: int = int(
         ragchecker_cfg.get("extractor_max_new_tokens", generation_cfg["max_new_tokens"])
     )
-    extractor_api_base = (
-        ragchecker_cfg.get("extractor_api_base")
-        or os.environ.get("RAGCHECKER_EXTRACTOR_API_BASE")
-        or os.environ.get("VLLM_API_BASE")
-    )
-    checker_api_base = (
-        ragchecker_cfg.get("checker_api_base")
-        or os.environ.get("RAGCHECKER_CHECKER_API_BASE")
-        or extractor_api_base
-    )
 
     run_name = args.run_name or cfg.get("run", {}).get("name")
     if args.output_dir:
@@ -433,9 +417,6 @@ def main() -> None:
         print("\n--build-only set; stopping before evaluation.")
         return
 
-    if inference == "vllm":
-        os.environ.setdefault("OPENAI_API_KEY", str(ragchecker_cfg.get("vllm_api_key", "sk-local")))
-
     # ========================================================================
     # PHASE 3 — Run RAGChecker
     # ========================================================================
@@ -445,9 +426,6 @@ def main() -> None:
     print(f"  Inference : {inference}")
     if inference == "local":
         print(f"  Model     : {extractor_hub_id} (HF cache via transformers)")
-    elif inference == "vllm":
-        print(f"  Extractor : openai/{extractor_hub_id} @ {extractor_api_base}")
-        print(f"  Checker   : openai/{checker_hub_id} @ {checker_api_base or extractor_api_base}")
     else:
         print(f"  Extractor : {extractor_litellm}")
         print(f"  Checker   : {checker_litellm}")
@@ -464,8 +442,8 @@ def main() -> None:
         extractor_max_new_tokens=extractor_max_new_tokens,
         generation_cfg=generation_cfg,
         models_config=models_config,
-        extractor_api_base=extractor_api_base,
-        checker_api_base=checker_api_base,
+        extractor_litellm=extractor_litellm,
+        checker_litellm=checker_litellm,
     )
 
     # ========================================================================
