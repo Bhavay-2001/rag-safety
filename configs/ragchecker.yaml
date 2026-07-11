@@ -40,7 +40,7 @@ run:
 # Evaluation settings
 # ---------------------------------------------------------------------------
 evaluation:
-  condition: rag_docs
+  condition: rag_llm
 
 # ---------------------------------------------------------------------------
 # Model registry (alias → hub id resolution)
@@ -70,6 +70,6 @@ ragchecker:
 # Output
 # ---------------------------------------------------------------------------
 output:
-  root: outputs/ragchecker
+  root: outputs/ragchecker/rag_llm_condition
   # Fallback when --run-name is not provided:
   dir: outputs/ragchecker/default
