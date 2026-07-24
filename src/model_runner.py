@@ -30,6 +30,86 @@ def select_models(models_cfg: Dict[str, Any], use_key: str) -> List[ModelSpec]:
     return specs
 
 
+class _SentencePieceTokenizerAdapter:
+    """Minimal HF-compatible wrapper around SentencePiece.
+
+    Transformers 5.x AutoTokenizer may fall back to TikToken for Llama/SPM
+    ``tokenizer.model`` files when ``protobuf`` is missing. This adapter loads
+    SentencePiece directly so models like WildGuard still work.
+    """
+
+    def __init__(
+        self,
+        vocab_file: str,
+        *,
+        name_or_path: str,
+        add_bos_token: bool = True,
+        add_eos_token: bool = False,
+    ) -> None:
+        import sentencepiece as spm
+
+        self.sp = spm.SentencePieceProcessor()
+        if not self.sp.Load(vocab_file):
+            raise RuntimeError(f"Failed to load SentencePiece model: {vocab_file}")
+        self.name_or_path = name_or_path
+        self.chat_template = None
+        self.add_bos_token = add_bos_token
+        self.add_eos_token = add_eos_token
+        self.unk_token = "<unk>"
+        self.bos_token = "<s>"
+        self.eos_token = "</s>"
+        self.pad_token = "</s>"
+        self.unk_token_id = int(self.sp.PieceToId(self.unk_token))
+        self.bos_token_id = int(self.sp.PieceToId(self.bos_token))
+        self.eos_token_id = int(self.sp.PieceToId(self.eos_token))
+        self.pad_token_id = self.eos_token_id
+
+    def __len__(self) -> int:
+        return int(self.sp.GetPieceSize())
+
+    def encode(self, text: str, add_special_tokens: bool = True) -> List[int]:
+        ids = [int(i) for i in self.sp.EncodeAsIds(text)]
+        if add_special_tokens and self.add_bos_token:
+            ids = [self.bos_token_id] + ids
+        if add_special_tokens and self.add_eos_token:
+            ids = ids + [self.eos_token_id]
+        return ids
+
+    def decode(self, token_ids: Any, skip_special_tokens: bool = True) -> str:
+        if hasattr(token_ids, "tolist"):
+            token_ids = token_ids.tolist()
+        if token_ids and isinstance(token_ids[0], list):
+            token_ids = token_ids[0]
+        ids = [int(i) for i in token_ids]
+        if skip_special_tokens:
+            special = {self.unk_token_id, self.bos_token_id, self.eos_token_id, self.pad_token_id}
+            ids = [i for i in ids if i not in special]
+        return self.sp.DecodeIds(ids)
+
+    def __call__(
+        self,
+        text: str,
+        return_tensors: str | None = None,
+        add_special_tokens: bool = True,
+    ) -> Dict[str, Any]:
+        ids = self.encode(text, add_special_tokens=add_special_tokens)
+        if return_tensors == "pt":
+            input_ids = torch.tensor([ids], dtype=torch.long)
+            attention_mask = torch.ones_like(input_ids)
+            return {"input_ids": input_ids, "attention_mask": attention_mask}
+        return {"input_ids": ids, "attention_mask": [1] * len(ids)}
+
+
+def _load_sentencepiece_tokenizer(model_id: str) -> _SentencePieceTokenizerAdapter:
+    from huggingface_hub import hf_hub_download
+
+    try:
+        vocab_file = hf_hub_download(repo_id=model_id, filename="tokenizer.model", local_files_only=True)
+    except Exception:
+        vocab_file = hf_hub_download(repo_id=model_id, filename="tokenizer.model")
+    return _SentencePieceTokenizerAdapter(vocab_file, name_or_path=model_id)
+
+
 class ModelRunner:
     def __init__(self, generation_cfg: Dict[str, Any]) -> None:
         self.generation_cfg = generation_cfg
@@ -69,9 +149,17 @@ class ModelRunner:
         try:
             tokenizer = AutoTokenizer.from_pretrained(model_id, trust_remote_code=trust_remote_code)
         except Exception:
-            tokenizer = AutoTokenizer.from_pretrained(
-                model_id, use_fast=False, trust_remote_code=trust_remote_code
-            )
+            try:
+                tokenizer = AutoTokenizer.from_pretrained(
+                    model_id, use_fast=False, trust_remote_code=trust_remote_code
+                )
+            except Exception:
+                # WildGuard / Llama SPM tokenizers: transformers 5.x may need
+                # protobuf and otherwise fall back to a broken TikToken path.
+                if "wildguard" in lower_model_id or lower_model_id.startswith("meta-llama/"):
+                    tokenizer = _load_sentencepiece_tokenizer(model_id)
+                else:
+                    raise
 
         model_kwargs = {
             "device_map": "auto",

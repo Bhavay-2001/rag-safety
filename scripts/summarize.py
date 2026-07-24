@@ -7,7 +7,7 @@ import time
 import math
 from collections import defaultdict
 from pathlib import Path
-from typing import Dict, Tuple
+from typing import Dict, List, Tuple
 
 ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
@@ -345,6 +345,77 @@ def _load_present_absent(path: str | Path) -> Dict[str, str]:
     return mapping
 
 
+def _unsafe_prob_from_row(row: Dict[str, object]) -> float | None:
+    for key in ("unsafe_prob_first_token_norm", "unsafe_prob_first_token", "unsafe_prob_llr"):
+        val = row.get(key)
+        if val is not None:
+            try:
+                return float(val)  # type: ignore[arg-type]
+            except (TypeError, ValueError):
+                continue
+    return None
+
+
+def _per_response_ensemble_scores(
+    responses: List[Dict[str, object]],
+    judge_labels: List[Dict[str, object]],
+    comparison_map: Dict[tuple[str, str, str], Dict[str, object]],
+) -> List[Dict[str, object]]:
+    """One row per prompt response with per-judge unsafe probs and their mean."""
+    primary_map = {
+        (str(j.get("prompt_id", "")), str(j.get("condition", "")), str(j.get("model", ""))): j
+        for j in judge_labels
+    }
+    rows: List[Dict[str, object]] = []
+    for r in responses:
+        key = (str(r.get("prompt_id", "")), str(r.get("condition", "")), str(r.get("model", "")))
+        primary = primary_map.get(key, {})
+        comp = comparison_map.get(key, {})
+
+        judge_probs: Dict[str, float | None] = {}
+        if isinstance(comp.get("judge_unsafe_probs"), dict) and comp.get("judge_unsafe_probs"):
+            for mid, val in comp["judge_unsafe_probs"].items():  # type: ignore[union-attr]
+                try:
+                    judge_probs[str(mid)] = float(val) if val is not None else None
+                except (TypeError, ValueError):
+                    judge_probs[str(mid)] = None
+        else:
+            primary_id = str(primary.get("judge_model_id") or "primary")
+            judge_probs[primary_id] = _unsafe_prob_from_row(primary)
+            comp_probs = comp.get("comparison_unsafe_probs")
+            if isinstance(comp_probs, dict):
+                for mid, val in comp_probs.items():
+                    try:
+                        judge_probs[str(mid)] = float(val) if val is not None else None
+                    except (TypeError, ValueError):
+                        judge_probs[str(mid)] = None
+
+        mean_from_comp = comp.get("mean_unsafe_prob")
+        if mean_from_comp is not None:
+            try:
+                mean_unsafe_prob: float | None = float(mean_from_comp)  # type: ignore[arg-type]
+            except (TypeError, ValueError):
+                mean_unsafe_prob = None
+        else:
+            vals = [float(v) for v in judge_probs.values() if v is not None]
+            mean_unsafe_prob = (sum(vals) / len(vals)) if vals else None
+
+        rows.append(
+            {
+                "prompt_id": key[0],
+                "condition": key[1],
+                "model": key[2],
+                "primary_label": primary.get("label"),
+                "unsafe_majority": comp.get("unsafe_majority"),
+                "unsafe_votes": comp.get("unsafe_votes"),
+                "judges_total": comp.get("judges_total"),
+                "judge_unsafe_probs": judge_probs,
+                "mean_unsafe_prob": mean_unsafe_prob,
+            }
+        )
+    return rows
+
+
 def main() -> None:
     args = _parse_args()
     cfg_path = Path(args.config)
@@ -395,6 +466,13 @@ def main() -> None:
     )
     if second_summary:
         metrics["second_pass_by_model_condition"] = second_summary
+    metrics["per_response_scores"] = _per_response_ensemble_scores(responses, judge_labels, comparison_map)
+    mean_vals = [
+        float(row["mean_unsafe_prob"])
+        for row in metrics["per_response_scores"]
+        if row.get("mean_unsafe_prob") is not None
+    ]
+    metrics["mean_unsafe_prob_overall"] = (sum(mean_vals) / len(mean_vals)) if mean_vals else None
     metrics["present_absent_population"] = present_absent_population
     metrics["present_absent_total_rows_considered"] = (
         metrics.get("present_absent_meta", {}).get("rows_considered", 0)
