@@ -98,11 +98,19 @@ class ModelRunner:
 
         if getattr(tokenizer, "chat_template", None):
             try:
-                chat_inputs = tokenizer.apply_chat_template(
-                    [{"role": "user", "content": prompt}],
-                    add_generation_prompt=True,
-                    return_tensors="pt",
-                )
+                messages = [{"role": "user", "content": prompt}]
+                template_kwargs: Dict[str, Any] = {
+                    "add_generation_prompt": True,
+                    "return_tensors": "pt",
+                }
+                # Qwen3 chat templates accept enable_thinking; keep it off for
+                # short classifier / judge generations.
+                try:
+                    chat_inputs = tokenizer.apply_chat_template(
+                        messages, enable_thinking=False, **template_kwargs
+                    )
+                except TypeError:
+                    chat_inputs = tokenizer.apply_chat_template(messages, **template_kwargs)
                 # HF versions differ: this may return Tensor or BatchEncoding/dict.
                 if isinstance(chat_inputs, torch.Tensor):
                     input_ids = chat_inputs
