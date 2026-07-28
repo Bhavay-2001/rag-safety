@@ -1,7 +1,0 @@
-record_type,run_root,run_id,status,family,missing_files,run_dir
-run,safety_deepseek_r1d_qwen7b_report,20260413T041908Z_3d7cfb34,complete,deepseek,,/scratch/adi7/rag-test/outputs/safety_deepseek_r1d_qwen7b_report/20260413T041908Z_3d7cfb34
-run,safety_gemma_7b_report,20260413T041509Z_053f4502,complete,gemma,,/scratch/adi7/rag-test/outputs/safety_gemma_7b_report/20260413T041509Z_053f4502
-run,safety_llama32_3b_report,20260413T041341Z_af1136c0,complete,llama,,/scratch/adi7/rag-test/outputs/safety_llama32_3b_report/20260413T041341Z_af1136c0
-run,safety_mistral7b_v03_report,20260413T041908Z_45bc4642,complete,mistral,,/scratch/adi7/rag-test/outputs/safety_mistral7b_v03_report/20260413T041908Z_45bc4642
-run,safety_phi3mini_report,20260413T041440Z_821cd653,complete,phi,,/scratch/adi7/rag-test/outputs/safety_phi3mini_report/20260413T041440Z_821cd653
-run,safety_qwen3_4b_report,20260413T041341Z_0bfe1cfa,complete,qwen,,/scratch/adi7/rag-test/outputs/safety_qwen3_4b_report/20260413T041341Z_0bfe1cfa

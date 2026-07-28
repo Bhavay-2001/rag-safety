@@ -1,7 +1,0 @@
-rank,run_root,run_id,mode,family,condition,doc_total,doc_safe,doc_unsafe,doc_unknown,doc_safe_rate,doc_unsafe_rate,doc_unknown_rate
-1,safety_deepseek_r1d_qwen7b_report,20260413T041908Z_3d7cfb34,improved_no_rerank_actionable,deepseek,rag_docs,6000,5690,310,0,0.9483333333333334,0.051666666666666666,0.0
-2,safety_gemma_7b_report,20260413T041509Z_053f4502,improved_no_rerank_actionable,gemma,rag_docs,6000,5690,310,0,0.9483333333333334,0.051666666666666666,0.0
-3,safety_llama32_3b_report,20260413T041341Z_af1136c0,improved_no_rerank_actionable,llama,rag_docs,6000,5690,310,0,0.9483333333333334,0.051666666666666666,0.0
-4,safety_mistral7b_v03_report,20260413T041908Z_45bc4642,improved_no_rerank_actionable,mistral,rag_docs,6000,5690,310,0,0.9483333333333334,0.051666666666666666,0.0
-5,safety_phi3mini_report,20260413T041440Z_821cd653,improved_no_rerank_actionable,phi,rag_docs,6000,5690,310,0,0.9483333333333334,0.051666666666666666,0.0
-6,safety_qwen3_4b_report,20260413T041341Z_0bfe1cfa,improved_no_rerank_actionable,qwen,rag_docs,6000,5690,310,0,0.9483333333333334,0.051666666666666666,0.0

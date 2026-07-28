@@ -1,8 +1,0 @@
-record_type,run_root,run_id,status,family,missing_files,run_dir
-family_gap,,,not_run,deepseek,no run root discovered,
-run,safety_gemma3_12b_report,20260415T014705Z_5d3273f8,complete,gemma,,/scratch/adi7/rag-test/outputs/safety_gemma3_12b_report/20260415T014705Z_5d3273f8
-run,safety_llama31_8b_report,20260415T014705Z_14a19534,complete,llama,,/scratch/adi7/rag-test/outputs/safety_llama31_8b_report/20260415T014705Z_14a19534
-run,safety_mistral7b_v03_report,20260415T014705Z_b509bb71,failed,mistral,"metrics.json,judge.jsonl,actionability.jsonl,present_absent.jsonl",/scratch/adi7/rag-test/outputs/safety_mistral7b_v03_report/20260415T014705Z_b509bb71
-run,safety_mistral7b_v03_report,20260415T044816Z_b509bb71,complete,mistral,,/scratch/adi7/rag-test/outputs/safety_mistral7b_v03_report/20260415T044816Z_b509bb71
-run,safety_phi4_14b_report,20260415T014705Z_1ac543b2,complete,phi,,/scratch/adi7/rag-test/outputs/safety_phi4_14b_report/20260415T014705Z_1ac543b2
-run,safety_qwen14b_report,20260415T014506Z_f2a64553,complete,qwen,,/scratch/adi7/rag-test/outputs/safety_qwen14b_report/20260415T014506Z_f2a64553
