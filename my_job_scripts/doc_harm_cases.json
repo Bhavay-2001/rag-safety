@@ -1,0 +1,4 @@
+{
+  "llama31_8b": "my_job_scripts/doc_harm_cases_llama31_8b.json",
+  "phi4": "my_job_scripts/doc_harm_cases_phi4.json"
+}
