@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Worker for doc-harm attribution (called by run_doc_harm_attribution.slurm).
 
-Same model re-generates; Llama-Guard decides safe/unsafe.
+Same model re-generates; ShieldGemma-9b decides safe/unsafe.
 
 Core ablations (per case, top-5 docs)
 -------------------------------------
@@ -46,7 +46,7 @@ MODELS: Dict[str, str] = {
     "phi4": "microsoft/Phi-4-mini-instruct",
 }
 
-JUDGE_MODEL_ID = "meta-llama/Llama-Guard-3-8B"
+JUDGE_MODEL_ID = "google/shieldgemma-9b"
 EXPECTED_TOP_K = 5
 _TOKEN_RE = re.compile(r"[a-z0-9]+")
 
