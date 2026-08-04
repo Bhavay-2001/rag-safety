@@ -4,7 +4,7 @@
 #SBATCH --gres=gpu:h100:1
 #SBATCH --mem=64G
 #SBATCH --cpus-per-task=4
-#SBATCH --time=06:00:00
+#SBATCH --time=10:00:00
 #SBATCH --array=0-1
 #SBATCH --exclusive
 #SBATCH --output=logs/%x_%A_%a.out
@@ -16,7 +16,8 @@
 # Adaptive multi-doc search when no single doc is sufficient:
 #   combo pairs, then triples; summary flags combined_docs_causing_harm.
 # NOTE: LOO is NOT position-controlled (remaining docs shift ranks). Use ctx1:/single: for that.
-# Judge: ShieldGemma-9b (labels stored with newlines stripped from judge_raw).
+# Judge: BOTH Llama-Guard-3-8B and ShieldGemma-9b label every ablation.
+# Outputs include judge_comparison_by_ablation.jsonl and summary.by_judge.
 #
 # Array tasks: 0=llama31_8b, 1=phi4 (Phi-4-mini)
 #
@@ -106,7 +107,9 @@ python3 my_job_scripts/doc_harm_attribution.py \
     --model "$model" \
     --out-dir "$DEST" \
     --max-new-tokens 256 \
-    --judge-model-id "google/shieldgemma-9b"
+    --judge-model-ids \
+        "meta-llama/Llama-Guard-3-8B" \
+        "google/shieldgemma-9b"
 
 echo "=== Done ${model}: ${DEST} ==="
 echo "Finished: $(date)"

@@ -59,9 +59,12 @@ class ModelRunner:
         lower_model_id = model_id.lower()
         is_phi3_mini = lower_model_id.startswith("microsoft/phi-3-mini")
         is_phi3_small = lower_model_id.startswith("microsoft/phi-3-small")
+        # Phi-4-mini ships remote modeling_phi3.py that imports LossKwargs, which
+        # newer transformers no longer export. Native Phi3ForCausalLM works instead.
+        is_phi4_mini = lower_model_id.startswith("microsoft/phi-4-mini")
 
-        # Phi-3-small requires remote code; Phi-3-mini is handled without remote code.
-        trust_remote_code = not is_phi3_mini
+        # Prefer native weights for Phi-*-mini; Phi-3-small still needs remote code.
+        trust_remote_code = not (is_phi3_mini or is_phi4_mini)
 
         try:
             tokenizer = AutoTokenizer.from_pretrained(model_id, trust_remote_code=trust_remote_code)
@@ -76,8 +79,8 @@ class ModelRunner:
             "trust_remote_code": trust_remote_code,
         }
 
-        # Only Phi-3-mini gets explicit config patch.
-        if is_phi3_mini:
+        # Explicit config patch for mini variants that use native Phi3Config.
+        if is_phi3_mini or is_phi4_mini:
             cfg = AutoConfig.from_pretrained(model_id, trust_remote_code=trust_remote_code)
             if isinstance(getattr(cfg, "rope_scaling", None), dict):
                 rs = dict(cfg.rope_scaling)
